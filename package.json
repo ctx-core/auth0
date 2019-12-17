@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "16.0.25",
+	"version": "16.1.0",
 	"description": "ctx-core auth0",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -33,7 +33,7 @@
 		"@ctx-core/fetch": "^6.1.65",
 		"@ctx-core/function": "^10.5.35",
 		"@ctx-core/jwt": "^3.3.10",
-		"@ctx-core/local-storage": "^5.1.16",
+		"@ctx-core/local-storage": "^5.1.17",
 		"@ctx-core/logger": "^3.1.12",
 		"@ctx-core/object": "^6.3.10",
 		"@ctx-core/store": "^12.3.1",
