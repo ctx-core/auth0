@@ -13,9 +13,9 @@ import {
 	set__token__auth0,
 	_s__token__auth0__,
 	__token__auth0__,
+	set__error__token__auth0,
 	clear__token__auth0,
 	logout__token__auth0,
-	set__error__token__auth0,
 	clear__error__token__auth0,
 	_s__token__auth0,
 	__token__auth0,
@@ -50,9 +50,9 @@ export {
 	set__token__auth0,
 	_s__token__auth0__,
 	__token__auth0__,
+	set__error__token__auth0,
 	clear__token__auth0,
 	logout__token__auth0,
-	set__error__token__auth0,
 	clear__error__token__auth0,
 	_s__token__auth0,
 	__token__auth0,
@@ -164,7 +164,7 @@ export const [_s__msg__logout__auth0,
 ] = _ensure__store__instance<Writable__msg__logout__auth0>(
 	ctx=>{
 		const __msg__logout__auth0 = writable(null)
-		const { logout__token__auth0 } = _s__token__auth0__(ctx)[0]
+		const { logout__token__auth0 } = _s__token__auth0(ctx)[0]
 		return [
 			assign(__msg__logout__auth0, {
 				logout__auth0,
