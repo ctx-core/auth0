@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "16.1.4",
+	"version": "16.1.5",
 	"description": "ctx-core auth0",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.13",
-		"@ctx-core/fetch": "^6.1.67",
+		"@ctx-core/fetch": "^6.1.68",
 		"@ctx-core/function": "^10.5.35",
 		"@ctx-core/jwt": "^3.3.10",
 		"@ctx-core/local-storage": "^5.1.17",
