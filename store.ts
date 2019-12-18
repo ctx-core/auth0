@@ -80,7 +80,7 @@ export const [_s__txt__error__token__auth0,
 	__txt__error__token__auth0,
 ] = _ensure__store__instance(
 	ctx=>derived(
-		_s__error__token__auth0(ctx)[0],
+		_s__error__token__auth0(ctx),
 		error__token__auth0=>
 			error__token__auth0
 			? error__token__auth0.error_message || error__token__auth0.message
@@ -123,57 +123,50 @@ export const [_s__is__loggedout__auth0,
 export const [_s__class__opened__auth0,
 	__class__opened__auth0,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0], I))
+	ctx=>derived(_s__opened__auth0(ctx), I))
 export const [_s__closed__auth0,
 	__closed__auth0,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		_eql(false)
 	))
 export const [_s__opened__login,
 	__opened__login,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		opened__auth0=>!opened__auth0 || opened__auth0 == 'login'))
 export const [_s__opened__signup,
 	__opened__signup,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		_eq('signup')))
 export const [_s__opened__forgot_password,
 	__opened__forgot_password,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		_eq('forgot_password')))
 export const [_s__opened__check_email__forgot_password,
 	__opened__check_email__forgot_password,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		_eq('check_email__forgot_password')))
 export const [_s__opened__change_password,
 	__opened__change_password,
 ] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx)[0],
+	ctx=>derived(_s__opened__auth0(ctx),
 		_eq('change_password')))
 interface Writable__msg__logout__auth0 extends Writable<falsy|any> {
 	logout__auth0:()=>void
 }
 export const [_s__msg__logout__auth0,
 	__msg__logout__auth0,
-	logout__auth0,
 ] = _ensure__store__instance<Writable__msg__logout__auth0>(
 	ctx=>{
 		const __msg__logout__auth0 = writable(null)
-		const { logout__token__auth0 } = _s__token__auth0(ctx)[0]
-		return [
-			assign(__msg__logout__auth0, {
-				logout__auth0,
-			}),
+		const { logout__token__auth0 } = _s__token__auth0(ctx)
+		return assign(__msg__logout__auth0, {
 			logout__auth0,
-		] as unknown as [
-			Writable__msg__logout__auth0,
-			()=>void,
-		]
+		}) as Writable__msg__logout__auth0
 		function logout__auth0() {
 			log(`${logPrefix}|logout__auth0`)
 			logout__token__auth0()
@@ -182,3 +175,6 @@ export const [_s__msg__logout__auth0,
 			})
 		}
 	})
+export const {
+	logout__auth0,
+} = __msg__logout__auth0

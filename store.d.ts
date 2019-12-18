@@ -22,4 +22,5 @@ export declare const _s__opened__change_password: (ctx?: any, opts?: any) => imp
 interface Writable__msg__logout__auth0 extends Writable<falsy | any> {
     logout__auth0: () => void;
 }
-export declare const _s__msg__logout__auth0: (ctx?: any, opts?: any) => [Writable__msg__logout__auth0, ...any[]], __msg__logout__auth0: Writable__msg__logout__auth0, logout__auth0: any;
+export declare const _s__msg__logout__auth0: (ctx?: any, opts?: any) => Writable__msg__logout__auth0, __msg__logout__auth0: Writable__msg__logout__auth0;
+export declare const logout__auth0: () => void;
