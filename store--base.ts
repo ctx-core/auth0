@@ -156,15 +156,13 @@ export const [_s__token__auth0,
 		if (_has__dom()) {
 			window.addEventListener('storage', __storage__json__token__auth0)
 		}
-		return [
-			assign(__token__auth0, {
-				set__token__auth0,
-				clear__token__auth0,
-				logout__token__auth0,
-				schedule__validate__current__token__auth0,
-				__storage__json__token__auth0,
-			}),
-		] as unknown as Readable__token__auth0
+		return assign(__token__auth0, {
+			set__token__auth0,
+			clear__token__auth0,
+			logout__token__auth0,
+			schedule__validate__current__token__auth0,
+			__storage__json__token__auth0,
+		}) as unknown as Readable__token__auth0
 		function schedule__validate__current__token__auth0() {
 			const token__auth0 = get(__token__auth0)
 			const id_token = token__auth0 && token__auth0.id_token
