@@ -3,7 +3,7 @@ import { assign } from '@ctx-core/object'
 // @ts-ignore
 import { subscribe__debug } from '@ctx-core/store'
 import { _ensure__store__instance } from '@ctx-core/store'
-import { _eql, _neql, _eq } from '@ctx-core/function'
+import { falsy, _eql, _eq } from '@ctx-core/function'
 import { I } from '@ctx-core/combinators'
 import {
 	__AUTH0_CLIENT_ID,
@@ -40,7 +40,6 @@ import {
 	reload__opened__auth0,
 } from './store--base'
 import { log } from '@ctx-core/logger'
-import { falsy } from '@ctx-core/function/lib'
 const logPrefix = '@ctx-core/auth0/store'
 export {
 	__AUTH0_CLIENT_ID,
@@ -111,7 +110,7 @@ export const [_s__is__loggedin__auth0,
 ] = _ensure__store__instance(
 	ctx=>derived(
 		_s__token__auth0(ctx),
-		_neql(false)
+		token__auth0 => !!token__auth0
 	))
 export const [_s__is__loggedout__auth0,
 	__is__loggedout__auth0,

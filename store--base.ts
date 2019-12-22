@@ -72,7 +72,7 @@ export const [_s__token__auth0__,
 		json__token__auth0=>{
 			if (json__token__auth0 && typeof json__token__auth0 === 'string') {
 				try {
-					return JSON.parse(json__token__auth0)
+					return JSON.parse(json__token__auth0) || false
 				} catch (e) {
 					warn(e)
 					json__token__auth0 = null
@@ -131,8 +131,10 @@ export const [_s__token__auth0,
 	__token__auth0,
 ] = _ensure__store__instance<Readable__token__auth0>(
 	ctx=>{
-		const { clear__token__auth0 } = _s__json__token__auth0(ctx)
-		const { set__error__token__auth0 } = _s__error__token__auth0(ctx)
+		const __json__token__auth0 = _s__json__token__auth0(ctx)
+		const { clear__token__auth0 } = __json__token__auth0
+		const __error__token__auth0 = _s__error__token__auth0(ctx)
+		const { set__error__token__auth0 } = __error__token__auth0
 		const __token__auth0 = derived<Readable<Token__auth0>, Token__auth0>(
 			_s__token__auth0__(ctx),
 			token__auth0=>

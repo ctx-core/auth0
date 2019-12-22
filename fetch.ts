@@ -4,7 +4,7 @@ import { get } from 'svelte/store'
 import { throw__unauthorized } from '@ctx-core/error'
 import {
 	_token__jwt__authorization__header,
-	validate__current__jwt
+	validate__current__jwt,
 } from '@ctx-core/jwt'
 import {
 	__AUTH0_CLIENT_ID,
