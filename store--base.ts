@@ -202,13 +202,15 @@ export const _s__token__auth0__userinfo__auth0 = def__token__auth0__userinfo__au
 export const __token__auth0__userinfo__auth0 = def__token__auth0__userinfo__auth0[1]
 const def__userinfo__auth0 = _ensure__store__instance(ctx=>
 	derived([
+			_s__AUTH0_DOMAIN(ctx),
 			_s__token__auth0(ctx),
 			_s__token__auth0__userinfo__auth0(ctx),
 		],
 		(
 			[
+				AUTH0_DOMAIN,
 				token__auth0,
-				token__auth0__userinfo__auth0
+				token__auth0__userinfo__auth0,
 			],
 			set
 		)=>{
@@ -223,7 +225,11 @@ const def__userinfo__auth0 = _ensure__store__instance(ctx=>
 				}
 				set(token__auth0)
 				const response =
-					await _waitfor__ratelimit__backoff__fibonacci(get__userinfo__auth0)
+					await _waitfor__ratelimit__backoff__fibonacci(()=>
+						get__userinfo__auth0({
+							token__auth0,
+							AUTH0_DOMAIN,
+						}))
 				if (cancel) return
 				if (!response.ok) {
 					clear__token__auth0(false)
