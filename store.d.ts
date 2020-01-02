@@ -30,7 +30,7 @@ export declare const _s__opened__check_email__forgot_password: (ctx?: any, opts?
 export declare const __opened__check_email__forgot_password: import("svelte/store").Readable<boolean>;
 export declare const _s__opened__change_password: (ctx?: any, opts?: any) => import("svelte/store").Readable<boolean>;
 export declare const __opened__change_password: import("svelte/store").Readable<boolean>;
-interface Writable__msg__logout__auth0 extends Writable<falsy | any> {
+export interface Writable__msg__logout__auth0 extends Writable<falsy | any> {
     logout__auth0: () => void;
 }
 export declare const _s__msg__logout__auth0: (ctx?: any, opts?: any) => Writable__msg__logout__auth0;

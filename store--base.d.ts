@@ -11,7 +11,7 @@ export declare const __AUTH0_URL: Writable<string>;
 declare type set__token__auth0 = (token__auth0: any) => void;
 declare type clear__token__auth0 = (value?: falsy) => void;
 declare type logout__token__auth0 = () => void;
-interface Writable__json__token__auth0 extends Writable<string | falsy> {
+export interface Writable__json__token__auth0 extends Writable<string | falsy> {
     set__token__auth0: set__token__auth0;
     clear__token__auth0: clear__token__auth0;
     logout__token__auth0: logout__token__auth0;
@@ -27,7 +27,7 @@ declare type Ctx__error = {
     error_description?: string;
     error?: any;
 };
-interface Writable__error__token__auth0 extends Writable<Ctx__error> {
+export interface Writable__error__token__auth0 extends Writable<Ctx__error> {
     set__error__token__auth0: (error: any) => void;
     clear__error__token__auth0: () => void;
 }
@@ -57,7 +57,7 @@ export declare const _s__email__auth0: (ctx?: any, opts?: any) => Readable<strin
 export declare const __email__auth0: Readable<string | false>;
 export declare const _s__email: (ctx?: any, opts?: any) => Readable<string | false>;
 export declare const __email: Readable<string | false>;
-interface Writable__Opened__Auth0 extends Writable<falsy | string> {
+export interface Writable__opened__auth0 extends Writable<falsy | string> {
     open__login__auth0: () => void;
     open__signup__auth0: () => void;
     open__forgot_password__auth0: () => void;
@@ -66,7 +66,7 @@ interface Writable__Opened__Auth0 extends Writable<falsy | string> {
     close__auth0: () => void;
     reload__opened__auth0: () => void;
 }
-export declare const _s__opened__auth0: (ctx?: any, opts?: any) => Writable__Opened__Auth0;
-export declare const __opened__auth0: Writable__Opened__Auth0;
+export declare const _s__opened__auth0: (ctx?: any, opts?: any) => Writable__opened__auth0;
+export declare const __opened__auth0: Writable__opened__auth0;
 export declare const open__login__auth0: () => void, open__signup__auth0: () => void, open__forgot_password__auth0: () => void, open__check_email__forgot_password__auth0: () => void, open__change_password__auth0: () => void, close__auth0: () => void, reload__opened__auth0: () => void;
 export {};

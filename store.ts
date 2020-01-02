@@ -153,7 +153,7 @@ const def__opened__change_password = _ensure__store__instance(ctx=>
 		_eq('change_password')))
 export const _s__opened__change_password = def__opened__change_password[0]
 export const __opened__change_password = def__opened__change_password[1]
-interface Writable__msg__logout__auth0 extends Writable<falsy|any> {
+export interface Writable__msg__logout__auth0 extends Writable<falsy|any> {
 	logout__auth0:()=>void
 }
 const def__msg__logout__auth0 = _ensure__store__instance<Writable__msg__logout__auth0>(ctx=>{

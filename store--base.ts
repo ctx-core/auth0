@@ -32,7 +32,7 @@ export const __AUTH0_URL = def__AUTH0_URL[1]
 type set__token__auth0 = (token__auth0:any)=>void
 type clear__token__auth0 = (value?:falsy)=>void
 type logout__token__auth0 = ()=>void
-interface Writable__json__token__auth0 extends Writable<string|falsy> {
+export interface Writable__json__token__auth0 extends Writable<string|falsy> {
 	set__token__auth0:set__token__auth0
 	clear__token__auth0:clear__token__auth0
 	logout__token__auth0:logout__token__auth0
@@ -90,7 +90,7 @@ type Ctx__error = {
 	error_description?:string,
 	error?,
 }
-interface Writable__error__token__auth0 extends Writable<Ctx__error> {
+export interface Writable__error__token__auth0 extends Writable<Ctx__error> {
 	set__error__token__auth0:(error:any)=>void
 	clear__error__token__auth0:()=>void
 }
@@ -261,7 +261,7 @@ export const _s__email__auth0 = def__email__auth0[0]
 export const __email__auth0 = def__email__auth0[1]
 export const _s__email = _s__email__auth0
 export const __email = __email__auth0
-interface Writable__Opened__Auth0 extends Writable<falsy|string> {
+export interface Writable__opened__auth0 extends Writable<falsy|string> {
 	open__login__auth0:()=>void
 	open__signup__auth0:()=>void
 	open__forgot_password__auth0:()=>void
@@ -270,7 +270,7 @@ interface Writable__Opened__Auth0 extends Writable<falsy|string> {
 	close__auth0:()=>void
 	reload__opened__auth0:()=>void
 }
-const def__opened__auth0 = _ensure__store__instance<Writable__Opened__Auth0>(()=>{
+const def__opened__auth0 = _ensure__store__instance<Writable__opened__auth0>(()=>{
 	const __opened__auth0 = assign(
 		writable(null), {
 			open__login__auth0,
@@ -294,7 +294,7 @@ const def__opened__auth0 = _ensure__store__instance<Writable__Opened__Auth0>(()=
 				}
 			})
 	}
-	return __opened__auth0 as Writable__Opened__Auth0
+	return __opened__auth0 as Writable__opened__auth0
 	function open__login__auth0() {
 		log(`${logPrefix}|open__login__auth0`)
 		__opened__auth0.set('login')
