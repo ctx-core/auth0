@@ -9,9 +9,11 @@ import { _has__dom } from '@ctx-core/dom'
 import { _exp__token__jwt } from '@ctx-core/jwt'
 import { sync__localStorage } from '@ctx-core/local-storage'
 import { Token } from '@ctx-core/jwt'
-import { warn } from '@ctx-core/logger'
-import { log } from '@ctx-core/logger/lib'
-import { get__userinfo__auth0, validate__current__token__auth0 } from './fetch'
+import {
+	get__userinfo__auth0,
+	validate__current__token__auth0,
+} from './fetch--base'
+import { log, warn } from '@ctx-core/logger'
 import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch/lib'
 const logPrefix = '@ctx-core/auth0/store'
 export type Token__auth0 = Token|falsy

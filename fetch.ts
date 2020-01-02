@@ -9,30 +9,27 @@ import {
 import {
 	__AUTH0_CLIENT_ID,
 	__AUTH0_DOMAIN,
-	__AUTH0_URL,
 	__token__auth0,
 	set__error__token__auth0,
 } from './store--base'
+import {
+	_authorization__header__access_token,
+	_authorization__header__access_token__verify,
+	get__userinfo__auth0,
+	Opts__get__userinfo__auth0,
+	validate__current__token__auth0,
+} from './fetch--base'
 import { log, error } from '@ctx-core/logger'
 const logPrefix = '@ctx-core/auth0/fetch'
+export {
+	_authorization__header__access_token,
+	_authorization__header__access_token__verify,
+	Opts__get__userinfo__auth0,
+	get__userinfo__auth0,
+}
 export async function get__jwks__json() {
 	log(`${logPrefix}|get__jwks__json`)
 	return fetch(`https://${get(__AUTH0_DOMAIN)}/.well-known/jwks.json`)
-}
-export function get__userinfo__auth0() {
-	log(`${logPrefix}|get__userinfo__auth0`)
-	const authorization = _authorization__header__access_token__verify(get(__token__auth0))
-	return (
-		fetch(
-			`https://${get(__AUTH0_DOMAIN)}/userinfo`,
-			{
-				headers:
-					{
-						'Content-Type': 'application/json',
-						authorization,
-					}
-			})
-	)
 }
 export function post__signup__dbconnections__auth0(body) {
 	log(`${logPrefix}|post__signup__dbconnections__auth0`)
@@ -107,36 +104,6 @@ export function post__token__oauth__auth0(body) {
 			body: JSON.stringify(body)
 		})
 	)
-}
-export function _authorization__header__access_token__verify(token__auth0) {
-	const authorization__header__access_token__auth0 =
-		_authorization__header__access_token(token__auth0)
-	if (!authorization__header__access_token__auth0) {
-		throw__unauthorized({ token__auth0 }, {
-			error_message: '_authorization__header__access_token__verify'
-		})
-	}
-	return authorization__header__access_token__auth0
-}
-export function _authorization__header__access_token(token__auth0) {
-	const authorization__header__access_token =
-		_authorization__token__auth0__access_token()
-		|| false
-	return authorization__header__access_token
-	function _authorization__token__auth0__access_token() {
-		const token_type = token__auth0 && token__auth0.token_type
-		const access_token = token__auth0 && token__auth0.access_token
-		const authorization__token__auth0 =
-			(token_type && access_token)
-			? `${token_type} ${access_token}`
-			: null
-		return authorization__token__auth0
-	}
-}
-export async function validate__current__token__auth0(token__auth0) {
-	log(`${logPrefix}|validate__current__token__auth0`)
-	const id_token = token__auth0 && token__auth0.id_token
-	validate__current__jwt(id_token)
 }
 export async function _authorization__header__id_token__verify(token__auth0) {
 	const authorization__header__id_token = _authorization__header__id_token(token__auth0)

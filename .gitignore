@@ -2,6 +2,7 @@
 tsconfig.tsbuildinfo
 env.js
 fetch.js
+fetch--base.js
 lib.js
 package.js
 store.js
