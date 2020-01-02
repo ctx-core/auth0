@@ -75,10 +75,8 @@ export {
 	close__auth0,
 	reload__opened__auth0,
 }
-export const [_s__txt__error__token__auth0,
-	__txt__error__token__auth0,
-] = _ensure__store__instance(
-	ctx=>derived(
+const def__txt__error__token__auth0 = _ensure__store__instance(ctx=>
+	derived(
 		_s__error__token__auth0(ctx),
 		error__token__auth0=>
 			error__token__auth0
@@ -90,90 +88,90 @@ export const [_s__txt__error__token__auth0,
 						? error__token__auth0.error
 						: ''
 			: ''))
-export const [_s__ctx__userinfo__auth0,
-	__ctx__userinfo__auth0
-] = _ensure__store__instance(
-	ctx=>
-		derived([
-				_s__userinfo__auth0(ctx),
-				_s__token__auth0__userinfo__auth0(ctx),
-			],
-			([userinfo__auth0, token__auth0__userinfo__auth0])=>(
-				{
-					userinfo__auth0,
-					token__auth0__userinfo__auth0,
-				}
-			))
+export const _s__txt__error__token__auth0 = def__txt__error__token__auth0[0]
+export const __txt__error__token__auth0 = def__txt__error__token__auth0[1]
+const def__ctx__userinfo__auth0 = _ensure__store__instance(ctx=>
+	derived([
+			_s__userinfo__auth0(ctx),
+			_s__token__auth0__userinfo__auth0(ctx),
+		],
+		([userinfo__auth0, token__auth0__userinfo__auth0])=>(
+			{
+				userinfo__auth0,
+				token__auth0__userinfo__auth0,
+			}
+		))
 )
-export const [_s__is__loggedin__auth0,
-	__is__loggedin__auth0,
-] = _ensure__store__instance(
-	ctx=>derived(
+export const _s__ctx__userinfo__auth0 = def__ctx__userinfo__auth0[0]
+export const __ctx__userinfo__auth0 = def__ctx__userinfo__auth0[1]
+const def__is__loggedin__auth0 = _ensure__store__instance(ctx=>
+	derived(
 		_s__token__auth0(ctx),
-		token__auth0 => !!token__auth0
+		token__auth0=>!!token__auth0
 	))
-export const [_s__is__loggedout__auth0,
-	__is__loggedout__auth0,
-] = _ensure__store__instance(
-	ctx=>derived(
+export const _s__is__loggedin__auth0 = def__is__loggedin__auth0[0]
+export const __is__loggedin__auth0 = def__is__loggedin__auth0[1]
+const def__is__loggedout__auth0 = _ensure__store__instance(ctx=>
+	derived(
 		_s__token__auth0(ctx),
 		_eql(false)
 	))
-export const [_s__class__opened__auth0,
-	__class__opened__auth0,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx), I))
-export const [_s__closed__auth0,
-	__closed__auth0,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__is__loggedout__auth0 = def__is__loggedout__auth0[0]
+export const __is__loggedout__auth0 = def__is__loggedout__auth0[1]
+const def__class__opened__auth0 = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx), I))
+export const _s__class__opened__auth0 = def__class__opened__auth0[0]
+export const __class__opened__auth0 = def__class__opened__auth0[1]
+const def__closed__auth0 = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		_eql(false)
 	))
-export const [_s__opened__login,
-	__opened__login,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__closed__auth0 = def__closed__auth0[0]
+export const __closed__auth0 = def__closed__auth0[1]
+const def__opened__login = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		opened__auth0=>!opened__auth0 || opened__auth0 == 'login'))
-export const [_s__opened__signup,
-	__opened__signup,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__opened__login = def__opened__login[0]
+export const __opened__login = def__opened__login[1]
+const def__opened__signup = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		_eq('signup')))
-export const [_s__opened__forgot_password,
-	__opened__forgot_password,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__opened__signup = def__opened__signup[0]
+export const __opened__signup = def__opened__signup[1]
+const def__opened__forgot_password = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		_eq('forgot_password')))
-export const [_s__opened__check_email__forgot_password,
-	__opened__check_email__forgot_password,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__opened__forgot_password = def__opened__forgot_password[0]
+export const __opened__forgot_password = def__opened__forgot_password[1]
+const def__opened__check_email__forgot_password = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		_eq('check_email__forgot_password')))
-export const [_s__opened__change_password,
-	__opened__change_password,
-] = _ensure__store__instance(
-	ctx=>derived(_s__opened__auth0(ctx),
+export const _s__opened__check_email__forgot_password = def__opened__check_email__forgot_password[0]
+export const __opened__check_email__forgot_password = def__opened__check_email__forgot_password[1]
+const def__opened__change_password = _ensure__store__instance(ctx=>
+	derived(_s__opened__auth0(ctx),
 		_eq('change_password')))
+export const _s__opened__change_password = def__opened__change_password[0]
+export const __opened__change_password = def__opened__change_password[1]
 interface Writable__msg__logout__auth0 extends Writable<falsy|any> {
 	logout__auth0:()=>void
 }
-export const [_s__msg__logout__auth0,
-	__msg__logout__auth0,
-] = _ensure__store__instance<Writable__msg__logout__auth0>(
-	ctx=>{
-		const __msg__logout__auth0 = writable(null)
-		const { logout__token__auth0 } = _s__token__auth0(ctx)
-		return assign(__msg__logout__auth0, {
-			logout__auth0,
-		}) as Writable__msg__logout__auth0
-		function logout__auth0() {
-			log(`${logPrefix}|logout__auth0`)
-			logout__token__auth0()
-			__msg__logout__auth0.set({
-				time: Date.now(),
-			})
-		}
-	})
+const def__msg__logout__auth0 = _ensure__store__instance<Writable__msg__logout__auth0>(ctx=>{
+	const __msg__logout__auth0 = writable(null)
+	const { logout__token__auth0 } = _s__token__auth0(ctx)
+	return assign(__msg__logout__auth0, {
+		logout__auth0,
+	}) as Writable__msg__logout__auth0
+	function logout__auth0() {
+		log(`${logPrefix}|logout__auth0`)
+		logout__token__auth0()
+		__msg__logout__auth0.set({
+			time: Date.now(),
+		})
+	}
+})
+export const _s__msg__logout__auth0 = def__msg__logout__auth0[0]
+export const __msg__logout__auth0 = def__msg__logout__auth0[1]
 export const {
 	logout__auth0,
 } = __msg__logout__auth0
