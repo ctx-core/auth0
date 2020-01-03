@@ -1,8 +1,7 @@
 import { writable, derived, Writable, } from 'svelte/store'
-import { assign } from '@ctx-core/object'
+import { assign, _def } from '@ctx-core/object'
 // @ts-ignore
 import { subscribe__debug } from '@ctx-core/store'
-import { _def__store } from '@ctx-core/store'
 import { falsy, _eql, _eq } from '@ctx-core/function'
 import { I } from '@ctx-core/combinators'
 import {
@@ -75,7 +74,7 @@ export {
 	close__auth0,
 	reload__opened__auth0,
 }
-export const def__txt__error__token__auth0 = _def__store('__txt__error__token__auth0', ctx=>
+export const def__txt__error__token__auth0 = _def('__txt__error__token__auth0', ctx=>
 	derived(
 		def__error__token__auth0(ctx),
 		error__token__auth0=>
@@ -89,7 +88,7 @@ export const def__txt__error__token__auth0 = _def__store('__txt__error__token__a
 						: ''
 			: ''))
 export const __txt__error__token__auth0 = def__txt__error__token__auth0()
-export const def__ctx__userinfo__auth0 = _def__store('__ctx__userinfo__auth0', ctx=>
+export const def__ctx__userinfo__auth0 = _def('__ctx__userinfo__auth0', ctx=>
 	derived([
 			def__userinfo__auth0(ctx),
 			def__token__auth0__userinfo__auth0(ctx),
@@ -102,50 +101,50 @@ export const def__ctx__userinfo__auth0 = _def__store('__ctx__userinfo__auth0', c
 		))
 )
 export const __ctx__userinfo__auth0 = def__ctx__userinfo__auth0()
-export const def__is__loggedin__auth0 = _def__store('__is__loggedin__auth0', ctx=>
+export const def__is__loggedin__auth0 = _def('__is__loggedin__auth0', ctx=>
 	derived(
 		def__token__auth0(ctx),
 		token__auth0=>!!token__auth0
 	))
 export const __is__loggedin__auth0 = def__is__loggedin__auth0()
-export const def__is__loggedout__auth0 = _def__store('__is__loggedout__auth0', ctx=>
+export const def__is__loggedout__auth0 = _def('__is__loggedout__auth0', ctx=>
 	derived(
 		def__token__auth0(ctx),
 		_eql(false)
 	))
 export const __is__loggedout__auth0 = def__is__loggedout__auth0()
-export const def__class__opened__auth0 = _def__store('__class__opened__auth0', ctx=>
+export const def__class__opened__auth0 = _def('__class__opened__auth0', ctx=>
 	derived(def__opened__auth0(ctx), I))
 export const __class__opened__auth0 = def__class__opened__auth0()
-export const def__closed__auth0 = _def__store('__closed__auth0', ctx=>
+export const def__closed__auth0 = _def('__closed__auth0', ctx=>
 	derived(def__opened__auth0(ctx),
 		_eql(false)
 	))
 export const __closed__auth0 = def__closed__auth0()
-export const def__opened__login = _def__store('__opened__login', ctx=>
+export const def__opened__login = _def('__opened__login', ctx=>
 	derived(def__opened__auth0(ctx),
 		opened__auth0=>!opened__auth0 || opened__auth0 == 'login'))
 export const __opened__login = def__opened__login()
-export const def__opened__signup = _def__store('__opened__signup', ctx=>
+export const def__opened__signup = _def('__opened__signup', ctx=>
 	derived(def__opened__auth0(ctx),
 		_eq('signup')))
 export const __opened__signup = def__opened__signup()
-export const def__opened__forgot_password = _def__store('__opened__forgot_password', ctx=>
+export const def__opened__forgot_password = _def('__opened__forgot_password', ctx=>
 	derived(def__opened__auth0(ctx),
 		_eq('forgot_password')))
 export const __opened__forgot_password = def__opened__forgot_password()
-export const def__opened__check_email__forgot_password = _def__store('__opened__check_email__forgot_password', ctx=>
+export const def__opened__check_email__forgot_password = _def('__opened__check_email__forgot_password', ctx=>
 	derived(def__opened__auth0(ctx),
 		_eq('check_email__forgot_password')))
 export const __opened__check_email__forgot_password = def__opened__check_email__forgot_password()
-export const def__opened__change_password = _def__store('__opened__change_password', ctx=>
+export const def__opened__change_password = _def('__opened__change_password', ctx=>
 	derived(def__opened__auth0(ctx),
 		_eq('change_password')))
 export const __opened__change_password = def__opened__change_password()
 export interface Writable__msg__logout__auth0 extends Writable<falsy|any> {
 	logout__auth0:()=>void
 }
-export const def__msg__logout__auth0 = _def__store<Writable__msg__logout__auth0>('__msg__logout__auth0', ctx=>{
+export const def__msg__logout__auth0 = _def<Writable__msg__logout__auth0>('__msg__logout__auth0', ctx=>{
 	const __msg__logout__auth0 = writable(null)
 	const { logout__token__auth0 } = def__token__auth0(ctx)
 	return assign(__msg__logout__auth0, {
