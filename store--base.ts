@@ -1,6 +1,6 @@
 import { derived, get, Readable, Writable, writable } from 'svelte/store'
 import { falsy } from '@ctx-core/function'
-import { assign, _def } from '@ctx-core/object'
+import { assign, _b } from '@ctx-core/object'
 // @ts-ignore
 import { subscribe__debug } from '@ctx-core/store'
 import { subscribe } from '@ctx-core/store'
@@ -16,15 +16,15 @@ import { log, warn } from '@ctx-core/logger'
 import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch/lib'
 const logPrefix = '@ctx-core/auth0/store'
 export type Token__auth0 = Token|falsy
-export const def__AUTH0_CLIENT_ID = _def('__AUTH0_CLIENT_ID', ()=>
+export const b__AUTH0_CLIENT_ID = _b('__AUTH0_CLIENT_ID', ()=>
 	writable(process.env.AUTH0_CLIENT_ID))
-export const __AUTH0_CLIENT_ID = def__AUTH0_CLIENT_ID()
-export const def__AUTH0_DOMAIN = _def('__AUTH0_DOMAIN', ()=>
+export const __AUTH0_CLIENT_ID = b__AUTH0_CLIENT_ID()
+export const b__AUTH0_DOMAIN = _b('__AUTH0_DOMAIN', ()=>
 	writable(process.env.AUTH0_DOMAIN))
-export const __AUTH0_DOMAIN = def__AUTH0_DOMAIN()
-export const def__AUTH0_URL = _def('__AUTH0_URL', ()=>
+export const __AUTH0_DOMAIN = b__AUTH0_DOMAIN()
+export const b__AUTH0_URL = _b('__AUTH0_URL', ()=>
 	writable(process.env.AUTH0_URL))
-export const __AUTH0_URL = def__AUTH0_URL()
+export const __AUTH0_URL = b__AUTH0_URL()
 type set__token__auth0 = (token__auth0:any)=>void
 type clear__token__auth0 = (value?:falsy)=>void
 type logout__token__auth0 = ()=>void
@@ -33,7 +33,7 @@ export interface Writable__json__token__auth0 extends Writable<string|falsy> {
 	clear__token__auth0:clear__token__auth0
 	logout__token__auth0:logout__token__auth0
 }
-export const def__json__token__auth0 = _def<Writable__json__token__auth0>('__json__token__auth0', ()=>{
+export const b__json__token__auth0 = _b<Writable__json__token__auth0>('__json__token__auth0', ()=>{
 	const __json__token__auth0 = writable<string|falsy>(
 		(
 			_has__dom()
@@ -54,15 +54,15 @@ export const def__json__token__auth0 = _def<Writable__json__token__auth0>('__jso
 		set__token__auth0(null)
 	}
 })
-export const __json__token__auth0 = def__json__token__auth0()
+export const __json__token__auth0 = b__json__token__auth0()
 export const {
 	set__token__auth0,
 	clear__token__auth0,
 	logout__token__auth0,
 } = __json__token__auth0
-export const def__token__auth0__ = _def('__token__auth0__', ctx=>
+export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 	derived<Readable<string|falsy>, Token__auth0>(
-		def__json__token__auth0(ctx) as Writable__json__token__auth0,
+		b__json__token__auth0(ctx) as Writable__json__token__auth0,
 		json__token__auth0=>{
 			if (json__token__auth0 && typeof json__token__auth0 === 'string') {
 				try {
@@ -77,7 +77,7 @@ export const def__token__auth0__ = _def('__token__auth0__', ctx=>
 			return json__token__auth0
 		})
 )
-export const __token__auth0__ = def__token__auth0__()
+export const __token__auth0__ = b__token__auth0__()
 type Ctx__error = {
 	message?:string,
 	error_message?:string,
@@ -88,8 +88,8 @@ export interface Writable__error__token__auth0 extends Writable<Ctx__error> {
 	set__error__token__auth0:(error:any)=>void
 	clear__error__token__auth0:()=>void
 }
-export const def__error__token__auth0 = _def<Writable__error__token__auth0>('__error__token__auth0', ctx=>{
-	const { logout__token__auth0 } = def__json__token__auth0(ctx)
+export const b__error__token__auth0 = _b<Writable__error__token__auth0>('__error__token__auth0', ctx=>{
+	const { logout__token__auth0 } = b__json__token__auth0(ctx)
 	const __error__token__auth0 = writable(null)
 	return assign(__error__token__auth0, {
 		set__error__token__auth0,
@@ -105,7 +105,7 @@ export const def__error__token__auth0 = _def<Writable__error__token__auth0>('__e
 		set__error__token__auth0(null)
 	}
 })
-export const __error__token__auth0 = def__error__token__auth0()
+export const __error__token__auth0 = b__error__token__auth0()
 export const {
 	set__error__token__auth0,
 	clear__error__token__auth0,
@@ -119,13 +119,13 @@ interface Readable__token__auth0 extends Readable<Token__auth0> {
 	schedule__validate__current__token__auth0:schedule__validate__current__token__auth0
 	__storage__json__token__auth0:__storage__json__token__auth0
 }
-export const def__token__auth0 = _def<Readable__token__auth0>('__token__auth0', ctx=>{
-	const __json__token__auth0 = def__json__token__auth0(ctx)
+export const b__token__auth0 = _b<Readable__token__auth0>('__token__auth0', ctx=>{
+	const __json__token__auth0 = b__json__token__auth0(ctx)
 	const { clear__token__auth0 } = __json__token__auth0
-	const __error__token__auth0 = def__error__token__auth0(ctx)
+	const __error__token__auth0 = b__error__token__auth0(ctx)
 	const { set__error__token__auth0 } = __error__token__auth0
 	const __token__auth0 = derived<Readable<Token__auth0>, Token__auth0>(
-		def__token__auth0__(ctx),
+		b__token__auth0__(ctx),
 		token__auth0=>
 			(token__auth0 && token__auth0.error)
 			? false
@@ -183,19 +183,19 @@ export const def__token__auth0 = _def<Readable__token__auth0>('__token__auth0', 
 		}
 	}
 })
-export const __token__auth0 = def__token__auth0()
+export const __token__auth0 = b__token__auth0()
 export const {
 	schedule__validate__current__token__auth0,
 	__storage__json__token__auth0,
 } = __token__auth0
-export const def__token__auth0__userinfo__auth0 = _def<Writable<falsy|any>>('__token__auth0__userinfo__auth0', ()=>
+export const b__token__auth0__userinfo__auth0 = _b<Writable<falsy|any>>('__token__auth0__userinfo__auth0', ()=>
 	writable(null))
-export const __token__auth0__userinfo__auth0 = def__token__auth0__userinfo__auth0()
-export const def__userinfo__auth0 = _def('__userinfo__auth0', ctx=>
+export const __token__auth0__userinfo__auth0 = b__token__auth0__userinfo__auth0()
+export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
 	derived([
-			def__AUTH0_DOMAIN(ctx),
-			def__token__auth0(ctx),
-			def__token__auth0__userinfo__auth0(ctx),
+			b__AUTH0_DOMAIN(ctx),
+			b__token__auth0(ctx),
+			b__token__auth0__userinfo__auth0(ctx),
 		],
 		(
 			[
@@ -239,16 +239,16 @@ export const def__userinfo__auth0 = _def('__userinfo__auth0', ctx=>
 				)
 			}
 		}))
-export const __userinfo__auth0 = def__userinfo__auth0()
-export const def__email__auth0 = _def('__email__auth0', ctx=>
+export const __userinfo__auth0 = b__userinfo__auth0()
+export const b__email__auth0 = _b('__email__auth0', ctx=>
 	derived(
-		def__userinfo__auth0(ctx),
+		b__userinfo__auth0(ctx),
 		(userinfo__auth0:{ email?:string })=>
 			(userinfo__auth0 == false)
 			? false
 			: userinfo__auth0 && userinfo__auth0.email))
-export const __email__auth0 = def__email__auth0()
-export const def__email = def__email__auth0
+export const __email__auth0 = b__email__auth0()
+export const b__email = b__email__auth0
 export const __email = __email__auth0
 export interface Writable__opened__auth0 extends Writable<falsy|string> {
 	open__login__auth0:()=>void
@@ -259,7 +259,7 @@ export interface Writable__opened__auth0 extends Writable<falsy|string> {
 	close__auth0:()=>void
 	reload__opened__auth0:()=>void
 }
-export const def__opened__auth0 = _def<Writable__opened__auth0>('__opened__auth0', ()=>{
+export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', ()=>{
 	const __opened__auth0 = assign(
 		writable(null), {
 			open__login__auth0,
@@ -319,7 +319,7 @@ export const def__opened__auth0 = _def<Writable__opened__auth0>('__opened__auth0
 		__opened__auth0.set(email__auth0 ? false : 'login')
 	}
 })
-export const __opened__auth0 = def__opened__auth0()
+export const __opened__auth0 = b__opened__auth0()
 export const {
 	open__login__auth0,
 	open__signup__auth0,
