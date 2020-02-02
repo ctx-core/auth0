@@ -1,17 +1,13 @@
 import { derived, get, Readable, Writable, writable } from 'svelte/store'
 import { falsy } from '@ctx-core/function'
-import { assign, _b } from '@ctx-core/object'
+import { _b, assign } from '@ctx-core/object'
+import { subscribe } from '@ctx-core/store'
 // @ts-ignore
 import { subscribe__debug } from '@ctx-core/store'
-import { subscribe } from '@ctx-core/store'
 import { _has__dom } from '@ctx-core/dom'
-import { _exp__token__jwt } from '@ctx-core/jwt'
+import { _exp__token__jwt, Token } from '@ctx-core/jwt'
 import { sync__localStorage } from '@ctx-core/local-storage'
-import { Token } from '@ctx-core/jwt'
-import {
-	get__userinfo__auth0,
-	validate__current__token__auth0,
-} from './fetch--base'
+import { get__userinfo__auth0, validate__current__token__auth0, } from './fetch--base'
 import { log, warn } from '@ctx-core/logger'
 import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch/lib'
 const logPrefix = '@ctx-core/auth0/store'
@@ -275,14 +271,6 @@ export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', (
 	if (_has__dom()) {
 		reload__opened__auth0()
 	}
-	if (_has__dom()) {
-		subscribe(__error__token__auth0,
-			error__token__auth0=>{
-				if (error__token__auth0) {
-					open__login__auth0()
-				}
-			})
-	}
 	return __opened__auth0 as Writable__opened__auth0
 	function open__login__auth0() {
 		log(`${logPrefix}|open__login__auth0`)
@@ -315,8 +303,7 @@ export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', (
 				subscribe(__email__auth0, reload__opened__auth0)
 			return
 		}
-		const email__auth0 = get(__email__auth0)
-		__opened__auth0.set(email__auth0 ? false : 'login')
+		__opened__auth0.set(false)
 	}
 })
 export const __opened__auth0 = b__opened__auth0()
