@@ -2,6 +2,7 @@
 	"name": "@ctx-core/auth0",
 	"version": "19.0.36",
 	"description": "ctx-core auth0",
+	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",
