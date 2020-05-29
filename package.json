@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "19.0.40",
+	"version": "19.0.41",
 	"description": "ctx-core auth0",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -30,13 +30,13 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.17",
-		"@ctx-core/fetch": "^6.1.124",
+		"@ctx-core/fetch": "^6.1.125",
 		"@ctx-core/function": "^13.0.6",
 		"@ctx-core/jwt": "^3.3.30",
 		"@ctx-core/local-storage": "^5.1.37",
 		"@ctx-core/logger": "^3.1.17",
 		"@ctx-core/object": "^8.0.14",
-		"@ctx-core/store": "^13.1.31",
+		"@ctx-core/store": "^13.1.32",
 		"auth0-js": "^9.13.2",
 		"deep-equal": "^2.0.3",
 		"jsonwebtoken": "^8.5.1",
