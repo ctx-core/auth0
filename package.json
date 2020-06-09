@@ -40,10 +40,10 @@
 		"auth0-js": "^9.13.2",
 		"deep-equal": "^2.0.3",
 		"jsonwebtoken": "^8.5.1",
-		"svelte": "^3.23.0"
+		"svelte": "^3.23.1"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"gitHead": "aee7b9bb1e2c4b40c7a528afd0418ba384dc5372"
 }
