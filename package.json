@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "19.0.56",
+	"version": "19.0.57",
 	"description": "ctx-core auth0",
 	"main": "./index.js",
 	"module": "./index.js",
@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.20",
-		"@ctx-core/fetch": "^6.1.140",
+		"@ctx-core/fetch": "^6.1.141",
 		"@ctx-core/function": "^13.0.11",
 		"@ctx-core/jwt": "^3.3.36",
 		"@ctx-core/local-storage": "^5.1.43",
