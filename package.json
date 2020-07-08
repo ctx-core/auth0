@@ -2,9 +2,9 @@
 	"name": "@ctx-core/auth0",
 	"version": "19.0.54",
 	"description": "ctx-core auth0",
-	"main": "index.js",
-	"module": "index.js",
-	"types": "index.ts",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
