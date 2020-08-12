@@ -1,10 +1,6 @@
 import { fetch } from '@ctx-core/fetch'
 import { throw__unauthorized } from '@ctx-core/error'
-import {
-	validate__current__jwt,
-} from '@ctx-core/jwt'
-import { log } from '@ctx-core/logger'
-const logPrefix = '@ctx-core/auth0/fetch--base'
+import { validate__current__jwt, } from '@ctx-core/jwt'
 export function _authorization__header__access_token(token__auth0) {
 	const authorization__header__access_token =
 		_authorization__token__auth0__access_token()
@@ -35,7 +31,6 @@ export interface Opts__get__userinfo__auth0 {
 	AUTH0_DOMAIN:string
 }
 export function get__userinfo__auth0(opts:Opts__get__userinfo__auth0) {
-	log(`${logPrefix}|get__userinfo__auth0`)
 	const {
 		token__auth0,
 		AUTH0_DOMAIN,
@@ -54,7 +49,6 @@ export function get__userinfo__auth0(opts:Opts__get__userinfo__auth0) {
 	)
 }
 export async function validate__current__token__auth0(token__auth0) {
-	log(`${logPrefix}|validate__current__token__auth0`)
 	const id_token = token__auth0 && token__auth0.id_token
 	validate__current__jwt(id_token)
 }

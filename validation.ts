@@ -1,13 +1,11 @@
 import { assign } from '@ctx-core/object'
 import { _valid__email } from '@ctx-core/email'
 import { throw__bad_gateway } from '@ctx-core/error'
-import { error } from '@ctx-core/logger'
-const logPrefix = '@ctx-core/auth0/lib.js'
 export function validate__user(user) {
 	if (user && user.error) {
-		error(`${logPrefix}|validate__user`)
-		error(`${user.statusCode} ${user.error}`)
-		error(user.message)
+		console.error(`validate__user`)
+		console.error(`${user.statusCode} ${user.error}`)
+		console.error(user.message)
 	}
 	if (!user || !user.user_id) {
 		throw__bad_gateway(user, {

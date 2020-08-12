@@ -2,15 +2,11 @@ import { derived, get, Readable, Writable, writable } from 'svelte/store'
 import { falsy } from '@ctx-core/function'
 import { _b, assign } from '@ctx-core/object'
 import { subscribe } from '@ctx-core/store'
-// @ts-ignore
-import { subscribe__debug } from '@ctx-core/store'
 import { _has__dom } from '@ctx-core/dom'
 import { _exp__token__jwt, Token } from '@ctx-core/jwt'
 import { sync__localStorage } from '@ctx-core/local-storage'
 import { get__userinfo__auth0, validate__current__token__auth0, } from './fetch--base'
-import { log, warn } from '@ctx-core/logger'
 import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch/lib'
-const logPrefix = '@ctx-core/auth0/store'
 export type Token__auth0 = Token|falsy
 export const b__AUTH0_CLIENT_ID = _b('__AUTH0_CLIENT_ID', ()=>
 	writable(process.env.AUTH0_CLIENT_ID))
@@ -63,8 +59,8 @@ export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 			if (json__token__auth0 && typeof json__token__auth0 === 'string') {
 				try {
 					return JSON.parse(json__token__auth0) || false
-				} catch (e) {
-					warn(e)
+				} catch (err) {
+					console.warn(err)
 					json__token__auth0 = null
 					setTimeout(
 						()=>__json__token__auth0.set(json__token__auth0))
@@ -174,7 +170,6 @@ export const b__token__auth0 = _b<Readable__token__auth0>('__token__auth0', ctx=
 	}
 	function __storage__json__token__auth0(event) {
 		if (event.key === 'json__token__auth0') {
-			log(`${logPrefix}|__storage__json__token__auth0`)
 			__json__token__auth0.set(event.newValue)
 		}
 	}
@@ -273,27 +268,21 @@ export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', (
 	}
 	return __opened__auth0 as Writable__opened__auth0
 	function open__login__auth0() {
-		log(`${logPrefix}|open__login__auth0`)
 		__opened__auth0.set('login')
 	}
 	function open__signup__auth0() {
-		log(`${logPrefix}|open__signup__auth0`)
 		__opened__auth0.set('signup')
 	}
 	function open__forgot_password__auth0() {
-		log(`${logPrefix}|open__forgot_password__auth0`)
 		__opened__auth0.set('forgot_password')
 	}
 	function open__check_email__forgot_password__auth0() {
-		log(`${logPrefix}|open__check_email__forgot_password__auth0`)
 		__opened__auth0.set('check_email__forgot_password')
 	}
 	function open__change_password__auth0() {
-		log(`${logPrefix}|open__change_password__auth0`)
 		__opened__auth0.set('change_password')
 	}
 	function close__auth0() {
-		log(`${logPrefix}|close__auth0`)
 		__opened__auth0.set(false)
 	}
 	function reload__opened__auth0() {
