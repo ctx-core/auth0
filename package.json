@@ -31,7 +31,7 @@
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.22",
 		"@ctx-core/fetch": "^6.1.196",
-		"@ctx-core/function": "^13.2.4",
+		"@ctx-core/function": "^14.0.0",
 		"@ctx-core/jwt": "^3.3.55",
 		"@ctx-core/local-storage": "^5.1.62",
 		"@ctx-core/object": "^10.0.0",
