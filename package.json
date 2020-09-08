@@ -29,7 +29,7 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "^4.2.22",
+		"@ctx-core/combinators": "^4.2.23",
 		"@ctx-core/fetch": "^6.1.198",
 		"@ctx-core/function": "^14.0.1",
 		"@ctx-core/jwt": "^3.3.57",
