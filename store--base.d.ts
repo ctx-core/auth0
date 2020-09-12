@@ -1,5 +1,5 @@
 import { Readable, Writable } from 'svelte/store';
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 import { Token } from '@ctx-core/jwt';
 export declare type Token__auth0 = Token | falsy;
 export declare const b__AUTH0_CLIENT_ID: (ctx?: any, opts?: any) => Writable<string>;

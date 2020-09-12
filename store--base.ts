@@ -1,5 +1,5 @@
 import { derived, get, Readable, Writable, writable } from 'svelte/store'
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { _b, assign } from '@ctx-core/object'
 import { subscribe } from '@ctx-core/store'
 import { _has__dom } from '@ctx-core/dom'
