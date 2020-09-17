@@ -2,12 +2,12 @@ import { derived, get, Readable, Writable, writable } from 'svelte/store'
 import type { falsy } from '@ctx-core/function'
 import { _b, assign } from '@ctx-core/object'
 import { subscribe } from '@ctx-core/store'
-import { _has__dom } from '@ctx-core/dom'
-import { _exp__token__jwt, Token } from '@ctx-core/jwt'
+import { has__dom } from '@ctx-core/dom'
+import { _exp__jwt_token, Token } from '@ctx-core/jwt'
 import { sync__localStorage } from '@ctx-core/local-storage'
 import { get__userinfo__auth0, validate__current__token__auth0, } from './fetch--base'
 import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch/lib'
-export type Token__auth0 = Token|falsy
+import type { maybe } from '@ctx-core/function'
 export const b__AUTH0_CLIENT_ID = _b('__AUTH0_CLIENT_ID', ()=>
 	writable(process.env.AUTH0_CLIENT_ID))
 export const __AUTH0_CLIENT_ID = b__AUTH0_CLIENT_ID()
@@ -17,27 +17,27 @@ export const __AUTH0_DOMAIN = b__AUTH0_DOMAIN()
 export const b__AUTH0_URL = _b('__AUTH0_URL', ()=>
 	writable(process.env.AUTH0_URL))
 export const __AUTH0_URL = b__AUTH0_URL()
-type set__token__auth0 = (token__auth0:any)=>void
+type set__token__auth0 = (auth0_token:any)=>void
 type clear__token__auth0 = (value?:falsy)=>void
 type logout__token__auth0 = ()=>void
-export interface Writable__json__token__auth0 extends Writable<string|falsy> {
+export interface type__json__token__auth0 extends Writable<string|falsy> {
 	set__token__auth0:set__token__auth0
 	clear__token__auth0:clear__token__auth0
 	logout__token__auth0:logout__token__auth0
 }
-export const b__json__token__auth0 = _b<Writable__json__token__auth0>('__json__token__auth0', ()=>{
+export const b__json__token__auth0 = _b<type__json__token__auth0>('__json__token__auth0', ()=>{
 	const __json__token__auth0 = writable<string|falsy>(
 		(
-			_has__dom()
+			has__dom
 			&& localStorage.getItem('json__token__auth0')) || false
-	)
+	) as type__json__token__auth0
 	return assign(__json__token__auth0, {
 		set__token__auth0,
 		clear__token__auth0,
 		logout__token__auth0,
-	}) as Writable__json__token__auth0
-	function set__token__auth0(token__auth0) {
-		__json__token__auth0.set(JSON.stringify(token__auth0))
+	}) as type__json__token__auth0
+	function set__token__auth0(auth0_token) {
+		__json__token__auth0.set(JSON.stringify(auth0_token))
 	}
 	function clear__token__auth0(value:falsy = null) {
 		set__token__auth0(value)
@@ -53,8 +53,8 @@ export const {
 	logout__token__auth0,
 } = __json__token__auth0
 export const b__token__auth0__ = _b('__token__auth0__', ctx=>
-	derived<Readable<string|falsy>, Token__auth0>(
-		b__json__token__auth0(ctx) as Writable__json__token__auth0,
+	derived(
+		b__json__token__auth0(ctx) as type__json__token__auth0,
 		json__token__auth0=>{
 			if (json__token__auth0 && typeof json__token__auth0 === 'string') {
 				try {
@@ -67,8 +67,9 @@ export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 				}
 			}
 			return json__token__auth0
-		})
+		}) as auth0_token_type
 )
+export type $auth0_token_type = Token|falsy
 export const __token__auth0__ = b__token__auth0__()
 type Ctx__error = {
 	message?:string,
@@ -76,17 +77,17 @@ type Ctx__error = {
 	error_description?:string,
 	error?,
 }
-export interface Writable__error__token__auth0 extends Writable<Ctx__error> {
+export interface type__error__token__auth0 extends Writable<Ctx__error> {
 	set__error__token__auth0:(error:any)=>void
 	clear__error__token__auth0:()=>void
 }
-export const b__error__token__auth0 = _b<Writable__error__token__auth0>('__error__token__auth0', ctx=>{
+export const b__error__token__auth0 = _b<type__error__token__auth0>('__error__token__auth0', ctx=>{
 	const { logout__token__auth0 } = b__json__token__auth0(ctx)
-	const __error__token__auth0 = writable(null)
+	const __error__token__auth0 = writable(null) as type__error__token__auth0
 	return assign(__error__token__auth0, {
 		set__error__token__auth0,
 		clear__error__token__auth0,
-	}) as Writable__error__token__auth0
+	}) as type__error__token__auth0
 	function set__error__token__auth0(error) {
 		__error__token__auth0.set(error)
 		if (error) {
@@ -104,25 +105,25 @@ export const {
 } = __error__token__auth0
 type schedule__validate__current__token__auth0 = ()=>void
 type __storage__json__token__auth0 = (event:{ key:string, newValue:any })=>void
-interface Readable__token__auth0 extends Readable<Token__auth0> {
+interface auth0_token_type extends Readable<$auth0_token_type> {
 	set__token__auth0:set__token__auth0
 	clear__token__auth0:clear__token__auth0
 	logout__token__auth0:logout__token__auth0
 	schedule__validate__current__token__auth0:schedule__validate__current__token__auth0
 	__storage__json__token__auth0:__storage__json__token__auth0
 }
-export const b__token__auth0 = _b<Readable__token__auth0>('__token__auth0', ctx=>{
+export const b__token__auth0 = _b<auth0_token_type>('__token__auth0', ctx=>{
 	const __json__token__auth0 = b__json__token__auth0(ctx)
 	const { clear__token__auth0 } = __json__token__auth0
 	const __error__token__auth0 = b__error__token__auth0(ctx)
 	const { set__error__token__auth0 } = __error__token__auth0
-	const __token__auth0 = derived<Readable<Token__auth0>, Token__auth0>(
+	const __token__auth0 = derived(
 		b__token__auth0__(ctx),
-		token__auth0=>
-			(token__auth0 && token__auth0.error)
+		(auth0_token:$auth0_token_type)=>
+			(auth0_token && (auth0_token as Token).error)
 			? false
-			: token__auth0 as Token)
-	if (_has__dom()) {
+			: auth0_token as Token) as auth0_token_type
+	if (has__dom) {
 		subscribe(__json__token__auth0,
 			json__token__auth0=>{
 				if (json__token__auth0 == null) {
@@ -136,7 +137,7 @@ export const b__token__auth0 = _b<Readable__token__auth0>('__token__auth0', ctx=
 			}
 		)
 	}
-	if (_has__dom()) {
+	if (has__dom) {
 		window.addEventListener('storage', __storage__json__token__auth0)
 	}
 	return assign(__token__auth0, {
@@ -145,18 +146,18 @@ export const b__token__auth0 = _b<Readable__token__auth0>('__token__auth0', ctx=
 		logout__token__auth0,
 		schedule__validate__current__token__auth0,
 		__storage__json__token__auth0,
-	}) as unknown as Readable__token__auth0
+	}) as unknown as auth0_token_type
 	function schedule__validate__current__token__auth0() {
-		const token__auth0 = get(__token__auth0)
-		const id_token = token__auth0 && token__auth0.id_token
+		const auth0_token = get(__token__auth0)
+		const id_token = auth0_token && auth0_token.id_token
 		if (!id_token) return
-		const exp__token__jwt = _exp__token__jwt(id_token)
+		const exp__jwt_token = _exp__jwt_token(id_token)
 		const now = Date.now()
-		const millis__validate = now - exp__token__jwt
+		const millis__validate = now - exp__jwt_token
 		setTimeout(
 			async ()=>{
 				try {
-					await validate__current__token__auth0(token__auth0)
+					await validate__current__token__auth0(auth0_token)
 				} catch (error) {
 					if (error.type === 'bad_credentials') {
 						console.error(error)
@@ -179,8 +180,10 @@ export const {
 	schedule__validate__current__token__auth0,
 	__storage__json__token__auth0,
 } = __token__auth0
-export const b__token__auth0__userinfo__auth0 = _b<Writable<falsy|any>>('__token__auth0__userinfo__auth0', ()=>
-	writable(null))
+export function b__token__auth0__userinfo__auth0<I = unknown>(ctx?: unknown) {
+	return _b<Writable<maybe<I>>>('__token__auth0__userinfo__auth0', (_ctx: unknown)=>
+		writable(null))(ctx)
+}
 export const __token__auth0__userinfo__auth0 = b__token__auth0__userinfo__auth0()
 export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
 	derived([
@@ -191,25 +194,25 @@ export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
 		(
 			[
 				AUTH0_DOMAIN,
-				token__auth0,
+				auth0_token,
 				token__auth0__userinfo__auth0,
 			],
 			set
 		)=>{
 			let cancel
 			(async ()=>{
-				if (token__auth0 === token__auth0__userinfo__auth0) {
+				if (auth0_token === token__auth0__userinfo__auth0) {
 					return
 				}
-				if (!token__auth0) {
+				if (!auth0_token) {
 					set(_userinfo__auth0__no__token__auth0())
 					return
 				}
-				set(token__auth0)
+				set(auth0_token)
 				const response =
 					await _waitfor__ratelimit__backoff__fibonacci(()=>
 						get__userinfo__auth0({
-							token__auth0,
+							auth0_token,
 							AUTH0_DOMAIN,
 						}))
 				if (cancel) return
@@ -224,7 +227,7 @@ export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
 			return ()=>cancel = true
 			function _userinfo__auth0__no__token__auth0() {
 				return (
-					token__auth0 == null
+					auth0_token == null
 					? null
 					: false
 				)
@@ -241,7 +244,8 @@ export const b__email__auth0 = _b('__email__auth0', ctx=>
 export const __email__auth0 = b__email__auth0()
 export const b__email = b__email__auth0
 export const __email = __email__auth0
-export interface Writable__opened__auth0 extends Writable<falsy|string> {
+export type $type__opened__auth0 = maybe<string>
+export interface type__opened__auth0 extends Writable<$type__opened__auth0> {
 	open__login__auth0:()=>void
 	open__signup__auth0:()=>void
 	open__forgot_password__auth0:()=>void
@@ -250,9 +254,9 @@ export interface Writable__opened__auth0 extends Writable<falsy|string> {
 	close__auth0:()=>void
 	reload__opened__auth0:()=>void
 }
-export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', ()=>{
+export const b__opened__auth0 = _b<type__opened__auth0>('__opened__auth0', ()=>{
 	const __opened__auth0 = assign(
-		writable(null), {
+		writable(null) as type__opened__auth0, {
 			open__login__auth0,
 			open__signup__auth0,
 			open__forgot_password__auth0,
@@ -263,10 +267,10 @@ export const b__opened__auth0 = _b<Writable__opened__auth0>('__opened__auth0', (
 		}
 	)
 	let unsubscribe__reload__opened__auth0
-	if (_has__dom()) {
+	if (has__dom) {
 		reload__opened__auth0()
 	}
-	return __opened__auth0 as Writable__opened__auth0
+	return __opened__auth0 as type__opened__auth0
 	function open__login__auth0() {
 		__opened__auth0.set('login')
 	}

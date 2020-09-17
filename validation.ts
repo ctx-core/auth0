@@ -1,6 +1,6 @@
 import { assign } from '@ctx-core/object'
 import { _valid__email } from '@ctx-core/email'
-import { throw__bad_gateway } from '@ctx-core/error'
+import { error_ctx_type, throw_bad_gateway } from '@ctx-core/error'
 export function validate__user(user) {
 	if (user && user.error) {
 		console.error(`validate__user`)
@@ -8,21 +8,21 @@ export function validate__user(user) {
 		console.error(user.message)
 	}
 	if (!user || !user.user_id) {
-		throw__bad_gateway(user, {
-			status__http: user.statusCode
-		})
+		throw_bad_gateway(user, {
+			http_status: user.statusCode as number
+		} as error_ctx_type)
 	}
 }
 export function validate__signup(form) {
-	const error__email = validate__email(form)
-	const error__password_confirmation = validate__password_confirmation(form)
-	const error__signup = {}
+	const email_error = validate__email(form)
+	const password_confirmation_error = validate__password_confirmation(form)
+	const signup_error = {}
 	let has__errors
-	if (error__email || error__password_confirmation) {
+	if (email_error || password_confirmation_error) {
 		has__errors = true
-		assign(error__signup, error__email, error__password_confirmation)
+		assign(signup_error, email_error, password_confirmation_error)
 	}
-	return has__errors && error__signup
+	return has__errors && signup_error
 }
 export function validate__forgot_password(form) {
 	return validate__email(form)

@@ -1,7 +1,7 @@
-export function _user_id(decoded__token__jwt) {
+export function _user_id(decoded__jwt_token) {
 	return (
-		decoded__token__jwt
-		&& (decoded__token__jwt.user_id
-			|| decoded__token__jwt.sub)
+		decoded__jwt_token
+		&& (decoded__jwt_token.user_id
+			|| decoded__jwt_token.sub)
 	)
 }

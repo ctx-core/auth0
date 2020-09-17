@@ -1,1 +1,1 @@
-export declare function _user_id(decoded__token__jwt: any): any;
+export declare function _user_id(decoded__jwt_token: any): any;
