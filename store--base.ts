@@ -1,5 +1,5 @@
 import { derived, get, Readable, Writable, writable } from 'svelte/store'
-import type { falsy } from '@ctx-core/function'
+import type { falsy, maybe_null } from '@ctx-core/function'
 import { _b, assign } from '@ctx-core/object'
 import { subscribe } from '@ctx-core/store'
 import { has__dom } from '@ctx-core/dom'
@@ -71,13 +71,14 @@ export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 )
 export type $auth0_token_type = Token|falsy
 export const __token__auth0__ = b__token__auth0__()
-type Ctx__error = {
+export type error_ctx_type = {
 	message?:string,
 	error_message?:string,
 	error_description?:string,
 	error?,
 }
-export interface type__error__token__auth0 extends Writable<Ctx__error> {
+export type maybe_error_ctx_type = maybe_null<error_ctx_type>
+export interface type__error__token__auth0 extends Writable<maybe_error_ctx_type> {
 	set__error__token__auth0:(error:any)=>void
 	clear__error__token__auth0:()=>void
 }
@@ -180,12 +181,17 @@ export const {
 	schedule__validate__current__token__auth0,
 	__storage__json__token__auth0,
 } = __token__auth0
-export function b__token__auth0__userinfo__auth0<I = unknown>(ctx?: unknown) {
-	return _b<Writable<maybe<I>>>('__token__auth0__userinfo__auth0', (_ctx: unknown)=>
+export function b__token__auth0__userinfo__auth0<I>(ctx?) {
+	return _b<Writable<maybe<I>>>('__token__auth0__userinfo__auth0', ()=>
 		writable(null))(ctx)
 }
 export const __token__auth0__userinfo__auth0 = b__token__auth0__userinfo__auth0()
-export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
+export type $type__userinfo__auth0 = {
+	email:string
+}
+export type $maybe_type__userinfo__auth0 = maybe<$type__userinfo__auth0, null|false>
+export type type__userinfo__auth0 = Readable<$maybe_type__userinfo__auth0>
+export const b__userinfo__auth0 = _b<type__userinfo__auth0>('__userinfo__auth0', ctx=>
 	derived([
 			b__AUTH0_DOMAIN(ctx),
 			b__token__auth0(ctx),
@@ -237,7 +243,7 @@ export const __userinfo__auth0 = b__userinfo__auth0()
 export const b__email__auth0 = _b('__email__auth0', ctx=>
 	derived(
 		b__userinfo__auth0(ctx),
-		(userinfo__auth0:{ email?:string })=>
+		userinfo__auth0=>
 			(userinfo__auth0 == false)
 			? false
 			: userinfo__auth0 && userinfo__auth0.email))

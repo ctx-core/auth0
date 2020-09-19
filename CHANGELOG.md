@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 21.0.0
+
+### Major Changes
+
+- Typescript strict checking
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@5.0.0
+  - @ctx-core/dom@7.0.0
+  - @ctx-core/email@5.0.0
+  - @ctx-core/env@9.0.0
+  - @ctx-core/error@7.0.0
+  - @ctx-core/fetch@7.0.0
+  - @ctx-core/function@16.0.0
+  - @ctx-core/jwt@6.0.0
+  - @ctx-core/local-storage@6.0.0
+  - @ctx-core/object@12.0.0
+  - @ctx-core/package@5.0.0
+  - @ctx-core/store@17.0.0
+
 ## 20.0.1
 
 ### Patch Changes

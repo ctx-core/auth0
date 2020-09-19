@@ -144,22 +144,27 @@ export const b__opened__change_password = _b('__opened__change_password', ctx=>
 	derived(b__opened__auth0(ctx),
 		_eq('change_password')))
 export const __opened__change_password = b__opened__change_password()
-export type type__msg__logout__auth0<I = unknown> = Writable<maybe<I>>&{
+export type $type__msg__logout__auth0 = {
+	time: number
+}
+export type type__msg__logout__auth0 = Writable<maybe<$type__msg__logout__auth0>>&{
 	logout__auth0:()=>void
 }
-export const b__msg__logout__auth0 = _b<type__msg__logout__auth0>('__msg__logout__auth0', ctx=>{
-	const __msg__logout__auth0 = writable(null) as type__msg__logout__auth0
-	const { logout__token__auth0 } = b__token__auth0(ctx)
-	return assign(__msg__logout__auth0, {
-		logout__auth0,
-	}) as type__msg__logout__auth0
-	function logout__auth0() {
-		logout__token__auth0()
-		__msg__logout__auth0.set({
-			time: Date.now(),
+export function b__msg__logout__auth0(ctx?) {
+	return _b<type__msg__logout__auth0>('__msg__logout__auth0', ctx=>{
+		const __msg__logout__auth0 = writable(null) as type__msg__logout__auth0
+		const { logout__token__auth0 } = b__token__auth0(ctx)
+		return assign(__msg__logout__auth0, {
+			logout__auth0,
 		})
-	}
-})
+		function logout__auth0() {
+			logout__token__auth0()
+			__msg__logout__auth0.set({
+				time: Date.now(),
+			})
+		}
+	})(ctx)
+}
 export const __msg__logout__auth0 = b__msg__logout__auth0()
 export const {
 	logout__auth0,
