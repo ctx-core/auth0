@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 21.0.6
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/email@5.0.2
+  - @ctx-core/jwt@6.0.2
+  - @ctx-core/fetch@7.0.6
+
 ## 21.0.5
 
 ### Patch Changes
