@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 21.0.7
+
+### Patch Changes
+
+- @ctx-core/jwt@6.0.3
+- @ctx-core/fetch@7.0.7
+
 ## 21.0.6
 
 ### Patch Changes
