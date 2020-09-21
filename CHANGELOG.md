@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 21.0.15
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/store@17.1.2
+  - @ctx-core/dom@7.0.11
+  - @ctx-core/fetch@7.0.15
+
 ## 21.0.14
 
 ### Patch Changes
