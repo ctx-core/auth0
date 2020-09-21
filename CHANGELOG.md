@@ -1,5 +1,23 @@
 # @ctx-core/auth0
 
+## 21.0.9
+
+### Patch Changes
+
+- stricter type checking of generics
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.1.0
+  - @ctx-core/object@12.0.3
+  - @ctx-core/store@17.0.5
+  - @ctx-core/dom@7.0.5
+  - @ctx-core/env@9.0.3
+  - @ctx-core/jwt@6.0.5
+  - @ctx-core/package@5.0.5
+  - @ctx-core/error@7.0.3
+  - @ctx-core/fetch@7.0.9
+  - @ctx-core/local-storage@6.0.3
+
 ## 21.0.8
 
 ### Patch Changes
