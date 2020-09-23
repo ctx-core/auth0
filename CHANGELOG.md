@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.0.19
+
+### Patch Changes
+
+- version bump to sync with npm
+
 ## 21.0.18
 
 ### Patch Changes
