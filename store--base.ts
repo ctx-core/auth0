@@ -181,7 +181,7 @@ export const {
 	schedule__validate__current__token__auth0,
 	__storage__json__token__auth0,
 } = __token__auth0
-export function b__token__auth0__userinfo__auth0<I extends unknown>(ctx?) {
+export function b__token__auth0__userinfo__auth0<I extends unknown = unknown>(ctx?) {
 	return _b<Writable<maybe<I>>>('__token__auth0__userinfo__auth0', ()=>
 		writable(null))(ctx)
 }

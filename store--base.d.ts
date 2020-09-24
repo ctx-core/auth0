@@ -51,7 +51,7 @@ interface auth0_token_type extends Readable<$auth0_token_type> {
 export declare const b__token__auth0: (ctx?: object | undefined, opts?: import("@ctx-core/object")._be_opts_type | undefined) => auth0_token_type;
 export declare const __token__auth0: auth0_token_type;
 export declare const schedule__validate__current__token__auth0: schedule__validate__current__token__auth0, __storage__json__token__auth0: __storage__json__token__auth0;
-export declare function b__token__auth0__userinfo__auth0<I extends unknown>(ctx?: any): Writable<maybe<I, falsy>>;
+export declare function b__token__auth0__userinfo__auth0<I extends unknown = unknown>(ctx?: any): Writable<maybe<I, falsy>>;
 export declare const __token__auth0__userinfo__auth0: Writable<unknown>;
 export declare type $type__userinfo__auth0 = {
     email: string;
