@@ -1,6 +1,6 @@
 import { assign } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
-import { get } from 'svelte/store'
+import { get } from '@ctx-core/store'
 import { throw_unauthorized } from '@ctx-core/error'
 import {
 	_jwt_token__authorization__header, validate__current__jwt,

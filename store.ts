@@ -1,4 +1,4 @@
-import { writable, derived, Writable, } from 'svelte/store'
+import { writable, derived, Writable, } from '@ctx-core/store'
 import { assign, _b } from '@ctx-core/object'
 import { _eql, _eq, maybe } from '@ctx-core/function'
 import {

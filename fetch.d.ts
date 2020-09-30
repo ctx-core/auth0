@@ -6,6 +6,6 @@ export declare function post__start__passwordless__auth0(body: any): any;
 export declare function post__change_password__auth(password: any): Promise<any>;
 export declare function post__change_password__dbconnections__auth0(body: any): any;
 export declare function post__token__oauth__auth0(body: any): any;
-export declare function _authorization__header__id_token__verify(auth0_token: any): Promise<string | null>;
+export declare function _authorization__header__id_token__verify(auth0_token: any): Promise<string>;
 export declare function _body__password_realm(...form: any[]): any;
 export declare function _body(...form: any[]): any;

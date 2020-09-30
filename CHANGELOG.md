@@ -1,5 +1,18 @@
 # @ctx-core/auth0
 
+## 21.0.53
+
+### Patch Changes
+
+- fix: tsc build issues
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/store@23.0.3
+  - @ctx-core/dom@7.0.46
+  - @ctx-core/env@9.0.19
+  - @ctx-core/jwt@6.0.17
+  - @ctx-core/fetch@7.0.51
+
 ## 21.0.52
 
 ### Patch Changes

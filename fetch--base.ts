@@ -1,6 +1,6 @@
 import { fetch } from '@ctx-core/fetch'
 import { throw_unauthorized } from '@ctx-core/error'
-import { validate__current__jwt, } from '@ctx-core/jwt'
+import { Token, validate__current__jwt, } from '@ctx-core/jwt'
 import type { auth0_error_ctx_type } from './auth0_error_ctx_type'
 export function _authorization__header__access_token(auth0_token) {
 	const authorization__header__access_token =
@@ -29,7 +29,7 @@ export function _authorization__header__access_token__verify(auth0_token) {
 	return authorization__header__access_token__auth0
 }
 export interface Opts__get__userinfo__auth0 {
-	auth0_token:string
+	auth0_token:string|Token
 	AUTH0_DOMAIN:string
 }
 export function get__userinfo__auth0(opts:Opts__get__userinfo__auth0) {

@@ -1,7 +1,8 @@
-import { derived, get, Readable, Writable, writable } from 'svelte/store'
+import {
+	derived, get, Readable, subscribe, Writable, writable
+} from '@ctx-core/store'
 import type { falsy, maybe_null } from '@ctx-core/function'
 import { _b, assign } from '@ctx-core/object'
-import { subscribe } from '@ctx-core/store'
 import { has__dom } from '@ctx-core/dom'
 import { _exp__jwt_token, Token } from '@ctx-core/jwt'
 import { sync__localStorage } from '@ctx-core/local-storage'
@@ -12,7 +13,7 @@ export const b__AUTH0_CLIENT_ID = _b('__AUTH0_CLIENT_ID', ()=>
 	writable(process.env.AUTH0_CLIENT_ID))
 export const __AUTH0_CLIENT_ID = b__AUTH0_CLIENT_ID()
 export const b__AUTH0_DOMAIN = _b('__AUTH0_DOMAIN', ()=>
-	writable(process.env.AUTH0_DOMAIN))
+	writable(process.env.AUTH0_DOMAIN as string))
 export const __AUTH0_DOMAIN = b__AUTH0_DOMAIN()
 export const b__AUTH0_URL = _b('__AUTH0_URL', ()=>
 	writable(process.env.AUTH0_URL))
@@ -69,7 +70,7 @@ export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 			return json__token__auth0
 		}) as auth0_token_type
 )
-export type $auth0_token_type = Token|falsy
+export type $auth0_token_type = Token
 export const __token__auth0__ = b__token__auth0__()
 export type error_ctx_type = {
 	message?:string,
@@ -106,7 +107,7 @@ export const {
 } = __error__token__auth0
 type schedule__validate__current__token__auth0 = ()=>void
 type __storage__json__token__auth0 = (event:{ key:string, newValue:any })=>void
-interface auth0_token_type extends Readable<$auth0_token_type> {
+type auth0_token_type = Readable<$auth0_token_type|null>&{
 	set__token__auth0:set__token__auth0
 	clear__token__auth0:clear__token__auth0
 	logout__token__auth0:logout__token__auth0
@@ -120,7 +121,7 @@ export const b__token__auth0 = _b<auth0_token_type>('__token__auth0', ctx=>{
 	const { set__error__token__auth0 } = __error__token__auth0
 	const __token__auth0 = derived(
 		b__token__auth0__(ctx),
-		(auth0_token:$auth0_token_type)=>
+		(auth0_token:$auth0_token_type|null)=>
 			(auth0_token && (auth0_token as Token).error)
 			? false
 			: auth0_token as Token) as auth0_token_type
@@ -147,7 +148,7 @@ export const b__token__auth0 = _b<auth0_token_type>('__token__auth0', ctx=>{
 		logout__token__auth0,
 		schedule__validate__current__token__auth0,
 		__storage__json__token__auth0,
-	}) as unknown as auth0_token_type
+	})
 	function schedule__validate__current__token__auth0() {
 		const auth0_token = get(__token__auth0)
 		const id_token = auth0_token && auth0_token.id_token
@@ -186,12 +187,10 @@ export function b__token__auth0__userinfo__auth0<I extends unknown = unknown>(ct
 		writable(null))(ctx)
 }
 export const __token__auth0__userinfo__auth0 = b__token__auth0__userinfo__auth0()
-export type $type__userinfo__auth0 = {
-	email:string
-}
-export type $maybe_type__userinfo__auth0 = maybe<$type__userinfo__auth0, null|false>
+export type $type__userinfo__auth0 = Token
+export type $maybe_type__userinfo__auth0 = $type__userinfo__auth0|null|boolean
 export type type__userinfo__auth0 = Readable<$maybe_type__userinfo__auth0>
-export const b__userinfo__auth0 = _b<type__userinfo__auth0>('__userinfo__auth0', ctx=>
+export const b__userinfo__auth0 = _b('__userinfo__auth0', ctx=>
 	derived([
 			b__AUTH0_DOMAIN(ctx),
 			b__token__auth0(ctx),
@@ -205,7 +204,6 @@ export const b__userinfo__auth0 = _b<type__userinfo__auth0>('__userinfo__auth0',
 			],
 			set
 		)=>{
-			let cancel
 			(async ()=>{
 				if (auth0_token === token__auth0__userinfo__auth0) {
 					return
@@ -221,7 +219,6 @@ export const b__userinfo__auth0 = _b<type__userinfo__auth0>('__userinfo__auth0',
 							auth0_token,
 							AUTH0_DOMAIN,
 						}))
-				if (cancel) return
 				if (!response.ok) {
 					clear__token__auth0(false)
 					set(false)
@@ -230,7 +227,6 @@ export const b__userinfo__auth0 = _b<type__userinfo__auth0>('__userinfo__auth0',
 				const userinfo__auth0 = await response.json()
 				set(userinfo__auth0)
 			})()
-			return ()=>cancel = true
 			function _userinfo__auth0__no__token__auth0() {
 				return (
 					auth0_token == null
@@ -246,7 +242,7 @@ export const b__email__auth0 = _b('__email__auth0', ctx=>
 		userinfo__auth0=>
 			(userinfo__auth0 == false)
 			? false
-			: userinfo__auth0 && userinfo__auth0.email))
+			: userinfo__auth0 && (userinfo__auth0 as Token).email))
 export const __email__auth0 = b__email__auth0()
 export const b__email = b__email__auth0
 export const __email = __email__auth0
