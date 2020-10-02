@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "21.0.54",
+	"version": "21.0.55",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -40,7 +40,7 @@
 		"@ctx-core/package": "workspace:^5.0.21",
 		"@ctx-core/store": "workspace:^23.0.4",
 		"auth0-js": "^9.14.0",
-		"deep-equal": "^2.0.3",
+		"deep-equal": "^2.0.4",
 		"jsonwebtoken": "^8.5.1",
 		"svelte": "3.29.0"
 	},
