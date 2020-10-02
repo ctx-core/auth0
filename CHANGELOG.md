@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.0.56
+
+### Patch Changes
+
+- flash updates
+
 ## 21.0.55
 
 ### Patch Changes
