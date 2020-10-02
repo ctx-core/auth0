@@ -56,12 +56,12 @@ export declare const __token__auth0__userinfo__auth0: Writable<unknown>;
 export declare type $type__userinfo__auth0 = Token;
 export declare type $maybe_type__userinfo__auth0 = $type__userinfo__auth0 | null | boolean;
 export declare type type__userinfo__auth0 = Readable<$maybe_type__userinfo__auth0>;
-export declare const b__userinfo__auth0: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => any;
-export declare const __userinfo__auth0: any;
-export declare const b__email__auth0: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => any;
-export declare const __email__auth0: any;
-export declare const b__email: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => any;
-export declare const __email: any;
+export declare const b__userinfo__auth0: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => Readable<unknown>;
+export declare const __userinfo__auth0: Readable<unknown>;
+export declare const b__email__auth0: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => Readable<string | false>;
+export declare const __email__auth0: Readable<string | false>;
+export declare const b__email: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => Readable<string | false>;
+export declare const __email: Readable<string | false>;
 export declare type $type__opened__auth0 = maybe<string>;
 export interface type__opened__auth0 extends Writable<$type__opened__auth0> {
     open__login__auth0: () => void;
