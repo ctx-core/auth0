@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 21.0.68
+
+### Patch Changes
+
+- typescript: ^4.0.3 -> ^4.0.5
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@5.0.3
+  - @ctx-core/dom@7.1.4
+  - @ctx-core/email@5.0.3
+  - @ctx-core/env@9.0.25
+  - @ctx-core/error@7.0.15
+  - @ctx-core/fetch@7.0.64
+  - @ctx-core/function@16.1.2
+  - @ctx-core/jwt@6.0.18
+  - @ctx-core/local-storage@6.0.15
+  - @ctx-core/object@13.0.1
+  - @ctx-core/package@5.0.23
+  - @ctx-core/store@23.0.9
+
 ## 21.0.67
 
 ### Patch Changes
