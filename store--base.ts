@@ -72,11 +72,11 @@ export const b__token__auth0__ = _b('__token__auth0__', ctx=>
 )
 export type $auth0_token_type = Token
 export const __token__auth0__ = b__token__auth0__()
-export type error_ctx_type = {
-	message?:string,
-	error_message?:string,
-	error_description?:string,
-	error?,
+export interface error_ctx_type {
+	message?:string
+	error_message?:string
+	error_description?:string
+	error?
 }
 export type maybe_error_ctx_type = maybe_null<error_ctx_type>
 export interface type__error__token__auth0 extends Writable<maybe_error_ctx_type> {

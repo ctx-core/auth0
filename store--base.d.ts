@@ -22,12 +22,12 @@ export declare const set__token__auth0: set__token__auth0, clear__token__auth0: 
 export declare const b__token__auth0__: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => auth0_token_type;
 export declare type $auth0_token_type = Token;
 export declare const __token__auth0__: auth0_token_type;
-export declare type error_ctx_type = {
+export interface error_ctx_type {
     message?: string;
     error_message?: string;
     error_description?: string;
     error?: any;
-};
+}
 export declare type maybe_error_ctx_type = maybe_null<error_ctx_type>;
 export interface type__error__token__auth0 extends Writable<maybe_error_ctx_type> {
     set__error__token__auth0: (error: any) => void;

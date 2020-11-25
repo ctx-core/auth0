@@ -30,12 +30,14 @@ export declare const b__opened__check_email__forgot_password: (ctx?: object, opt
 export declare const __opened__check_email__forgot_password: import("@ctx-core/store").Readable<boolean>;
 export declare const b__opened__change_password: (ctx?: object, opts?: import("@ctx-core/object")._be_opts_type) => import("@ctx-core/store").Readable<boolean>;
 export declare const __opened__change_password: import("@ctx-core/store").Readable<boolean>;
-export declare type $type__msg__logout__auth0 = {
+export interface $type__msg__logout__auth0 {
     time: number;
-};
-export declare type type__msg__logout__auth0 = Writable<maybe<$type__msg__logout__auth0>> & {
-    logout__auth0: () => void;
-};
-export declare function b__msg__logout__auth0(ctx?: any): type__msg__logout__auth0;
-export declare const __msg__logout__auth0: type__msg__logout__auth0;
+}
+export interface auth0_logout_msg_interface {
+    logout__auth0(): void;
+}
+export declare type auth_logout_msg_type = Writable<maybe<$type__msg__logout__auth0>> & auth0_logout_msg_interface;
+export declare type type__msg__logout__auth0 = auth_logout_msg_type;
+export declare function b__msg__logout__auth0(ctx?: any): auth_logout_msg_type;
+export declare const __msg__logout__auth0: auth_logout_msg_type;
 export declare const logout__auth0: () => void;

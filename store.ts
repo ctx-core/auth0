@@ -144,15 +144,19 @@ export const b__opened__change_password = _b('__opened__change_password', ctx=>
 	derived(b__opened__auth0(ctx),
 		_eq('change_password')))
 export const __opened__change_password = b__opened__change_password()
-export type $type__msg__logout__auth0 = {
-	time: number
+export interface $type__msg__logout__auth0 {
+	time:number
 }
-export type type__msg__logout__auth0 = Writable<maybe<$type__msg__logout__auth0>>&{
-	logout__auth0:()=>void
+export interface auth0_logout_msg_interface {
+	logout__auth0():void
 }
+export type auth_logout_msg_type =
+	Writable<maybe<$type__msg__logout__auth0>>
+	& auth0_logout_msg_interface
+export type type__msg__logout__auth0 = auth_logout_msg_type
 export function b__msg__logout__auth0(ctx?) {
-	return _b<type__msg__logout__auth0>('__msg__logout__auth0', ctx=>{
-		const __msg__logout__auth0 = writable(null) as type__msg__logout__auth0
+	return _b<auth_logout_msg_type>('__msg__logout__auth0', ctx=>{
+		const __msg__logout__auth0 = writable(null) as auth_logout_msg_type
 		const { logout__token__auth0 } = b__token__auth0(ctx)
 		return assign(__msg__logout__auth0, {
 			logout__auth0,
