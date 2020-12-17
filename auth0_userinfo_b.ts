@@ -51,11 +51,12 @@ export const auth0_userinfo_b = _b('auth0_userinfo', ctx=>{
 					: false
 				)
 			}
-		})
+		}
+	) as auth0_userinfo_type
 })
-export type $type__auth0_userinfo = Token
-export type $maybe_type__auth0_userinfo = $type__auth0_userinfo|null|boolean
-export type type__auth0_userinfo = Readable<$maybe_type__auth0_userinfo>
+export type $auth0_userinfo_type = Token
+export type $maybe_auth0_userinfo_type = $auth0_userinfo_type|null|boolean
+export interface auth0_userinfo_type extends Readable<$maybe_auth0_userinfo_type> {}
 export {
 	auth0_userinfo_b as b__auth0_userinfo,
 }

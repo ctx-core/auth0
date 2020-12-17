@@ -21,7 +21,7 @@ export const in_auth0_token_b = _b('in_auth0_token', ctx=>
 		}) as in_auth0_token_type
 )
 export type $in_auth0_token_type = Token
-export type in_auth0_token_type = Readable<$in_auth0_token_type>
+export interface in_auth0_token_type extends Readable<$in_auth0_token_type> {}
 export {
 	in_auth0_token_b as b__token__auth0__
 }

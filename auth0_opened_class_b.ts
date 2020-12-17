@@ -6,7 +6,7 @@ export const auth0_opened_class_b = _b('auth0_opened_class', ctx=>
 		(v:$auth0_opened_type)=>v) as auth0_opened_class_type
 )
 export type $auth0_opened_class_type = $auth0_opened_type
-export type auth0_opened_class_type = Readable<$auth0_opened_class_type>
+export interface auth0_opened_class_type extends Readable<$auth0_opened_class_type> {}
 export {
 	auth0_opened_class_b as b__class__opened__auth0,
 }

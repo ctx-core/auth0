@@ -23,10 +23,10 @@ export interface $type__msg__logout__auth0 {
 export interface auth0_logout_msg_interface {
 	logout__auth0():void
 }
-export type auth_logout_msg_type =
-	Writable<maybe<$type__msg__logout__auth0>>
-	& auth0_logout_msg_interface
-export type type__msg__logout__auth0 = auth_logout_msg_type
+export interface auth_logout_msg_type
+	extends Writable<maybe<$type__msg__logout__auth0>>,
+		auth0_logout_msg_interface {}
 export {
+	auth_logout_msg_type as type__msg__logout__auth0,
 	auth0_logout_msg_b as b__msg__logout__auth0,
 }

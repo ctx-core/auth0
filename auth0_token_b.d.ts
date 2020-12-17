@@ -8,12 +8,11 @@ declare type set_auth0_token_json_type = (event: {
     newValue: any;
 }) => void;
 export declare type $auth0_token_type = Token;
-interface auth0_token_interface {
+export interface auth0_token_type extends Readable<$auth0_token_type | null> {
     set_auth0_token: set_auth0_token_type;
     clear_auth0_token: clear_auth0_token_type;
     logout_auth0_token: logout_auth0_token_type;
     schedule_auth0_token_current_validate: schedule_auth0_token_current_validate;
     set_auth0_token_json: set_auth0_token_json_type;
 }
-declare type auth0_token_type = Readable<$auth0_token_type | null> & auth0_token_interface;
 export { auth0_token_b as b__token__auth0 };
