@@ -1,5 +1,26 @@
 # @ctx-core/auth0
 
+## 21.2.21
+
+### Patch Changes
+
+- - .rush
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.4.0
+  - @ctx-core/combinators@5.0.6
+  - @ctx-core/dom@7.1.26
+  - @ctx-core/email@5.0.6
+  - @ctx-core/env@9.1.13
+  - @ctx-core/error@7.1.12
+  - @ctx-core/fetch@7.0.97
+  - @ctx-core/jwt@6.2.11
+  - @ctx-core/local-storage@6.1.10
+  - @ctx-core/object@15.0.10
+  - @ctx-core/package@5.0.41
+  - @ctx-core/store@23.1.15
+
 ## 21.2.20
 
 ### Patch Changes
