@@ -1,6 +1,6 @@
 import { _b } from '@ctx-core/object'
 import { derived, Readable } from '@ctx-core/store'
-import { _waitfor__ratelimit__backoff__fibonacci } from '@ctx-core/fetch'
+import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { Token } from '@ctx-core/jwt'
 import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
 import { auth0_token_b } from './auth0_token_b'
@@ -31,7 +31,7 @@ export const auth0_userinfo_b = _b('auth0_userinfo', ctx=>{
 				}
 				set($auth0_token)
 				const response =
-					await _waitfor__ratelimit__backoff__fibonacci(()=>
+					await waitfor_fibonacci_backoff(()=>
 						get_auth0_userinfo({
 							auth0_token: $auth0_token,
 							AUTH0_DOMAIN: $AUTH0_DOMAIN,
