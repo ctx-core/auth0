@@ -1,5 +1,21 @@
 # @ctx-core/auth0
 
+## 21.2.29
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.8.1
+  - @ctx-core/dom@7.1.32
+  - @ctx-core/env@9.1.19
+  - @ctx-core/jwt@6.2.17
+  - @ctx-core/object@15.0.16
+  - @ctx-core/store@23.1.21
+  - @ctx-core/package@5.0.47
+  - @ctx-core/fetch@7.1.7
+  - @ctx-core/error@7.1.18
+  - @ctx-core/local-storage@6.1.16
+
 ## 21.2.28
 
 ### Patch Changes
