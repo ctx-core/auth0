@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.2.32
+
+### Patch Changes
+
+- @ctx-core/fetch@7.1.10
+
 ## 21.2.31
 
 ### Patch Changes
