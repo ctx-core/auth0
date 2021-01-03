@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "21.2.33",
+	"version": "21.2.35",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -28,11 +28,11 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "workspace:^5.0.6",
-		"@ctx-core/dom": "workspace:^7.1.35",
+		"@ctx-core/dom": "workspace:^7.1.36",
 		"@ctx-core/email": "workspace:^5.1.0",
-		"@ctx-core/env": "workspace:^9.1.22",
+		"@ctx-core/env": "workspace:^9.3.0",
 		"@ctx-core/error": "workspace:^7.1.20",
-		"@ctx-core/fetch": "workspace:^7.1.11",
+		"@ctx-core/fetch": "workspace:^7.1.12",
 		"@ctx-core/function": "workspace:^16.8.1",
 		"@ctx-core/jwt": "workspace:^6.2.19",
 		"@ctx-core/local-storage": "workspace:^6.1.18",
