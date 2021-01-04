@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.3.3
+
+### Patch Changes
+
+- fix: AUTH0_URL_b:AUTH0_URL_b_type
+
 ## 21.3.2
 
 ### Patch Changes
