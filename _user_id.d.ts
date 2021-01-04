@@ -1,1 +1,2 @@
-export declare function _user_id(decoded__jwt_token: any): any;
+import type { jwt_token_decoded_type } from './jwt_token_decoded_type';
+export declare function _user_id(jwt_token_decoded: jwt_token_decoded_type): string;

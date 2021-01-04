@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.3.0
+
+### Minor Changes
+
+- annotated api with types
+
 ## 21.2.37
 
 ### Patch Changes

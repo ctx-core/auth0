@@ -1,4 +1,4 @@
-import { validate_auth0_email } from './validate_auth0_email'
-export function validate_auth0_forgot_password(form) {
-	return validate_auth0_email(form)
+import { validate_auth0_email, validate_auth0_email_data_type } from './validate_auth0_email'
+export function validate_auth0_forgot_password(data:validate_auth0_email_data_type) {
+	return validate_auth0_email(data)
 }
