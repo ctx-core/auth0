@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.3.6
+
+### Patch Changes
+
+- type fixes
+
 ## 21.3.5
 
 ### Patch Changes
