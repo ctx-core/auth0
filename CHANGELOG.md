@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 21.3.1
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/jwt@6.2.20
+
 ## 21.3.0
 
 ### Minor Changes
