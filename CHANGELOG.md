@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.3.2
+
+### Patch Changes
+
+- fix: types: post_auth0_dbconnections_change_password_b,post_auth0_oauth_token_b,validate_auth0_forgot_password
+
 ## 21.3.1
 
 ### Patch Changes

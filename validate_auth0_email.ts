@@ -1,5 +1,7 @@
 import { _email_valid } from '@ctx-core/email'
-export function validate_auth0_email(data:validate_auth0_email_data_type) {
+export function validate_auth0_email(
+	data:validate_auth0_email_data_type
+):boolean|validate_auth0_email_error_type {
 	const { email } = data
 	const email_error:validate_auth0_email_error_type = {}
 	let has_errors
