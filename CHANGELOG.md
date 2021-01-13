@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 21.3.13
+
+### Patch Changes
+
+- @types/auth0: ^2.20.12 -> ^2.20.13
+
 ## 21.3.12
 
 ### Patch Changes
