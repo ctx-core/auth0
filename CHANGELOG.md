@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 22.0.3
+
+### Patch Changes
+
+- fix: auth0_token_json_b: type alias export
+- Updated dependencies [undefined]
+  - @ctx-core/dom@8.1.0
+  - @ctx-core/fetch@8.0.3
+
 ## 22.0.2
 
 ### Patch Changes
