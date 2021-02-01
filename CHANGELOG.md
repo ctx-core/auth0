@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 22.0.2
+
+### Patch Changes
+
+- fix: remove export type aliases causing build issues
+  - @ctx-core/dom@8.0.2
+  - @ctx-core/fetch@8.0.2
+
 ## 22.0.1
 
 ### Patch Changes

@@ -36,6 +36,4 @@ export interface auth0_opened_type extends Writable<$auth0_opened_type> {
 export interface auth0_opened_b_type extends B<auth0_opened_type> {}
 export {
 	auth0_opened_b as b__opened__auth0,
-	$auth0_opened_type as $type__opened__auth0,
-	auth0_opened_type as type__opened__auth0,
 }

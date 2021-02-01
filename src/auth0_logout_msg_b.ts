@@ -23,6 +23,5 @@ export interface auth0_logout_msg_type extends Writable<maybe<$auth0_logout_msg_
 }
 export interface auth0_logout_msg_b_type extends B<auth0_logout_msg_type> {}
 export {
-	auth0_logout_msg_type as type__msg__auth0_logout,
 	auth0_logout_msg_b as b__msg__auth0_logout,
 }

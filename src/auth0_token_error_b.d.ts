@@ -14,4 +14,4 @@ export interface auth0_token_error_type extends Writable<$auth0_token_error_type
 }
 export interface auth0_token_error_b_type extends B<auth0_token_error_type> {
 }
-export { auth0_token_error_b as b__error__token__auth0, auth0_token_error_type as type__error__token__auth0 };
+export { auth0_token_error_b as b__error__token__auth0, };
