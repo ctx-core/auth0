@@ -1,5 +1,5 @@
 import { _b, assign, B } from '@ctx-core/object'
-import { has__dom } from '@ctx-core/dom'
+import { has_dom } from '@ctx-core/dom'
 import { derived, get, Readable, subscribe } from '@ctx-core/store'
 import { _jwt_token_exp, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
@@ -22,7 +22,7 @@ export const auth0_token_b:auth0_token_b_type = _b('auth0_token', ctx=>{
 			($auth0_token && ($auth0_token as Token).error)
 			? false
 			: $auth0_token as Token) as auth0_token_type
-	if (has__dom) {
+	if (has_dom) {
 		subscribe(auth0_token_json,
 			$auth0_token_json=>{
 				if ($auth0_token_json == null) {
@@ -36,7 +36,7 @@ export const auth0_token_b:auth0_token_b_type = _b('auth0_token', ctx=>{
 			}
 		)
 	}
-	if (has__dom) {
+	if (has_dom) {
 		window.addEventListener('storage', set_auth0_token_json)
 	}
 	return assign(auth0_token, {

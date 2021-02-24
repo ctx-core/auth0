@@ -1,5 +1,5 @@
 import { _b, assign, B } from '@ctx-core/object'
-import { has__dom } from '@ctx-core/dom'
+import { has_dom } from '@ctx-core/dom'
 import { subscribe, Writable, writable } from '@ctx-core/store'
 import { auth0_email_b } from './auth0_email_b'
 export const auth0_opened_b:auth0_opened_b_type = _b('auth0_opened', (ctx)=>{
@@ -11,7 +11,7 @@ export const auth0_opened_b:auth0_opened_b_type = _b('auth0_opened', (ctx)=>{
 		}
 	) as auth0_opened_type
 	let auth0_opened_reload_unsubscribe
-	if (has__dom) {
+	if (has_dom) {
 		reload_auth0_opened()
 	}
 	return auth0_opened as auth0_opened_type

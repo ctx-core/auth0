@@ -1,11 +1,11 @@
 import { _b, B } from '@ctx-core/object'
 import type { falsy } from '@ctx-core/function'
-import { has__dom } from '@ctx-core/dom'
+import { has_dom } from '@ctx-core/dom'
 import { Writable, writable } from '@ctx-core/store'
 export const auth0_token_json_b:auth0_token_json_b_type = _b('auth0_token_json', ()=>{
 	const auth_token_json = writable<string|falsy>(
 		(
-			has__dom
+			has_dom
 			&& localStorage.getItem('auth0_token_json')) || false
 	)
 	return auth_token_json as auth0_token_json_type
