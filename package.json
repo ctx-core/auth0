@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "22.0.40",
+	"version": "22.0.41",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -27,18 +27,18 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "workspace:^6.0.4",
-		"@ctx-core/dom": "workspace:^8.2.8",
-		"@ctx-core/email": "workspace:^6.0.4",
-		"@ctx-core/env": "workspace:^10.0.27",
-		"@ctx-core/error": "workspace:^8.0.15",
-		"@ctx-core/fetch": "workspace:^8.0.38",
-		"@ctx-core/function": "workspace:^17.4.0",
-		"@ctx-core/jwt": "workspace:^7.0.15",
-		"@ctx-core/local-storage": "workspace:^7.0.15",
-		"@ctx-core/object": "workspace:^17.3.0",
-		"@ctx-core/package": "workspace:^6.1.9",
-		"@ctx-core/store": "workspace:^24.1.9",
+		"@ctx-core/combinators": "workspace:^6.0.5",
+		"@ctx-core/dom": "workspace:^8.2.9",
+		"@ctx-core/email": "workspace:^6.0.5",
+		"@ctx-core/env": "workspace:^10.0.28",
+		"@ctx-core/error": "workspace:^8.0.16",
+		"@ctx-core/fetch": "workspace:^8.0.39",
+		"@ctx-core/function": "workspace:^17.4.1",
+		"@ctx-core/jwt": "workspace:^7.0.16",
+		"@ctx-core/local-storage": "workspace:^7.0.16",
+		"@ctx-core/object": "workspace:^17.3.1",
+		"@ctx-core/package": "workspace:^6.1.10",
+		"@ctx-core/store": "workspace:^24.1.10",
 		"auth0-js": "^9.14.3",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
@@ -46,7 +46,7 @@
 	},
 	"devDependencies": {
 		"@types/auth0": "^2.33.1",
-		"typescript": "^4.2.2"
+		"typescript": "^4.2.3"
 	},
 	"publishConfig": {
 		"access": "public"
