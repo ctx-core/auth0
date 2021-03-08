@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 22.0.42
+
+### Patch Changes
+
+- @types/auth0: ^2.33.1 -> ^2.33.2
+  - @ctx-core/fetch@8.0.40
+
 ## 22.0.41
 
 ### Patch Changes
