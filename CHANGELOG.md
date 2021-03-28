@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 22.0.49
+
+### Patch Changes
+
+- fix: npm run compile: tsc -b .
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.0.6
+  - @ctx-core/dom@8.2.13
+  - @ctx-core/email@6.0.6
+  - @ctx-core/env@10.0.32
+  - @ctx-core/error@8.0.19
+  - @ctx-core/fetch@8.0.47
+  - @ctx-core/function@17.4.2
+  - @ctx-core/jwt@7.0.19
+  - @ctx-core/local-storage@7.0.19
+  - @ctx-core/object@17.4.1
+  - @ctx-core/package@6.1.14
+  - @ctx-core/store@24.1.14
+
 ## 22.0.48
 
 ### Patch Changes
