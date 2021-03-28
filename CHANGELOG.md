@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 22.0.48
+
+### Patch Changes
+
+- 39607cca5: auth0-js: ^9.14.3 -> ^9.15.0
+- 39607cca5: @types/auth0: ^2.33.2 -> ^2.33.3
+  - @ctx-core/fetch@8.0.46
+
 ## 22.0.47
 
 ### Patch Changes
