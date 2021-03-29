@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 22.0.50
+
+### Patch Changes
+
+- fix: npm publish: https://github.com/npm/cli/issues/2834
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.0.7
+  - @ctx-core/dom@8.2.14
+  - @ctx-core/email@6.0.7
+  - @ctx-core/env@10.0.33
+  - @ctx-core/error@8.0.20
+  - @ctx-core/fetch@8.0.48
+  - @ctx-core/function@17.4.3
+  - @ctx-core/jwt@7.0.20
+  - @ctx-core/local-storage@7.0.20
+  - @ctx-core/object@17.4.2
+  - @ctx-core/package@6.1.15
+  - @ctx-core/store@24.1.15
+
 ## 22.0.49
 
 ### Patch Changes
