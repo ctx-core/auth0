@@ -38,7 +38,7 @@
 		"@ctx-core/local-storage": "workspace:^7.0.37",
 		"@ctx-core/object": "workspace:^17.5.27",
 		"@ctx-core/package": "workspace:^6.1.25",
-		"@ctx-core/store": "workspace:^24.7.21",
+		"@ctx-core/store": "workspace:^24.7.23",
 		"auth0-js": "^9.16.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
