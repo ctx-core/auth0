@@ -1,12 +1,14 @@
 import { _b, B } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { get } from '@ctx-core/store'
-import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
-import type { auth0_client_id_body_type } from './auth0_client_id_body_type'
-export const post_auth0_dbconnections_signup_b:post_auth0_dbconnections_signup_b_type = _b('post_auth0_dbconnections_signup', (ctx)=>{
+import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
+import type { auth0_client_id_body_I } from './auth0_client_id_body_I'
+export const post_auth0_dbconnections_signup_b:post_auth0_dbconnections_signup_b_T = _b('post_auth0_dbconnections_signup', (
+	ctx:post_auth0_dbconnections_signup_ctx_I
+)=>{
 	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
-	return post_auth0_dbconnections_signup as post_auth0_dbconnections_signup_type
-	function post_auth0_dbconnections_signup(body:post_auth0_dbconnections_signup_body_type) {
+	return post_auth0_dbconnections_signup as post_auth0_dbconnections_signup_T
+	function post_auth0_dbconnections_signup(body:post_auth0_dbconnections_signup_body_T) {
 		return (
 			fetch(
 				`https://${get(AUTH0_DOMAIN)}/dbconnections/signup`,
@@ -19,7 +21,10 @@ export const post_auth0_dbconnections_signup_b:post_auth0_dbconnections_signup_b
 		)
 	}
 })
-export interface post_auth0_dbconnections_signup_body_type extends auth0_client_id_body_type {
+export interface post_auth0_dbconnections_signup_ctx_I extends AUTH0_DOMAIN_ctx_I {
+	post_auth0_dbconnections_signup?:post_auth0_dbconnections_signup_T
+}
+export interface post_auth0_dbconnections_signup_body_T extends auth0_client_id_body_I {
 	client_id:string
 	grant_type:string
 	realm:string
@@ -27,5 +32,5 @@ export interface post_auth0_dbconnections_signup_body_type extends auth0_client_
 	email:string
 	password:string
 }
-export type post_auth0_dbconnections_signup_type = (body:post_auth0_dbconnections_signup_body_type)=>Promise<Response>
-export interface post_auth0_dbconnections_signup_b_type extends B<post_auth0_dbconnections_signup_type> {}
+export type post_auth0_dbconnections_signup_T = (body:post_auth0_dbconnections_signup_body_T)=>Promise<Response>
+export interface post_auth0_dbconnections_signup_b_T extends B<post_auth0_dbconnections_signup_T> {}

@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 22.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.1.0
+  - @ctx-core/dom@8.3.0
+  - @ctx-core/email@6.1.0
+  - @ctx-core/env@10.1.0
+  - @ctx-core/error@8.1.0
+  - @ctx-core/fetch@8.1.0
+  - @ctx-core/function@17.9.0
+  - @ctx-core/jwt@7.1.0
+  - @ctx-core/local-storage@7.1.0
+  - @ctx-core/object@17.6.0
+  - @ctx-core/package@6.2.0
+  - @ctx-core/store@24.8.0
+
 ## 22.0.101
 
 ### Patch Changes
@@ -1786,7 +1808,7 @@
 
 ### Patch Changes
 
-- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_ctx_type,auth_logout_msg_type,auth0_opened_type,auth0_opened
+- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_ctx_I,auth_logout_msg_type,auth0_opened_type,auth0_opened
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]

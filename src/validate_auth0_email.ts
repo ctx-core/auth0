@@ -1,8 +1,8 @@
 import { _email_valid } from '@ctx-core/email'
 import type { $auth0_token_error_I } from './auth0_token_error_b'
 export function validate_auth0_email(
-	data:validate_auth0_email_data_type
-):false|validate_auth0_email_error_type {
+	data:validate_auth0_email_data_T
+):false|validate_auth0_email_error_T {
 	const { email } = data
 	const email_error:$auth0_token_error_I = {}
 	let has_errors
@@ -16,7 +16,7 @@ export function validate_auth0_email(
 	}
 	return has_errors ? email_error : false
 }
-export interface validate_auth0_email_data_type {
+export interface validate_auth0_email_data_T {
 	email:string
 }
-export type validate_auth0_email_error_type = $auth0_token_error_I
+export type validate_auth0_email_error_T = $auth0_token_error_I

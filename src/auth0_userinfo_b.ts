@@ -1,14 +1,16 @@
 import { _b, B } from '@ctx-core/object'
-import { derived, Readable } from '@ctx-core/store'
+import { derived$, Readable$ } from '@ctx-core/store'
 import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { Token } from '@ctx-core/jwt'
-import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
-import { auth0_token_b } from './auth0_token_b'
-import { auth0_userinfo_auth0_token_b } from './auth0_userinfo_auth0_token_b'
+import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
+import { auth0_token_b, auth0_token_ctx_I } from './auth0_token_b'
+import { auth0_userinfo_auth0_token_b, auth0_userinfo_auth0_token_ctx_I } from './auth0_userinfo_auth0_token_b'
 import { get_auth0_userinfo } from './get_auth0_userinfo'
-export const auth0_userinfo_b:auth0_userinfo_b_type = _b('auth0_userinfo', ctx=>{
+export const auth0_userinfo_b:auth0_userinfo_b_T = _b('auth0_userinfo', (
+	ctx:auth0_userinfo_ctx_I
+)=>{
 	const auth0_token = auth0_token_b(ctx)
-	return derived([
+	return derived$([
 			AUTH0_DOMAIN_b(ctx),
 			auth0_token,
 			auth0_userinfo_auth0_token_b(ctx),
@@ -52,12 +54,16 @@ export const auth0_userinfo_b:auth0_userinfo_b_type = _b('auth0_userinfo', ctx=>
 				)
 			}
 		}
-	) as auth0_userinfo_type
+	) as auth0_userinfo_T
 })
-export type $auth0_userinfo_type = Token
-export type $maybe_auth0_userinfo_type = $auth0_userinfo_type|null|boolean
-export interface auth0_userinfo_type extends Readable<$maybe_auth0_userinfo_type> {}
-export interface auth0_userinfo_b_type extends B<auth0_userinfo_type> {}
+export interface auth0_userinfo_ctx_I
+	extends AUTH0_DOMAIN_ctx_I, auth0_token_ctx_I, auth0_userinfo_auth0_token_ctx_I {
+	auth0_userinfo?:auth0_userinfo_T
+}
+export type $auth0_userinfo_T = Token
+export type $maybe_auth0_userinfo_T = $auth0_userinfo_T|null|boolean
+export interface auth0_userinfo_T extends Readable$<$maybe_auth0_userinfo_T> {}
+export interface auth0_userinfo_b_T extends B<auth0_userinfo_T> {}
 export {
 	auth0_userinfo_b as b__auth0_userinfo,
 }

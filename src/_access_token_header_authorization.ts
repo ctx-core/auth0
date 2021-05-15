@@ -1,5 +1,5 @@
-import type { $auth0_token_type } from './auth0_token_b'
-export function _access_token_header_authorization(auth0_token: $auth0_token_type): access_token_header_authorization_type {
+import type { $auth0_token_T } from './auth0_token_b'
+export function _access_token_header_authorization(auth0_token: $auth0_token_T): access_token_header_authorization_T {
 	const access_token_header_authorization =
 		_auth0_access_token_authorization()
 		|| false
@@ -14,4 +14,4 @@ export function _access_token_header_authorization(auth0_token: $auth0_token_typ
 		return auth0_token_authorization
 	}
 }
-export type access_token_header_authorization_type = string | false | null
+export type access_token_header_authorization_T = string | false | null

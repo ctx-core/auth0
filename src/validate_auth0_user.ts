@@ -1,5 +1,5 @@
 import type { Auth0Error, Auth0UserProfile } from 'auth0-js'
-import { error_ctx_T, throw_bad_gateway } from '@ctx-core/error'
+import { error_ctx_I, throw_bad_gateway } from '@ctx-core/error'
 export function validate_auth0_user(user:Auth0UserProfile|Auth0Error|null) {
 	const user_error = user as Auth0Error
 	if (user_error && user_error.error) {
@@ -12,6 +12,6 @@ export function validate_auth0_user(user:Auth0UserProfile|Auth0Error|null) {
 		throw_bad_gateway({
 			http_status: user_error.statusCode as number,
 			data: user_error
-		} as error_ctx_T)
+		} as error_ctx_I)
 	}
 }
