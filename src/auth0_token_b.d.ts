@@ -1,14 +1,14 @@
 import { Readable } from '@ctx-core/store';
 import { Token } from '@ctx-core/jwt';
-import { auth0_token_json_ctx_I } from './auth0_token_json_b';
-import { clear_auth0_token_ctx_I, clear_auth0_token_T } from './clear_auth0_token_b';
-import { logout_auth0_token_ctx_I, logout_auth0_token_T } from './logout_auth0_token_b';
-import { logout_auth0_token_error_ctx_I } from './logout_auth0_token_error_b';
-import { set_auth0_token_ctx_I, set_auth0_token_T } from './set_auth0_token_b';
-export interface auth0_token_ctx_I extends auth0_token_json_ctx_I, clear_auth0_token_ctx_I, logout_auth0_token_ctx_I, logout_auth0_token_error_ctx_I, set_auth0_token_ctx_I {
+import { auth0_token_json_Ctx } from './auth0_token_json_b';
+import { clear_auth0_token_Ctx, clear_auth0_token_T } from './clear_auth0_token_b';
+import { logout_auth0_token_Ctx, logout_auth0_token_T } from './logout_auth0_token_b';
+import { logout_auth0_token_error_Ctx } from './logout_auth0_token_error_b';
+import { set_auth0_token_Ctx, set_auth0_token_T } from './set_auth0_token_b';
+export interface auth0_token_Ctx extends auth0_token_json_Ctx, clear_auth0_token_Ctx, logout_auth0_token_Ctx, logout_auth0_token_error_Ctx, set_auth0_token_Ctx {
     auth0_token?: auth0_token_T;
 }
-export declare const auth0_token_b: import("@ctx-core/object").Be<auth0_token_ctx_I, "auth0_token">;
+export declare const auth0_token_b: import("@ctx-core/object").Be<auth0_token_Ctx, "auth0_token">;
 export declare type schedule_auth0_token_current_validate = () => void;
 export declare type set_auth0_token_json_T = (event: {
     key: string;

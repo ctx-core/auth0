@@ -1,8 +1,8 @@
 import { Writable } from '@ctx-core/store';
-export interface AUTH0_URL_ctx_I {
+export interface AUTH0_URL_Ctx {
     AUTH0_URL?: AUTH0_URL_T;
 }
-export declare const AUTH0_URL_b: import("@ctx-core/object").Be<AUTH0_URL_ctx_I, "AUTH0_URL">;
+export declare const AUTH0_URL_b: import("@ctx-core/object").Be<AUTH0_URL_Ctx, "AUTH0_URL">;
 export declare type $AUTH0_URL_T = string;
 export interface AUTH0_URL_T extends Writable<$AUTH0_URL_T> {
 }

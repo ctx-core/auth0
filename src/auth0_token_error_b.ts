@@ -1,10 +1,10 @@
 import { _b } from '@ctx-core/object'
 import { Writable$, writable$ } from '@ctx-core/store'
 const key = 'auth0_token_error'
-export interface auth0_token_error_ctx_I {
+export interface auth0_token_error_Ctx {
 	auth0_token_error?:auth0_token_error_T
 }
-export const auth0_token_error_b = _b<auth0_token_error_ctx_I, typeof key>(key, _ctx=>{
+export const auth0_token_error_b = _b<auth0_token_error_Ctx, typeof key>(key, _ctx=>{
 	const auth0_token_error = writable$(null)
 	return auth0_token_error as auth0_token_error_T
 })

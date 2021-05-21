@@ -1,13 +1,13 @@
 import { _b } from '@ctx-core/object'
 import { get } from '@ctx-core/store'
 import { fetch } from '@ctx-core/fetch'
-import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
+import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_Ctx } from './AUTH0_DOMAIN_b'
 const key = 'post_auth0_dbconnections_change_password'
-export interface post_auth0_dbconnections_change_password_ctx_I
-	extends AUTH0_DOMAIN_ctx_I {
+export interface post_auth0_dbconnections_change_password_Ctx
+	extends AUTH0_DOMAIN_Ctx {
 	post_auth0_dbconnections_change_password?:post_auth0_dbconnections_change_password_T
 }
-export const post_auth0_dbconnections_change_password_b = _b<post_auth0_dbconnections_change_password_ctx_I, typeof key>(key, ctx=>{
+export const post_auth0_dbconnections_change_password_b = _b<post_auth0_dbconnections_change_password_Ctx, typeof key>(key, ctx=>{
 	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
 	return post_auth0_dbconnections_change_password as post_auth0_dbconnections_change_password_T
 	function post_auth0_dbconnections_change_password(body:post_auth0_dbconnections_change_password_body_T) {

@@ -1,12 +1,12 @@
 import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
 import { subscribe, Unsubscriber, Writable, writable } from '@ctx-core/store'
-import { auth0_email_b, auth0_email_ctx_I } from './auth0_email_b'
+import { auth0_email_b, auth0_email_Ctx } from './auth0_email_b'
 const key = 'auth0_opened'
-export interface auth0_opened_ctx_I extends auth0_email_ctx_I {
+export interface auth0_opened_Ctx extends auth0_email_Ctx {
 	auth0_opened?:auth0_opened_T
 }
-export const auth0_opened_b = _b<auth0_opened_ctx_I, typeof key>(key, ctx=>{
+export const auth0_opened_b = _b<auth0_opened_Ctx, typeof key>(key, ctx=>{
 	const auth0_email = auth0_email_b(ctx)
 	const auth0_opened = assign(
 		writable(null) as auth0_opened_T, {

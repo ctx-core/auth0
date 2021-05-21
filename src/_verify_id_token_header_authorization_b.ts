@@ -3,15 +3,15 @@ import { throw_unauthorized } from '@ctx-core/error'
 import { _header_authorization_jwt_token, validate_current_jwt } from '@ctx-core/jwt'
 import { validate_auth0_token_current } from './validate_auth0_token_current'
 import {
-	logout_auth0_token_error_b, logout_auth0_token_error_ctx_I
+	logout_auth0_token_error_b, logout_auth0_token_error_Ctx
 } from './logout_auth0_token_error_b'
 import type { $auth0_token_T } from './auth0_token_b'
 const key = '_verify_id_token_header_authorization'
-export interface _verify_id_token_header_authorization_ctx_I
-	extends logout_auth0_token_error_ctx_I {
+export interface _verify_id_token_header_authorization_Ctx
+	extends logout_auth0_token_error_Ctx {
 	_verify_id_token_header_authorization?:_verify_id_token_header_authorization_T
 }
-export const _verify_id_token_header_authorization_b = _b<_verify_id_token_header_authorization_ctx_I, typeof key>(key, ctx=>{
+export const _verify_id_token_header_authorization_b = _b<_verify_id_token_header_authorization_Ctx, typeof key>(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return _verify_id_token_header_authorization as _verify_id_token_header_authorization_T
 	async function _verify_id_token_header_authorization($auth0_token:$auth0_token_T) {

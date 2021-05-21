@@ -1,12 +1,12 @@
 import { _b } from '@ctx-core/object'
 import { derived, Readable } from '@ctx-core/store'
 import type { Token } from '@ctx-core/jwt'
-import { auth0_userinfo_b, auth0_userinfo_ctx_I } from './auth0_userinfo_b'
+import { auth0_userinfo_b, auth0_userinfo_Ctx } from './auth0_userinfo_b'
 const key = 'auth0_email'
-export interface auth0_email_ctx_I extends auth0_userinfo_ctx_I {
+export interface auth0_email_Ctx extends auth0_userinfo_Ctx {
 	auth0_email?:auth0_email_T
 }
-export const auth0_email_b = _b<auth0_email_ctx_I, typeof key>(key, ctx=>
+export const auth0_email_b = _b<auth0_email_Ctx, typeof key>(key, ctx=>
 	derived(auth0_userinfo_b(ctx), $auth0_userinfo=>
 		($auth0_userinfo == false)
 		? false

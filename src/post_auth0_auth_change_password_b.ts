@@ -1,16 +1,16 @@
 import { _b } from '@ctx-core/object'
 import { get } from '@ctx-core/store'
 import { fetch } from '@ctx-core/fetch'
-import { $auth0_token_T, auth0_token_b, auth0_token_ctx_I } from './auth0_token_b'
+import { $auth0_token_T, auth0_token_b, auth0_token_Ctx } from './auth0_token_b'
 import {
-	_verify_id_token_header_authorization_b, _verify_id_token_header_authorization_ctx_I
+	_verify_id_token_header_authorization_b, _verify_id_token_header_authorization_Ctx
 } from './_verify_id_token_header_authorization_b'
 const key = 'post_auth0_auth_change_password'
-export interface post_auth0_auth_change_password_ctx_I
-	extends auth0_token_ctx_I, _verify_id_token_header_authorization_ctx_I {
+export interface post_auth0_auth_change_password_Ctx
+	extends auth0_token_Ctx, _verify_id_token_header_authorization_Ctx {
 	post_auth0_auth_change_password?:post_auth0_auth_change_password_T
 }
-export const post_auth0_auth_change_password_b = _b<post_auth0_auth_change_password_ctx_I, typeof key>(key, ctx=>{
+export const post_auth0_auth_change_password_b = _b<post_auth0_auth_change_password_Ctx, typeof key>(key, ctx=>{
 	const auth0_token = auth0_token_b(ctx)
 	const _verify_id_token_header_authorization = _verify_id_token_header_authorization_b(ctx)
 	return post_auth0_auth_change_password as post_auth0_auth_change_password_T

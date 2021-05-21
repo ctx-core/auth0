@@ -1,8 +1,8 @@
 import { Writable$ } from '@ctx-core/store';
-export interface auth0_token_error_ctx_I {
+export interface auth0_token_error_Ctx {
     auth0_token_error?: auth0_token_error_T;
 }
-export declare const auth0_token_error_b: import("@ctx-core/object").Be<auth0_token_error_ctx_I, "auth0_token_error">;
+export declare const auth0_token_error_b: import("@ctx-core/object").Be<auth0_token_error_Ctx, "auth0_token_error">;
 export interface $auth0_token_error_I {
     message?: string;
     error_message?: string;

@@ -1,12 +1,12 @@
 import { _b } from '@ctx-core/object'
 import type { Token } from '@ctx-core/jwt'
 import { derived, Readable } from '@ctx-core/store'
-import { auth0_token_json_b, auth0_token_json_ctx_I, auth0_token_json_T } from './auth0_token_json_b'
+import { auth0_token_json_b, auth0_token_json_Ctx, auth0_token_json_T } from './auth0_token_json_b'
 const key = 'in_auth0_token'
-export interface in_auth0_token_ctx_I extends auth0_token_json_ctx_I {
+export interface in_auth0_token_Ctx extends auth0_token_json_Ctx {
 	in_auth0_token?:in_auth0_token_T
 }
-export const in_auth0_token_b = _b<in_auth0_token_ctx_I, typeof key>(key, ctx=>
+export const in_auth0_token_b = _b<in_auth0_token_Ctx, typeof key>(key, ctx=>
 	derived(
 		auth0_token_json_b(ctx) as auth0_token_json_T,
 		$auth0_token_json=>{

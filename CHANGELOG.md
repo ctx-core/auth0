@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 22.1.5
+
+### Patch Changes
+
+- \_ctx_I->\_Ctx
+- Updated dependencies [undefined]
+  - @ctx-core/env@10.1.5
+  - @ctx-core/error@8.1.5
+  - @ctx-core/fetch@8.1.5
+  - @ctx-core/jwt@7.1.3
+
 ## 22.1.4
 
 ### Patch Changes
@@ -1872,7 +1883,7 @@
 
 ### Patch Changes
 
-- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_ctx_I,auth_logout_msg_type,auth0_opened_type,auth0_opened
+- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_Ctx,auth_logout_msg_type,auth0_opened_type,auth0_opened
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]

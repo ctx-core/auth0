@@ -1,9 +1,9 @@
-import { AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b';
+import { AUTH0_DOMAIN_Ctx } from './AUTH0_DOMAIN_b';
 import type { auth0_client_id_optional_body_I } from './auth0_client_id_body_I';
-export interface post_auth0_passwordless_start_ctx_I extends AUTH0_DOMAIN_ctx_I {
+export interface post_auth0_passwordless_start_Ctx extends AUTH0_DOMAIN_Ctx {
     post_auth0_passwordless_start?: post_auth0_passwordless_start_T;
 }
-export declare const post_auth0_passwordless_start_b: import("@ctx-core/object").Be<post_auth0_passwordless_start_ctx_I, "post_auth0_passwordless_start">;
+export declare const post_auth0_passwordless_start_b: import("@ctx-core/object").Be<post_auth0_passwordless_start_Ctx, "post_auth0_passwordless_start">;
 export interface post_auth0_passwordless_start_optional_body_T extends auth0_client_id_optional_body_I {
     connection: string;
     send: string;

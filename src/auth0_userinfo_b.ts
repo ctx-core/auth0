@@ -2,18 +2,18 @@ import { _b } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { Token } from '@ctx-core/jwt'
-import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
-import { auth0_token_b, auth0_token_ctx_I } from './auth0_token_b'
-import { auth0_userinfo_auth0_token_b, auth0_userinfo_auth0_token_ctx_I } from './auth0_userinfo_auth0_token_b'
+import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_Ctx } from './AUTH0_DOMAIN_b'
+import { auth0_token_b, auth0_token_Ctx } from './auth0_token_b'
+import { auth0_userinfo_auth0_token_b, auth0_userinfo_auth0_token_Ctx } from './auth0_userinfo_auth0_token_b'
 import { get_auth0_userinfo } from './get_auth0_userinfo'
 const key = 'auth0_userinfo'
-export interface auth0_userinfo_ctx_I
-	extends AUTH0_DOMAIN_ctx_I,
-		auth0_token_ctx_I,
-		auth0_userinfo_auth0_token_ctx_I {
+export interface auth0_userinfo_Ctx
+	extends AUTH0_DOMAIN_Ctx,
+		auth0_token_Ctx,
+		auth0_userinfo_auth0_token_Ctx {
 	auth0_userinfo?:auth0_userinfo_T
 }
-export const auth0_userinfo_b = _b<auth0_userinfo_ctx_I, typeof key>(key, ctx=>{
+export const auth0_userinfo_b = _b<auth0_userinfo_Ctx, typeof key>(key, ctx=>{
 	const auth0_token = auth0_token_b(ctx)
 	return derived$([
 			AUTH0_DOMAIN_b(ctx),

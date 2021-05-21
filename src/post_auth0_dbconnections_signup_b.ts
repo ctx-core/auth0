@@ -1,14 +1,14 @@
 import { _b } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { get } from '@ctx-core/store'
-import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
+import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_Ctx } from './AUTH0_DOMAIN_b'
 import type { auth0_client_id_body_I } from './auth0_client_id_body_I'
 const key = 'post_auth0_dbconnections_signup'
-export interface post_auth0_dbconnections_signup_ctx_I
-	extends AUTH0_DOMAIN_ctx_I {
+export interface post_auth0_dbconnections_signup_Ctx
+	extends AUTH0_DOMAIN_Ctx {
 	post_auth0_dbconnections_signup?:post_auth0_dbconnections_signup_T
 }
-export const post_auth0_dbconnections_signup_b = _b<post_auth0_dbconnections_signup_ctx_I, typeof key>(key, ctx=>{
+export const post_auth0_dbconnections_signup_b = _b<post_auth0_dbconnections_signup_Ctx, typeof key>(key, ctx=>{
 	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
 	return post_auth0_dbconnections_signup as post_auth0_dbconnections_signup_T
 	function post_auth0_dbconnections_signup(body:post_auth0_dbconnections_signup_body_T) {
