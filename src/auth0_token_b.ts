@@ -1,4 +1,4 @@
-import { _b, assign, B } from '@ctx-core/object'
+import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
 import { derived, get, Readable, subscribe } from '@ctx-core/store'
 import { _jwt_token_exp, Token } from '@ctx-core/jwt'
@@ -10,9 +10,16 @@ import { clear_auth0_token_b, clear_auth0_token_ctx_I, clear_auth0_token_T } fro
 import { logout_auth0_token_b, logout_auth0_token_ctx_I, logout_auth0_token_T } from './logout_auth0_token_b'
 import { logout_auth0_token_error_b, logout_auth0_token_error_ctx_I } from './logout_auth0_token_error_b'
 import { set_auth0_token_b, set_auth0_token_ctx_I, set_auth0_token_T } from './set_auth0_token_b'
-export const auth0_token_b:auth0_token_b_T = _b('auth0_token', (
-	ctx:auth0_token_ctx_I
-)=>{
+const key = 'auth0_token'
+export interface auth0_token_ctx_I
+	extends auth0_token_json_ctx_I,
+		clear_auth0_token_ctx_I,
+		logout_auth0_token_ctx_I,
+		logout_auth0_token_error_ctx_I,
+		set_auth0_token_ctx_I {
+	auth0_token?:auth0_token_T
+}
+export const auth0_token_b = _b<auth0_token_ctx_I, typeof key>(key, ctx=>{
 	const auth0_token_json = auth0_token_json_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)
@@ -76,11 +83,6 @@ export const auth0_token_b:auth0_token_b_T = _b('auth0_token', (
 		}
 	}
 })
-export interface auth0_token_ctx_I
-	extends auth0_token_json_ctx_I, clear_auth0_token_ctx_I, logout_auth0_token_ctx_I,
-		logout_auth0_token_error_ctx_I, set_auth0_token_ctx_I {
-	auth0_token?:auth0_token_T
-}
 export type schedule_auth0_token_current_validate = ()=>void
 export type set_auth0_token_json_T = (event:{ key:string, newValue:any })=>void
 export type $auth0_token_T = Token
@@ -91,7 +93,6 @@ export interface auth0_token_T extends Readable<$auth0_token_T|null> {
 	schedule_auth0_token_current_validate:schedule_auth0_token_current_validate
 	set_auth0_token_json:set_auth0_token_json_T
 }
-export interface auth0_token_b_T extends B<auth0_token_T> {}
 export {
 	auth0_token_b as b__token__auth0
 }

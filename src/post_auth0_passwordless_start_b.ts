@@ -1,11 +1,14 @@
-import { _b, assign, B } from '@ctx-core/object'
+import { _b, assign } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { get } from '@ctx-core/store'
 import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_ctx_I } from './AUTH0_DOMAIN_b'
 import type { auth0_client_id_optional_body_I } from './auth0_client_id_body_I'
-export const post_auth0_passwordless_start_b:post_auth0_passwordless_start_b_T = _b('post_auth0_passwordless_start', (
-	ctx:post_auth0_passwordless_start_ctx_I
-)=>{
+const key = 'post_auth0_passwordless_start'
+export interface post_auth0_passwordless_start_ctx_I
+	extends AUTH0_DOMAIN_ctx_I {
+	post_auth0_passwordless_start?:post_auth0_passwordless_start_T
+}
+export const post_auth0_passwordless_start_b = _b<post_auth0_passwordless_start_ctx_I, typeof key>(key, ctx=>{
 	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
 	return post_auth0_passwordless_start as post_auth0_passwordless_start_T
 	function post_auth0_passwordless_start(body:post_auth0_passwordless_start_body_T) {
@@ -25,9 +28,6 @@ export const post_auth0_passwordless_start_b:post_auth0_passwordless_start_b_T =
 		)
 	}
 })
-export interface post_auth0_passwordless_start_ctx_I extends AUTH0_DOMAIN_ctx_I {
-	post_auth0_passwordless_start?:post_auth0_passwordless_start_T
-}
 export interface post_auth0_passwordless_start_optional_body_T extends auth0_client_id_optional_body_I {
 	connection:string
 	send:string
@@ -38,4 +38,3 @@ export interface post_auth0_passwordless_start_body_T extends post_auth0_passwor
 }
 export type post_auth0_passwordless_start_T =
 	(body:post_auth0_passwordless_start_body_T)=>Promise<Response>
-export interface post_auth0_passwordless_start_b_T extends B<post_auth0_passwordless_start_T> {}

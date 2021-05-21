@@ -2,10 +2,10 @@ import { B } from '@ctx-core/object';
 import { Readable } from '@ctx-core/store';
 import { $auth0_userinfo_T, auth0_userinfo_ctx_I } from './auth0_userinfo_b';
 import { $auth0_userinfo_auth0_token_T, auth0_userinfo_auth0_token_ctx_I } from './auth0_userinfo_auth0_token_b';
-export declare const auth0_userinfo_ctx_b: auth0_userinfo_ctx_b_T;
 export interface auth0_userinfo_ctx_ctx_I extends auth0_userinfo_ctx_I, auth0_userinfo_auth0_token_ctx_I {
     auth0_userinfo_ctx?: auth0_userinfo_ctx_T;
 }
+export declare const auth0_userinfo_ctx_b: import("@ctx-core/object").Be<auth0_userinfo_ctx_ctx_I, "auth0_userinfo_ctx">;
 export interface $auth0_userinfo_ctx_T {
     auth0_userinfo: $auth0_userinfo_T;
     auth0_userinfo_auth0_token: $auth0_userinfo_auth0_token_T;

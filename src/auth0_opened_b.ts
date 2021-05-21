@@ -1,10 +1,12 @@
-import { _b, assign, B } from '@ctx-core/object'
+import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
 import { subscribe, Unsubscriber, Writable, writable } from '@ctx-core/store'
 import { auth0_email_b, auth0_email_ctx_I } from './auth0_email_b'
-export const auth0_opened_b:auth0_opened_b_T = _b('auth0_opened', (
-	ctx:auth0_opened_ctx_I
-)=>{
+const key = 'auth0_opened'
+export interface auth0_opened_ctx_I extends auth0_email_ctx_I {
+	auth0_opened?:auth0_opened_T
+}
+export const auth0_opened_b = _b<auth0_opened_ctx_I, typeof key>(key, ctx=>{
 	const auth0_email = auth0_email_b(ctx)
 	const auth0_opened = assign(
 		writable(null) as auth0_opened_T, {
@@ -29,15 +31,11 @@ export const auth0_opened_b:auth0_opened_b_T = _b('auth0_opened', (
 		auth0_opened.set(false)
 	}
 })
-export interface auth0_opened_ctx_I extends auth0_email_ctx_I {
-	auth0_opened?:auth0_opened_T
-}
 export type $auth0_opened_T = string|false|null
 export interface auth0_opened_T extends Writable<$auth0_opened_T> {
 	open_auth0_change_password:()=>void
 	reload_auth0_opened:()=>void
 }
-export interface auth0_opened_b_T extends B<auth0_opened_T> {}
 export {
 	auth0_opened_b as b__opened__auth0,
 }

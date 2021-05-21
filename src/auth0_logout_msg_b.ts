@@ -1,10 +1,13 @@
-import { _b, assign, B } from '@ctx-core/object'
+import { _b, assign } from '@ctx-core/object'
 import type { maybe } from '@ctx-core/function'
 import { writable, Writable } from '@ctx-core/store'
-import { auth0_token_b } from './auth0_token_b'
-export const auth0_logout_msg_b:auth0_logout_msg_b_T = _b('auth0_logout_msg', (
-	ctx:auth0_logout_msg_ctx_I
-)=>{
+import { auth0_token_b, auth0_token_ctx_I } from './auth0_token_b'
+const key = 'auth0_logout_msg'
+export interface auth0_logout_msg_ctx_I
+	extends auth0_token_ctx_I {
+	auth0_logout_msg?:auth0_logout_msg_T
+}
+export const auth0_logout_msg_b = _b<auth0_logout_msg_ctx_I, typeof key>(key, ctx=>{
 	const auth0_logout_msg = writable(null) as auth0_logout_msg_T
 	const { logout_auth0_token } = auth0_token_b(ctx)
 	return assign(auth0_logout_msg, {
@@ -17,16 +20,12 @@ export const auth0_logout_msg_b:auth0_logout_msg_b_T = _b('auth0_logout_msg', (
 		})
 	}
 })
-export interface auth0_logout_msg_ctx_I {
-	auth0_logout_msg?:auth0_logout_msg_T
-}
 export interface $auth0_logout_msg_T {
 	time:number
 }
 export interface auth0_logout_msg_T extends Writable<maybe<$auth0_logout_msg_T>> {
 	auth0_logout():void
 }
-export interface auth0_logout_msg_b_T extends B<auth0_logout_msg_T> {}
 export {
 	auth0_logout_msg_b as b__msg__auth0_logout,
 }
