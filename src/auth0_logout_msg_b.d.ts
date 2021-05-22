@@ -4,7 +4,7 @@ import { auth0_token_Ctx } from './auth0_token_b';
 export interface auth0_logout_msg_Ctx extends auth0_token_Ctx {
     auth0_logout_msg?: auth0_logout_msg_T;
 }
-export declare const auth0_logout_msg_b: import("@ctx-core/object").Be<auth0_logout_msg_Ctx, "auth0_logout_msg">;
+export declare const auth0_logout_msg_b: import("@ctx-core/object").Be<auth0_logout_msg_Ctx, "auth0_logout_msg", auth0_logout_msg_T>;
 export interface $auth0_logout_msg_T {
     time: number;
 }

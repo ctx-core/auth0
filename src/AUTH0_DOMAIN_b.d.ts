@@ -2,7 +2,7 @@ import { Writable$ } from '@ctx-core/store';
 export interface AUTH0_DOMAIN_Ctx {
     AUTH0_DOMAIN?: AUTH0_DOMAIN_T;
 }
-export declare const AUTH0_DOMAIN_b: import("@ctx-core/object").Be<AUTH0_DOMAIN_Ctx, "AUTH0_DOMAIN">;
+export declare const AUTH0_DOMAIN_b: import("@ctx-core/object").Be<AUTH0_DOMAIN_Ctx, "AUTH0_DOMAIN", AUTH0_DOMAIN_T>;
 export declare type $AUTH0_DOMAIN_T = string;
 export interface AUTH0_DOMAIN_T extends Writable$<$AUTH0_DOMAIN_T> {
 }
