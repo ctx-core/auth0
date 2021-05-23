@@ -1,12 +1,9 @@
 import { _b } from '@ctx-core/object'
 import { derived, Readable } from '@ctx-core/store'
-import { auth0_token_b, auth0_token_Ctx } from './auth0_token_b'
+import { auth0_token_b } from './auth0_token_b'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'is_auth0_loggedin'
-export interface is_auth0_loggedin_Ctx
-	extends auth0_token_Ctx {
-	is_auth0_loggedin?:is_auth0_loggedin_T
-}
-export const is_auth0_loggedin_b = _b<is_auth0_loggedin_Ctx, typeof key>(key, ctx=>
+export const is_auth0_loggedin_b = _b<auth0_Ctx, typeof key>(key, ctx=>
 	derived(
 		auth0_token_b(ctx),
 		auth0_token=>!!auth0_token

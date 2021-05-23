@@ -1,10 +1,8 @@
 import { _b } from '@ctx-core/object'
-import { auth0_opened_b, auth0_opened_Ctx } from './auth0_opened_b'
+import { auth0_opened_b } from './auth0_opened_b'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'open_auth0_login'
-export interface open_auth0_login_I extends auth0_opened_Ctx {
-	open_auth0_login?:open_auth0_login_T
-}
-export const open_auth0_login_b = _b<open_auth0_login_I, typeof key>(key, ctx=>{
+export const open_auth0_login_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	const auth0_opened = auth0_opened_b(ctx)
 	return open_auth0_login as open_auth0_login_T
 	function open_auth0_login() {

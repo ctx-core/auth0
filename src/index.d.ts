@@ -9,6 +9,7 @@ export * from './auth0_change_password_opened_b';
 export * from './AUTH0_CLIENT_ID_b';
 export * from './auth0_client_id_body_I';
 export * from './auth0_closed_b';
+export * from './auth0_Ctx';
 export * from './AUTH0_DOMAIN_b';
 export * from './auth0_email_b';
 export * from './auth0_error_Ctx';

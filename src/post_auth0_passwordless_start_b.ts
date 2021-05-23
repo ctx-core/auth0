@@ -1,14 +1,11 @@
 import { _b, assign } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { get } from '@ctx-core/store'
-import { AUTH0_DOMAIN_b, AUTH0_DOMAIN_Ctx } from './AUTH0_DOMAIN_b'
+import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
 import type { auth0_client_id_optional_body_I } from './auth0_client_id_body_I'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'post_auth0_passwordless_start'
-export interface post_auth0_passwordless_start_Ctx
-	extends AUTH0_DOMAIN_Ctx {
-	post_auth0_passwordless_start?:post_auth0_passwordless_start_T
-}
-export const post_auth0_passwordless_start_b = _b<post_auth0_passwordless_start_Ctx, typeof key>(key, ctx=>{
+export const post_auth0_passwordless_start_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
 	return post_auth0_passwordless_start as post_auth0_passwordless_start_T
 	function post_auth0_passwordless_start(body:post_auth0_passwordless_start_body_T) {

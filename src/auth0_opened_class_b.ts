@@ -1,12 +1,9 @@
 import { _b } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
-import { $auth0_opened_T, auth0_opened_b, auth0_opened_Ctx } from './auth0_opened_b'
+import { $auth0_opened_T, auth0_opened_b } from './auth0_opened_b'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_opened_class'
-export interface auth0_opened_class_Ctx
-	extends auth0_opened_Ctx {
-	auth0_opened_class?:auth0_opened_class_T
-}
-export const auth0_opened_class_b = _b<auth0_opened_class_Ctx, typeof key>(key, ctx=>
+export const auth0_opened_class_b = _b<auth0_Ctx, typeof key>(key, ctx=>
 	derived$(auth0_opened_b(ctx),
 		(v:$auth0_opened_T)=>v
 	) as auth0_opened_class_T)

@@ -1,12 +1,10 @@
 import { _b } from '@ctx-core/object'
 import { _eql } from '@ctx-core/function'
 import { derived, Readable } from '@ctx-core/store'
-import { auth0_opened_b, auth0_opened_Ctx } from './auth0_opened_b'
+import { auth0_opened_b } from './auth0_opened_b'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_closed'
-export interface auth0_closed_Ctx extends auth0_opened_Ctx {
-	auth0_closed?:auth0_closed_T
-}
-export const auth0_closed_b = _b<auth0_closed_Ctx, typeof key>(key, ctx=>
+export const auth0_closed_b = _b<auth0_Ctx, typeof key>(key, ctx=>
 	derived(auth0_opened_b(ctx),
 		_eql(false)
 	) as auth0_closed_T)

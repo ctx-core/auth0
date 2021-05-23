@@ -3,23 +3,16 @@ import { has_dom } from '@ctx-core/dom'
 import { derived, get, Readable, subscribe } from '@ctx-core/store'
 import { _jwt_token_exp, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
-import { auth0_token_json_b, auth0_token_json_Ctx } from './auth0_token_json_b'
+import { auth0_token_json_b } from './auth0_token_json_b'
 import { in_auth0_token_b } from './in_auth0_token_b'
 import { validate_auth0_token_current } from './validate_auth0_token_current'
-import { clear_auth0_token_b, clear_auth0_token_Ctx, clear_auth0_token_T } from './clear_auth0_token_b'
-import { logout_auth0_token_b, logout_auth0_token_Ctx, logout_auth0_token_T } from './logout_auth0_token_b'
-import { logout_auth0_token_error_b, logout_auth0_token_error_Ctx } from './logout_auth0_token_error_b'
-import { set_auth0_token_b, set_auth0_token_Ctx, set_auth0_token_T } from './set_auth0_token_b'
+import { clear_auth0_token_b, clear_auth0_token_T } from './clear_auth0_token_b'
+import { logout_auth0_token_b, logout_auth0_token_T } from './logout_auth0_token_b'
+import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
+import { set_auth0_token_b, set_auth0_token_T } from './set_auth0_token_b'
+import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_token'
-export interface auth0_token_Ctx
-	extends auth0_token_json_Ctx,
-		clear_auth0_token_Ctx,
-		logout_auth0_token_Ctx,
-		logout_auth0_token_error_Ctx,
-		set_auth0_token_Ctx {
-	auth0_token?:auth0_token_T
-}
-export const auth0_token_b = _b<auth0_token_Ctx, typeof key>(key, ctx=>{
+export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	const auth0_token_json = auth0_token_json_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)
