@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 22.3.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.2.1
+  - @ctx-core/dom@8.4.1
+  - @ctx-core/email@6.2.1
+  - @ctx-core/env@10.3.1
+  - @ctx-core/error@8.2.1
+  - @ctx-core/fetch@8.2.1
+  - @ctx-core/function@17.10.1
+  - @ctx-core/jwt@7.3.1
+  - @ctx-core/local-storage@7.2.1
+  - @ctx-core/object@18.1.1
+  - @ctx-core/package@6.3.1
+  - @ctx-core/store@24.9.1
+
 ## 22.3.0
 
 ### Minor Changes
