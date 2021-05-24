@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 22.3.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.2.0
+  - @ctx-core/dom@8.4.0
+  - @ctx-core/email@6.2.0
+  - @ctx-core/env@10.3.0
+  - @ctx-core/error@8.2.0
+  - @ctx-core/fetch@8.2.0
+  - @ctx-core/function@17.10.0
+  - @ctx-core/jwt@7.3.0
+  - @ctx-core/local-storage@7.2.0
+  - @ctx-core/object@18.1.0
+  - @ctx-core/package@6.3.0
+  - @ctx-core/store@24.9.0
+
 ## 22.2.3
 
 ### Patch Changes

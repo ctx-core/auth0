@@ -1,3 +1,0 @@
-import type { auth0_client_id_body_I, auth0_client_id_optional_body_I } from './auth0_client_id_body_I';
-export declare function _auth0_body_b</*@formatter:off*/ Ctx extends object, In extends auth0_client_id_optional_body_I = auth0_client_id_optional_body_I, Out extends auth0_client_id_body_I = auth0_client_id_body_I>(ctx: Ctx, _key: (base: string) => keyof Ctx): _auth0_body_T<In, Out>;
-export declare type _auth0_body_T</*@formatter:off*/ In extends auth0_client_id_optional_body_I = auth0_client_id_optional_body_I, Out extends auth0_client_id_body_I = auth0_client_id_body_I> = (body: In) => Out;
