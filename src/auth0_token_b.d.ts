@@ -4,7 +4,7 @@ import { clear_auth0_token_T } from './clear_auth0_token_b';
 import { logout_auth0_token_T } from './logout_auth0_token_b';
 import { set_auth0_token_T } from './set_auth0_token_b';
 import type { auth0_Ctx } from './auth0_Ctx';
-export declare const auth0_token_b: import("@ctx-core/object").Be<auth0_Ctx, "auth0_token", auth0_token_T>;
+export declare const auth0_token_b: (ctx: auth0_Ctx, opts?: import("@ctx-core/object")._be_opts_T) => auth0_token_T;
 export declare type schedule_auth0_token_current_validate = () => void;
 export declare type set_auth0_token_json_T = (event: {
     key: string;
