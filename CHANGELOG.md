@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 22.4.0
+
+### Minor Changes
+
+- fix tsc build directory issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.3.0
+  - @ctx-core/dom@8.5.0
+  - @ctx-core/email@6.3.0
+  - @ctx-core/env@10.4.0
+  - @ctx-core/error@8.3.0
+  - @ctx-core/fetch@8.3.0
+  - @ctx-core/function@17.11.0
+  - @ctx-core/jwt@7.4.0
+  - @ctx-core/local-storage@7.3.0
+  - @ctx-core/object@18.2.0
+  - @ctx-core/package@6.4.0
+  - @ctx-core/store@24.10.0
+
 ## 22.3.1
 
 ### Patch Changes
