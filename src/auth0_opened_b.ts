@@ -1,13 +1,13 @@
 import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
-import { subscribe, Unsubscriber, Writable, writable } from '@ctx-core/store'
+import { subscribe, Unsubscriber, Writable$, writable$ } from '@ctx-core/store'
 import { auth0_email_b } from './auth0_email_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_opened'
 export const auth0_opened_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	const auth0_email = auth0_email_b(ctx)
 	const auth0_opened = assign(
-		writable(null) as auth0_opened_T, {
+		writable$(null) as auth0_opened_T, {
 			open_auth0_change_password,
 			reload_auth0_opened,
 		}
@@ -30,7 +30,7 @@ export const auth0_opened_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	}
 })
 export type $auth0_opened_T = string|false|null
-export interface auth0_opened_T extends Writable<$auth0_opened_T> {
+export interface auth0_opened_T extends Writable$<$auth0_opened_T> {
 	open_auth0_change_password:()=>void
 	reload_auth0_opened:()=>void
 }

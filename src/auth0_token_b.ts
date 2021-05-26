@@ -1,6 +1,6 @@
 import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
-import { derived, get, Readable, subscribe } from '@ctx-core/store'
+import { derived$, get, Readable$, subscribe } from '@ctx-core/store'
 import { _jwt_token_exp, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
 import { auth0_token_json_b } from './auth0_token_json_b'
@@ -18,7 +18,7 @@ export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	const logout_auth0_token = logout_auth0_token_b(ctx)
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	const set_auth0_token = set_auth0_token_b(ctx)
-	const auth0_token = derived(
+	const auth0_token = derived$(
 		in_auth0_token_b(ctx),
 		($auth0_token:$auth0_token_T|null)=>
 			($auth0_token && ($auth0_token as Token).error)
@@ -79,7 +79,7 @@ export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 export type schedule_auth0_token_current_validate = ()=>void
 export type set_auth0_token_json_T = (event:{ key:string, newValue:any })=>void
 export type $auth0_token_T = Token
-export interface auth0_token_T extends Readable<$auth0_token_T|null> {
+export interface auth0_token_T extends Readable$<$auth0_token_T|null> {
 	set_auth0_token:set_auth0_token_T
 	clear_auth0_token:clear_auth0_token_T
 	logout_auth0_token:logout_auth0_token_T
