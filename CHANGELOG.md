@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 22.4.8
+
+### Patch Changes
+
+- fix: \_h_b_h: return value
+- Updated dependencies [undefined]
+  - @ctx-core/env@10.4.3
+
 ## 22.4.7
 
 ### Patch Changes
