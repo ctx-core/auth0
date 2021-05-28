@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 22.4.7
+
+### Patch Changes
+
+- - auth0_b_h_b
+- Updated dependencies [undefined]
+  - @ctx-core/env@10.4.2
+
 ## 22.4.6
 
 ### Patch Changes
@@ -2092,7 +2100,7 @@
 
 ### Patch Changes
 
-- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_Ctx,auth_logout_msg_type,auth0_opened_type,auth0_opened
+- interface instead of type: AUTH0_CLIENT_ID_type,AUTH0_DOMAIN_type,auth0_error_ctx_I,auth_logout_msg_type,auth0_opened_type,auth0_opened
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]
