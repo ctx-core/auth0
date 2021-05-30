@@ -1,16 +1,15 @@
 import { _b } from '@ctx-core/object'
-import { get } from '@ctx-core/store'
 import { fetch } from '@ctx-core/fetch'
-import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
+import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'post_auth0_dbconnections_change_password'
 export const post_auth0_dbconnections_change_password_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
-	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
+	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_dbconnections_change_password as post_auth0_dbconnections_change_password_T
 	function post_auth0_dbconnections_change_password(body:post_auth0_dbconnections_change_password_body_T) {
 		const promise =
 			fetch(
-				`https://${get(AUTH0_DOMAIN)}/dbconnections/change_password`,
+				`https://${AUTH0_DOMAIN$._}/dbconnections/change_password`,
 				{
 					method: 'POST',
 					headers:

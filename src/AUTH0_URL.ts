@@ -1,2 +1,2 @@
-import { AUTH0_URL_fn } from './AUTH0_URL_fn'
-export const AUTH0_URL:string = AUTH0_URL_fn()
+import { AUTH0_URL_ } from './AUTH0_URL_'
+export const AUTH0_URL:string = AUTH0_URL_()

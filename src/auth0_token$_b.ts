@@ -1,29 +1,29 @@
 import { _b, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
 import { derived$, get, Readable$, subscribe } from '@ctx-core/store'
-import { _jwt_token_exp, Token } from '@ctx-core/jwt'
+import { jwt_token_exp_, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
-import { auth0_token_json_b } from './auth0_token_json_b'
-import { in_auth0_token_b } from './in_auth0_token_b'
+import { auth0_token_json$_b } from './auth0_token_json$_b'
+import { in_auth0_token$_b } from './in_auth0_token$_b'
 import { validate_auth0_token_current } from './validate_auth0_token_current'
 import { clear_auth0_token_b, clear_auth0_token_T } from './clear_auth0_token_b'
 import { logout_auth0_token_b, logout_auth0_token_T } from './logout_auth0_token_b'
 import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
 import { set_auth0_token_b, set_auth0_token_T } from './set_auth0_token_b'
 import type { auth0_Ctx } from './auth0_Ctx'
-const key = 'auth0_token'
-export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
-	const auth0_token_json = auth0_token_json_b(ctx)
+const key = 'auth0_token$'
+export const auth0_token$_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
+	const auth0_token_json = auth0_token_json$_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	const set_auth0_token = set_auth0_token_b(ctx)
-	const auth0_token = derived$(
-		in_auth0_token_b(ctx),
-		($auth0_token:$auth0_token_T|null)=>
+	const auth0_token$ = derived$(
+		in_auth0_token$_b(ctx),
+		($auth0_token:auth0_token_T|null)=>
 			($auth0_token && ($auth0_token as Token).error)
 			? false
-			: $auth0_token as Token) as auth0_token_T
+			: $auth0_token as Token) as auth0_token$_T
 	if (has_dom) {
 		subscribe(auth0_token_json,
 			$auth0_token_json=>{
@@ -41,24 +41,24 @@ export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 	if (has_dom) {
 		window.addEventListener('storage', set_auth0_token_json)
 	}
-	return assign(auth0_token, {
+	return assign(auth0_token$, {
 		set_auth0_token,
 		clear_auth0_token,
 		logout_auth0_token,
 		schedule_auth0_token_current_validate,
 		set_auth0_token_json,
-	}) as auth0_token_T
+	}) as auth0_token$_T
 	function schedule_auth0_token_current_validate() {
-		const $auth0_token:$auth0_token_T|null = get(auth0_token)
+		const $auth0_token:auth0_token_T|null = get(auth0_token$)
 		const id_token = $auth0_token && $auth0_token.id_token
 		if (!id_token) return
-		const jwt_token_exp = _jwt_token_exp(id_token)
+		const jwt_token_exp = jwt_token_exp_(id_token)
 		const now = Date.now()
 		const validate_millis = now - jwt_token_exp
 		setTimeout(
 			async ()=>{
 				try {
-					validate_auth0_token_current($auth0_token as $auth0_token_T)
+					validate_auth0_token_current($auth0_token as auth0_token_T)
 				} catch (error) {
 					if (error.type === 'bad_credentials') {
 						console.error(error)
@@ -78,8 +78,8 @@ export const auth0_token_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
 })
 export type schedule_auth0_token_current_validate = ()=>void
 export type set_auth0_token_json_T = (event:{ key:string, newValue:any })=>void
-export type $auth0_token_T = Token
-export interface auth0_token_T extends Readable$<$auth0_token_T|null> {
+export type auth0_token_T = Token
+export interface auth0_token$_T extends Readable$<auth0_token_T|null> {
 	set_auth0_token:set_auth0_token_T
 	clear_auth0_token:clear_auth0_token_T
 	logout_auth0_token:logout_auth0_token_T
@@ -87,5 +87,5 @@ export interface auth0_token_T extends Readable$<$auth0_token_T|null> {
 	set_auth0_token_json:set_auth0_token_json_T
 }
 export {
-	auth0_token_b as b__token__auth0
+	auth0_token$_b as b__token__auth0
 }

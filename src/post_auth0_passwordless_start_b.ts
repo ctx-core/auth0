@@ -1,21 +1,20 @@
 import { _b, assign } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
-import { get } from '@ctx-core/store'
-import { AUTH0_DOMAIN_b } from './AUTH0_DOMAIN_b'
+import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b'
 import type { auth0_client_id_optional_body_I } from './auth0_client_id_body_I'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'post_auth0_passwordless_start'
 export const post_auth0_passwordless_start_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
-	const AUTH0_DOMAIN = AUTH0_DOMAIN_b(ctx)
+	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_passwordless_start as post_auth0_passwordless_start_T
 	function post_auth0_passwordless_start(body:post_auth0_passwordless_start_body_T) {
 		const { hostname, pathname } = window.location
 		const redirect_uri = `https://${hostname}/auth?redirect_url=${pathname}`
 		assign(body, { authParams: { redirect_uri } })
-		const $AUTH0_DOMAIN = get(AUTH0_DOMAIN)
+		const AUTH0_DOMAIN = AUTH0_DOMAIN$._
 		return (
 			fetch(
-				`https://${$AUTH0_DOMAIN}/passwordless/start`,
+				`https://${AUTH0_DOMAIN}/passwordless/start`,
 				{
 					method: 'POST',
 					headers:

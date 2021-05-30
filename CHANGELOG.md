@@ -1,5 +1,28 @@
 # @ctx-core/auth0
 
+## 23.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/dom@9.0.0
+  - @ctx-core/email@7.0.0
+  - @ctx-core/env@11.0.0
+  - @ctx-core/error@9.0.0
+  - @ctx-core/fetch@9.0.0
+  - @ctx-core/function@18.0.0
+  - @ctx-core/jwt@8.0.0
+  - @ctx-core/local-storage@8.0.0
+  - @ctx-core/object@19.0.0
+  - @ctx-core/package@7.0.0
+  - @ctx-core/store@25.0.0
+
 ## 22.4.9
 
 ### Patch Changes
@@ -1493,7 +1516,7 @@
 
 ### Patch Changes
 
-- fix: auth0_token_json_b: type alias export
+- fix: auth0_token_json\$\_b: type alias export
 - Updated dependencies [undefined]
   - @ctx-core/dom@8.1.0
   - @ctx-core/fetch@8.0.3
