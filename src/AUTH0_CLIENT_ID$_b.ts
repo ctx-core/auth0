@@ -1,8 +1,8 @@
-import { _b } from '@ctx-core/object'
+import { be_ } from '@ctx-core/object'
 import { Writable$, writable$ } from '@ctx-core/store'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'AUTH0_CLIENT_ID$'
-export const AUTH0_CLIENT_ID$_b = _b<auth0_Ctx, typeof key>(key, (
+export const AUTH0_CLIENT_ID$_b = be_<auth0_Ctx, typeof key>(key, (
 	_ctx
 )=>
 	writable$(process.env.AUTH0_CLIENT_ID as string) as AUTH0_CLIENT_ID$_T)

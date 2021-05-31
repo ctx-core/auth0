@@ -1,4 +1,4 @@
-import { _b, assign } from '@ctx-core/object'
+import { be_, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
 import { derived$, get, Readable$, subscribe } from '@ctx-core/store'
 import { jwt_token_exp_, Token } from '@ctx-core/jwt'
@@ -12,7 +12,7 @@ import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
 import { set_auth0_token_b, set_auth0_token_T } from './set_auth0_token_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_token$'
-export const auth0_token$_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
+export const auth0_token$_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
 	const auth0_token_json = auth0_token_json$_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)

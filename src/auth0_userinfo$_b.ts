@@ -1,5 +1,5 @@
 import type { nullish } from '@ctx-core/function'
-import { _b } from '@ctx-core/object'
+import { be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { Token } from '@ctx-core/jwt'
@@ -9,7 +9,7 @@ import { auth0_userinfo_auth0_token$_b } from './auth0_userinfo_auth0_token$_b'
 import { get_auth0_userinfo } from './get_auth0_userinfo'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_userinfo$'
-export const auth0_userinfo$_b = _b<auth0_Ctx, typeof key>(key, ctx=>{
+export const auth0_userinfo$_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
 	const auth0_token$ = auth0_token$_b(ctx)
 	return derived$([
 			AUTH0_DOMAIN$_b(ctx),

@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 23.0.4
+
+### Patch Changes
+
+- _b->be_
+- Updated dependencies [undefined]
+  - @ctx-core/env@11.0.3
+  - @ctx-core/object@19.0.2
+
 ## 23.0.3
 
 ### Patch Changes
@@ -1543,7 +1552,7 @@
 
 ### Patch Changes
 
-- fix: auth0_token_json\$\_b: type alias export
+- fix: auth0*token_json\$\be*: type alias export
 - Updated dependencies [undefined]
   - @ctx-core/dom@8.1.0
   - @ctx-core/fetch@8.0.3
@@ -2296,7 +2305,7 @@
 
 ### Minor Changes
 
-- \_b: required ctx argument & generic type updates
+- \be\_: required ctx argument & generic type updates
 - Extract separate modules
 
 ### Patch Changes
