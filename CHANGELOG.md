@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 23.0.11
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/env@11.0.10
+
 ## 23.0.10
 
 ### Patch Changes
