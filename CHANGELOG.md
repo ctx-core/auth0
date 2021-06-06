@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 23.0.16
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.3.2
+  - @ctx-core/dom@9.0.9
+  - @ctx-core/email@7.0.1
+  - @ctx-core/env@11.0.15
+  - @ctx-core/error@9.0.3
+  - @ctx-core/fetch@9.0.5
+  - @ctx-core/function@18.1.2
+  - @ctx-core/jwt@8.0.4
+  - @ctx-core/local-storage@8.0.3
+  - @ctx-core/object@19.1.2
+  - @ctx-core/package@7.0.1
+  - @ctx-core/store@25.1.12
+
 ## 23.0.15
 
 ### Patch Changes
