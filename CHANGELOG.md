@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 23.0.17
+
+### Patch Changes
+
+- version bump: run build
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.3.3
+  - @ctx-core/dom@9.0.10
+  - @ctx-core/email@7.0.2
+  - @ctx-core/env@11.0.16
+  - @ctx-core/error@9.0.4
+  - @ctx-core/fetch@9.0.6
+  - @ctx-core/function@18.1.3
+  - @ctx-core/jwt@8.0.5
+  - @ctx-core/local-storage@8.0.4
+  - @ctx-core/object@19.1.3
+  - @ctx-core/package@7.0.2
+  - @ctx-core/store@25.1.13
+
 ## 23.0.16
 
 ### Patch Changes
