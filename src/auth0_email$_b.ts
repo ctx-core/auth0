@@ -11,8 +11,7 @@ export const auth0_email$_b = be_<auth0_Ctx, typeof key>(key, ctx=>
 		? null
 		: (auth0_userinfo as Token)?.email
 	) as auth0_email$_T)
-export type auth0_email_T = Token|nullish
-export type auth0_email$_T = Readable$<auth0_email_T>
+export type auth0_email$_T = Readable$<string|nullish>
 export {
 	auth0_email$_b as b__email__auth0,
 	auth0_email$_b as b__email,

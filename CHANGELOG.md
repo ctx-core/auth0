@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 23.0.22
+
+### Patch Changes
+
+- fix: auth0_email\$\_b: return type: string|nullish
+
 ## 23.0.21
 
 ### Patch Changes
