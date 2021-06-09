@@ -1,5 +1,18 @@
 # @ctx-core/auth0
 
+## 23.0.19
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/dom@9.0.12
+  - @ctx-core/env@11.0.18
+  - @ctx-core/error@9.0.6
+  - @ctx-core/fetch@9.0.9
+  - @ctx-core/local-storage@8.0.6
+  - @ctx-core/store@25.1.18
+
 ## 23.0.18
 
 ### Patch Changes
