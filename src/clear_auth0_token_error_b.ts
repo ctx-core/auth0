@@ -1,8 +1,8 @@
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'clear_auth0_token_error'
-export const clear_auth0_token_error_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
+export const clear_auth0_token_error_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return clear_auth0_token_error as clear_auth0_token_error_T
 	function clear_auth0_token_error() {

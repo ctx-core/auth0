@@ -1,10 +1,10 @@
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import type { Token } from '@ctx-core/jwt'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { auth0_token_json$_b, auth0_token_json$_T } from './auth0_token_json$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'in_auth0_token$'
-export const in_auth0_token$_b = be_<auth0_Ctx, typeof key>(key, ctx=>
+export const in_auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 	derived$(
 		auth0_token_json$_b(ctx) as auth0_token_json$_T,
 		auth0_token_json=>{

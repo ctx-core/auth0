@@ -1,9 +1,9 @@
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'post_auth0_dbconnections_change_password'
-export const post_auth0_dbconnections_change_password_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
+export const post_auth0_dbconnections_change_password_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_dbconnections_change_password as post_auth0_dbconnections_change_password_T
 	function post_auth0_dbconnections_change_password(body:post_auth0_dbconnections_change_password_body_T) {

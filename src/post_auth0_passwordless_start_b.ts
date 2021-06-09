@@ -1,10 +1,10 @@
-import { be_, assign } from '@ctx-core/object'
+import { B, be_, assign } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b'
 import type { auth0_client_id_optional_body_I } from './auth0_client_id_body_I'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'post_auth0_passwordless_start'
-export const post_auth0_passwordless_start_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
+export const post_auth0_passwordless_start_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_passwordless_start as post_auth0_passwordless_start_T
 	function post_auth0_passwordless_start(body:post_auth0_passwordless_start_body_T) {

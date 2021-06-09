@@ -1,4 +1,4 @@
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { throw_unauthorized } from '@ctx-core/error'
 import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core/jwt'
 import { validate_auth0_token_current } from './validate_auth0_token_current'
@@ -6,7 +6,7 @@ import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
 import type { auth0_token_T } from './auth0_token$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'verify_id_token_header_authorization_'
-export const verify_id_token_header_authorization__b = be_<auth0_Ctx, typeof key>(key, ctx=>{
+export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return verify_id_token_header_authorization_ as verify_id_token_header_authorization__T
 	async function verify_id_token_header_authorization_($auth0_token:auth0_token_T) {

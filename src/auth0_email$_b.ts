@@ -1,11 +1,11 @@
 import type { nullish } from '@ctx-core/function'
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
 import type { Token } from '@ctx-core/jwt'
 import { auth0_userinfo$_b } from './auth0_userinfo$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_email$'
-export const auth0_email$_b = be_<auth0_Ctx, typeof key>(key, ctx=>
+export const auth0_email$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 	derived$(auth0_userinfo$_b(ctx), auth0_userinfo=>
 		(auth0_userinfo === null)
 		? null

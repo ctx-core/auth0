@@ -1,10 +1,10 @@
 import { eql_ } from '@ctx-core/function'
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { auth0_token$_b } from './auth0_token$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'is_auth0_loggedout$'
-export const is_auth0_loggedout$_b = be_<auth0_Ctx, typeof key>(key, ctx=>
+export const is_auth0_loggedout$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 	derived$(
 		auth0_token$_b(ctx), eql_(false)
 	) as is_auth0_loggedout$_T)

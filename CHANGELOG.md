@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 23.0.23
+
+### Patch Changes
+
+- fix: B: inferred type issue
+- Updated dependencies [undefined]
+  - @ctx-core/env@11.0.20
+
 ## 23.0.22
 
 ### Patch Changes

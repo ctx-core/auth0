@@ -1,10 +1,10 @@
 import { eq_ } from '@ctx-core/function'
-import { be_ } from '@ctx-core/object'
+import { B, be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { auth0_opened_T, auth0_opened$_b } from './auth0_opened$_b'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'auth0_forgot_password_check_email_opened$'
-export const auth0_forgot_password_check_email_opened$_b = be_<auth0_Ctx, typeof key>(key, (
+export const auth0_forgot_password_check_email_opened$_b:B<auth0_Ctx, typeof key> = be_(key, (
 	ctx
 )=>
 	derived$(auth0_opened$_b(ctx),
