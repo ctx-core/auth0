@@ -9,10 +9,10 @@ export const auth0_email$_b = be_<auth0_Ctx, typeof key>(key, ctx=>
 	derived$(auth0_userinfo$_b(ctx), auth0_userinfo=>
 		(auth0_userinfo === null)
 		? null
-		: auth0_userinfo && (auth0_userinfo as Token).email
+		: (auth0_userinfo as Token)?.email
 	) as auth0_email$_T)
 export type auth0_email_T = Token|nullish
-export interface auth0_email$_T extends Readable$<auth0_email_T> {}
+export type auth0_email$_T = Readable$<auth0_email_T>
 export {
 	auth0_email$_b as b__email__auth0,
 	auth0_email$_b as b__email,

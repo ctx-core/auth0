@@ -57,9 +57,7 @@ export const auth0_userinfo$_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
 		}
 	) as auth0_userinfo$_T
 })
-export type auth0_userinfo_T = Token
-export type maybe_auth0_userinfo_T = auth0_userinfo_T|nullish
-export interface auth0_userinfo$_T extends Readable$<maybe_auth0_userinfo_T> {}
+export type auth0_userinfo$_T = Readable$<Token|nullish>
 export {
 	auth0_userinfo$_b as b__auth0_userinfo,
 }

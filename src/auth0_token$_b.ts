@@ -1,6 +1,7 @@
+import type { nullish } from '@ctx-core/function'
 import { be_, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
-import { derived$, get, Readable$, subscribe } from '@ctx-core/store'
+import { derived$, Readable$, subscribe } from '@ctx-core/store'
 import { jwt_token_exp_, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
 import { auth0_token_json$_b } from './auth0_token_json$_b'
@@ -49,16 +50,16 @@ export const auth0_token$_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
 		set_auth0_token_json,
 	}) as auth0_token$_T
 	function schedule_auth0_token_current_validate() {
-		const $auth0_token:auth0_token_T|null = get(auth0_token$)
-		const id_token = $auth0_token && $auth0_token.id_token
+		const auth0_token = auth0_token$._
+		const id_token:string|nullish = auth0_token?.id_token
 		if (!id_token) return
-		const jwt_token_exp = jwt_token_exp_(id_token)
+		const jwt_token_exp:number = jwt_token_exp_(id_token as string)
 		const now = Date.now()
 		const validate_millis = now - jwt_token_exp
 		setTimeout(
 			async ()=>{
 				try {
-					validate_auth0_token_current($auth0_token as auth0_token_T)
+					validate_auth0_token_current(auth0_token as auth0_token_T)
 				} catch (error) {
 					if (error.type === 'bad_credentials') {
 						console.error(error)
@@ -79,7 +80,7 @@ export const auth0_token$_b = be_<auth0_Ctx, typeof key>(key, ctx=>{
 export type schedule_auth0_token_current_validate = ()=>void
 export type set_auth0_token_json_T = (event:{ key:string, newValue:any })=>void
 export type auth0_token_T = Token
-export interface auth0_token$_T extends Readable$<auth0_token_T|null> {
+export interface auth0_token$_T extends Readable$<Token|nullish> {
 	set_auth0_token:set_auth0_token_T
 	clear_auth0_token:clear_auth0_token_T
 	logout_auth0_token:logout_auth0_token_T

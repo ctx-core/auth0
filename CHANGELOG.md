@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 23.0.21
+
+### Patch Changes
+
+- fix: auth0_email\$\_b: type issue
+
 ## 23.0.20
 
 ### Patch Changes
