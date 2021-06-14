@@ -1,0 +1,1 @@
+{"version":3,"file":"validate_auth0_token_current.js","sourceRoot":"","sources":["../validate_auth0_token_current.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,eAAe,CAAA;AAEpD,MAAM,UAAU,4BAA4B,CAAC,WAAyB;IACrE,MAAM,QAAQ,GAAG,WAAW,IAAI,WAAW,CAAC,QAAQ,CAAA;IACpD,oBAAoB,CAAC,QAAQ,CAAC,CAAA;AAC/B,CAAC"}
