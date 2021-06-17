@@ -11,6 +11,6 @@ export function validate_auth0_email(data) {
         email_error.email = 'Please enter a valid email address.';
         has_errors = true;
     }
-    return has_errors ? email_error : false;
+    return has_errors ? email_error : null;
 }
 //# sourceMappingURL=src/validate_auth0_email.js.map

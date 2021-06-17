@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 24.0.8
+
+### Patch Changes
+
+- fix: validate_auth0_forgot_password: build issue
+
 ## 24.0.7
 
 ### Patch Changes
