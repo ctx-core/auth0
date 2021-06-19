@@ -34,7 +34,7 @@
 		"@ctx-core/email": "workspace:^8.0.2",
 		"@ctx-core/env": "workspace:^12.0.6",
 		"@ctx-core/error": "workspace:^10.0.2",
-		"@ctx-core/fetch": "workspace:^10.0.4",
+		"@ctx-core/fetch": "workspace:^10.0.5",
 		"@ctx-core/function": "workspace:^19.1.2",
 		"@ctx-core/jwt": "workspace:^9.0.3",
 		"@ctx-core/local-storage": "workspace:^9.0.2",
