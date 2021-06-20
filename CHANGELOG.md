@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.15
+
+### Patch Changes
+
+- fix: deploying \*.js files
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.8
+  - @ctx-core/combinators@7.0.6
+  - @ctx-core/dom@10.0.7
+  - @ctx-core/email@8.0.6
+  - @ctx-core/env@12.0.10
+  - @ctx-core/error@10.0.6
+  - @ctx-core/fetch@10.0.11
+  - @ctx-core/function@19.1.6
+  - @ctx-core/jwt@9.0.7
+  - @ctx-core/local-storage@9.0.6
+  - @ctx-core/object@20.0.7
+  - @ctx-core/package@8.0.6
+  - @ctx-core/store@26.0.8
+
 ## 24.0.14
 
 ### Patch Changes
