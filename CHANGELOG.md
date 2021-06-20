@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.13
+
+### Patch Changes
+
+- npm run prepare instead of npm run prepublishOnly
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.6
+  - @ctx-core/combinators@7.0.4
+  - @ctx-core/dom@10.0.5
+  - @ctx-core/email@8.0.4
+  - @ctx-core/env@12.0.8
+  - @ctx-core/error@10.0.4
+  - @ctx-core/fetch@10.0.9
+  - @ctx-core/function@19.1.4
+  - @ctx-core/jwt@9.0.5
+  - @ctx-core/local-storage@9.0.4
+  - @ctx-core/object@20.0.5
+  - @ctx-core/package@8.0.4
+  - @ctx-core/store@26.0.6
+
 ## 24.0.12
 
 ### Patch Changes
