@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.14
+
+### Patch Changes
+
+- "prepare": "npm run clean && npm run compile"
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.7
+  - @ctx-core/combinators@7.0.5
+  - @ctx-core/dom@10.0.6
+  - @ctx-core/email@8.0.5
+  - @ctx-core/env@12.0.9
+  - @ctx-core/error@10.0.5
+  - @ctx-core/fetch@10.0.10
+  - @ctx-core/function@19.1.5
+  - @ctx-core/jwt@9.0.6
+  - @ctx-core/local-storage@9.0.5
+  - @ctx-core/object@20.0.6
+  - @ctx-core/package@8.0.5
+  - @ctx-core/store@26.0.7
+
 ## 24.0.13
 
 ### Patch Changes
