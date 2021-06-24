@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.19
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.11
+  - @ctx-core/combinators@7.0.8
+  - @ctx-core/dom@10.0.10
+  - @ctx-core/email@8.0.8
+  - @ctx-core/env@12.0.14
+  - @ctx-core/error@10.1.1
+  - @ctx-core/fetch@10.0.14
+  - @ctx-core/function@19.1.8
+  - @ctx-core/jwt@9.0.10
+  - @ctx-core/local-storage@9.0.9
+  - @ctx-core/object@20.1.1
+  - @ctx-core/package@8.0.8
+  - @ctx-core/store@26.0.12
+
 ## 24.0.18
 
 ### Patch Changes
