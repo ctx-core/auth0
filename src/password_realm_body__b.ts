@@ -8,7 +8,7 @@ export function password_realm_body__b</*@formatter:off*/
 	Out extends password_realm_body_T = password_realm_body_T
 /*@formatter:on*/>(
 	ctx:Ctx, key:Key, auth0_body_fn:(body:auth0_client_id_optional_body_I)=>Out
-) {
+):password_realm_body__T<Out> {
 	return be_<Ctx, Key, password_realm_body__T<Out>>(key, ()=>{
 		return password_realm_body_ as password_realm_body__T<Out>
 		function password_realm_body_(data:Partial<Out>) {

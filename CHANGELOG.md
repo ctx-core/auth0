@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.24
+
+### Patch Changes
+
+- dist directory
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.16
+  - @ctx-core/combinators@7.0.9
+  - @ctx-core/dom@10.0.15
+  - @ctx-core/email@8.0.9
+  - @ctx-core/env@12.0.19
+  - @ctx-core/error@10.1.5
+  - @ctx-core/fetch@10.0.18
+  - @ctx-core/function@19.1.10
+  - @ctx-core/jwt@9.0.13
+  - @ctx-core/local-storage@9.0.13
+  - @ctx-core/object@20.2.2
+  - @ctx-core/package@8.0.11
+  - @ctx-core/store@26.0.17
+
 ## 24.0.23
 
 ### Patch Changes

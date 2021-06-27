@@ -9,7 +9,7 @@ export const auth0_signup_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 		eq_<auth0_opened_T>('signup')
 	) as auth0_signup_opened$_T)
 export type auth0_signup_opened_T = boolean
-export interface auth0_signup_opened$_T extends Readable$<auth0_signup_opened_T> {}
+export type auth0_signup_opened$_T = Readable$<auth0_signup_opened_T>
 export {
 	auth0_signup_opened$_b as b__opened__signup,
 }
