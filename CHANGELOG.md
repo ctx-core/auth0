@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 24.0.33
+
+### Patch Changes
+
+- typescript: ^4.3.4 -> ^4.3.5
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.1.2
+  - @ctx-core/combinators@7.0.10
+  - @ctx-core/dom@10.0.20
+  - @ctx-core/email@8.0.10
+  - @ctx-core/env@12.0.23
+  - @ctx-core/error@10.1.6
+  - @ctx-core/fetch@10.0.25
+  - @ctx-core/function@19.1.12
+  - @ctx-core/jwt@9.0.15
+  - @ctx-core/local-storage@9.0.14
+  - @ctx-core/object@20.2.4
+  - @ctx-core/package@8.0.15
+  - @ctx-core/store@26.0.20
+
 ## 24.0.32
 
 ### Patch Changes
