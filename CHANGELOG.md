@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 25.0.5
+
+### Patch Changes
+
+- fix: import.meta.url instead of \_\_dirname
+- Updated dependencies [undefined]
+  - @ctx-core/fetch@11.0.5
+  - @ctx-core/package@9.0.3
+
 ## 25.0.4
 
 ### Patch Changes
