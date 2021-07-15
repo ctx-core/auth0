@@ -1,7 +1,7 @@
 import type { falsy } from '@ctx-core/function'
 import { B, be_ } from '@ctx-core/object'
-import { auth0_token_json$_b } from './auth0_token_json$_b'
-import type { auth0_token_T } from './auth0_token$_b'
+import { auth0_token_json$_b } from './auth0_token_json$_b.js'
+import type { auth0_token_T } from './auth0_token$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'set_auth0_token'
 export const set_auth0_token_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{

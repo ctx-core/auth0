@@ -1,6 +1,6 @@
 import { be_, assign } from '@ctx-core/object'
-import { AUTH0_CLIENT_ID$_b } from './AUTH0_CLIENT_ID$_b'
-import type { auth0_client_id_body_I, auth0_client_id_optional_body_I } from './auth0_client_id_body_I'
+import { AUTH0_CLIENT_ID$_b } from './AUTH0_CLIENT_ID$_b.js'
+import type { auth0_client_id_body_I, auth0_client_id_optional_body_I } from './auth0_client_id_body_I.js'
 export function auth0_body__b</*@formatter:off*/
 	Ctx extends object,
 	Key extends keyof Ctx,

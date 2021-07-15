@@ -1,5 +1,5 @@
-import type { auth0_password_confirmation_data_I } from './auth0_password_confirmation_data_I'
-import type { auth0_token_error_I } from './auth0_token_error$_b'
+import type { auth0_password_confirmation_data_I } from './auth0_password_confirmation_data_I.js'
+import type { auth0_token_error_I } from './auth0_token_error$_b.js'
 export function validate_auth0_password_confirmation(data:auth0_password_confirmation_data_I) {
 	const { password, password_confirmation } = data
 	const change_password_error:change_password_error_I = {}

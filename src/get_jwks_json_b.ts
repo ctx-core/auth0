@@ -1,6 +1,6 @@
 import { B, be_ } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
-import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b'
+import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'get_jwks_json'
 export const get_jwks_json_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{

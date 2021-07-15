@@ -1,5 +1,5 @@
 import type { nullish } from '@ctx-core/function'
-import type { auth0_token_T } from './auth0_token$_b'
+import type { auth0_token_T } from './auth0_token$_b.js'
 export function access_token_header_authorization_(auth0_token:auth0_token_T):access_token_header_authorization_T {
 	const access_token_header_authorization =
 		auth0_access_token_authorization_()

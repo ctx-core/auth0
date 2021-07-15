@@ -1,9 +1,9 @@
 import { B, be_ } from '@ctx-core/object'
 import { throw_unauthorized } from '@ctx-core/error'
 import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core/jwt'
-import { validate_auth0_token_current } from './validate_auth0_token_current'
-import { logout_auth0_token_error_b } from './logout_auth0_token_error_b'
-import type { auth0_token_T } from './auth0_token$_b'
+import { validate_auth0_token_current } from './validate_auth0_token_current.js'
+import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
+import type { auth0_token_T } from './auth0_token$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx'
 const key = 'verify_id_token_header_authorization_'
 export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{

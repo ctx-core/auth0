@@ -1,7 +1,7 @@
 import { assign } from '@ctx-core/object'
-import { validate_auth0_email } from './validate_auth0_email'
-import { validate_auth0_password_confirmation } from './validate_auth0_password_confirmation'
-import type { signup_data_I } from './signup_data_I'
+import { validate_auth0_email } from './validate_auth0_email.js'
+import { validate_auth0_password_confirmation } from './validate_auth0_password_confirmation.js'
+import type { signup_data_I } from './signup_data_I.js'
 export function validate_auth0_signup(data:signup_data_I) {
 	const email_error = validate_auth0_email(data)
 	const password_confirmation_error = validate_auth0_password_confirmation(data)
