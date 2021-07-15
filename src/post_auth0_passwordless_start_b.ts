@@ -7,13 +7,15 @@ const key = 'post_auth0_passwordless_start'
 export const post_auth0_passwordless_start_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_passwordless_start as post_auth0_passwordless_start_T
-	function post_auth0_passwordless_start(body:post_auth0_passwordless_start_body_T) {
+	async function post_auth0_passwordless_start(
+		body:post_auth0_passwordless_start_body_T
+	):Promise<Response> {
 		const { hostname, pathname } = window.location
 		const redirect_uri = `https://${hostname}/auth?redirect_url=${pathname}`
 		assign(body, { authParams: { redirect_uri } })
-		const AUTH0_DOMAIN = AUTH0_DOMAIN$._
+		const AUTH0_DOMAIN = AUTH0_DOMAIN$.$
 		return (
-			fetch(
+			await fetch(
 				`https://${AUTH0_DOMAIN}/passwordless/start`,
 				{
 					method: 'POST',
