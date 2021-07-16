@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 25.0.10
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.7
+  - @ctx-core/combinators@8.0.7
+  - @ctx-core/dom@11.0.8
+  - @ctx-core/email@9.0.7
+  - @ctx-core/env@13.0.8
+  - @ctx-core/error@11.0.7
+  - @ctx-core/fetch@11.0.9
+  - @ctx-core/function@20.0.6
+  - @ctx-core/jwt@10.0.7
+  - @ctx-core/local-storage@10.0.7
+  - @ctx-core/object@21.0.6
+  - @ctx-core/package@9.0.7
+  - @ctx-core/store@27.0.5
+
 ## 25.0.9
 
 ### Patch Changes
