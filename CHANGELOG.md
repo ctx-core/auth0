@@ -1,5 +1,65 @@
 # @ctx-core/auth0
 
+## 25.0.9
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.6
+  - @ctx-core/combinators@8.0.6
+  - @ctx-core/dom@11.0.7
+  - @ctx-core/email@9.0.6
+  - @ctx-core/env@13.0.7
+  - @ctx-core/error@11.0.6
+  - @ctx-core/fetch@11.0.8
+  - @ctx-core/function@20.0.5
+  - @ctx-core/jwt@10.0.6
+  - @ctx-core/local-storage@10.0.6
+  - @ctx-core/object@21.0.5
+  - @ctx-core/package@9.0.6
+  - @ctx-core/store@27.0.4
+
+## 25.0.8
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.5
+  - @ctx-core/combinators@8.0.5
+  - @ctx-core/dom@11.0.6
+  - @ctx-core/email@9.0.5
+  - @ctx-core/env@13.0.6
+  - @ctx-core/error@11.0.5
+  - @ctx-core/fetch@11.0.7
+  - @ctx-core/function@20.0.4
+  - @ctx-core/jwt@10.0.5
+  - @ctx-core/local-storage@10.0.5
+  - @ctx-core/object@21.0.4
+  - @ctx-core/package@9.0.5
+  - @ctx-core/store@27.0.4
+
+## 25.0.7
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.4
+  - @ctx-core/combinators@8.0.4
+  - @ctx-core/dom@11.0.5
+  - @ctx-core/email@9.0.5
+  - @ctx-core/env@13.0.6
+  - @ctx-core/error@11.0.5
+  - @ctx-core/fetch@11.0.7
+  - @ctx-core/function@20.0.4
+  - @ctx-core/jwt@10.0.5
+  - @ctx-core/local-storage@10.0.5
+  - @ctx-core/object@21.0.4
+  - @ctx-core/package@9.0.5
+  - @ctx-core/store@27.0.4
+
 ## 25.0.6
 
 ### Patch Changes
