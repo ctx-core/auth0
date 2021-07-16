@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 25.0.6
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.3
+  - @ctx-core/combinators@8.0.3
+  - @ctx-core/dom@11.0.4
+  - @ctx-core/email@9.0.4
+  - @ctx-core/env@13.0.5
+  - @ctx-core/error@11.0.4
+  - @ctx-core/fetch@11.0.6
+  - @ctx-core/function@20.0.3
+  - @ctx-core/jwt@10.0.4
+  - @ctx-core/local-storage@10.0.4
+  - @ctx-core/object@21.0.3
+  - @ctx-core/package@9.0.4
+  - @ctx-core/store@27.0.3
+
 ## 25.0.5
 
 ### Patch Changes
