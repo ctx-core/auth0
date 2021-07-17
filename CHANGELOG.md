@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 25.0.18
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/fetch@11.0.17
+
 ## 25.0.17
 
 ### Patch Changes
