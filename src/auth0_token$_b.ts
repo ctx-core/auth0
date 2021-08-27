@@ -1,17 +1,18 @@
-import type { nullish } from '@ctx-core/function'
-import { B, be_, assign } from '@ctx-core/object'
 import { has_dom } from '@ctx-core/dom'
-import { derived$, Readable$, subscribe } from '@ctx-core/store'
+import type { nullish } from '@ctx-core/function'
 import { jwt_token_exp_, Token } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
+import { B, be_, assign } from '@ctx-core/object'
+import { derived$, Readable$, subscribe } from '@ctx-core/store'
+import type { auth0_Ctx } from './auth0_Ctx.js'
+import type { auth0_token_error_T } from './auth0_token_error$_b.js'
 import { auth0_token_json$_b } from './auth0_token_json$_b.js'
-import { in_auth0_token$_b } from './in_auth0_token$_b.js'
-import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 import { clear_auth0_token_b, clear_auth0_token_T } from './clear_auth0_token_b.js'
+import { in_auth0_token$_b } from './in_auth0_token$_b.js'
 import { logout_auth0_token_b, logout_auth0_token_T } from './logout_auth0_token_b.js'
 import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
 import { set_auth0_token_b, set_auth0_token_T } from './set_auth0_token_b.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'auth0_token$'
 export const auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const auth0_token_json = auth0_token_json$_b(ctx)
@@ -61,9 +62,9 @@ export const auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 				try {
 					validate_auth0_token_current(auth0_token as auth0_token_T)
 				} catch (error) {
-					if (error.type === 'bad_credentials') {
+					if ((error as any).type === 'bad_credentials') {
 						console.error(error)
-						logout_auth0_token_error(error)
+						logout_auth0_token_error(error as auth0_token_error_T)
 						return
 					}
 					throw error

@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 25.0.67
+
+### Patch Changes
+
+- fix: typescript upgrade: build
+- Updated dependencies [undefined]
+  - @ctx-core/dom@11.0.22
+
 ## 25.0.66
 
 ### Patch Changes

@@ -18,7 +18,7 @@ export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = 
 			await validate_auth0_token_current($auth0_token)
 			const jwt_token = header_authorization_jwt_token_(id_token_header_authorization)
 			validate_current_jwt(jwt_token)
-		} catch (err) {
+		} catch (err:any) {
 			console.error(err)
 			logout_auth0_token_error(err)
 			throw_unauthorized(err)
