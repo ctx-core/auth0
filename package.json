@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "25.0.73",
+	"version": "25.0.74",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -58,7 +58,7 @@
 	},
 	"devDependencies": {
 		"@ctx-core/dev-tools": "workspace:^7.1.2",
-		"@types/auth0": "^2.33.4",
+		"@types/auth0": "^2.33.5",
 		"typescript": "^4.4.2"
 	},
 	"publishConfig": {
