@@ -1,5 +1,29 @@
 # @ctx-core/auth0
 
+## 25.0.99
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+- auth0-js: ^9.16.4 -> ^9.17.0
+- svelte: 3.43.1 -> 3.44.0
+- @types/auth0: ^2.34.2 -> ^2.34.4
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.22
+  - @ctx-core/combinators@8.0.16
+  - @ctx-core/dom@11.0.28
+  - @ctx-core/email@9.0.16
+  - @ctx-core/env@13.0.43
+  - @ctx-core/error@11.0.17
+  - @ctx-core/fetch@11.0.77
+  - @ctx-core/function@20.2.2
+  - @ctx-core/jwt@10.0.25
+  - @ctx-core/local-storage@10.0.17
+  - @ctx-core/object@21.0.21
+  - @ctx-core/package@9.0.17
+  - @ctx-core/store@27.0.34
+
 ## 25.0.98
 
 ### Patch Changes
