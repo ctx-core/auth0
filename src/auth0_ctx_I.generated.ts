@@ -4,6 +4,7 @@
 import type { AUTH0_CLIENT_ID$_T } from './AUTH0_CLIENT_ID$_b.js'
 import type { AUTH0_DOMAIN$_T } from './AUTH0_DOMAIN$_b.js'
 import type { AUTH0_URL$_T } from './AUTH0_URL$_b.js'
+import type { auth0_body__T } from './auth0_body__b.js'
 import type { auth0_change_password_opened$_T } from './auth0_change_password_opened$_b.js'
 import type { auth0_closed$_T } from './auth0_closed$_b.js'
 import type { auth0_email$_T } from './auth0_email$_b.js'
@@ -34,6 +35,7 @@ import type { open_auth0_forgot_password_T } from './open_auth0_forgot_password_
 import type { open_auth0_forgot_password_check_email_T } from './open_auth0_forgot_password_check_email_b.js'
 import type { open_auth0_login_T } from './open_auth0_login_b.js'
 import type { open_auth0_signup_T } from './open_auth0_signup_b.js'
+import type { password_realm_body__T } from './password_realm_body__b.js'
 import type { post_auth0_auth_change_password_T } from './post_auth0_auth_change_password_b.js'
 import type { post_auth0_dbconnections_change_password_T } from './post_auth0_dbconnections_change_password_b.js'
 import type { post_auth0_dbconnections_signup_T } from './post_auth0_dbconnections_signup_b.js'
@@ -45,6 +47,7 @@ export interface auth0_ctx_I {
 	AUTH0_CLIENT_ID$?:AUTH0_CLIENT_ID$_T
 	AUTH0_DOMAIN$?:AUTH0_DOMAIN$_T
 	AUTH0_URL$?:AUTH0_URL$_T
+	auth0_body_?:auth0_body__T
 	auth0_change_password_opened$?:auth0_change_password_opened$_T
 	auth0_closed$?:auth0_closed$_T
 	auth0_email$?:auth0_email$_T
@@ -75,6 +78,7 @@ export interface auth0_ctx_I {
 	open_auth0_forgot_password_check_email?:open_auth0_forgot_password_check_email_T
 	open_auth0_login?:open_auth0_login_T
 	open_auth0_signup?:open_auth0_signup_T
+	password_realm_body_?:password_realm_body__T
 	post_auth0_auth_change_password?:post_auth0_auth_change_password_T
 	post_auth0_dbconnections_change_password?:post_auth0_dbconnections_change_password_T
 	post_auth0_dbconnections_signup?:post_auth0_dbconnections_signup_T
