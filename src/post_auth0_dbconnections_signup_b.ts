@@ -2,7 +2,7 @@ import { B, be_ } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import type { auth0_client_id_body_I } from './auth0_client_id_body_I.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'post_auth0_dbconnections_signup'
 export const post_auth0_dbconnections_signup_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
@@ -10,7 +10,7 @@ export const post_auth0_dbconnections_signup_b:B<auth0_Ctx, typeof key> = be_(ke
 	function post_auth0_dbconnections_signup(body:post_auth0_dbconnections_signup_body_T) {
 		return (
 			fetch(
-				`https://${AUTH0_DOMAIN$._}/dbconnections/signup`,
+				`https://${AUTH0_DOMAIN$.$}/dbconnections/signup`,
 				{
 					method: 'POST',
 					headers:

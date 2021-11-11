@@ -7,7 +7,7 @@ import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import { auth0_token$_b } from './auth0_token$_b.js'
 import { auth0_userinfo_auth0_token$_b } from './auth0_userinfo_auth0_token$_b.js'
 import { get_auth0_userinfo } from './get_auth0_userinfo.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'auth0_userinfo$'
 export const auth0_userinfo$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const auth0_token$ = auth0_token$_b(ctx)

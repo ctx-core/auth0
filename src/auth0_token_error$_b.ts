@@ -1,6 +1,6 @@
 import { B, be_ } from '@ctx-core/object'
 import { Writable$, writable$ } from '@ctx-core/store'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'auth0_token_error$'
 export const auth0_token_error$_b:B<auth0_Ctx, typeof key> = be_(key, _ctx=>{
 	const auth0_token_error$ = writable$(undefined)

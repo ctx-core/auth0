@@ -7,7 +7,7 @@ import { auth0_userinfo$_b } from './auth0_userinfo$_b.js'
 import {
 	auth0_userinfo_auth0_token_T, auth0_userinfo_auth0_token$_b
 } from './auth0_userinfo_auth0_token$_b.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'auth0_userinfo_ctx$'
 export const auth0_userinfo_ctx$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 	derived$(tup(

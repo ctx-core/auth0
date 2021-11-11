@@ -51,7 +51,7 @@ export const auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 		set_auth0_token_json,
 	}) as auth0_token$_T
 	function schedule_auth0_token_current_validate() {
-		const auth0_token = auth0_token$._
+		const auth0_token = auth0_token$.$
 		const id_token:string|nullish = auth0_token?.id_token
 		if (!id_token) return
 		const jwt_token_exp:number = jwt_token_exp_(id_token as string)

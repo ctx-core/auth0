@@ -11,7 +11,7 @@ export function auth0_body__b</*@formatter:off*/
 		return auth0_body_ as auth0_body__T<Out>
 		function auth0_body_(data:auth0_client_id_optional_body_I) {
 			return assign(
-				{ client_id: AUTH0_CLIENT_ID$._ } as Out,
+				{ client_id: AUTH0_CLIENT_ID$.$ } as Out,
 				data
 			) as unknown as Out
 		}

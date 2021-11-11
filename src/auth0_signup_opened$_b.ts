@@ -2,7 +2,7 @@ import { B, be_ } from '@ctx-core/object'
 import { eq_ } from '@ctx-core/function'
 import { derived$, Readable$ } from '@ctx-core/store'
 import { auth0_opened_T, auth0_opened$_b } from './auth0_opened$_b.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'auth0_signup_opened$'
 export const auth0_signup_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
 	derived$(auth0_opened$_b(ctx),

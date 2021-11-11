@@ -4,18 +4,18 @@ import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
 import type { auth0_token_T } from './auth0_token$_b.js'
-import type { auth0_Ctx } from './auth0_Ctx'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'verify_id_token_header_authorization_'
 export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return verify_id_token_header_authorization_ as verify_id_token_header_authorization__T
-	async function verify_id_token_header_authorization_($auth0_token:auth0_token_T) {
-		const id_token_header_authorization = id_token_header_authorization_($auth0_token)
+	async function verify_id_token_header_authorization_(auth0_token:auth0_token_T) {
+		const id_token_header_authorization = id_token_header_authorization_(auth0_token)
 		try {
 			if (!id_token_header_authorization) {
-				throw_unauthorized({ data: $auth0_token })
+				throw_unauthorized({ data: auth0_token })
 			}
-			await validate_auth0_token_current($auth0_token)
+			await validate_auth0_token_current(auth0_token)
 			const jwt_token = header_authorization_jwt_token_(id_token_header_authorization)
 			validate_current_jwt(jwt_token)
 		} catch (err:any) {
