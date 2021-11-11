@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 25.0.104
+
+### Patch Changes
+
+- version bump: changes to internals
+
 ## 25.0.103
 
 ### Patch Changes
