@@ -1,9 +1,9 @@
 import { B, be_ } from '@ctx-core/object'
 import { fetch } from '@ctx-core/fetch'
-import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import type { auth0_client_id_body_I } from './auth0_client_id_body_I.js'
-import type { auth0_grant_type_body_I } from './auth0_grant_type_body_I.js'
+import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx.js'
+import type { auth0_grant_type_body_I } from './auth0_grant_type_body_I.js'
 const key = 'post_auth0_oauth_token'
 export const post_auth0_oauth_token_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
