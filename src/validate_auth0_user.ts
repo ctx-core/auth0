@@ -2,7 +2,7 @@ import type { Auth0Error, Auth0UserProfile } from 'auth0-js'
 import { error_ctx_I, throw_bad_gateway } from '@ctx-core/error'
 export function validate_auth0_user(user:Auth0UserProfile|Auth0Error|null) {
 	const user_error = user as Auth0Error
-	if (user_error && user_error.error) {
+	if (user_error?.error) {
 		console.error(`validate_auth0_user`)
 		console.error(`${user_error.statusCode} ${user_error.error}`)
 		console.error(user_error.description)

@@ -15,26 +15,26 @@ import { set_auth0_token_b, set_auth0_token_T } from './set_auth0_token_b.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'auth0_token$'
 export const auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
-	const auth0_token_json = auth0_token_json$_b(ctx)
+	const auth0_token_json$ = auth0_token_json$_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	const set_auth0_token = set_auth0_token_b(ctx)
 	const auth0_token$ = derived$(
 		in_auth0_token$_b(ctx),
-		($auth0_token:auth0_token_T|null)=>
-			($auth0_token && ($auth0_token as Token).error)
+		(auth0_token:auth0_token_T|null)=>
+			(auth0_token && (auth0_token as Token).error)
 			? false
-			: $auth0_token as Token) as auth0_token$_T
+			: auth0_token as Token) as auth0_token$_T
 	if (has_dom) {
-		subscribe(auth0_token_json,
-			$auth0_token_json=>{
-				if ($auth0_token_json == null) {
+		subscribe(auth0_token_json$,
+			auth0_token_json=>{
+				if (auth0_token_json == null) {
 					clear_auth0_token()
 					return
 				}
-				sync_localStorage('$auth0_token_json', $auth0_token_json)
-				if ($auth0_token_json) {
+				sync_localStorage('auth0_token_json', auth0_token_json)
+				if (auth0_token_json) {
 					schedule_auth0_token_current_validate()
 				}
 			}
@@ -74,7 +74,7 @@ export const auth0_token$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	}
 	function set_auth0_token_json(event:StorageEvent) {
 		if (event.key === 'auth0_token_json') {
-			auth0_token_json.set(event.newValue)
+			auth0_token_json$.$ = event.newValue
 		}
 	}
 })

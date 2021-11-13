@@ -1,9 +1,9 @@
+import { has_dom } from '@ctx-core/dom'
 import type { nullish } from '@ctx-core/function'
 import { be_, assign, B } from '@ctx-core/object'
-import { has_dom } from '@ctx-core/dom'
 import { subscribe, Unsubscriber, Writable$, writable$ } from '@ctx-core/store'
-import { auth0_email$_b } from './auth0_email$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx.js'
+import { auth0_email$_b } from './auth0_email$_b.js'
 const key = 'auth0_opened$'
 export const auth0_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const auth0_email$ = auth0_email$_b(ctx)
@@ -19,7 +19,7 @@ export const auth0_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	}
 	return auth0_opened$ as auth0_opened$_T
 	function open_auth0_change_password() {
-		auth0_opened$.set('change_password')
+		auth0_opened$.$ = 'change_password'
 	}
 	function reload_auth0_opened() {
 		if (!auth0_opened_reload_unsubscribe) {
@@ -27,7 +27,7 @@ export const auth0_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 				subscribe(auth0_email$, reload_auth0_opened)
 			return
 		}
-		auth0_opened$.set(null)
+		auth0_opened$.$ = null
 	}
 })
 export type auth0_opened_T = string|nullish

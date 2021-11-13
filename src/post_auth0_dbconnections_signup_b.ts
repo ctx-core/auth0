@@ -7,6 +7,7 @@ const key = 'post_auth0_dbconnections_signup'
 export const post_auth0_dbconnections_signup_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const AUTH0_DOMAIN$ = AUTH0_DOMAIN$_b(ctx)
 	return post_auth0_dbconnections_signup as post_auth0_dbconnections_signup_T
+	// https://auth0.com/docs/libraries/custom-signup
 	function post_auth0_dbconnections_signup(body:post_auth0_dbconnections_signup_body_T) {
 		return (
 			fetch(

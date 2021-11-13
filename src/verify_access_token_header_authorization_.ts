@@ -1,7 +1,7 @@
 import { throw_unauthorized } from '@ctx-core/error'
 import { access_token_header_authorization_ } from './access_token_header_authorization_.js'
+import type { auth0_error_ctx_I } from './auth0_error_ctx_I.js'
 import type { auth0_token_T } from './auth0_token$_b.js'
-import type { auth0_error_ctx_I } from './auth0_error_ctx_I'
 export function verify_access_token_header_authorization_(
 	auth0_token:auth0_token_T
 ):string {

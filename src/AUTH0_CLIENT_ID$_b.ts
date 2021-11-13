@@ -6,8 +6,7 @@ export const AUTH0_CLIENT_ID$_b:B<auth0_Ctx, typeof key> = be_(key, (
 	_ctx
 )=>
 	writable$(process.env.AUTH0_CLIENT_ID as string) as AUTH0_CLIENT_ID$_T)
-export type AUTH0_CLIENT_ID_T = string
-export interface AUTH0_CLIENT_ID$_T extends Writable$<AUTH0_CLIENT_ID_T> {}
+export type AUTH0_CLIENT_ID$_T = Writable$<string>
 export {
 	AUTH0_CLIENT_ID$_b as b__AUTH0_CLIENT_ID
 }

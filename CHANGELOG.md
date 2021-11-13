@@ -1,5 +1,22 @@
 # @ctx-core/auth0
 
+## 26.0.0
+
+### Major Changes
+
+- inlined types: auth0_change_password_opened_T,AUTH0_CLIENT_ID_T,AUTH0_DOMAIN_T,auth0_forgot_password_check_email_opened_T,auth0_forgot_password_opened_T,auth0_login_opened_T,auth0_signup_opened_T,auth0_token_error_txt_T,auth0_token_json_T,AUTH0_URL_T,in_auth0_token_T,is_auth0_loggedin_T
+- type instead of interface: auth0_change_password_opened$_T,AUTH0_CLIENT_ID$\_T,AUTH0_DOMAIN$_T,auth0_forgot_password_check_email_opened$\_T,auth0_forgot_password_opened$_T,auth0_login_opened$\_T,auth0_signup_opened$_T,auth0_token_error_txt$\_T,auth0_token_json$_T,AUTH0_URL$\_T,auth0_userinfo_ctx$_T,in_auth0_token$\_T,is_auth0_loggedin\$\_T,
+
+### Minor Changes
+
+- auth0_token_error_I: + username,password_confirmation
+
+### Patch Changes
+
+- fix: jwt_token_decoded_I: sub?
+- Updated dependencies
+  - @ctx-core/jwt@10.0.28
+
 ## 25.0.104
 
 ### Patch Changes

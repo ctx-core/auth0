@@ -12,7 +12,9 @@ export interface auth0_token_error_I {
 	error_description?:string
 	error?:any
 	email?:string
+	username?:string
 	password?:string
+	password_confirmation?:string
 }
 export type auth0_token_error_T = auth0_token_error_I|undefined
 export interface auth0_token_error$_T extends Writable$<auth0_token_error_T> {}

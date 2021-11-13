@@ -10,8 +10,7 @@ export const auth0_forgot_password_check_email_opened$_b:B<auth0_Ctx, typeof key
 	derived$(auth0_opened$_b(ctx),
 		eq_<auth0_opened_T>('forgot_password_check_email')
 	) as auth0_forgot_password_check_email_opened$_T)
-export type auth0_forgot_password_check_email_opened_T = boolean
-export interface auth0_forgot_password_check_email_opened$_T extends Readable$<auth0_forgot_password_check_email_opened_T> {}
+export type auth0_forgot_password_check_email_opened$_T = Readable$<boolean>
 export {
 	auth0_forgot_password_check_email_opened$_b as b__opened__forgot_password_check_email,
 }

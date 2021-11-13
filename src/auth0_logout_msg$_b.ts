@@ -1,7 +1,7 @@
 import { B, be_, assign } from '@ctx-core/object'
 import { writable$, Writable$ } from '@ctx-core/store'
-import { auth0_token$_b } from './auth0_token$_b.js'
 import type { auth0_Ctx } from './auth0_Ctx.js'
+import { auth0_token$_b } from './auth0_token$_b.js'
 const key = 'auth0_logout_msg$'
 export const auth0_logout_msg$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const auth0_logout_msg$ = writable$(undefined) as auth0_logout_msg$_T

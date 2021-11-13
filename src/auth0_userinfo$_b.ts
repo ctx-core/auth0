@@ -1,13 +1,13 @@
+import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { nullish } from '@ctx-core/function'
+import type { Token } from '@ctx-core/jwt'
 import { B, be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
-import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
-import type { Token } from '@ctx-core/jwt'
+import type { auth0_Ctx } from './auth0_Ctx.js'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import { auth0_token$_b } from './auth0_token$_b.js'
 import { auth0_userinfo_auth0_token$_b } from './auth0_userinfo_auth0_token$_b.js'
 import { get_auth0_userinfo } from './get_auth0_userinfo.js'
-import type { auth0_Ctx } from './auth0_Ctx.js'
 const key = 'auth0_userinfo$'
 export const auth0_userinfo$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
 	const auth0_token$ = auth0_token$_b(ctx)
