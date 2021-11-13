@@ -1,5 +1,26 @@
 # @ctx-core/auth0
 
+## 26.0.1
+
+### Patch Changes
+
+- @swc/core: ^1.2.107 -> ^1.2.108
+- @types/auth0: ^2.34.5 -> ^2.34.6
+- Updated dependencies
+  - @ctx-core/array@23.0.24
+  - @ctx-core/combinators@8.0.18
+  - @ctx-core/dom@11.0.31
+  - @ctx-core/email@9.0.18
+  - @ctx-core/env@13.0.46
+  - @ctx-core/error@11.0.19
+  - @ctx-core/fetch@11.0.81
+  - @ctx-core/function@20.2.4
+  - @ctx-core/jwt@10.0.29
+  - @ctx-core/local-storage@10.0.19
+  - @ctx-core/object@21.0.23
+  - @ctx-core/package@9.1.1
+  - @ctx-core/store@27.0.37
+
 ## 26.0.0
 
 ### Major Changes
