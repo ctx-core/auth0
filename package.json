@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "26.0.1",
+	"version": "26.0.2",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -36,30 +36,30 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file -e auth0_body_,password_realm_body_"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.24",
-		"@ctx-core/combinators": "workspace:^8.0.18",
-		"@ctx-core/dom": "workspace:^11.0.31",
-		"@ctx-core/email": "workspace:^9.0.18",
-		"@ctx-core/env": "workspace:^13.0.46",
-		"@ctx-core/error": "workspace:^11.0.19",
-		"@ctx-core/fetch": "workspace:^11.0.81",
-		"@ctx-core/function": "workspace:^20.2.4",
-		"@ctx-core/jwt": "workspace:^10.0.29",
-		"@ctx-core/local-storage": "workspace:^10.0.19",
-		"@ctx-core/object": "workspace:^21.0.23",
-		"@ctx-core/package": "workspace:^9.1.1",
-		"@ctx-core/store": "workspace:^27.0.37",
+		"@ctx-core/array": "workspace:^23.0.25",
+		"@ctx-core/combinators": "workspace:^8.0.19",
+		"@ctx-core/dom": "workspace:^11.0.32",
+		"@ctx-core/email": "workspace:^9.0.19",
+		"@ctx-core/env": "workspace:^13.0.47",
+		"@ctx-core/error": "workspace:^11.0.20",
+		"@ctx-core/fetch": "workspace:^11.0.83",
+		"@ctx-core/function": "workspace:^20.2.5",
+		"@ctx-core/jwt": "workspace:^10.0.30",
+		"@ctx-core/local-storage": "workspace:^10.0.20",
+		"@ctx-core/object": "workspace:^21.0.24",
+		"@ctx-core/package": "workspace:^9.1.2",
+		"@ctx-core/store": "workspace:^27.0.38",
 		"auth0-js": "^9.18.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
 		"svelte": "3.44.1"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^7.2.1",
+		"@ctx-core/dev-tools": "workspace:^7.2.2",
 		"@swc/cli": "^0.1.51",
-		"@swc/core": "^1.2.108",
-		"@types/auth0": "^2.34.6",
-		"typescript": "^4.4.4"
+		"@swc/core": "^1.2.110",
+		"@types/auth0": "^2.34.7",
+		"typescript": "^4.5.2"
 	},
 	"publishConfig": {
 		"access": "public",
