@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 26.0.3
+
+### Patch Changes
+
+- update dependencies
+
 ## 26.0.2
 
 ### Patch Changes
