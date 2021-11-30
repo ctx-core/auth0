@@ -1,5 +1,51 @@
 # @ctx-core/auth0
 
+## 26.0.5
+
+### Patch Changes
+
+- @swc/cli: ^0.1.51 -> ^0.1.52
+- @swc/core: ^1.2.111 -> ^1.2.113
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/package@9.1.4
+  - @ctx-core/array@23.0.27
+  - @ctx-core/combinators@8.0.21
+  - @ctx-core/dom@11.0.34
+  - @ctx-core/email@9.0.21
+  - @ctx-core/env@13.0.49
+  - @ctx-core/error@11.1.3
+  - @ctx-core/fetch@11.0.85
+  - @ctx-core/function@20.2.7
+  - @ctx-core/jwt@10.0.32
+  - @ctx-core/local-storage@10.0.22
+  - @ctx-core/object@21.0.26
+  - @ctx-core/store@27.0.40
+
+## 26.0.4
+
+### Patch Changes
+
+- svelte: 3.44.1 -> 3.44.2
+- @swc/core: ^1.2.110 -> ^1.2.111
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/package@9.1.3
+  - @ctx-core/env@13.0.48
+  - @ctx-core/store@27.0.39
+  - @ctx-core/array@23.0.26
+  - @ctx-core/combinators@8.0.20
+  - @ctx-core/dom@11.0.33
+  - @ctx-core/email@9.0.20
+  - @ctx-core/error@11.1.2
+  - @ctx-core/fetch@11.0.84
+  - @ctx-core/function@20.2.6
+  - @ctx-core/jwt@10.0.31
+  - @ctx-core/local-storage@10.0.21
+  - @ctx-core/object@21.0.25
+
 ## 26.0.3
 
 ### Patch Changes
