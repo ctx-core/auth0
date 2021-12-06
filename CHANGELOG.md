@@ -1,5 +1,23 @@
 # @ctx-core/auth0
 
+## 26.0.13
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/array@23.0.32
+  - @ctx-core/combinators@8.0.25
+  - @ctx-core/dom@11.0.39
+  - @ctx-core/email@9.0.25
+  - @ctx-core/env@13.0.54
+  - @ctx-core/error@11.1.8
+  - @ctx-core/fetch@11.0.90
+  - @ctx-core/jwt@10.0.37
+  - @ctx-core/local-storage@10.0.27
+  - @ctx-core/package@9.1.9
+  - @ctx-core/store@27.0.45
+
 ## 26.0.12
 
 ### Patch Changes
