@@ -43,7 +43,7 @@
 		"@ctx-core/env": "workspace:^13.0.52",
 		"@ctx-core/error": "workspace:^11.1.6",
 		"@ctx-core/fetch": "workspace:^11.0.88",
-		"@ctx-core/function": "workspace:^20.2.10",
+		"@ctx-core/function": "workspace:^20.2.11",
 		"@ctx-core/jwt": "workspace:^10.0.35",
 		"@ctx-core/local-storage": "workspace:^10.0.25",
 		"@ctx-core/object": "workspace:^21.0.29",
