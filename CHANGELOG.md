@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 26.0.15
+
+### Patch Changes
+
+- fix: browser esm import: vite
+
 ## 26.0.14
 
 ### Patch Changes
