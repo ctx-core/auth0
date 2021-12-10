@@ -1,9 +1,8 @@
 import { B, be_ } from '@ctx-core/object'
 import { derived$, Readable$ } from '@ctx-core/store'
-import type { auth0_Ctx } from './auth0_Ctx.js'
 import { auth0_token_error$_b } from './auth0_token_error$_b.js'
 const key = 'auth0_token_error_txt$'
-export const auth0_token_error_txt$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>
+export const auth0_token_error_txt$_b:B<auth0_token_error_txt$_T> = be_(key, ctx=>
 	derived$(
 		auth0_token_error$_b(ctx),
 		auth0_token_error=>

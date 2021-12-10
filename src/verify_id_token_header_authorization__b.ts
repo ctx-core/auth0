@@ -1,12 +1,11 @@
 import { throw_unauthorized } from '@ctx-core/error'
 import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core/jwt'
 import { B, be_ } from '@ctx-core/object'
-import type { auth0_Ctx } from './auth0_Ctx.js'
 import type { auth0_token_T } from './auth0_token$_b.js'
 import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'verify_id_token_header_authorization_'
-export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
+export const verify_id_token_header_authorization__b:B<verify_id_token_header_authorization__T> = be_(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return verify_id_token_header_authorization_ as verify_id_token_header_authorization__T
 	async function verify_id_token_header_authorization_(auth0_token:auth0_token_T) {
@@ -35,7 +34,7 @@ export const verify_id_token_header_authorization__b:B<auth0_Ctx, typeof key> = 
 		)
 	}
 })
-export type verify_id_token_header_authorization__T = ($auth0_token:auth0_token_T)=>Promise<string>
+export type verify_id_token_header_authorization__T = (auth0_token:auth0_token_T)=>Promise<string>
 export type _verify_id_token_header_authorization_T = verify_id_token_header_authorization__T
 export {
 	verify_id_token_header_authorization__b as _verify_id_token_header_authorization_b

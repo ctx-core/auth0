@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "26.0.16",
+	"version": "27.0.0",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -25,7 +25,7 @@
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"build": "npm run generate_ctx_I_file && npm run compile",
+		"build": "npm run compile",
 		"clean": "rm -rf dist",
 		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
 		"exec": "$@",
@@ -33,25 +33,24 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file -e auth0_body_,password_realm_body_"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.32",
-		"@ctx-core/combinators": "workspace:^8.0.25",
-		"@ctx-core/dom": "workspace:^11.0.39",
-		"@ctx-core/email": "workspace:^9.0.25",
-		"@ctx-core/env": "workspace:^13.0.54",
-		"@ctx-core/error": "workspace:^11.1.8",
-		"@ctx-core/fetch": "workspace:^11.0.92",
+		"@ctx-core/array": "workspace:^23.0.33",
+		"@ctx-core/combinators": "workspace:^8.0.26",
+		"@ctx-core/dom": "workspace:^11.0.40",
+		"@ctx-core/email": "workspace:^9.0.26",
+		"@ctx-core/env": "workspace:^14.0.0",
+		"@ctx-core/error": "workspace:^11.1.9",
+		"@ctx-core/fetch": "workspace:^11.0.93",
 		"@ctx-core/function": "workspace:^20.2.12",
-		"@ctx-core/jwt": "workspace:^10.0.37",
-		"@ctx-core/local-storage": "workspace:^10.0.27",
-		"@ctx-core/object": "workspace:^21.0.30",
-		"@ctx-core/store": "workspace:^27.0.45",
+		"@ctx-core/jwt": "workspace:^10.0.38",
+		"@ctx-core/local-storage": "workspace:^10.0.28",
+		"@ctx-core/object": "workspace:^22.0.0",
+		"@ctx-core/store": "workspace:^27.0.46",
 		"auth0-js": "^9.18.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
 		"svelte": "3.44.2"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^7.2.9",
 		"@swc/cli": "^0.1.52",
 		"@swc/core": "^1.2.118",
 		"@types/auth0": "^2.34.7",

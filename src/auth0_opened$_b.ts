@@ -2,10 +2,9 @@ import { has_dom } from '@ctx-core/dom'
 import type { nullish } from '@ctx-core/function'
 import { be_, assign, B } from '@ctx-core/object'
 import { subscribe, Unsubscriber, Writable$, writable$ } from '@ctx-core/store'
-import type { auth0_Ctx } from './auth0_Ctx.js'
 import { auth0_email$_b } from './auth0_email$_b.js'
 const key = 'auth0_opened$'
-export const auth0_opened$_b:B<auth0_Ctx, typeof key> = be_(key, ctx=>{
+export const auth0_opened$_b:B<auth0_opened$_T> = be_(key, ctx=>{
 	const auth0_email$ = auth0_email$_b(ctx)
 	const auth0_opened$ = assign(
 		writable$(undefined) as auth0_opened$_T, {
