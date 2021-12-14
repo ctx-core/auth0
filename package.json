@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "27.0.0",
+	"version": "27.0.1",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -37,18 +37,18 @@
 		"@ctx-core/combinators": "workspace:^8.0.26",
 		"@ctx-core/dom": "workspace:^11.0.40",
 		"@ctx-core/email": "workspace:^9.0.26",
-		"@ctx-core/env": "workspace:^14.0.0",
+		"@ctx-core/env": "workspace:^14.0.1",
 		"@ctx-core/error": "workspace:^11.1.9",
 		"@ctx-core/fetch": "workspace:^11.0.93",
 		"@ctx-core/function": "workspace:^20.2.12",
 		"@ctx-core/jwt": "workspace:^10.0.38",
 		"@ctx-core/local-storage": "workspace:^10.0.28",
 		"@ctx-core/object": "workspace:^22.0.0",
-		"@ctx-core/store": "workspace:^27.0.46",
+		"@ctx-core/store": "workspace:^27.0.47",
 		"auth0-js": "^9.18.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
-		"svelte": "3.44.2"
+		"svelte": "^3.44.3"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
