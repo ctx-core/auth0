@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 27.0.2
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.0.34
+  - @ctx-core/combinators@8.0.27
+  - @ctx-core/dom@11.0.41
+  - @ctx-core/email@9.0.27
+  - @ctx-core/env@14.0.2
+  - @ctx-core/error@11.1.10
+  - @ctx-core/fetch@11.0.94
+  - @ctx-core/function@20.2.13
+  - @ctx-core/jwt@10.0.39
+  - @ctx-core/local-storage@10.0.29
+  - @ctx-core/object@22.0.1
+  - @ctx-core/store@27.0.48
+
 ## 27.0.1
 
 ### Patch Changes
