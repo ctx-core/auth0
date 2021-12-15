@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 27.0.3
+
+### Patch Changes
+
+- fix: package.json: exports
+- Updated dependencies
+  - @ctx-core/array@23.0.35
+  - @ctx-core/combinators@8.0.28
+  - @ctx-core/dom@11.0.42
+  - @ctx-core/email@9.0.28
+  - @ctx-core/env@14.0.3
+  - @ctx-core/error@11.1.11
+  - @ctx-core/fetch@11.0.95
+  - @ctx-core/function@20.2.14
+  - @ctx-core/jwt@10.0.40
+  - @ctx-core/local-storage@10.0.30
+  - @ctx-core/object@22.0.2
+  - @ctx-core/store@27.0.49
+
 ## 27.0.2
 
 ### Patch Changes
