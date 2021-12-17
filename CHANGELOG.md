@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 27.0.8
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+- Updated dependencies
+  - @ctx-core/array@23.0.40
+  - @ctx-core/combinators@8.0.33
+  - @ctx-core/dom@11.0.47
+  - @ctx-core/email@9.0.33
+  - @ctx-core/env@14.0.8
+  - @ctx-core/error@11.1.16
+  - @ctx-core/fetch@11.0.100
+  - @ctx-core/function@20.2.19
+  - @ctx-core/jwt@10.0.45
+  - @ctx-core/local-storage@10.0.35
+  - @ctx-core/object@22.0.7
+  - @ctx-core/store@27.0.54
+
 ## 27.0.7
 
 ### Patch Changes
