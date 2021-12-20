@@ -1,8 +1,9 @@
 import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
 import type { nullish } from '@ctx-core/function'
+import { run } from '@ctx-core/function'
 import type { Token } from '@ctx-core/jwt'
 import { B, be_ } from '@ctx-core/object'
-import { derived$, Readable$ } from '@ctx-core/store'
+import { ReadableAtom$, setter_computed$ } from '@ctx-core/nanostores'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 import { auth0_token$_b } from './auth0_token$_b.js'
 import { auth0_userinfo_auth0_token$_b } from './auth0_userinfo_auth0_token$_b.js'
@@ -10,7 +11,7 @@ import { get_auth0_userinfo } from './get_auth0_userinfo.js'
 const key = 'auth0_userinfo$'
 export const auth0_userinfo$_b:B<auth0_userinfo$_T> = be_(key, ctx=>{
 	const auth0_token$ = auth0_token$_b(ctx)
-	return derived$([
+	return setter_computed$([
 			AUTH0_DOMAIN$_b(ctx),
 			auth0_token$,
 			auth0_userinfo_auth0_token$_b(ctx),
@@ -23,7 +24,7 @@ export const auth0_userinfo$_b:B<auth0_userinfo$_T> = be_(key, ctx=>{
 			],
 			set
 		)=>{
-			(async ()=>{
+			run(async ()=>{
 				if (auth0_token === auth0_userinfo_auth0_token) {
 					return
 				}
@@ -45,7 +46,7 @@ export const auth0_userinfo$_b:B<auth0_userinfo$_T> = be_(key, ctx=>{
 				}
 				const auth0_userinfo = await response.json()
 				set(auth0_userinfo)
-			})()
+			})
 			function no_auth0_userinfo_auth0_token_() {
 				return (
 					auth0_token === undefined
@@ -56,7 +57,7 @@ export const auth0_userinfo$_b:B<auth0_userinfo$_T> = be_(key, ctx=>{
 		}
 	) as auth0_userinfo$_T
 })
-export type auth0_userinfo$_T = Readable$<Token|nullish>
+export type auth0_userinfo$_T = ReadableAtom$<Token|nullish>
 export {
 	auth0_userinfo$_b as b__auth0_userinfo,
 }

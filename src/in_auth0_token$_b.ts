@@ -1,10 +1,10 @@
 import type { Token } from '@ctx-core/jwt'
 import { B, be_ } from '@ctx-core/object'
-import { derived$, Readable$ } from '@ctx-core/store'
+import { computed$, ReadableAtom$ } from '@ctx-core/nanostores'
 import { auth0_token_json$_b, auth0_token_json$_T } from './auth0_token_json$_b.js'
 const key = 'in_auth0_token$'
 export const in_auth0_token$_b:B<in_auth0_token$_T> = be_(key, ctx=>
-	derived$(
+	computed$(
 		auth0_token_json$_b(ctx) as auth0_token_json$_T,
 		auth0_token_json=>{
 			if (auth0_token_json && typeof auth0_token_json === 'string') {
@@ -19,7 +19,7 @@ export const in_auth0_token$_b:B<in_auth0_token$_T> = be_(key, ctx=>
 			}
 			return auth0_token_json
 		}) as in_auth0_token$_T)
-export type in_auth0_token$_T = Readable$<Token>
+export type in_auth0_token$_T = ReadableAtom$<Token>
 export {
 	in_auth0_token$_b as b__token__auth0__
 }
