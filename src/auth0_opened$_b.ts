@@ -22,7 +22,8 @@ export const auth0_opened$_b:B<auth0_opened$_T> = be_(key, ctx=>{
 	}
 	function reload_auth0_opened() {
 		if (!auth0_opened_reload_unsubscribe) {
-			auth0_opened_reload_unsubscribe = auth0_email$.subscribe(reload_auth0_opened)
+			auth0_opened_reload_unsubscribe = auth0_email$.listen(reload_auth0_opened)
+			reload_auth0_opened()
 			return
 		}
 		auth0_opened$.$ = null

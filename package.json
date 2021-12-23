@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "28.0.5",
+	"version": "28.0.6",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.121",
+		"@swc/core": "^1.2.122",
 		"@types/auth0": "^2.34.8",
 		"rimraf": "^3.0.2",
 		"typescript": "next"

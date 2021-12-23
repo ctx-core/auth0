@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 28.0.6
+
+### Patch Changes
+
+- fix: auth0_opened\$\_b: reload_auth0_opened: infinite recursion
+
 ## 28.0.5
 
 ### Patch Changes
