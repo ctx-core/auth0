@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@ctx-core/array": "workspace:^23.0.41",
 		"@ctx-core/combinators": "workspace:^8.0.34",
-		"@ctx-core/dom": "workspace:^11.0.48",
+		"@ctx-core/dom": "workspace:^11.0.49",
 		"@ctx-core/email": "workspace:^9.0.34",
 		"@ctx-core/env": "workspace:^15.0.5",
 		"@ctx-core/error": "workspace:^11.1.17",
