@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 28.0.8
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+- Updated dependencies
+  - @ctx-core/dom@11.1.2
+  - @ctx-core/email@9.0.35
+  - @ctx-core/env@15.0.7
+  - @ctx-core/error@11.1.18
+  - @ctx-core/fetch@11.0.104
+  - @ctx-core/function@20.2.21
+  - @ctx-core/jwt@10.0.47
+  - @ctx-core/local-storage@10.0.37
+  - @ctx-core/nanostores@0.3.1
+
+## 28.0.7
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 28.0.6
 
 ### Patch Changes
