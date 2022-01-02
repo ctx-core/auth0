@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 28.0.9
+
+### Patch Changes
+
+- fix: auth0_forgot_password_opened\$\_b: implementation
+- fix: auth0_forgot_password_check_email_opened\$\_b: implementation
+
 ## 28.0.8
 
 ### Patch Changes
