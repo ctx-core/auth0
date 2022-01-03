@@ -40,7 +40,7 @@
 		"@ctx-core/dom": "workspace:^11.1.2",
 		"@ctx-core/email": "workspace:^9.0.35",
 		"@ctx-core/env": "workspace:^15.0.7",
-		"@ctx-core/error": "workspace:^11.1.18",
+		"@ctx-core/error": "workspace:^11.1.19",
 		"@ctx-core/fetch": "workspace:^11.0.104",
 		"@ctx-core/function": "workspace:^20.2.21",
 		"@ctx-core/jwt": "workspace:^10.0.47",
