@@ -7,4 +7,3 @@ export const auth0_opened_class$_b = be_(key, (ctx)=>
 	computed$(auth0_opened$_b(ctx), (v)=>v
 	))
 export { auth0_opened_class$_b as b__class__opened__auth0, }
-//# sourceMappingURL=auth0_opened_class$_b.js.map

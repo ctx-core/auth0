@@ -9,4 +9,3 @@ export const validate_auth0_password_confirmation = (data)=>{
 	}
 	return has_errors && change_password_error
 }
-//# sourceMappingURL=validate_auth0_password_confirmation.js.map

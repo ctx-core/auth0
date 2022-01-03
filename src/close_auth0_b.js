@@ -9,4 +9,3 @@ export const close_auth0_b = be_(key, (ctx)=>{
 		auth0_opened$.$ = null
 	}
 })
-//# sourceMappingURL=close_auth0_b.js.map

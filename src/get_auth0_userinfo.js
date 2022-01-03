@@ -11,4 +11,3 @@ export const get_auth0_userinfo = (params)=>{
 		}
 	})
 }
-//# sourceMappingURL=get_auth0_userinfo.js.map

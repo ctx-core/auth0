@@ -13,4 +13,3 @@ export const validate_auth0_signup = (data)=>{
 	}
 	return has_errors && signup_error
 }
-//# sourceMappingURL=validate_auth0_signup.js.map

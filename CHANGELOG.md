@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 28.0.10
+
+### Patch Changes
+
+- fix: remove incorrect source map annotation
+- Updated dependencies
+  - @ctx-core/fetch@11.0.105
+
 ## 28.0.9
 
 ### Patch Changes

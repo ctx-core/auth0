@@ -12,4 +12,3 @@ export const verify_access_token_header_authorization_ = (auth0_token)=>{
 	return access_token_header_authorization
 }
 export { verify_access_token_header_authorization_ as _verify_access_token_header_authorization }
-//# sourceMappingURL=verify_access_token_header_authorization_.js.map

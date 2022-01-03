@@ -3,4 +3,3 @@ import { validate_auth0_email } from './validate_auth0_email.js'
 export const validate_auth0_forgot_password = (data)=>{
 	return validate_auth0_email(data)
 }
-//# sourceMappingURL=validate_auth0_forgot_password.js.map

@@ -9,4 +9,3 @@ export const open_auth0_signup_b = be_(key, (ctx)=>{
 		auth0_opened$.$ = 'signup'
 	}
 })
-//# sourceMappingURL=open_auth0_signup_b.js.map

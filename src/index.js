@@ -53,4 +53,3 @@ export * from './validate_auth0_token_current.js'
 export * from './validate_auth0_user.js'
 export * from './verify_access_token_header_authorization_.js'
 export * from './verify_id_token_header_authorization__b.js'
-//# sourceMappingURL=index.js.map

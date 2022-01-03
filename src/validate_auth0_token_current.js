@@ -4,4 +4,3 @@ export const validate_auth0_token_current = (auth0_token)=>{
 	const id_token = auth0_token && auth0_token.id_token
 	validate_current_jwt(id_token)
 }
-//# sourceMappingURL=validate_auth0_token_current.js.map

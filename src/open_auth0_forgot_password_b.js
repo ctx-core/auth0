@@ -9,4 +9,3 @@ export const open_auth0_forgot_password_b = be_(key, (ctx)=>{
 		auth0_opened$.$ = 'forgot_password'
 	}
 })
-//# sourceMappingURL=open_auth0_forgot_password_b.js.map

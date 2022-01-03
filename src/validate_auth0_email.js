@@ -14,4 +14,3 @@ export const validate_auth0_email = (data)=>{
 	}
 	return has_errors ? email_error : null
 }
-//# sourceMappingURL=validate_auth0_email.js.map

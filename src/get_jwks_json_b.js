@@ -10,4 +10,3 @@ export const get_jwks_json_b = be_(key, (ctx)=>{
 		return fetch(`https://${AUTH0_DOMAIN$.$}/.well-known/jwks.json`)
 	}
 })
-//# sourceMappingURL=get_jwks_json_b.js.map

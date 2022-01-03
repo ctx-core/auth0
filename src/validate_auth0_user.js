@@ -15,4 +15,3 @@ export const validate_auth0_user = (user)=>{
 		})
 	}
 }
-//# sourceMappingURL=validate_auth0_user.js.map
