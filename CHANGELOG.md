@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 28.0.12
+
+### Patch Changes
+
+- fix: + auth0_opened\$\_b type
+
 ## 28.0.11
 
 ### Patch Changes
