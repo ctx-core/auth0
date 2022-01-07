@@ -1,5 +1,28 @@
 # @ctx-core/auth0
 
+## 28.0.13
+
+### Patch Changes
+
+- uvu: ^0.5.2 -> ^0.5.3
+- @types/auth0: ^2.34.9 -> ^2.34.10
+- svelte: ^3.44.3 -> ^3.45.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.1.3
+  - @ctx-core/combinators@8.0.36
+  - @ctx-core/dom@11.1.4
+  - @ctx-core/env@15.0.9
+  - @ctx-core/error@11.1.22
+  - @ctx-core/fetch@11.0.108
+  - @ctx-core/function@20.2.24
+  - @ctx-core/nanostores@0.3.3
+  - @ctx-core/object@22.0.11
+  - @ctx-core/email@9.0.37
+  - @ctx-core/jwt@10.0.49
+  - @ctx-core/local-storage@10.0.39
+
 ## 28.0.12
 
 ### Patch Changes
