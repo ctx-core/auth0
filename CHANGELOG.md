@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 28.0.16
+
+### Patch Changes
+
+- fix: package.json: - source
+
 ## 28.0.15
 
 ### Patch Changes
