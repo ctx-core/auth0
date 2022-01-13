@@ -1,5 +1,23 @@
 # @ctx-core/auth0
 
+## 28.0.21
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies
+  - @ctx-core/env@15.0.16
+  - @ctx-core/fetch@11.0.112
+
+## 28.0.20
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/nanostores@0.4.0
+  - @ctx-core/env@15.0.15
+
 ## 28.0.19
 
 ### Patch Changes
