@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 29.0.1
+
+### Patch Changes
+
+- fix: logout_auth0_token_error_T: + logout_auth0_token_error_param_T:
+
 ## 29.0.0
 
 ### Major Changes
