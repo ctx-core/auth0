@@ -1,4 +1,4 @@
-import { fetch } from '@ctx-core/fetch'
+import { safe_fetch as fetch } from '@ctx-core/fetch-undici'
 import { be_ } from '@ctx-core/object'
 import { auth0_token$_b } from './auth0_token$_b.js'
 import { verify_id_token_header_authorization__b } from './verify_id_token_header_authorization__b.js'

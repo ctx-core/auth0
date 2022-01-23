@@ -1,4 +1,4 @@
-import { fetch } from '@ctx-core/fetch'
+import { safe_fetch as fetch } from '@ctx-core/fetch-undici'
 import { verify_access_token_header_authorization_ } from './verify_access_token_header_authorization_.js'
 /** @type {import('./get_auth0_userinfo.d.ts').get_auth0_userinfo} */
 export const get_auth0_userinfo = (params)=>{

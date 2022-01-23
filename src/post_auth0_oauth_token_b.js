@@ -1,4 +1,4 @@
-import { fetch } from '@ctx-core/fetch'
+import { safe_fetch as fetch } from '@ctx-core/fetch-undici'
 import { be_ } from '@ctx-core/object'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 const key = 'post_auth0_oauth_token'
