@@ -1,4 +1,4 @@
-import { safe_fetch as fetch } from '@ctx-core/fetch-undici'
+import { fetch } from '@ctx-core/fetch-undici'
 import { be_ } from '@ctx-core/object'
 import { auth0_token$_b } from './auth0_token$_b.js'
 import { verify_id_token_header_authorization__b } from './verify_id_token_header_authorization__b.js'
@@ -13,7 +13,7 @@ export const post_auth0_auth_change_password_b = be_(key, (ctx)=>{
 			password
 		}
 		const Authorization = await verify_id_token_header_authorization_(auth0_token$.$)
-		return fetch('/auth/change_password', {
+		const res = await fetch('/auth/change_password', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -21,5 +21,6 @@ export const post_auth0_auth_change_password_b = be_(key, (ctx)=>{
 			},
 			body: JSON.stringify(body)
 		})
+		return [await res.json(), res]
 	}
 })

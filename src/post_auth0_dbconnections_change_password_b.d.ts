@@ -5,4 +5,5 @@ export interface post_auth0_dbconnections_change_password_body_T {
 	email:string;
 	connection:string;
 }
-export declare type post_auth0_dbconnections_change_password_T = (body:post_auth0_dbconnections_change_password_body_T)=>Promise<Response>;
+export declare type post_auth0_dbconnections_change_password_T = (body:post_auth0_dbconnections_change_password_body_T)=>
+	Promise<[string, Response]>;

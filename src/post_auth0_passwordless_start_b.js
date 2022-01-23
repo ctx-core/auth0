@@ -1,4 +1,4 @@
-import { safe_fetch as fetch } from '@ctx-core/fetch-undici'
+import { fetch } from '@ctx-core/fetch-undici'
 import { be_, assign } from '@ctx-core/object'
 import { AUTH0_DOMAIN$_b } from './AUTH0_DOMAIN$_b.js'
 const key = 'post_auth0_passwordless_start'
@@ -15,12 +15,13 @@ export const post_auth0_passwordless_start_b = be_(key, (ctx)=>{
 			}
 		})
 		const AUTH0_DOMAIN = AUTH0_DOMAIN$.$
-		return await fetch(`https://${AUTH0_DOMAIN}/passwordless/start`, {
+		const res = await fetch(`https://${AUTH0_DOMAIN}/passwordless/start`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(body)
 		})
+		return [await res.json(), res]
 	}
 })
