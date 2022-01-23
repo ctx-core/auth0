@@ -1,4 +1,4 @@
-import { waitfor_fibonacci_backoff } from '@ctx-core/fetch'
+import { waitfor_fibonacci_backoff } from '@ctx-core/fetch-undici'
 import { run } from '@ctx-core/function'
 import { be_ } from '@ctx-core/object'
 import { setter_computed$ } from '@ctx-core/nanostores'

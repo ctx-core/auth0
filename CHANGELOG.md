@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 28.1.1
+
+### Patch Changes
+
+- fix reference to @ctx-core/fetch-undici
+- Updated dependencies
+  - @ctx-core/fetch-undici@1.0.2
+
 ## 28.1.0
 
 ### Minor Changes
