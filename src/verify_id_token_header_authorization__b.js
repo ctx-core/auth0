@@ -5,7 +5,7 @@ import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'verify_id_token_header_authorization_'
 /** @type {import('./verify_id_token_header_authorization__b.d.ts').verify_id_token_header_authorization__b} */
-export const verify_id_token_header_authorization__b = be_(key, (ctx)=>{
+export const verify_id_token_header_authorization__b = be_(key, ctx=>{
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	return verify_id_token_header_authorization_
 	async function verify_id_token_header_authorization_(auth0_token) {

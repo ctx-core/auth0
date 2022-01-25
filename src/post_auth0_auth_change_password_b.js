@@ -4,7 +4,7 @@ import { auth0_token$_b } from './auth0_token$_b.js'
 import { verify_id_token_header_authorization__b } from './verify_id_token_header_authorization__b.js'
 const key = 'post_auth0_auth_change_password'
 /** @type {import('./post_auth0_auth_change_password_b.d.ts').post_auth0_auth_change_password_b} */
-export const post_auth0_auth_change_password_b = be_(key, (ctx)=>{
+export const post_auth0_auth_change_password_b = be_(key, ctx=>{
 	const auth0_token$ = auth0_token$_b(ctx)
 	const verify_id_token_header_authorization_ = verify_id_token_header_authorization__b(ctx)
 	return post_auth0_auth_change_password

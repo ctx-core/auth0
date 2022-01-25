@@ -11,16 +11,17 @@ import { logout_auth0_token_error_b } from './logout_auth0_token_error_b.js'
 import { set_auth0_token_b } from './set_auth0_token_b.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'auth0_token$'
-export const auth0_token$_b = be_(key, (ctx)=>{
+export const auth0_token$_b = be_(key, ctx=>{
 	const auth0_token_json$ = auth0_token_json$_b(ctx)
 	const clear_auth0_token = clear_auth0_token_b(ctx)
 	const logout_auth0_token = logout_auth0_token_b(ctx)
 	const logout_auth0_token_error = logout_auth0_token_error_b(ctx)
 	const set_auth0_token = set_auth0_token_b(ctx)
-	const auth0_token$ = computed$(in_auth0_token$_b(ctx), (auth0_token)=>auth0_token && auth0_token.error ? false : auth0_token
+	const auth0_token$ = computed$(in_auth0_token$_b(ctx),
+		auth0_token=>auth0_token?.error ? false : auth0_token
 	)
 	if (has_dom) {
-		auth0_token_json$.subscribe((auth0_token_json)=>{
+		auth0_token_json$.subscribe(auth0_token_json=>{
 			if (auth0_token_json == null) {
 				clear_auth0_token()
 				return
