@@ -13,6 +13,6 @@ export const post_auth0_oauth_token_b = be_(key, ctx=>{
 			},
 			body: JSON.stringify(body)
 		})
-		return [res.ok ? await res.json() : await res.text(), res]
+		return [await res.json(), res]
 	}
 })

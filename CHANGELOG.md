@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 29.1.1
+
+### Patch Changes
+
+- back to await res.json() as Auth0Error is expected
+
+  get*auth0_userinfo
+  post_auth0_auth_change_password_b
+  post_auth0_dbconnections_signup_b
+  post_auth0_oauth_token*
+  post_auth0_passwordless_start_b
+
 ## 29.1.0
 
 ### Minor Changes
