@@ -10,5 +10,5 @@ export const get_auth0_userinfo = async params=>{
 			authorization
 		}
 	})
-	return [await res.json(), params]
+	return [res.ok ? await res.json() : await res.text(), res]
 }

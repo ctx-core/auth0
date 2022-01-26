@@ -1,5 +1,21 @@
 # @ctx-core/auth0
 
+## 29.1.0
+
+### Minor Changes
+
+- non ok responses return res.text() for [0]
+
+  get_auth0_userinfo
+  post_auth0_auth_change_password_b
+  post_auth0_dbconnections_signup_b
+  post_auth0_oauth_token_b
+  post_auth0_passwordless_start_b
+
+### Patch Changes
+
+- fix: get_auth0_userinfo: element [1] should be a response
+
 ## 29.0.2
 
 ### Patch Changes

@@ -22,6 +22,6 @@ export const post_auth0_passwordless_start_b = be_(key, ctx=>{
 			},
 			body: JSON.stringify(body)
 		})
-		return [await res.json(), res]
+		return [res.ok ? await res.json() : await res.text(), res]
 	}
 })
