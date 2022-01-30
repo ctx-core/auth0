@@ -39,7 +39,7 @@
 		"@ctx-core/combinators": "workspace:^8.0.37",
 		"@ctx-core/dom": "workspace:^11.1.5",
 		"@ctx-core/email": "workspace:^9.0.38",
-		"@ctx-core/env": "workspace:^15.0.18",
+		"@ctx-core/env": "workspace:^15.0.19",
 		"@ctx-core/error": "workspace:^11.3.0",
 		"@ctx-core/fetch-undici": "workspace:^1.1.0",
 		"@ctx-core/function": "workspace:^20.4.0",
