@@ -45,7 +45,7 @@
 		"@ctx-core/function": "workspace:^20.4.0",
 		"@ctx-core/jwt": "workspace:^10.0.50",
 		"@ctx-core/local-storage": "workspace:^10.0.40",
-		"@ctx-core/nanostores": "workspace:^0.5.0",
+		"@ctx-core/nanostores": "workspace:^0.5.1",
 		"@ctx-core/object": "workspace:^22.0.13",
 		"auth0-js": "^9.19.0",
 		"deep-equal": "^2.0.5",
