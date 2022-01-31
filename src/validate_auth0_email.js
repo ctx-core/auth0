@@ -1,6 +1,6 @@
 import { _email_valid } from '@ctx-core/email'
 /** @type {import('./validate_auth0_email.d.ts').validate_auth0_email} */
-export const validate_auth0_email = (data)=>{
+export const validate_auth0_email = data=>{
 	const { email } = data
 	const email_error = {}
 	let has_errors

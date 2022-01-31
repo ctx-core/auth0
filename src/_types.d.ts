@@ -1,6 +1,6 @@
 import { JwtPayload } from 'jsonwebtoken'
 import { error_ctx_I } from '@ctx-core/error'
-import { auth0_token_T } from './auth0_token$_b'
+import { auth0_token_T } from './auth0_token$_'
 export interface auth0_client_id_optional_body_I {
 	client_id?:string
 }

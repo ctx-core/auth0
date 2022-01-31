@@ -1,1 +1,1 @@
-export declare function validate_auth0_env():void;
+export declare function validate_auth0_env():void
