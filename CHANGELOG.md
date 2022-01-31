@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 30.0.1
+
+### Patch Changes
+
+- fix: verify*access_token_header_authorization*=>verify_access_token_header_authorization
+- fix: verify*id_token_header_authorization*=>verify_id_token_header_authorization
+- Updated dependencies [9c361b0c8]
+  - @ctx-core/fetch-undici@1.1.2
+
 ## 30.0.0
 
 ### Major Changes

@@ -9,7 +9,7 @@ import { validate_auth0_token_current } from './validate_auth0_token_current.js'
  * @return {Promise<string>}
  * @private
  */
-export async function verify_id_token_header_authorization_(ctx, auth0_token) {
+export async function verify_id_token_header_authorization(ctx, auth0_token) {
 	const id_token_header_authorization = id_token_header_authorization_(auth0_token)
 	try {
 		if (!id_token_header_authorization) {

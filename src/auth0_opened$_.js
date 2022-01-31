@@ -8,7 +8,7 @@ export const auth0_opened$_ = be_(key, ctx=>{
 	const auth0_email$ = auth0_email$_(ctx)
 	/** @type {import('auth0_opened$_.d.ts').auth0_opened$_T} */
 	const auth0_opened$ = assign(
-		atom$(undefined), {
+		/** @type {*} */atom$(undefined), {
 			open_auth0_change_password,
 			reload_auth0_opened,
 		}
