@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 30.0.2
+
+### Patch Changes
+
+- fix: clear*auth0_token*=>clear_auth0_token
+- fix: clear*auth0_token_error*=>clear_auth0_token_error
+
 ## 30.0.1
 
 ### Patch Changes

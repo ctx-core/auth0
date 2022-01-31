@@ -4,7 +4,7 @@ import { sync_localStorage } from '@ctx-core/local-storage'
 import { computed$ } from '@ctx-core/nanostores'
 import { assign, be_ } from '@ctx-core/object'
 import { auth0_token_json$_ } from './auth0_token_json$_.js'
-import { clear_auth0_token_ } from './clear_auth0_token_.js'
+import { clear_auth0_token } from './clear_auth0_token.js'
 import { in_auth0_token$_ } from './in_auth0_token$_.js'
 import { logout_auth0_token as _logout_auth0_token } from './logout_auth0_token.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
@@ -13,7 +13,6 @@ import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 const key = 'auth0_token$'
 export const auth0_token$_ = be_(key, ctx=>{
 	const auth0_token_json$ = auth0_token_json$_(ctx)
-	const clear_auth0_token = clear_auth0_token_(ctx)
 	const logout_auth0_token = ()=>_logout_auth0_token(ctx)
 	const set_auth0_token = auth0_token=>_set_auth0_token(ctx, auth0_token)
 	const auth0_token$ = computed$(in_auth0_token$_(ctx),
@@ -22,7 +21,7 @@ export const auth0_token$_ = be_(key, ctx=>{
 	if (has_dom) {
 		auth0_token_json$.subscribe(auth0_token_json=>{
 			if (auth0_token_json == null) {
-				clear_auth0_token()
+				clear_auth0_token(ctx)
 				return
 			}
 			sync_localStorage('auth0_token_json', auth0_token_json)

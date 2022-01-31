@@ -2,7 +2,7 @@ import type { nullish } from '@ctx-core/function'
 import { Token } from '@ctx-core/jwt'
 import { ReadableAtom$ } from '@ctx-core/nanostores'
 import { B } from '@ctx-core/object'
-import { clear_auth0_token_T } from './clear_auth0_token_'
+import { clear_auth0_token_T } from './clear_auth0_token'
 import { logout_auth0_token_T } from './logout_auth0_token'
 import { set_auth0_token_T } from './set_auth0_token.js'
 export declare const auth0_token$_:B<auth0_token$_T>
