@@ -8,7 +8,7 @@ import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
  * @return {Promise<[UserData|Auth0Error, Response]>}
  * @see {@link https://auth0.com/docs/libraries/custom-signup}
  */
-async function post_auth0_dbconnections_signup(ctx, body) {
+export async function post_auth0_dbconnections_signup(ctx, body) {
 	const res = await fetch(`https://${AUTH0_DOMAIN$_(ctx).$}/dbconnections/signup`, {
 		method: 'POST',
 		headers: {

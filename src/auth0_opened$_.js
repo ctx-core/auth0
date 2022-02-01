@@ -2,9 +2,8 @@ import { has_dom } from '@ctx-core/dom'
 import { atom$ } from '@ctx-core/nanostores'
 import { assign, be_ } from '@ctx-core/object'
 import { auth0_email$_ } from './auth0_email$_.js'
-const key = 'auth0_opened$'
 /** @type {import('auth0_opened$_.d.ts').auth0_opened$_} */
-export const auth0_opened$_ = be_(key, ctx=>{
+export const auth0_opened$_ = be_('auth0_opened$', ctx=>{
 	const auth0_email$ = auth0_email$_(ctx)
 	/** @type {import('auth0_opened$_.d.ts').auth0_opened$_T} */
 	const auth0_opened$ = assign(

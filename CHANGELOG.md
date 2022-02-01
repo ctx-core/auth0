@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 30.0.4
+
+### Patch Changes
+
+- fix: export post_auth0_dbconnections_signup
+
 ## 30.0.3
 
 ### Patch Changes

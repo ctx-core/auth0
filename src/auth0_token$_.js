@@ -10,8 +10,7 @@ import { logout_auth0_token as _logout_auth0_token } from './logout_auth0_token.
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
 import { set_auth0_token as _set_auth0_token } from './set_auth0_token.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
-const key = 'auth0_token$'
-export const auth0_token$_ = be_(key, ctx=>{
+export const auth0_token$_ = be_('auth0_token$', ctx=>{
 	const auth0_token_json$ = auth0_token_json$_(ctx)
 	const logout_auth0_token = ()=>_logout_auth0_token(ctx)
 	const set_auth0_token = auth0_token=>_set_auth0_token(ctx, auth0_token)
