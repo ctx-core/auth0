@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 31.0.0
+
+### Major Changes
+
+- jwt_token_decoded_I=>verified_jwt_token_I
+
 ## 30.0.4
 
 ### Patch Changes

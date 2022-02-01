@@ -1,6 +1,6 @@
 import { JwtPayload } from 'jsonwebtoken'
 import { error_ctx_I } from '@ctx-core/error'
-import { auth0_token_T } from './auth0_token$_'
+import { auth0_token_T } from '../auth0_token$_'
 export interface auth0_client_id_optional_body_I {
 	client_id?:string
 }
@@ -17,7 +17,7 @@ export interface auth0_password_confirmation_data_I {
 	password:string;
 	password_confirmation?:string;
 }
-export interface jwt_token_decoded_I extends JwtPayload {
+export interface verified_jwt_token_I extends JwtPayload {
 	user_id:string;
 	email:string;
 	sub?:string;
