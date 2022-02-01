@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 30.0.3
+
+### Patch Changes
+
+- fix: export clear_auth0_token_error
+
 ## 30.0.2
 
 ### Patch Changes
