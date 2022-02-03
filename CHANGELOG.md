@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 31.0.1
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies
+  - @ctx-core/env@16.0.1
+
 ## 31.0.0
 
 ### Major Changes
