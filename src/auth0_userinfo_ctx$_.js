@@ -10,6 +10,4 @@ export const auth0_userinfo_ctx$_ = be_('auth0_userinfo_ctx$', ctx=>
 		(auth0_userinfo, auth0_userinfo_auth0_token)=>({
 			auth0_userinfo,
 			auth0_userinfo_auth0_token
-		})
-	)
-)
+		})))

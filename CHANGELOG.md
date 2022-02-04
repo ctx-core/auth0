@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 32.0.0
+
+### Major Changes
+
+- extracted auth0_logout from auth0_logout_msg\$
+- schedule_auth0_token_current_validate,set_auth0_token_json: extracted from auth0_token\$
+
 ## 31.0.1
 
 ### Patch Changes

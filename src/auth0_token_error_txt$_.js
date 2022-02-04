@@ -14,5 +14,4 @@ export const auth0_token_error_txt$_ = be_('auth0_token_error_txt$', ctx=>
 				: auth0_token_error.error
 					? auth0_token_error.error
 					: ''
-		: ''
-	))
+		: ''))
