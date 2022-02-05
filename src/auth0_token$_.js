@@ -21,7 +21,7 @@ export const auth0_token$_ = be_('auth0_token$', ctx=>{
 				return
 			}
 			sync_localStorage('auth0_token_json', $)
-			if ($) schedule_auth0_token_current_validate(ctx)
+			if ($) queueMicrotask(()=>schedule_auth0_token_current_validate(ctx))
 		})
 	}
 	if (has_dom) {
