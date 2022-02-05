@@ -25,7 +25,7 @@ export const auth0_token$_ = be_('auth0_token$', ctx=>{
 		})
 	}
 	if (has_dom) {
-		window.addEventListener('storage', set_auth0_token_json)
+		window.addEventListener('storage', event=>set_auth0_token_json(ctx, event))
 	}
 	return auth0_token$
 })
@@ -54,7 +54,7 @@ export function schedule_auth0_token_current_validate(ctx) {
 }
 /**
  * @param {Ctx}ctx
- * @param event
+ * @param {StorageEvent}event
  */
 export function set_auth0_token_json(ctx, event) {
 	if (event.key === 'auth0_token_json') {

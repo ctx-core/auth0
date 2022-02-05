@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 32.0.2
+
+### Patch Changes
+
+- fix: auth0*token\$*: window.addEventListener: 'storage': event=>set_auth0_token_json(ctx, event)
+
 ## 32.0.1
 
 ### Patch Changes
