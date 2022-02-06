@@ -5,6 +5,5 @@ export function password_realm_body_(ctx, data) {
 		grant_type: 'http://auth0.com/oauth/grant-type/password-realm',
 		realm: 'Username-Password-Authentication',
 		connection: 'Username-Password-Authentication',
-		data
-	}))
+	}, data))
 }
