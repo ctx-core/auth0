@@ -13,7 +13,7 @@ import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 export const auth0_token$_ = be_('auth0_token$', ctx=>{
 	const auth0_token_json$ = auth0_token_json$_(ctx)
 	const auth0_token$ = computed$(in_auth0_token$_(ctx),
-		$=>$?.error ? false : $)
+		$=>$?.error ? null : $)
 	if (has_dom) {
 		auth0_token_json$.subscribe($=>{
 			if ($ == null) {

@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 32.0.3
+
+### Patch Changes
+
+- fix: auth0*userinfo\$*: using waitfor_fibonacci_backoff api
+- auth0_token_json: localStorage key: auth0_token_json
+- fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
+- fix: auth0*change_password_opened\$*: \$ === 'change_password'
+
+  fix: auth0*auth0_login_opened\$\_\$*: \$ === 'login'
+
 ## 32.0.2
 
 ### Patch Changes

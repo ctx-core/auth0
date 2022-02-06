@@ -22,9 +22,13 @@ export const auth0_userinfo$_ = be_('auth0_userinfo$', ctx=>{
 			return
 		}
 		set(auth0_token)
-		const [auth0_userinfo, response] = await waitfor_fibonacci_backoff(()=>get_auth0_userinfo({
-			auth0_token, AUTH0_DOMAIN,
-		}))
+		let auth0_userinfo
+		const response = await waitfor_fibonacci_backoff(
+			async ()=>{
+				const [_auth0_userinfo, response] = await get_auth0_userinfo({ auth0_token, AUTH0_DOMAIN })
+				auth0_userinfo = _auth0_userinfo
+				return response
+			})
 		if (!response.ok) {
 			clear_auth0_token(ctx, null)
 			set(null)

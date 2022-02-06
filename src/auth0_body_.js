@@ -8,6 +8,5 @@ import { AUTH0_CLIENT_ID$_ } from './AUTH0_CLIENT_ID$_.js'
 export function auth0_body_(ctx, data) {
 	return assign(
 		{ client_id: AUTH0_CLIENT_ID$_(ctx).$ },
-		data
-	)
+		data)
 }

@@ -6,6 +6,3 @@ export const auth0_forgot_password_check_email_opened$_ = be_('auth0_forgot_pass
 	computed$(
 		auth0_opened$_(ctx),
 		$=>$ === 'forgot_password_check_email'))
-export {
-	auth0_forgot_password_check_email_opened$_ as b__opened__forgot_password_check_email,
-}

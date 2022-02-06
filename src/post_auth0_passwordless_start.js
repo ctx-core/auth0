@@ -5,7 +5,7 @@ import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  * @param {string}body
- * @return {Promise<[null|Auth0Error, Response]>}
+ * @return {Promise<[string|Auth0Error, Response]>}
  */
 export async function post_auth0_passwordless_start(ctx, body) {
 	const { hostname, pathname } = window.location
@@ -22,5 +22,5 @@ export async function post_auth0_passwordless_start(ctx, body) {
 		},
 		body: JSON.stringify(body)
 	})
-	return [res.ok ? null : await res.json(), res]
+	return [res.ok ? await res.text() : await res.json(), res]
 }

@@ -16,6 +16,3 @@ export const auth0_opened$_ = be_('auth0_opened$', ctx=>{
 export function open_auth0_change_password(ctx) {
 	auth0_opened$_(ctx).$ = 'change_password'
 }
-export {
-	auth0_opened$_ as b__opened__auth0,
-}

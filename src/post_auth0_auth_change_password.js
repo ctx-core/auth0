@@ -7,9 +7,7 @@ import { verify_id_token_header_authorization } from './verify_id_token_header_a
  * @return {Promise<[auth_change_password_T, Response]>}
  */
 export async function post_auth0_auth_change_password(ctx, password) {
-	const body = {
-		password
-	}
+	const body = { password }
 	const Authorization = await verify_id_token_header_authorization(ctx, auth0_token$_(ctx).$)
 	const res = await fetch('/auth/change_password', {
 		method: 'POST',

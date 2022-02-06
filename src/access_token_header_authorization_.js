@@ -8,6 +8,3 @@ export const access_token_header_authorization_ = (auth0_token)=>{
 		: null
 	return auth0_token_authorization
 }
-export {
-	access_token_header_authorization_ as _access_token_header_authorization
-}
