@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 32.0.6
+
+### Patch Changes
+
+- fix: auth0*opened\$*: dedupe: auth0*email\$*(ctx).listen(()=>auth0_opened$.$ = null)
+
 ## 32.0.5
 
 ### Patch Changes
@@ -21,7 +27,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\$\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\$\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
