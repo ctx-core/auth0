@@ -6,7 +6,13 @@ import { auth0_email$_ } from './auth0_email$_.js'
 export const auth0_opened$_ = be_('auth0_opened$', ctx=>{
 	/** @type {import('auth0_opened$_.d.ts').auth0_opened$_T} */
 	const auth0_opened$ = atom$(null)
-	auth0_email$_(ctx).listen(()=>auth0_opened$.$ = null)
+	let auth0_email
+	auth0_email$_(ctx).subscribe((_auth0_email)=>{
+		if (auth0_email !== _auth0_email) {
+			auth0_email = _auth0_email
+			auth0_opened$.$ = null
+		}
+	})
 	return auth0_opened$
 })
 export function open_auth0_change_password(ctx) {
