@@ -43,7 +43,7 @@
 		"@ctx-core/error": "workspace:^11.3.1",
 		"@ctx-core/fetch-undici": "workspace:^1.1.5",
 		"@ctx-core/function": "workspace:*",
-		"@ctx-core/jwt": "workspace:^10.1.0",
+		"@ctx-core/jwt": "workspace:^10.1.1",
 		"@ctx-core/local-storage": "workspace:^10.0.41",
 		"@ctx-core/nanostores": "workspace:^0.5.4",
 		"@ctx-core/object": "workspace:*",
