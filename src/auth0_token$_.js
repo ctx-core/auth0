@@ -11,21 +11,19 @@ import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {import('./auth0_token$_.d.ts').auth0_token$_} */
 export const auth0_token$_ = be_('auth0_token$', ctx=>{
-	const auth0_token_json$ = auth0_token_json$_(ctx)
-	const auth0_token$ = computed$(in_auth0_token$_(ctx),
-		$=>$?.error ? null : $)
-	if (has_dom) {
-		auth0_token_json$.subscribe($=>{
-			if ($ == null) {
-				clear_auth0_token(ctx)
-				return
-			}
+	const auth0_token$ = computed$(in_auth0_token$_(ctx), $=>$?.error ? null : $)
+	auth0_token_json$_(ctx).subscribe($=>{
+		if ($ == null) {
+			clear_auth0_token(ctx)
+			return
+		}
+		if (has_dom) {
 			sync_localStorage('auth0_token_json', $)
 			if ($) queueMicrotask(()=>schedule_auth0_token_current_validate(ctx))
-		})
-	}
+		}
+	})
 	if (has_dom) {
-		window.addEventListener('storage', event=>set_auth0_token_json(ctx, event))
+		window.addEventListener('storage', $=>set_auth0_token_json(ctx, $))
 	}
 	return auth0_token$
 })
