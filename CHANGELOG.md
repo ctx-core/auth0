@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 33.0.0
+
+### Major Changes
+
+- BREAKING_CHANGE: schedule_auth0_token_current_validate,set_auth0_token_json: is not exported
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/nanostores@0.6.0
+  - @ctx-core/env@16.0.4
+
 ## 32.0.11
 
 ### Patch Changes
@@ -65,7 +77,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\$\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\$\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
