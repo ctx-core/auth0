@@ -5,8 +5,3 @@ import { B, Ctx } from '@ctx-core/object'
 export declare const auth0_token$_:B<auth0_token$_T>
 export declare type auth0_token_T = JwtToken
 export type auth0_token$_T = ReadableAtom$<JwtToken|nullish>
-export declare function schedule_auth0_token_current_validate(ctx:Ctx):void
-export declare function set_auth0_token_json(ctx:Ctx, event:{
-	key:string
-	newValue:any
-}):void

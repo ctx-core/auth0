@@ -8,11 +8,8 @@ import { clear_auth0_token } from './clear_auth0_token.js'
 import { get_auth0_userinfo } from './get_auth0_userinfo.js'
 /** @type {import('./auth0_userinfo$_.d.ts').auth0_userinfo$_} */
 export const auth0_userinfo$_ = be_('auth0_userinfo$', ctx=>{
-	const auth0_token$ = auth0_token$_(ctx)
 	return setter_computed$([
-		AUTH0_DOMAIN$_(ctx),
-		auth0_token$,
-		auth0_userinfo_auth0_token$_(ctx),
+		AUTH0_DOMAIN$_(ctx), auth0_token$_(ctx), auth0_userinfo_auth0_token$_(ctx),
 	], async ([AUTH0_DOMAIN, auth0_token, auth0_userinfo_auth0_token,], set)=>{
 		if (auth0_token === auth0_userinfo_auth0_token) {
 			return
@@ -22,6 +19,7 @@ export const auth0_userinfo$_ = be_('auth0_userinfo$', ctx=>{
 			return
 		}
 		set(auth0_token)
+		/** @type {import('./get_auth0_userinfo.d.ts').get_auth0_userinfo_T} */
 		let auth0_userinfo
 		const response = await waitfor_fibonacci_backoff(
 			async ()=>{
@@ -30,7 +28,7 @@ export const auth0_userinfo$_ = be_('auth0_userinfo$', ctx=>{
 				return response
 			})
 		if (!response.ok) {
-			clear_auth0_token(ctx, null)
+			clear_auth0_token(ctx)
 			set(null)
 			return
 		}
