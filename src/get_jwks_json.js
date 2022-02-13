@@ -6,5 +6,6 @@ import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
  * @return {Promise<[jwks_json_T, Response]>}
  */
 export async function get_jwks_json(ctx) {
-	return await fetch_response_pair_(`https://${AUTH0_DOMAIN$_(ctx).$}/.well-known/jwks.json`)
+	const [body, response] = await fetch_response_pair_(`https://${AUTH0_DOMAIN$_(ctx).$}/.well-known/jwks.json`)
+	return [typeof body === 'string' ? JSON.parse(body) : body, response]
 }
