@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 33.1.0
+
+### Minor Changes
+
+- - throw_bad_gateway_auth0,throw_unauthorized_auth0: ∈ validate_auth0_user,verify_access_token_header_authorization,verify_id_token_header_authorization
+
+### Patch Changes
+
+- fix: auth0*token_json\$*: set to null when auth0_token_error\$ changes & is present
+
 ## 33.0.5
 
 ### Patch Changes
@@ -118,7 +128,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
