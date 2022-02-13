@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 33.1.1
+
+### Patch Changes
+
+- fix: get_jwks_json: body: JSON.parse: response does not have Content-Type: application/json
+
 ## 33.1.0
 
 ### Minor Changes
@@ -128,7 +134,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
