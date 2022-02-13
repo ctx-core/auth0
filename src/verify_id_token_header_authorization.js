@@ -1,6 +1,6 @@
-import { throw_unauthorized } from '@ctx-core/error'
 import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core/jwt'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
+import { throw_unauthorized_auth0 } from './throw_unauthorized_auth0.js'
 import { validate_auth0_token_current } from './validate_auth0_token_current.js'
 /** @typedef {import('./auth0_token$_.d.ts').auth0_token_T}auth0_token_T */
 /**
@@ -11,19 +11,17 @@ import { validate_auth0_token_current } from './validate_auth0_token_current.js'
  */
 export async function verify_id_token_header_authorization(ctx, auth0_token) {
 	const id_token_header_authorization = id_token_header_authorization_(auth0_token)
+	if (!id_token_header_authorization) {
+		throw_unauthorized_auth0({ data })
+	}
 	try {
-		if (!id_token_header_authorization) {
-			throw_unauthorized({
-				data: auth0_token
-			})
-		}
 		await validate_auth0_token_current(auth0_token)
 		const jwt_token = header_authorization_jwt_token_(id_token_header_authorization)
 		validate_current_jwt(jwt_token)
 	} catch (err) {
 		console.error(err)
 		logout_auth0_token_error(ctx, err)
-		throw_unauthorized(err)
+		throw_unauthorized_auth0(err)
 	}
 	return id_token_header_authorization
 }
