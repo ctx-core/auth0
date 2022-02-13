@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 33.0.3
+
+### Patch Changes
+
+- get_auth0_userinfo,get_jwks_json,post_auth0_auth_change_password,post_auth0_dbconnections_signup,post_auth0_oauth_token,post_auth0_passwordless_start
+
+  ∋ fetch*response_pair*
+
+- Updated dependencies
+  - @ctx-core/fetch-undici@1.2.0
+
 ## 33.0.2
 
 ### Patch Changes
@@ -93,7 +104,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\$\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\$\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
