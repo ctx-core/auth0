@@ -1,4 +1,4 @@
-import { fetch } from '@ctx-core/fetch-undici'
+import { fetch_response_pair_ } from '@ctx-core/fetch-undici'
 import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
 /** @typedef {import('auth0').UserData}UserData */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
@@ -9,14 +9,11 @@ import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
  * @see {@link https://auth0.com/docs/libraries/custom-signup}
  */
 export async function post_auth0_dbconnections_signup(ctx, body) {
-	const res = await fetch(`https://${AUTH0_DOMAIN$_(ctx).$}/dbconnections/signup`, {
+	return await fetch_response_pair_(`https://${AUTH0_DOMAIN$_(ctx).$}/dbconnections/signup`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify(body)
 	})
-	/** @type {UserData|Auth0Error} */
-	const user_data_or_error = await res.json()
-	return [user_data_or_error, res]
 }
