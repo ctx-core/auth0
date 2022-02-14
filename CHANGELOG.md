@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 33.2.0
+
+### Minor Changes
+
+- feat: throw_bad_gateway_auth0,throw_unauthorized_auth0: error_ctx is an optional argument
+- feat: + bad*gateway_auth0_error*,unauthorized*auth0_error*
+
+### Patch Changes
+
+- fix: logout_auth0_token_error: error argument is coerced into Auth0Error
+
 ## 33.1.2
 
 ### Patch Changes
@@ -140,7 +151,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
