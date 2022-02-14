@@ -5,7 +5,10 @@ import { logout_auth0_token } from './logout_auth0_token.js'
  * @param {Auth0Error|logout_auth0_token_error_param_T|null}error
  */
 export function logout_auth0_token_error(ctx, error) {
-	auth0_token_error$_(ctx).$ = error
+	auth0_token_error$_(ctx).$ = typeof error === 'string' ? {
+		error: 'Error',
+		error_description: error
+	} : error
 	if (error) {
 		logout_auth0_token(ctx)
 	}
