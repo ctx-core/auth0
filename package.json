@@ -45,7 +45,7 @@
 		"@ctx-core/function": "*",
 		"@ctx-core/jwt": "^10.1.1",
 		"@ctx-core/local-storage": "^10.0.41",
-		"@ctx-core/nanostores": "^0.7.1",
+		"@ctx-core/nanostores": "^0.7.2",
 		"@ctx-core/object": "*",
 		"auth0-js": "^9.19.0",
 		"deep-equal": "^2.0.5",
