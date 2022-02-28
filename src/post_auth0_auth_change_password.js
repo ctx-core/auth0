@@ -1,4 +1,4 @@
-import { fetch_response_pair_ } from '@ctx-core/fetch-undici'
+import { fetch_response_pair_, headers_ } from '@ctx-core/fetch-undici'
 import { auth0_token$_ } from './auth0_token$_.js'
 import { verify_id_token_header_authorization } from './verify_id_token_header_authorization.js'
 /**
@@ -11,10 +11,10 @@ export async function post_auth0_auth_change_password(ctx, password) {
 	const Authorization = await verify_id_token_header_authorization(ctx, auth0_token$_(ctx).$)
 	return await fetch_response_pair_('/auth/change_password', {
 		method: 'POST',
-		headers: {
+		headers: headers_({
 			'Content-Type': 'application/json',
 			Authorization
-		},
+		}),
 		body: JSON.stringify(body)
 	})
 }
