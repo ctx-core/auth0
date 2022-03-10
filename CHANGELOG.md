@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 34.0.0
+
+### Major Changes
+
+- validate_auth0_token_current=>validate_auth0_token
+
 ## 33.2.10
 
 ### Patch Changes
@@ -221,7 +227,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 

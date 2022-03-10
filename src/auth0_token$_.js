@@ -7,7 +7,7 @@ import { auth0_token_json$_ } from './auth0_token_json$_.js'
 import { clear_auth0_token } from './clear_auth0_token.js'
 import { in_auth0_token$_ } from './in_auth0_token$_.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
-import { validate_auth0_token_current } from './validate_auth0_token_current.js'
+import { validate_auth0_token } from './validate_auth0_token.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {import('./auth0_token$_.d.ts').auth0_token$_} */
 export const auth0_token$_ = be_('auth0_token$', ctx=>{
@@ -35,7 +35,7 @@ export const auth0_token$_ = be_('auth0_token$', ctx=>{
 		const validate_millis = now - jwt_token_exp_millis
 		setTimeout(async ()=>{
 			try {
-				validate_auth0_token_current(auth0_token)
+				validate_auth0_token(auth0_token)
 			} catch (error) {
 				if (error.type === 'bad_credentials') {
 					console.error(error)
