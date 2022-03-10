@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 33.2.9
+
+### Patch Changes
+
+- fix: in*auth0_token\$*: dedupe set of the same token content
+- Updated dependencies
+  - @ctx-core/nanostores@1.0.0
+  - @ctx-core/env@16.0.8
+
 ## 33.2.8
 
 ### Patch Changes
@@ -206,7 +215,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*: \$ === 'login'
 
 ## 32.0.2
 
