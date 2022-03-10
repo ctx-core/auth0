@@ -1,5 +1,5 @@
 import { has_dom } from '@ctx-core/dom'
-import { atom$, neql_atom$ } from '@ctx-core/nanostores'
+import { atom$ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { auth0_token_error$_ } from './auth0_token_error$_.js'
 const localStorage_key = 'auth0_token_json'
