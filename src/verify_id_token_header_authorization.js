@@ -1,4 +1,5 @@
-import { header_authorization_jwt_token_, validate_current_jwt } from '@ctx-core/jwt'
+import { header_authorization_jwt_token_ } from '@ctx-core/jwt'
+import { auth0_validate_current_jwt } from './auth0_validate_current_jwt.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
 import { throw_unauthorized_auth0 } from './throw_unauthorized_auth0.js'
 import { validate_auth0_token } from './validate_auth0_token.js'
@@ -12,12 +13,12 @@ import { validate_auth0_token } from './validate_auth0_token.js'
 export async function verify_id_token_header_authorization(ctx, auth0_token) {
 	const id_token_header_authorization = id_token_header_authorization_(auth0_token)
 	if (!id_token_header_authorization) {
-		throw_unauthorized_auth0({ data })
+		throw_unauthorized_auth0({ data: auth0_token })
 	}
 	try {
 		await validate_auth0_token(auth0_token)
 		const jwt_token = header_authorization_jwt_token_(id_token_header_authorization)
-		validate_current_jwt(jwt_token)
+		auth0_validate_current_jwt(jwt_token)
 	} catch (err) {
 		console.error(err)
 		logout_auth0_token_error(ctx, err)
