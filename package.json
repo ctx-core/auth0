@@ -41,7 +41,7 @@
 		"@ctx-core/email": "^9.0.38",
 		"@ctx-core/env": "^16.0.12",
 		"@ctx-core/error": "^11.4.0",
-		"@ctx-core/fetch-undici": "^1.2.10",
+		"@ctx-core/fetch-undici": "^1.2.11",
 		"@ctx-core/function": "*",
 		"@ctx-core/jwt": "^10.1.2",
 		"@ctx-core/local-storage": "^10.0.41",
