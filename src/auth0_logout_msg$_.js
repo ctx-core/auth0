@@ -9,7 +9,6 @@ export const auth0_logout_msg$_ = be_('auth0_logout_msg$', ()=>
  */
 export function auth0_logout(ctx) {
 	logout_auth0_token(ctx)
-	auth0_logout_msg$_(ctx).$ = {
-		time: Date.now(),
-	}
+	auth0_logout_msg$_(ctx).$ = { time: Date.now() }
+	queueMicrotask(()=>auth0_logout_msg$_(ctx).$ = null)
 }
