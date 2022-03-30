@@ -50,10 +50,10 @@
 		"auth0-js": "^9.19.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
-		"svelte": "^3.46.4"
+		"svelte": "^3.46.5"
 	},
 	"devDependencies": {
-		"@types/auth0": "^2.34.16",
+		"@types/auth0": "^2.34.17",
 		"c8": "^7.11.0",
 		"check-dts": "^0.6.6",
 		"tsm": "^2.2.1",
