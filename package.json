@@ -51,7 +51,7 @@
 		"svelte": "^3.47.0"
 	},
 	"devDependencies": {
-		"@types/auth0": "^2.34.18",
+		"@types/auth0": "^2.34.19",
 		"c8": "^7.11.0",
 		"check-dts": "^0.6.6",
 		"tsm": "^2.2.1",
