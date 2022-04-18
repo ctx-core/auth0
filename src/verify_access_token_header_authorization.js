@@ -6,7 +6,7 @@ export const verify_access_token_header_authorization = auth0_token=>{
 	if (!access_token_header_authorization) {
 		throw_unauthorized_auth0({
 			auth0_token,
-			error_message: 'verify_access_token_header_authorization.js'
+			error_message: 'verify_access_token_header_authorization'
 		})
 	}
 	return access_token_header_authorization

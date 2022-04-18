@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 34.2.12
+
+### Patch Changes
+
+- verify_access_token_header_authorization: throw_unauthorized_auth0: fix: error_message: 'verify_access_token_header_authorization'
+
 ## 34.2.11
 
 ### Patch Changes
@@ -392,7 +398,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\$\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\$\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 
