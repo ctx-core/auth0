@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 34.2.17
+
+### Patch Changes
+
+- svelte: ^3.47.0 -> ^3.48.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch-undici@2.1.5
+  - @ctx-core/env@16.0.22
+
 ## 34.2.16
 
 ### Patch Changes
@@ -457,7 +467,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 
