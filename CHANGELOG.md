@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 34.2.26
+
+### Patch Changes
+
+- @types/auth0: ^2.34.19 -> ^2.34.20
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch-undici@2.1.11
+  - @ctx-core/dom@11.1.20
+
 ## 34.2.25
 
 ### Patch Changes
@@ -536,7 +547,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 
