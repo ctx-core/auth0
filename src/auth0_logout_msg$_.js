@@ -1,9 +1,9 @@
-import { atom$ } from '@ctx-core/nanostores'
+import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { logout_auth0_token } from './logout_auth0_token.js'
 /** @type {import('./auth0_logout_msg$_.d.ts').auth0_logout_msg$_} */
 export const auth0_logout_msg$_ = be_('auth0_logout_msg$', ()=>{
-	const auth0_logout_msg$ = atom$(undefined)
+	const auth0_logout_msg$ = atom_(undefined)
 	auth0_logout_msg$.subscribe($=>{
 		if ($) {
 			queueMicrotask(()=>auth0_logout_msg$.$ = null)

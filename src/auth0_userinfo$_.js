@@ -1,6 +1,6 @@
 import { waitfor_fibonacci_backoff } from '@ctx-core/fetch-undici'
 import { be_ } from '@ctx-core/object'
-import { setter_computed$ } from '@ctx-core/nanostores'
+import { setter_computed_ } from '@ctx-core/nanostores'
 import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
 import { auth0_token$_ } from './auth0_token$_.js'
 import { auth0_userinfo_auth0_token$_ } from './auth0_userinfo_auth0_token$_.js'
@@ -8,7 +8,7 @@ import { clear_auth0_token } from './clear_auth0_token.js'
 import { get_auth0_userinfo } from './get_auth0_userinfo.js'
 /** @type {import('./auth0_userinfo$_.d.ts').auth0_userinfo$_} */
 export const auth0_userinfo$_ = be_('auth0_userinfo$', ctx=>{
-	return setter_computed$([
+	return setter_computed_([
 		AUTH0_DOMAIN$_(ctx), auth0_token$_(ctx), auth0_userinfo_auth0_token$_(ctx),
 	], async ([AUTH0_DOMAIN, auth0_token, auth0_userinfo_auth0_token,], set)=>{
 		if (auth0_token === auth0_userinfo_auth0_token) {

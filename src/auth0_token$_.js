@@ -1,7 +1,7 @@
 import { has_dom } from '@ctx-core/dom'
 import { jwt_token_exp_ } from '@ctx-core/jwt'
 import { sync_localStorage } from '@ctx-core/local-storage'
-import { computed$ } from '@ctx-core/nanostores'
+import { computed_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { auth0_token_json$_ } from './auth0_token_json$_.js'
 import { clear_auth0_token } from './clear_auth0_token.js'
@@ -11,7 +11,7 @@ import { validate_auth0_token } from './validate_auth0_token.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {import('./auth0_token$_.d.ts').auth0_token$_} */
 export const auth0_token$_ = be_('auth0_token$', ctx=>{
-	const auth0_token$ = computed$(in_auth0_token$_(ctx), $=>$?.error ? null : $)
+	const auth0_token$ = computed_(in_auth0_token$_(ctx), $=>$?.error ? null : $)
 	auth0_token_json$_(ctx).subscribe($=>{
 		if ($ == null) {
 			clear_auth0_token(ctx)
