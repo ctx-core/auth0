@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "34.3.1",
+	"version": "34.4.0",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -33,11 +33,11 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.4.3",
+		"@ctx-core/array": "^26.5.0",
 		"@ctx-core/combinators": "^8.0.38",
 		"@ctx-core/dom": "^11.1.21",
 		"@ctx-core/email": "^9.0.39",
-		"@ctx-core/env": "^16.0.31",
+		"@ctx-core/env": "^16.1.0",
 		"@ctx-core/error": "^11.4.8",
 		"@ctx-core/fetch-undici": "^2.1.12",
 		"@ctx-core/function": "^20.8.0",
