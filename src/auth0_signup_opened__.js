@@ -5,6 +5,4 @@ import { auth0_opened__ } from './auth0_opened__.js'
 export const auth0_signup_opened__ = be_('auth0_signup_opened__', ctx=>
 	computed_(auth0_opened__(ctx),
 		$=>$ === 'signup'))
-export {
-	auth0_signup_opened__ as auth0_signup_opened$_
-}
+export { auth0_signup_opened__ as auth0_signup_opened$_ }

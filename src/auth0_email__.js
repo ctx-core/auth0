@@ -15,3 +15,4 @@ export const auth0_email__ = be_('auth0_email_', ctx=>{
 	})
 	return auth0_email_
 })
+export { auth0_email__ as auth0_email$_ }

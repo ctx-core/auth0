@@ -1,5 +1,34 @@
 # @ctx-core/auth0
 
+## 34.3.1
+
+### Patch Changes
+
+- fix:
+
+      AUTH0_CLIENT_ID$_
+      AUTH0_DOMAIN$_
+      AUTH0_URL$_
+      auth0_change_password_opened$_
+      auth0_closed$_
+      auth0_email$_
+      auth0_forgot_password_check_email_opened$_
+      auth0_forgot_password_opened$_
+      auth0_login_opened$_
+      auth0_logout_msg$_
+      auth0_opened$_
+      auth0_opened_class$_
+      auth0_signup_opened$_
+      auth0_token$_
+      auth0_token_error$_
+      auth0_token_error_txt$_
+      auth0_token_json$_
+      auth0_userinfo$_
+      auth0_userinfo_auth0_token$_
+      auth0_userinfo_ctx$_
+      is_auth0_loggedin$_
+      is_auth0_loggedout$_
+
 ## 34.3.0
 
 ### Minor Changes
@@ -612,7 +641,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 

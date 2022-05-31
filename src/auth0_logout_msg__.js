@@ -18,3 +18,4 @@ export function auth0_logout(ctx) {
 	logout_auth0_token(ctx)
 	auth0_logout_msg__(ctx).$ = { time: Date.now() }
 }
+export { auth0_logout_msg__ as auth0_logout_msg$_ }

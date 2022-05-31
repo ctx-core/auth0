@@ -56,6 +56,4 @@ function set_auth0_token_json(ctx, event) {
 		auth0_token_json__(ctx).$ = event.newValue
 	}
 }
-export {
-	auth0_token__ as auth0_token$_
-}
+export { auth0_token__ as auth0_token$_ }

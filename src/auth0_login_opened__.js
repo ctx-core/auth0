@@ -5,6 +5,4 @@ import { auth0_opened__ } from './auth0_opened__.js'
 export const auth0_login_opened__ = be_('auth0_login_opened__', ctx=>
 	computed_(auth0_opened__(ctx),
 		$=>!$ || $ === 'login'))
-export {
-	auth0_login_opened__ as auth0_login_opened$_
-}
+export { auth0_login_opened__ as auth0_login_opened$_ }

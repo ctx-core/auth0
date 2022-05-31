@@ -13,6 +13,4 @@ export const auth0_token_error_txt__ = be_('auth0_token_error_txt_', ctx=>
 					? $.error
 					: ''
 		: ''))
-export {
-	auth0_token_error_txt__ as auth0_token_error_txt$_
-}
+export { auth0_token_error_txt__ as auth0_token_error_txt$_ }

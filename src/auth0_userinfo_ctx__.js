@@ -11,3 +11,4 @@ export const auth0_userinfo_ctx__ = be_('auth0_userinfo_ctx__', ctx=>
 			auth0_userinfo,
 			auth0_userinfo_auth0_token
 		})))
+export { auth0_userinfo_ctx__ as auth0_userinfo_ctx$_ }

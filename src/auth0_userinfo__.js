@@ -38,6 +38,4 @@ export const auth0_userinfo__ = be_('auth0_userinfo_', ctx=>{
 		}
 	})
 })
-export {
-	auth0_userinfo__ as auth0_userinfo$_
-}
+export { auth0_userinfo__ as auth0_userinfo$_ }

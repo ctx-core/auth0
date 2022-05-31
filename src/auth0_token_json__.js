@@ -15,6 +15,4 @@ export const auth0_token_json__ = be_('auth0_token_json__', ctx=>{
 	}
 	return auth0_token_json_
 })
-export {
-	auth0_token_json__ as auth0_token_json$_
-}
+export { auth0_token_json__ as auth0_token_json$_ }

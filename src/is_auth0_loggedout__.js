@@ -5,3 +5,4 @@ import { auth0_token__ } from './auth0_token__.js'
 export const is_auth0_loggedout__ = be_('is_auth0_loggedout__', ctx=>
 	computed_(auth0_token__(ctx),
 		$=>$ === null))
+export { is_auth0_loggedout__ as is_auth0_loggedout$_ }
