@@ -44,7 +44,7 @@
 		"@ctx-core/jwt": "^10.1.12",
 		"@ctx-core/local-storage": "^10.0.50",
 		"@ctx-core/nanostores": "^1.4.0",
-		"@ctx-core/object": "^22.2.0",
+		"@ctx-core/object": "^22.2.1",
 		"auth0-js": "^9.19.0",
 		"deep-equal": "^2.0.5",
 		"jsonwebtoken": "^8.5.1",
