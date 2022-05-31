@@ -1,4 +1,0 @@
-import type { ReadableAtom_ } from '@ctx-core/nanostores'
-import type { B } from '@ctx-core/object'
-export const auth0_login_opened$_:B<auth0_login_opened$_T>
-export type auth0_login_opened$_T = ReadableAtom_<boolean>

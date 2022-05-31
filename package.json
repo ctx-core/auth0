@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "34.2.33",
+	"version": "34.3.0",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",

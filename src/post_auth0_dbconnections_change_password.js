@@ -1,7 +1,7 @@
 import { fetch } from '@ctx-core/fetch-undici'
-import { AUTH0_DOMAIN$_ } from './AUTH0_DOMAIN$_.js'
+import { AUTH0_DOMAIN__ } from './AUTH0_DOMAIN__.js'
 export async function post_auth0_dbconnections_change_password(ctx, body) {
-	const res = await fetch(`https://${AUTH0_DOMAIN$_(ctx).$}/dbconnections/change_password`, {
+	const res = await fetch(`https://${AUTH0_DOMAIN__(ctx).$}/dbconnections/change_password`, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(body)

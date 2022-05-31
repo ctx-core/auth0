@@ -3,7 +3,7 @@ import { auth0_validate_current_jwt } from './auth0_validate_current_jwt.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
 import { throw_unauthorized_auth0 } from './throw_unauthorized_auth0.js'
 import { validate_auth0_token } from './validate_auth0_token.js'
-/** @typedef {import('./auth0_token$_.d.ts').auth0_token_T}auth0_token_T */
+/** @typedef {import('./auth0_token__.d.ts').auth0_token_T}auth0_token_T */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  * @param {auth0_token_T}auth0_token
