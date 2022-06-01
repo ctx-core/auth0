@@ -33,13 +33,13 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.5.0",
+		"@ctx-core/array": "^26.5.1",
 		"@ctx-core/combinators": "^8.0.38",
 		"@ctx-core/dom": "^11.1.21",
 		"@ctx-core/email": "^9.0.39",
-		"@ctx-core/env": "^16.1.0",
+		"@ctx-core/env": "^16.1.1",
 		"@ctx-core/error": "^11.5.0",
-		"@ctx-core/fetch-undici": "^2.1.12",
+		"@ctx-core/fetch-undici": "^2.1.15",
 		"@ctx-core/function": "^20.8.0",
 		"@ctx-core/jwt": "^10.1.13",
 		"@ctx-core/local-storage": "^10.0.50",
