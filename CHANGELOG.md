@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 34.4.1
+
+### Patch Changes
+
+- auth0*token_error\$* alias
+- fix: jwt*token_exp*: jwt_token: return null when raw jwt_token does not have '.' format
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/jwt@10.1.13
+  - @ctx-core/error@11.5.0
+
 ## 34.4.0
 
 ### Minor Changes
@@ -653,7 +664,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 

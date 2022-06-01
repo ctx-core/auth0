@@ -7,7 +7,7 @@ import { auth0_token_json__ } from './auth0_token_json__.js'
 import { clear_auth0_token } from './clear_auth0_token.js'
 import { in_auth0_token__ } from './in_auth0_token__.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
-import { validate_auth0_token } from './validate_auth0_token.js'
+import { validate_auth0_token } from './validate_auth0_token/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {import('./auth0_token__.d.ts').auth0_token__} */
 export const auth0_token__ = be_('auth0_token_', ctx=>{

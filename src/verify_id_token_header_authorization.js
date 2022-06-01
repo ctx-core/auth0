@@ -1,8 +1,8 @@
 import { header_authorization_jwt_token_ } from '@ctx-core/jwt'
-import { auth0_validate_current_jwt } from './auth0_validate_current_jwt.js'
+import { auth0_validate_current_jwt } from './auth0_validate_current_jwt/index.js'
 import { logout_auth0_token_error } from './logout_auth0_token_error.js'
 import { throw_unauthorized_auth0 } from './throw_unauthorized_auth0.js'
-import { validate_auth0_token } from './validate_auth0_token.js'
+import { validate_auth0_token } from './validate_auth0_token/index.js'
 /** @typedef {import('./auth0_token__.d.ts').auth0_token_T}auth0_token_T */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
