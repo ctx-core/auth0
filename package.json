@@ -53,7 +53,7 @@
 	"devDependencies": {
 		"@ctx-core/btoa": "^8.0.58",
 		"@sinonjs/fake-timers": "^9.1.2",
-		"@types/auth0": "^2.35.0",
+		"@types/auth0": "^2.35.1",
 		"@types/auth0-js": "^9.14.6",
 		"@types/jsonwebtoken": "^8.5.8",
 		"@types/sinonjs__fake-timers": "^8.1.2",
