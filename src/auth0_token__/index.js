@@ -10,7 +10,7 @@ import { logout_auth0_token_error } from '../logout_auth0_token_error/index.js'
 import { validate_auth0_token } from '../validate_auth0_token/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {import('./auth0_token__.d.ts').auth0_token__} */
-export const auth0_token__ = be_('auth0_token_', ctx=>{
+export const auth0_token__ = be_('auth0_token__', ctx=>{
 	const auth0_token_ = computed_(in_auth0_token__(ctx), $=>$?.error ? null : $)
 	auth0_token_json__(ctx).subscribe($=>{
 		if ($ == null) {

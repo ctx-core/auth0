@@ -7,8 +7,8 @@ import { auth0_userinfo_auth0_token__ } from '../auth0_userinfo_auth0_token__/in
 import { clear_auth0_token } from '../clear_auth0_token/index.js'
 import { get_auth0_userinfo } from '../get_auth0_userinfo/index.js'
 /** @type {import('./auth0_userinfo__.d.ts').auth0_userinfo__} */
-export const auth0_userinfo__ = be_('auth0_userinfo_', ctx=>{
-	return setter_computed_([
+export const auth0_userinfo__ = be_('auth0_userinfo__', ctx=>
+	setter_computed_([
 		AUTH0_DOMAIN__(ctx), auth0_token__(ctx), auth0_userinfo_auth0_token__(ctx),
 	], async ([AUTH0_DOMAIN, auth0_token, auth0_userinfo_auth0_token,], set)=>{
 		if (auth0_token === auth0_userinfo_auth0_token) {
@@ -36,6 +36,5 @@ export const auth0_userinfo__ = be_('auth0_userinfo_', ctx=>{
 		function no_auth0_userinfo_auth0_token_() {
 			return auth0_token === undefined ? undefined : null
 		}
-	})
-})
+	}))
 export { auth0_userinfo__ as auth0_userinfo$_ }
