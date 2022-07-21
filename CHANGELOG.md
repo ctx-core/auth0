@@ -1,5 +1,18 @@
 # @ctx-core/auth0
 
+## 34.4.12
+
+### Patch Changes
+
+- @ctx-core: 20.9.0
+- Updated dependencies
+  - @ctx-core/array@26.7.2
+  - @ctx-core/dom@11.1.22
+  - @ctx-core/env@16.1.4
+  - @ctx-core/jwt@10.1.14
+  - @ctx-core/nanostores@1.4.3
+  - @ctx-core/object@22.2.2
+
 ## 34.4.11
 
 ### Patch Changes
@@ -734,7 +747,7 @@
 - fix: auth0*token\$*,in*auth0_token\$*,validate_auth0_change_password,validate_auth0_password_confirmation: remove false state: null instead
 - fix: auth0*change_password_opened\$*: \$ === 'change_password'
 
-  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
+  fix: auth0*auth0_login_opened\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_\$*:\$ === 'login'
 
 ## 32.0.2
 
