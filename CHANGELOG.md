@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.9
+
+### Patch Changes
+
+- auth0-js: ^9.19.0 -> ^9.19.1
+
 ## 35.0.8
 
 ### Patch Changes
