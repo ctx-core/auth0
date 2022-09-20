@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.10
+
+### Patch Changes
+
+- dependencies: @types/auth0,@types/auth0-js,@types/jsonwebtoken
+
 ## 35.0.9
 
 ### Patch Changes
