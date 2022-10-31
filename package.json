@@ -45,7 +45,7 @@
 		"@ctx-core/local-storage": "^10.0.50",
 		"@ctx-core/nanostores": "^2.2.1",
 		"@ctx-core/object": "^22.2.8",
-		"@types/auth0": "^2.35.6",
+		"@types/auth0": "^2.35.7",
 		"@types/auth0-js": "^9.14.6",
 		"@types/jsonwebtoken": "^8.5.9",
 		"auth0-js": "^9.19.1",
