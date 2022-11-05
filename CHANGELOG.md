@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.15
+
+### Patch Changes
+
+- update reference to auth0/9.19.2
+
 ## 35.0.14
 
 ### Patch Changes
