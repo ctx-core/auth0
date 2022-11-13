@@ -43,7 +43,7 @@
 		"@ctx-core/function": "^21.6.0",
 		"@ctx-core/jwt": "^10.1.20",
 		"@ctx-core/local-storage": "^10.0.50",
-		"@ctx-core/nanostores": "^2.2.1",
+		"@ctx-core/nanostores": "^2.2.2",
 		"@ctx-core/object": "^22.3.0",
 		"@types/auth0": "^2.35.7",
 		"@types/auth0-js": "^9.14.6",
