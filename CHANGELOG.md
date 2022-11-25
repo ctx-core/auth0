@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 35.0.20
+
+### Patch Changes
+
+- @types/auth0-js: ^9.14.6 -> ^9.14.7
+- Updated dependencies
+  - @ctx-core/fetch-undici@2.3.10
+
 ## 35.0.19
 
 ### Patch Changes
