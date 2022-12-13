@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 35.0.23
+
+### Patch Changes
+
+- auth0-js: ^9.19.2 -> ^9.20.0
+- svelte: ^3.54.0 -> ^3.55.0
+- Updated dependencies
+  - @ctx-core/env@16.1.21
+
 ## 35.0.22
 
 ### Patch Changes
