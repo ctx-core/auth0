@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.25
+
+### Patch Changes
+
+- AUTH0_URL: fix: value
+
 ## 35.0.24
 
 ### Patch Changes
