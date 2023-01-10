@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "35.0.59",
+	"version": "35.0.60",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -37,7 +37,7 @@
 		"@ctx-core/combinators": "^8.0.39",
 		"@ctx-core/dom": "^11.2.19",
 		"@ctx-core/email": "^9.0.39",
-		"@ctx-core/env": "^16.1.32",
+		"@ctx-core/env": "^16.1.33",
 		"@ctx-core/error": "^11.5.11",
 		"@ctx-core/fetch-undici": "^2.3.42",
 		"@ctx-core/function": "^21.6.0",
@@ -51,7 +51,7 @@
 		"auth0-js": "^9.20.0",
 		"deep-equal": "^2.2.0",
 		"jsonwebtoken": "^9.0.0",
-		"svelte": "^3.55.0"
+		"svelte": "^3.55.1"
 	},
 	"devDependencies": {
 		"@ctx-core/btoa": "^8.0.79",
