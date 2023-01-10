@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.61
+
+### Patch Changes
+
+- @ctx-core/fetch-undici: ^2.3.42 -> ^2.3.43
+
 ## 35.0.60
 
 ### Patch Changes
