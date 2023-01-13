@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 35.0.64
+
+### Patch Changes
+
+- @ctx-core/fetch-undici: ^2.3.44 -> ^2.3.45
+- @ctx-core/local-storage: ^10.0.61 -> ^10.0.62
+- @ctx-core/email: ^9.0.40 -> ^9.0.41
+- @ctx-core/dom: ^11.2.19 -> ^11.2.20
+
 ## 35.0.63
 
 ### Patch Changes
