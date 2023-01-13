@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 35.0.63
+
+### Patch Changes
+
+- auth0-js: ^9.20.0 -> ^9.20.1
+- @types/jsonwebtoken: ^9.0.0 -> ^9.0.1
+- Updated dependencies
+  - @ctx-core/email@9.0.40
+  - @ctx-core/local-storage@10.0.61
+
 ## 35.0.62
 
 ### Patch Changes
