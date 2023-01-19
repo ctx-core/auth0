@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.67
+
+### Patch Changes
+
+- fix: AUTH0_URL = 'https://cdn.auth0.com/js/auth0/9.20.1/auth0.min.js'
+
 ## 35.0.66
 
 ### Patch Changes
