@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 35.0.80
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/error@11.5.16
+
 ## 35.0.79
 
 ### Patch Changes
