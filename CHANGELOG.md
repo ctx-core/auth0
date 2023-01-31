@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 35.0.78
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/array@26.8.13
+  - @ctx-core/combinators@8.0.40
+  - @ctx-core/dom@11.2.25
+  - @ctx-core/email@9.0.42
+  - @ctx-core/env@16.1.37
+  - @ctx-core/error@11.5.14
+  - @ctx-core/fetch-undici@2.3.57
+  - @ctx-core/function@21.6.1
+  - @ctx-core/jwt@10.1.46
+  - @ctx-core/local-storage@10.0.65
+  - @ctx-core/nanostores@2.2.17
+  - @ctx-core/object@24.1.1
+
 ## 35.0.77
 
 ### Patch Changes
