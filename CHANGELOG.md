@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 35.0.84
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.0.87 -> ^8.0.88
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@11.2.29
+  - @ctx-core/jwt@10.1.50
+
 ## 35.0.83
 
 ### Patch Changes
