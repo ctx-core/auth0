@@ -1,5 +1,21 @@
 # @ctx-core/auth0
 
+## 35.0.83
+
+### Patch Changes
+
+- @ctx-core/jwt: ^10.1.48 -> ^10.1.49
+- @ctx-core/email: ^9.0.42 -> ^9.0.43
+- @ctx-core/local-storage: ^10.0.66 -> ^10.0.67
+- @ctx-core/combinators: ^8.0.40 -> ^8.0.41
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch-undici@2.3.62
+  - @ctx-core/dom@11.2.28
+  - @ctx-core/array@26.8.15
+
 ## 35.0.82
 
 ### Patch Changes
