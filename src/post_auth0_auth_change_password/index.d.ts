@@ -1,4 +1,4 @@
-import { type Ctx } from '@ctx-core/object'
+import type { Ctx } from '@ctx-core/object'
 export declare function post_auth0_auth_change_password(
 	ctx:Ctx, password:string
 ):Promise<[auth_change_password_T, Response]>

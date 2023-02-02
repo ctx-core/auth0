@@ -1,5 +1,5 @@
-import { type Ctx } from '@ctx-core/object'
-import { type Auth0Error } from 'auth0-js'
+import type { Ctx } from '@ctx-core/object'
+import type { Auth0Error } from 'auth0-js'
 export declare function logout_auth0_token_error(
 	ctx:Ctx, error:Auth0Error|logout_auth0_token_error_param_T|null
 ):void

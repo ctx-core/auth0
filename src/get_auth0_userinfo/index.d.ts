@@ -1,4 +1,4 @@
-import { type JwtToken } from '@ctx-core/jwt'
+import type { JwtToken } from '@ctx-core/jwt'
 export declare function get_auth0_userinfo(
 	params:get_auth0_userinfo_params_I
 ):Promise<[get_auth0_userinfo_T, Response]>;
