@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.0.88
+
+### Patch Changes
+
+- fix: types: import type
+
 ## 35.0.87
 
 ### Patch Changes
