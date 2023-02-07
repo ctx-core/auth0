@@ -1,6 +1,6 @@
 import { has_dom } from '@ctx-core/dom'
 import { jwt_token_exp_ } from '@ctx-core/jwt'
-import { sync_localStorage } from '@ctx-core/local-storage'
+import { localStorage__sync } from '@ctx-core/local-storage'
 import { computed_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { auth0__token__json__ } from '../auth0__token__json__/index.js'
@@ -18,7 +18,7 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 			return
 		}
 		if (has_dom) {
-			sync_localStorage('auth0_token_json', $)
+			localStorage__sync('auth0_token_json', $)
 			if ($) queueMicrotask(()=>schedule_validate_auth0_token_current(ctx))
 		}
 	})

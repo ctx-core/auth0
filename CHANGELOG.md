@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 35.1.3
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/local-storage@11.0.0
+
 ## 35.1.2
 
 ### Patch Changes
