@@ -39,5 +39,6 @@ function auth0_token__authorization_(auth0_token) {
 	return token_type && id_token ? `${token_type} ${id_token}` : null
 }
 export {
+	auth0__authorization__verify as verify_id_token_header_authorization,
 	auth0__authorization__verify as auth0_token__authorization,
 }

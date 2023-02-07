@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.1.5
+
+### Patch Changes
+
+- fix: export: auth0**authorization**verify as verify_id_token_header_authorization
+
 ## 35.1.4
 
 ### Patch Changes
