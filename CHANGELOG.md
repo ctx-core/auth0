@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 35.1.0
+
+### Minor Changes
+
+- name convention updates
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/error@11.6.0
+  - @ctx-core/jwt@10.2.0
+
 ## 35.0.97
 
 ### Patch Changes
