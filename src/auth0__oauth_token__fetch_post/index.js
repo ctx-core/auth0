@@ -7,7 +7,7 @@ import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
  * @param {string}body
  * @return {Promise<[TokenResponse|Auth0Error, Response]>}
  */
-export async function auth0__oauth_token__fetch_get(ctx, body) {
+export async function auth0__oauth_token__fetch_post(ctx, body) {
 	return await fetch_response_pair_(`https://${AUTH0_DOMAIN__(ctx).$}/oauth/token`, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
@@ -15,5 +15,5 @@ export async function auth0__oauth_token__fetch_get(ctx, body) {
 	})
 }
 export {
-	auth0__oauth_token__fetch_get as post_auth0_oauth_token,
+	auth0__oauth_token__fetch_post as post_auth0_oauth_token,
 }
