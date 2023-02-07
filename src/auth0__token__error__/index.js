@@ -3,15 +3,15 @@ import { be_ } from '@ctx-core/object'
 import { auth0__opened__ } from '../auth0__opened__/index.js'
 /** @type {typeof import('index.d.ts').auth0__token__error__} */
 export const auth0__token__error__ = be_('auth0__token__error__', ctx=>{
-	const auth0_token_error_ = atom_(null)
+	const auth0__token__error_ = atom_(null)
 	let auth0_opened
 	auth0__opened__(ctx).subscribe($=>{
 		if (auth0_opened !== $) {
 			auth0_opened = $
-			auth0_token_error_.$ = null
+			auth0__token__error_.$ = null
 		}
 	})
-	return auth0_token_error_
+	return auth0__token__error_
 })
 export {
 	auth0__token__error__ as auth0_token_error__,

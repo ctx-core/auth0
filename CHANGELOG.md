@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.1.7
+
+### Patch Changes
+
+- name convention updates
+
 ## 35.1.6
 
 ### Patch Changes
