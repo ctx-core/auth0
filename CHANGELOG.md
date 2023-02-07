@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.1.6
+
+### Patch Changes
+
+- fix: export auth0**forgot_password**opened** as auth0_forgot_password_opened**
+
 ## 35.1.5
 
 ### Patch Changes
