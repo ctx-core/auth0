@@ -6,7 +6,7 @@ import { auth0__authorization__verify } from '../auth0__authorization__verify/in
  * @param {string}password
  * @return {Promise<[auth_change_password_T, Response]>}
  */
-export async function auth0__change_password__fetch(ctx, password) {
+export async function auth0__change_password__fetch_post(ctx, password) {
 	const body = { password }
 	const Authorization = await auth0__authorization__verify(ctx, auth0__token__(ctx).$)
 	return await fetch_response_pair_('/auth/change_password', {
@@ -19,5 +19,5 @@ export async function auth0__change_password__fetch(ctx, password) {
 	})
 }
 export {
-	auth0__change_password__fetch as post_auth0_auth_change_password,
+	auth0__change_password__fetch_post as post_auth0_auth_change_password,
 }

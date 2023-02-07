@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 35.1.2
+
+### Patch Changes
+
+- auth0**change_password**fetch=>auth0**change_password**fetch_post
+
+  auth0**dbconnections_change_password**fetch=>auth0**dbconnections_change_password**fetch_post
+
 ## 35.1.1
 
 ### Patch Changes
