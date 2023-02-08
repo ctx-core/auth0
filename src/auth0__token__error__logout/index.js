@@ -6,7 +6,9 @@ import { auth0__token__logout } from '../auth0__token__logout/index.js'
  * @param {import('@ctx-core/object').Ctx}ctx
  * @param {Auth0Error|auth0__token__error__logout__param_T}error
  */
-export function auth0__token__error__logout(ctx, error) {
+export function auth0__token__error__logout(
+	ctx, error
+) {
 	auth0__token__error__(ctx).$ = typeof error === 'string' ? {
 		error: 'Error',
 		error_description: error,

@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.2.1
+
+### Patch Changes
+
+- auth0**token**error**logout: argument: error:Auth0Error|TokenResponse|auth0**token**error**logout\_\_param_T
+
 ## 35.2.0
 
 ### Minor Changes
