@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 35.2.0
+
+### Minor Changes
+
+- auth0**token**error_T:
+
+  - username?:string
+  - password?:string
+  - password_confirmation?:string
+
+- - auth0**token**error_T aliased by auth0_token_error_T
+
 ## 35.1.8
 
 ### Patch Changes

@@ -9,7 +9,7 @@ import { auth0__token__logout } from '../auth0__token__logout/index.js'
 export function auth0__token__error__logout(ctx, error) {
 	auth0__token__error__(ctx).$ = typeof error === 'string' ? {
 		error: 'Error',
-		error_description: error
+		error_description: error,
 	} : error
 	if (error) {
 		auth0__token__logout(ctx)
