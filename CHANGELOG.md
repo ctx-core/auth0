@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.1.8
+
+### Patch Changes
+
+- name convention updates: auth0_token_json=>auth0**token**json
+
 ## 35.1.7
 
 ### Patch Changes

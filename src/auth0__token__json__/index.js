@@ -2,7 +2,7 @@ import { has_dom } from '@ctx-core/dom'
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { auth0__token__error__ } from '../auth0__token__error__/index.js'
-const localStorage_key = 'auth0_token_json'
+const localStorage_key = 'auth0__token__json'
 /** @type {typeof import('./index.d.ts').auth0__token__json__} */
 export const auth0__token__json__ = be_('auth0__token__json__', ctx=>{
 	const auth0__token__json_ = atom_(has_dom && localStorage.getItem(localStorage_key) || null)

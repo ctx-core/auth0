@@ -18,7 +18,7 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 			return
 		}
 		if (has_dom) {
-			localStorage__sync('auth0_token_json', $)
+			localStorage__sync('auth0__token__json', $)
 			if ($) queueMicrotask(()=>schedule_validate_auth0_token_current(ctx))
 		}
 	})
@@ -52,7 +52,7 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
  * @param {StorageEvent}event
  */
 function auth0__token__json__set(ctx, event) {
-	if (event.key === 'auth0_token_json') {
+	if (event.key === 'auth0__token__json') {
 		auth0__token__json__(ctx).$ = event.newValue
 	}
 }
