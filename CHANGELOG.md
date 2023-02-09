@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 35.3.0
+
+### Minor Changes
+
+- - auth0**secret**oauth_token**fetch**body_T
+- - auth0**secret**dbconnections_signup**fetch**body_T
+- - auth0**init,auth0**init\_\_props_T
+- password*realm\_\_body*: data argument: auth0**client_id**body_T|password_realm\_\_body_T
+- auth0**oauth_token**fetch**body_T = auth0**secret**oauth_token**fetch**body_T|auth0**login_data_T
+- auth0**dbconnections_signup**fetch**body_T = auth0**dbconnections_signup**fetch**body_T|auth0**secret**dbconnections_signup**fetch**body_T
+
 ## 35.2.1
 
 ### Patch Changes

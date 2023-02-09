@@ -4,7 +4,7 @@ import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
- * @param {string}body
+ * @param {Partial<import('./index.d.ts').auth0__dbconnections_signup__fetch__body_T>}body
  * @return {Promise<[UserData|Auth0Error, Response]>}
  * @see {@link https://auth0.com/docs/libraries/custom-signup}
  */
