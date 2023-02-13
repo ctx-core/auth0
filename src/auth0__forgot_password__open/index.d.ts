@@ -4,4 +4,4 @@ export {
 	auth0__forgot_password__open as open_auth0_forgot_password,
 }
 export declare type auth0__forgot_password__open_T = typeof auth0__forgot_password__open
-export declare type open_auth0_forgot_password_T = auth0__forgot_password__open_T
+export declare type open_auth0_forgot_password_T = typeof auth0__forgot_password__open
