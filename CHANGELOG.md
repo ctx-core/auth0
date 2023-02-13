@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.3.12
+
+### Patch Changes
+
+- @ctx-core/email: ^9.0.43 -> ^9.1.0
+
 ## 35.3.11
 
 ### Patch Changes
