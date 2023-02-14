@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.3.20
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.1.0 -> ^8.1.1
+
 ## 35.3.19
 
 ### Patch Changes
