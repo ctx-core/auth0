@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 35.3.29
+
+### Patch Changes
+
+- auth0**oauth_token**fetch**body_T: auth0**secret**oauth_token**fetch**body_T|login**auth0**oauth_token**fetch\_\_body_T
+
+  - login**auth0**oauth_token**fetch**body_T
+    client_id:string
+    client_secret:string
+    grant_type:string
+    audience?:string
+    connection?:string
+    realm?:string
+
 ## 35.3.28
 
 ### Patch Changes

@@ -14,6 +14,14 @@ export interface auth0__secret__oauth_token__fetch__body_T extends auth0__grant_
 }
 export type auth0__oauth_token__fetch__body_T =
 	auth0__secret__oauth_token__fetch__body_T
-	|auth0__login_data_T
+	|login__auth0__oauth_token__fetch__body_T
 export declare type post_auth0_oauth_token_T = typeof auth0__oauth_token__fetch_post
 export declare type post_auth0_oauth_token_body_I = auth0__secret__oauth_token__fetch__body_T
+export interface login__auth0__oauth_token__fetch__body_T extends auth0__login_data_T {
+	client_id:string
+	client_secret:string
+	grant_type:string
+	audience?:string
+	connection?:string
+	realm?:string
+}
