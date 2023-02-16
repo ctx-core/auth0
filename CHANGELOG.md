@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 35.3.27
+
+### Patch Changes
+
+- @ctx-core/dom: ^11.3.2 -> ^11.3.3
+- Updated dependencies
+  - @ctx-core/fetch-undici@2.3.82
+
 ## 35.3.26
 
 ### Patch Changes
