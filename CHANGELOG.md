@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.5.0
+
+### Minor Changes
+
+- auth0**oauth_token**fetch_post: return type: Promise<[TokenResponse|Auth0Error, Response]>
+
 ## 35.4.0
 
 ### Minor Changes
