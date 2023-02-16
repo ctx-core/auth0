@@ -5,7 +5,10 @@ import { auth0__token__error__ } from '../auth0__token__error__/index.js'
 const localStorage_key = 'auth0__token__json'
 /** @type {typeof import('./index.d.ts').auth0__token__json__} */
 export const auth0__token__json__ = be_('auth0__token__json__', ctx=>{
-	const auth0__token__json_ = atom_(has_dom && localStorage.getItem(localStorage_key) || null)
+	const auth0__token__json_ =
+		atom_(
+			has_dom && localStorage.getItem(localStorage_key)
+			|| null)
 	auth0__token__error__(ctx).subscribe($error=>{
 		if ($error) auth0__token__json_.$ = 'null'
 	})

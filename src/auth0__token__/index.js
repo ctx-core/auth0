@@ -47,6 +47,10 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 		}, validate_millis)
 	}
 })
+export {
+	auth0__token__ as auth0_token__,
+	auth0__token__ as auth0_token$_,
+}
 /**
  * @param {Ctx}ctx
  * @param {StorageEvent}event
@@ -55,9 +59,4 @@ function auth0__token__json__set(ctx, event) {
 	if (event.key === 'auth0__token__json') {
 		auth0__token__json__(ctx).$ = event.newValue
 	}
-}
-export {
-	auth0__token__ as auth0_token__, 
-	auth0__token__ as auth0_token$_,
-	auth0__token__json__set as set_auth0_token_json,
 }

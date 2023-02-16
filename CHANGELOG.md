@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 35.4.0
+
+### Minor Changes
+
+- - auth0**userinfo**fetch_get\_\_payload_T: aliased by get_auth0_userinfo_T
+- - auth0**userinfo**fetch_get\_\_params_T: aliased by get_auth0_userinfo_params_I
+- - auth0**userinfo_o**: aliased by auth0**userinfo_ctx**
+
 ## 35.3.29
 
 ### Patch Changes

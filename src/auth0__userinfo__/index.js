@@ -19,7 +19,7 @@ export const auth0__userinfo__ = be_('auth0__userinfo__', ctx=>
 			return
 		}
 		set(auth0_token)
-		/** @type {import('./auth0__userinfo__fetch_get.d.ts').get_auth0_userinfo_T} */
+		/** @type {import('./auth0__userinfo__fetch_get.d.ts').auth0__userinfo__fetch_get__payload_T} */
 		let auth0_userinfo
 		waitfor_fibonacci_backoff(
 			async ()=>{

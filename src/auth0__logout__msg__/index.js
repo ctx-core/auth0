@@ -11,6 +11,10 @@ export const auth0__logout__msg__ = be_('auth0__logout__msg__', ()=>{
 	})
 	return auth0__logout__msg_
 })
+export {
+	auth0__logout__msg__ as auth0_logout_msg__,
+	auth0__logout__msg__ as auth0_logout_msg$_,
+}
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  */
@@ -19,7 +23,5 @@ export function auth0__logout(ctx) {
 	auth0__logout__msg__(ctx).$ = { time: Date.now() }
 }
 export {
-	auth0__logout__msg__ as auth0_logout_msg__,
-	auth0__logout__msg__ as auth0_logout_msg$_,
 	auth0__logout as auth0_logout,
 }
