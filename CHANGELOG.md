@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 35.6.0
+
+### Minor Changes
+
+- - auth0**jwt**expiration\__is_valid_
+- - auth0**token**is*valid*
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/jwt@10.3.0
+
 ## 35.5.0
 
 ### Minor Changes
