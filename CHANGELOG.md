@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.0.1
+
+### Patch Changes
+
+- auth0**token**is*valid*: no auth0\_\_token: fix: returns false
+
 ## 36.0.0
 
 ### Major Changes
