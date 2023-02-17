@@ -25,4 +25,5 @@ export interface login__auth0__oauth_token__fetch__body_T extends auth0__login_d
 	audience?:string
 	connection?:string
 	realm?:string
+	scope?:string
 }

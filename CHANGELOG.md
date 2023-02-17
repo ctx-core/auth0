@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.1.0
+
+### Minor Changes
+
+- login**auth0**oauth_token**fetch**body_T: + scope?: string
+
 ## 36.0.5
 
 ### Patch Changes
