@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.2.0
+
+### Minor Changes
+
+- - AUTH0_DOMAIN\_\_set
+
 ## 36.1.0
 
 ### Minor Changes
