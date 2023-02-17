@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.2.4
+
+### Patch Changes
+
+- AUTH0_DOMAIN\_\_set: fix: implementation
+
 ## 36.2.3
 
 ### Patch Changes
