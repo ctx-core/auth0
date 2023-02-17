@@ -14,7 +14,10 @@ export interface auth0__userinfo__fetch_get__error_T {
 	error:string
 	error_description:string
 }
-export type auth0__userinfo__fetch_get__payload_T = auth0__userinfo_T|auth0__userinfo__fetch_get__error_T
+export type auth0__userinfo__fetch_get__payload_T =
+	auth0__userinfo_T
+	|auth0__userinfo__fetch_get__error_T
+	|string // Unauthorized
 export interface auth0__userinfo_T {
 	sub:string
 	name:string

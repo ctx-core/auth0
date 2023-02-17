@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.2.5
+
+### Patch Changes
+
+- auth0**userinfo**fetch_get\_\_payload_T: + |string: Unauthorized
+
 ## 36.2.4
 
 ### Patch Changes
