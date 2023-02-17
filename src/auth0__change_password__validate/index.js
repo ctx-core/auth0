@@ -1,5 +1,11 @@
 import { auth0__password_confirmation__validate } from '../auth0__password_confirmation__validate/index.js'
-/** @type {typeof import('./index.d.ts').auth0__change_password__validate} */
+/**
+ * @param data{import('../_types').auth0__password_confirmation__data_T}
+ * @returns {import('../_types').auth0__password_confirmation__error_T}
+ */
+export function auth0__change_password__validate(data) {
+  return auth0__password_confirmation__validate(data)
+}
 export const auth0__change_password__validate = data=>
 	auth0__password_confirmation__validate(data)
 export {

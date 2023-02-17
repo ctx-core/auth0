@@ -6,19 +6,19 @@ import { auth0__token__validate } from '../auth0__token__validate/index.js'
 /** @typedef {import('./auth0__token__.d.ts').auth0_token_T}auth0_token_T */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
- * @param {auth0_token_T}auth0_token
+ * @param {auth0_token_T}auth0__token
  * @return {Promise<string>}
  * @private
  */
 export async function auth0__authorization__verify(
-	ctx, auth0_token
+	ctx, auth0__token
 ) {
-	const auth0_token__authorization = auth0_token__authorization_(auth0_token)
+	const auth0_token__authorization = auth0_token__authorization_(auth0__token)
 	if (!auth0_token__authorization) {
-		auth0__unauthorized__throw({ data: auth0_token })
+		auth0__unauthorized__throw({ data: auth0__token })
 	}
 	try {
-		await auth0__token__validate(auth0_token)
+		await auth0__token__validate(auth0__token)
 		const jwt_token = authorization__header__jwt_token_(auth0_token__authorization)
 		auth0__jwt__expiration__validate(jwt_token)
 	} catch (err) {
@@ -29,13 +29,13 @@ export async function auth0__authorization__verify(
 	return auth0_token__authorization
 }
 /**
- * @param {auth0_token_T}auth0_token
+ * @param {auth0_token_T}auth0__token
  * @return {string|null}
  * @private
  */
-function auth0_token__authorization_(auth0_token) {
-	if (!auth0_token) return null
-	const { id_token, token_type } = auth0_token
+function auth0_token__authorization_(auth0__token) {
+	if (!auth0__token) return null
+	const { id_token, token_type } = auth0__token
 	return token_type && id_token ? `${token_type} ${id_token}` : null
 }
 export {

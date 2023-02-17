@@ -2,7 +2,11 @@ import { assign } from '@ctx-core/object'
 import { auth0__email__validate } from '../auth0__email__validate/index.js'
 import { auth0__password_confirmation__validate } from '../auth0__password_confirmation__validate/index.js'
 /** @type {typeof import('./index.d.ts').auth0__signup__validate} */
-export const auth0__signup__validate = data=>{
+/**
+ * @param data{import('../_types').auth0__signup_data_T}
+ * @returns {import('auth0-js').Auth0Error|null}
+ */
+export function auth0__signup__validate(data) {
 	const email_error = auth0__email__validate(data)
 	const password_confirmation_error = auth0__password_confirmation__validate(data)
 	const signup_error = {}

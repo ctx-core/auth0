@@ -6,7 +6,7 @@ export {
 	auth0__userinfo__fetch_get as get_auth0_userinfo,
 }
 export interface auth0__userinfo__fetch_get__params_T {
-	auth0_token:JwtToken
+	auth0__token:JwtToken
 	AUTH0_DOMAIN:string
 }
 export declare type get_auth0_userinfo_params_I = auth0__userinfo__fetch_get__params_T

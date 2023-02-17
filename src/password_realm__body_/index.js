@@ -7,7 +7,9 @@ import { auth0__body_ } from '../auth0__body_/index.js'
  * @param data{auth0__client_id__body_T|password_realm__body_T}
  * @returns {auth0__client_id__body_T}
  */
-export function password_realm__body_(ctx, data) {
+export function password_realm__body_(
+	ctx, data
+) {
 	return auth0__body_(ctx, assign({
 		grant_type: 'http://auth0.com/oauth/grant-type/password-realm',
 		realm: 'Username-Password-Authentication',

@@ -7,7 +7,9 @@ import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
  * @param {string}body
  * @return {Promise<[string|Auth0Error, Response]>}
  */
-export async function auth0__passwordless_start__fetch_post(ctx, body) {
+export async function auth0__passwordless_start__fetch_post(
+	ctx, body
+) {
 	const { hostname, pathname } = window.location
 	const redirect_uri = `https://${hostname}/auth?redirect_url=${pathname}`
 	assign(body, {

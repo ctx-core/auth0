@@ -10,20 +10,20 @@ import { auth0__userinfo__fetch_get } from '../auth0__userinfo__fetch_get/index.
 export const auth0__userinfo__ = be_('auth0__userinfo__', ctx=>
 	setter_computed_([
 		AUTH0_DOMAIN__(ctx), auth0__token__(ctx), auth0__userinfo_token__(ctx),
-	], ([AUTH0_DOMAIN, auth0_token, auth0_userinfo_auth0_token,], set)=>{
-		if (auth0_token === auth0_userinfo_auth0_token) {
+	], ([AUTH0_DOMAIN, auth0__token, auth0_userinfo_auth0_token,], set)=>{
+		if (auth0__token === auth0_userinfo_auth0_token) {
 			return
 		}
-		if (!auth0_token) {
-			set(auth0_token === undefined ? undefined : null)
+		if (!auth0__token) {
+			set(auth0__token === undefined ? undefined : null)
 			return
 		}
-		set(auth0_token)
+		set(auth0__token)
 		/** @type {import('./auth0__userinfo__fetch_get.d.ts').auth0__userinfo__fetch_get__payload_T} */
 		let auth0_userinfo
 		waitfor_fibonacci_backoff(
 			async ()=>{
-				const [_auth0_userinfo, response] = await auth0__userinfo__fetch_get({ auth0_token, AUTH0_DOMAIN })
+				const [_auth0_userinfo, response] = await auth0__userinfo__fetch_get({ auth0__token, AUTH0_DOMAIN })
 				auth0_userinfo = _auth0_userinfo
 				return response
 			}

@@ -1,5 +1,8 @@
-/** @type {typeof import('./index.d.ts').auth0__password_confirmation__validate} */
-export const auth0__password_confirmation__validate = data=>{
+/**
+ * @param data{import('../_types').auth0__password_confirmation__data_T}
+ * @returns {import('../_types').auth0__password_confirmation__data_T}
+ */
+export function auth0__password_confirmation__validate(data) {
 	const { password, password_confirmation } = data
 	const change_password_error = {}
 	let has_errors

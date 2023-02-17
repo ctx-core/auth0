@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 35.6.1
+
+### Patch Changes
+
+- variable names: auth0_token=>auth0\_\_token
+
 ## 35.6.0
 
 ### Minor Changes

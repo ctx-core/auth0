@@ -4,7 +4,8 @@ import { be_ } from '@ctx-core/object'
 /** @type {typeof import('index.d.ts').auth0__opened__} */
 export const auth0__opened__ = be_(
 	'auth0__opened__',
-	()=>atom_(null))
+	()=>
+		atom_(null))
 export function auth0__change_password__open(ctx) {
 	auth0__opened__(ctx).$ = 'change_password'
 }

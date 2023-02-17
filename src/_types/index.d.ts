@@ -1,6 +1,11 @@
 import type { JwtPayload } from 'jsonwebtoken'
 import type { error_o_T } from '@ctx-core/error'
-import type { auth0__token_T } from '../auth0__token__'
+import type { JwtToken } from '@ctx-core/jwt'
+import { Auth0Error } from 'auth0-js'
+export declare type auth0__token_T = JwtToken
+export declare type auth0_token_T = auth0__token_T
+export type header__access_token_T = string
+export declare type access_token_header_authorization_T = header__access_token_T
 export interface auth0__client_id__optional_body_T {
 	client_id?:string
 }
@@ -10,7 +15,7 @@ export interface auth0__client_id__body_T extends auth0__client_id__optional_bod
 }
 export declare type auth0_client_id_body_I = auth0__client_id__body_T
 export interface auth0__error_o_T extends error_o_T {
-	auth0_token:auth0__token_T
+	auth0__token:auth0__token_T
 }
 export declare type auth0_error_ctx_I = auth0__error_o_T
 export interface auth0__grant_type__body_T {
@@ -39,3 +44,7 @@ export interface auth0__signup_data_T extends auth0__password_confirmation__data
 	password_confirmation?:string;
 }
 export declare type signup_data_I = auth0__signup_data_T
+export interface auth0__password_confirmation__error_T extends Auth0Error {
+	password_confirmation?:string
+}
+export declare type change_password_error_I = auth0__password_confirmation__error_T

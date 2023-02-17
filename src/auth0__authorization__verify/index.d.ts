@@ -1,7 +1,7 @@
 import type { Ctx } from '@ctx-core/object'
-import type { auth0__token_T } from '../auth0__token__'
+import type { auth0__token_T } from '../_types'
 export declare function auth0__authorization__verify(
-	ctx:Ctx, auth0_token:auth0__token_T
+	ctx:Ctx, auth0__token:auth0__token_T
 ):Promise<string>
 export {
 	auth0__authorization__verify as verify_id_token_header_authorization,

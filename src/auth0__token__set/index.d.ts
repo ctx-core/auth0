@@ -1,7 +1,9 @@
 import type { nullish } from '@ctx-core/function'
 import type { Ctx } from '@ctx-core/object'
-import type { auth0__token_T } from '../auth0__token__'
-export declare function auth0__token__set(ctx:Ctx, auth0_token:auth0__token_T|nullish):void
+import type { auth0__token_T } from '../_types'
+export declare function auth0__token__set(
+	ctx:Ctx, auth0__token:auth0__token_T|nullish
+):void
 export {
 	auth0__token__set as set_auth0_token,
 }

@@ -1,7 +1,8 @@
-import type { auth0__email__validate__data_T, validate_auth0_email_error_T } from '../auth0__email__validate'
+import type { auth0__email__validate__data_T } from '../auth0__email__validate'
+import type { Auth0Error } from 'auth0-js'
 export declare function auth0__forgot_password__validate(
 	data:auth0__email__validate__data_T
-):validate_auth0_email_error_T
+):Auth0Error
 export {
 	auth0__forgot_password__validate as validate_auth0_forgot_password,
 }

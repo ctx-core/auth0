@@ -1,5 +1,7 @@
 import type { Auth0Error } from 'auth0-js'
-export declare function auth0__email__validate(data:auth0__email__validate__data_T):validate_auth0_email_error_T|null
+export declare function auth0__email__validate(
+	data:auth0__email__validate__data_T
+):Auth0Error|null
 export {
 	auth0__email__validate as validate_auth0_email,
 }

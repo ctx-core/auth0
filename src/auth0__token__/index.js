@@ -27,15 +27,15 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 	}
 	return auth0_token_
 	function schedule_validate_auth0_token_current(ctx) {
-		const auth0_token = auth0__token__(ctx).$
-		const id_token = auth0_token === null || auth0_token === void 0 ? void 0 : auth0_token.id_token
+		const auth0__token = auth0__token__(ctx).$
+		const id_token = auth0__token === null || auth0__token === void 0 ? void 0 : auth0__token.id_token
 		if (!id_token) return
 		const jwt_token_exp_millis = jwt_token_exp_(id_token) * 1000
 		const now = Date.now()
 		const validate_millis = now - jwt_token_exp_millis
 		setTimeout(async ()=>{
 			try {
-				auth0__token__validate(auth0_token)
+				auth0__token__validate(auth0__token)
 			} catch (error) {
 				if (error.type === 'bad_credentials') {
 					console.error(error)
