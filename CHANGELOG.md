@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 36.0.3
+
+### Patch Changes
+
+- auth0**userinfo**fetch_get**payload_T: auth0**userinfo_T|auth0**userinfo**fetch_get\_\_error_T
+
+  - auth0**userinfo_T: extracted from auth0**userinfo**fetch_get**payload_T
+  - auth0**userinfo**fetch_get\_\_error_T
+    error:string
+    error_description:string
+
 ## 36.0.2
 
 ### Patch Changes

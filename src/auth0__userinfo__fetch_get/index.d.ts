@@ -10,7 +10,12 @@ export interface auth0__userinfo__fetch_get__params_T {
 	AUTH0_DOMAIN:string
 }
 export declare type get_auth0_userinfo_params_I = auth0__userinfo__fetch_get__params_T
-export interface auth0__userinfo__fetch_get__payload_T {
+export interface auth0__userinfo__fetch_get__error_T {
+	error:string
+	error_description:string
+}
+export type auth0__userinfo__fetch_get__payload_T = auth0__userinfo_T|auth0__userinfo__fetch_get__error_T
+export interface auth0__userinfo_T {
 	sub:string
 	name:string
 	given_name:string
