@@ -6,8 +6,6 @@ import { auth0__password_confirmation__validate } from '../auth0__password_confi
 export function auth0__change_password__validate(data) {
   return auth0__password_confirmation__validate(data)
 }
-export const auth0__change_password__validate = data=>
-	auth0__password_confirmation__validate(data)
 export {
 	auth0__change_password__validate as validate_auth0_change_password,
 }

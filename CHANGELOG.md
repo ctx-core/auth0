@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.0.0
+
+### Major Changes
+
+- auth0**userinfo**fetch_get**params_T: auth0_token=>auth0**token
+
 ## 35.6.1
 
 ### Patch Changes
