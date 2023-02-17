@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.2.2
+
+### Patch Changes
+
+- auth0**v2**url\_: fix: circular dependency
+
 ## 36.2.1
 
 ### Patch Changes

@@ -1,4 +1,4 @@
-import { AUTH0_DOMAIN__ } from '@ctx-core/auth0'
+import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  * @return {string}
