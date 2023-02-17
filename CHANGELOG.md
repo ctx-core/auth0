@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.3.0
+
+### Minor Changes
+
+- - AUTH0*DOMAIN*
+
 ## 36.2.5
 
 ### Patch Changes
