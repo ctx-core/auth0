@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.3.2
+
+### Patch Changes
+
+- @ctx-core/env: ^17.1.0 -> ^17.2.0
+
 ## 36.3.1
 
 ### Patch Changes
