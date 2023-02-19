@@ -1,5 +1,30 @@
 # @ctx-core/auth0
 
+## 36.4.0
+
+### Minor Changes
+
+- - auth0**userinfo**set
+- auth0\_\_userinfo_T: optional props:
+
+      given_name?:string
+      family_name?:string
+      middle_name?:string
+      preferred_username?:string
+      profile?:string
+      website?:string
+      gender?:string
+      birthdate?:string
+      zoneinfo?:string
+      locale?:string
+      phone_number?:string
+      phone_number_verified?:boolean
+      address?:{ country:string }
+
+### Patch Changes
+
+- auth0**userinfo**: fix: type: Be<ReadableAtom\_<auth0\_\_userinfo_T>>
+
 ## 36.3.12
 
 ### Patch Changes

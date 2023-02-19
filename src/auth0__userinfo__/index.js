@@ -6,6 +6,8 @@ import { auth0__token__ } from '../auth0__token__/index.js'
 import { auth0__userinfo_token__ } from '../auth0__userinfo_token__/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__userinfo__fetch_get } from '../auth0__userinfo__fetch_get/index.js'
+/** @typedef {typeof import('@ctx-core/object').Ctx}Ctx */
+/** @typedef {typeof import('../auth0__userinfo__fetch_get').auth0__userinfo_T}auth0__userinfo_T */
 /** @type {typeof import('./index.d.ts').auth0__userinfo__} */
 export const auth0__userinfo__ = be_('auth0__userinfo__', ctx=>
 	setter_computed_([
@@ -39,4 +41,18 @@ export const auth0__userinfo__ = be_('auth0__userinfo__', ctx=>
 export {
 	auth0__userinfo__ as auth0_userinfo__,
 	auth0__userinfo__ as auth0_userinfo$_,
+}
+/**
+ * @param ctx{Ctx}
+ * @returns {auth0__userinfo_T}
+ */
+export function auth0__userinfo_(ctx) {
+  return auth0__userinfo__(ctx).$
+}
+/**
+ * @param ctx{Ctx}
+ * @param auth0__userinfo{auth0__userinfo_T}
+ */
+export function auth0__userinfo__set(ctx, auth0__userinfo) {
+	auth0__userinfo__(ctx).$ = auth0__userinfo
 }
