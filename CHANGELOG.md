@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 36.6.0
+
+### Minor Changes
+
+- - auth**userinfo\_,auth0**userinfo\_\_set
+- - auth0**userinfo**response*pair**,auth0**userinfo\_\_response_pair*,auth0**userinfo**response_pair\_\_set
+
 ## 36.5.6
 
 ### Patch Changes

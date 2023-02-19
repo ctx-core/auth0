@@ -1,7 +1,7 @@
 import type { JwtPayload } from 'jsonwebtoken'
 import type { error_o_T } from '@ctx-core/error'
 import type { JwtToken } from '@ctx-core/jwt'
-import { Auth0Error } from 'auth0-js'
+import type { Auth0Error } from 'auth0-js'
 export declare type auth0__token_T = JwtToken
 export declare type auth0_token_T = auth0__token_T
 export type header__access_token_T = string
@@ -48,3 +48,40 @@ export interface auth0__password_confirmation__error_T extends Auth0Error {
 	password_confirmation?:string
 }
 export declare type change_password_error_I = auth0__password_confirmation__error_T
+export interface auth0__userinfo__fetch_get__params_T {
+	auth0__token:JwtToken
+	AUTH0_DOMAIN:string
+}
+export declare type get_auth0_userinfo_params_I = auth0__userinfo__fetch_get__params_T
+export interface auth0__userinfo__fetch_get__error_T {
+	error:string
+	error_description:string
+}
+export type auth0__userinfo__fetch_get__payload_T =
+	auth0__userinfo_T
+	|auth0__userinfo__fetch_get__error_T
+	|string // Unauthorized
+export interface auth0__userinfo_T {
+	sub:string
+	nickname:string
+	name:string
+	picture:string
+	updated_at:string
+	email:string
+	email_verified:boolean
+	given_name?:string
+	family_name?:string
+	middle_name?:string
+	preferred_username?:string
+	profile?:string
+	website?:string
+	gender?:string
+	birthdate?:string
+	zoneinfo?:string
+	locale?:string
+	phone_number?:string
+	phone_number_verified?:boolean
+	address?:{ country:string }
+}
+export declare type get_auth0_userinfo_T = auth0__userinfo__fetch_get__payload_T
+export type auth0__userinfo__response_pair_T = [auth0__userinfo__fetch_get__payload_T, Response]
