@@ -4,7 +4,6 @@ import { clone } from '@ctx-core/object'
 /**
  * @param http_error{HttpError}
  * @returns {Auth0Error&HttpError}
- * @private
  */
 export function auth0__http__error_(http_error) {
 	return /** @type {Auth0Error&HttpError} */clone(

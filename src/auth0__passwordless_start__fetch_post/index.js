@@ -1,6 +1,6 @@
 import { fetch_response_pair_ } from '@ctx-core/fetch-undici'
 import { assign } from '@ctx-core/object'
-import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
@@ -17,7 +17,7 @@ export async function auth0__passwordless_start__fetch_post(
 			redirect_uri
 		}
 	})
-	return await fetch_response_pair_(`https://${AUTH0_DOMAIN__(ctx).$}/passwordless/start`, {
+	return await fetch_response_pair_(`https://${AUTH0_DOMAIN_(ctx)}/passwordless/start`, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(body)

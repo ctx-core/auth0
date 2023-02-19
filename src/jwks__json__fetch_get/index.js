@@ -1,5 +1,5 @@
 import { fetch_response_pair_ } from '@ctx-core/fetch-undici'
-import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
 /** @typedef {import('./index.d.ts').jwks_json_T}.jwks_json_T */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
@@ -7,7 +7,7 @@ import { AUTH0_DOMAIN__ } from '../AUTH0_DOMAIN__/index.js'
  */
 export async function jwks__json__fetch_get(ctx) {
 	const [body, response] =
-		await fetch_response_pair_(`https://${AUTH0_DOMAIN__(ctx).$}/.well-known/jwks.json`)
+		await fetch_response_pair_(`https://${AUTH0_DOMAIN_(ctx)}/.well-known/jwks.json`)
 	return [typeof body === 'string' ? JSON.parse(body) : body, response]
 }
 export {

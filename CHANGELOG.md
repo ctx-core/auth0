@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.5.0
+
+### Minor Changes
+
+- - AUTH0*CLIENT_ID*,AUTH0_CLIENT_ID\_\_set
+
 ## 36.4.0
 
 ### Minor Changes
