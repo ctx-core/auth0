@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 36.7.0
+
+### Minor Changes
+
+- - auth0\__userinfo_
+
 ## 36.6.0
 
 ### Minor Changes

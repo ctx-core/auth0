@@ -20,3 +20,11 @@ export {
 	auth0__userinfo__ as auth0_userinfo__,
 	auth0__userinfo__ as auth0_userinfo$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {auth0__userinfo_T}
+ */
+export function auth0__userinfo_(ctx) {
+  return auth0__userinfo__(ctx).$
+}
+
