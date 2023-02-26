@@ -1,5 +1,31 @@
 # @ctx-core/auth0
 
+## 37.0.0
+
+### Major Changes
+
+- - auth0\_\_passwordless_start\_\_fetch_post\_\_optional_body_T
+  - auth0\_\_passwordless_start\_\_fetch\_\_optional_body_T
+  - post_auth0_passwordless_start_optional_body_T
+  - auth0\_\_client_id\_\_optional_body_T
+  - auth0_client_id_optional_body_I
+
+### Minor Changes
+
+- - auth0**passwordless_start**fetch_post**body_T: aliased by auth0**passwordless_start**fetch**body_T
+- auth0**passwordless_start**fetch_post\_\_body_T:
+
+  - client_secret?:string
+  - send?:'link'|'code'
+  - authParams?:{ scope?:'openid', state?:string, redirect_uri?:string
+  - { connection: 'email', email:string }|{ connection: 'sms', phone_number:string }
+
+### Patch Changes
+
+- import*meta_env*() instead of process.env
+- Updated dependencies
+  - @ctx-core/env@17.2.18
+
 ## 36.7.22
 
 ### Patch Changes

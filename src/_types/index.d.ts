@@ -6,11 +6,7 @@ export declare type auth0__token_T = JwtToken
 export declare type auth0_token_T = auth0__token_T
 export type header__access_token_T = string
 export declare type access_token_header_authorization_T = header__access_token_T
-export interface auth0__client_id__optional_body_T {
-	client_id?:string
-}
-export declare type auth0_client_id_optional_body_I = auth0__client_id__optional_body_T
-export interface auth0__client_id__body_T extends auth0__client_id__optional_body_T {
+export interface auth0__client_id__body_T {
 	client_id:string
 }
 export declare type auth0_client_id_body_I = auth0__client_id__body_T
