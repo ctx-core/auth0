@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 37.1.0
+
+### Minor Changes
+
+- auth0**init: + AUTH0_CLIENT_SECRET**set
+- - AUTH0*CLIENT_SECRET\_\_,AUTH0_CLIENT_SECRET*,AUTH0_CLIENT_SECRET\_\_set
+
+### Patch Changes
+
+- auth0**passwordless_start**fetch*post: fix: server side call to AUTH0_DOMAIN*(ctx)/passwordless/start: - window
+
 ## 37.0.0
 
 ### Major Changes
