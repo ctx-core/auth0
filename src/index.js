@@ -1,4 +1,5 @@
 export * from './AUTH0_CLIENT_ID__/index.js'
+export * from './AUTH0_CLIENT_SECRET__/index.js'
 export * from './AUTH0_DOMAIN__/index.js'
 export * from './AUTH0_URL/index.js'
 export * from './AUTH0_URL__/index.js'

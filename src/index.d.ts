@@ -1,4 +1,5 @@
 export * from './AUTH0_CLIENT_ID__'
+export * from './AUTH0_CLIENT_SECRET__'
 export * from './AUTH0_DOMAIN__'
 export * from './AUTH0_URL'
 export * from './AUTH0_URL__'
