@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 37.2.0
+
+### Minor Changes
+
+- auth0**passwordless**oauth_token**fetch**body_T: scope?: 'openid'|'openid profile email'
+- - auth0**passwordless_start**fetch_post
+- - auth0**password**oauth_token**fetch**body_T
+- auth0**oauth_token**fetch**body_T: auth0**password**oauth_token**fetch**body_T|auth0**passwordless**oauth_token**fetch\_\_body_T
+
 ## 37.1.0
 
 ### Minor Changes
