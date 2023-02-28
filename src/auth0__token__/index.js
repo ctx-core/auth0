@@ -70,7 +70,7 @@ export function auth0__token_(ctx) {
  * @param {Ctx}ctx
  * @param {StorageEvent}event
  */
-function auth0__token__json__set(ctx, event) {
+export function auth0__token__json__set(ctx, event) {
 	if (event.key === 'auth0__token__json') {
 		auth0__token__json__(ctx).$ = event.newValue
 	}

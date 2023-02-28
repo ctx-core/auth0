@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 37.4.1
+
+### Patch Changes
+
+- auth0**token**json\_\_set: fix: export
+
 ## 37.4.0
 
 ### Minor Changes
