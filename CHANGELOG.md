@@ -1,5 +1,26 @@
 # @ctx-core/auth0
 
+## 37.3.0
+
+### Minor Changes
+
+- - auth0\__is_loggedout_
+- - auth0\__userinfo_
+- - auth0\__token_
+- - auth0\__is_loggedin_
+- - auth0**opened**class\_
+- - auth0\__userinfo_token_
+- - auth0**token**error\_
+- - auth0**in**token\_
+- - auth0\_\_opened_T: aliased by auth0_opened_T
+- - auth0**login**opened\_
+- - auth0**logout**msg_T: aliased by auth0_logout_msg_T
+- - auth0*forgot_password_check_email_opened*
+- - AUTH0*URL*
+- - auth0\__opened_
+- - auth0**logout**msg\_
+- - auth0**change_password**opened\_
+
 ## 37.2.0
 
 ### Minor Changes

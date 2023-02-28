@@ -9,3 +9,11 @@ export {
 	auth0__is_loggedin__ as is_auth0_loggedin__,
 	auth0__is_loggedin__ as is_auth0_loggedin$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0__is_loggedin_(ctx) {
+  return auth0__is_loggedin__(ctx).$
+}

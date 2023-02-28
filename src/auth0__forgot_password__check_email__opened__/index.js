@@ -10,3 +10,11 @@ export {
 	auth0__forgot_password__check_email__opened__ as auth0_forgot_password_check_email_opened__,
 	auth0__forgot_password__check_email__opened__ as auth0_forgot_password_check_email_opened$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0_forgot_password_check_email_opened_(ctx) {
+  return auth0_forgot_password_check_email_opened__(ctx).$
+}

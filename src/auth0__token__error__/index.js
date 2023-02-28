@@ -17,3 +17,11 @@ export {
 	auth0__token__error__ as auth0_token_error__,
 	auth0__token__error__ as auth0_token_error$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {auth0__token__error_T}
+ * @private
+ */
+export function auth0__token__error_(ctx) {
+  return auth0__token__error__(ctx).$
+}

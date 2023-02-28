@@ -1,6 +1,7 @@
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
+/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @type {typeof import('./index.js.d.ts').auth0__logout__msg__} */
 export const auth0__logout__msg__ = be_('auth0__logout__msg__', ()=>{
 	const auth0__logout__msg_ = atom_(undefined)
@@ -16,7 +17,15 @@ export {
 	auth0__logout__msg__ as auth0_logout_msg$_,
 }
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
+ * @returns {import('./index.d.ts').auth0__logout__msg_T}
+ * @private
+ */
+export function auth0__logout__msg_(ctx) {
+  return auth0__logout__msg__(ctx).$
+}
+/**
+ * @param {Ctx}ctx
  */
 export function auth0__logout(ctx) {
 	auth0__token__logout(ctx)

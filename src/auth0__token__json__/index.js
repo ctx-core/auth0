@@ -22,3 +22,11 @@ export {
 	auth0__token__json__ as auth0_token_json__,
 	auth0__token__json__ as auth0_token_json$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {string|null|undefined}
+ * @private
+ */
+export function auth0__token__json_(ctx) {
+	return auth0__token__json__(ctx).$
+}

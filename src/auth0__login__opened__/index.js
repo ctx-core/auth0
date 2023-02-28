@@ -10,3 +10,11 @@ export {
 	auth0__login__opened__ as auth0_login_opened__,
 	auth0__login__opened__ as auth0_login_opened$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0__login__opened_(ctx) {
+  return auth0__login__opened__(ctx).$
+}

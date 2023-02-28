@@ -9,3 +9,11 @@ export {
 	auth0__closed__ as auth0_closed__,
 	auth0__closed__ as auth0_closed$_, 
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0_closed_(ctx) {
+  return auth0__closed__(ctx).$
+}

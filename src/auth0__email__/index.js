@@ -19,3 +19,11 @@ export {
 	auth0__email__ as auth0_email__,
 	auth0__email__ as auth0_email$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {string}
+ * @private
+ */
+export function auth0__email_(ctx) {
+  return auth0__email__(ctx).$
+}

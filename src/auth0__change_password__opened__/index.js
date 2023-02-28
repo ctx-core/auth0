@@ -11,3 +11,11 @@ export {
 	auth0__change_password__opened__ as auth0_change_password_opened__,
 	auth0__change_password__opened__ as auth0_change_password_opened$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0__change_password__opened_(ctx) {
+  return auth0__change_password__opened__(ctx).$
+}

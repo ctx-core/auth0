@@ -9,3 +9,11 @@ export {
 	auth0__is_loggedout__ as is_auth0_loggedout__,
 	auth0__is_loggedout__ as is_auth0_loggedout$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {boolean}
+ * @private
+ */
+export function auth0__is_loggedout_(ctx) {
+  return auth0__is_loggedout__(ctx).$
+}

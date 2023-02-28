@@ -23,3 +23,11 @@ export {
 	auth0__in__token__ as in_auth0_token__,
 	auth0__in__token__ as in_auth0_token$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {import('@ctx-core/jwt').JwtToken}
+ * @private
+ */
+export function auth0__in__token_(ctx) {
+  return auth0__in__token__(ctx).$
+}

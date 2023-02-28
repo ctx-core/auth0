@@ -15,3 +15,11 @@ export {
 	auth0__userinfo_o__ as auth0_userinfo_ctx__,
 	auth0__userinfo_o__ as auth0_userinfo_ctx$_,
 }
+/**
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @returns {import('./index.d.ts').auth0__userinfo_T}
+ * @private
+ */
+export function auth0__userinfo_(ctx) {
+  return auth0__userinfo__(ctx).$
+}
