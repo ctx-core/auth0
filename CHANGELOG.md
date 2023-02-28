@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 37.4.0
+
+### Minor Changes
+
+- - auth0**token**json\_\_set
+
 ## 37.3.0
 
 ### Minor Changes

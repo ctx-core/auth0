@@ -3,16 +3,16 @@ import { jwt_token_exp_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
 import { computed_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
-import { auth0__token__json__ } from '../auth0__token__json__/index.js'
-import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__in__token__ } from '../auth0__in__token__/index.js'
+import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
+import { auth0__token__json__ } from '../auth0__token__json__/index.js'
 import { auth0__token__validate } from '../auth0__token__validate/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
 /** @type {typeof import('./index.d.ts').auth0__token__} */
 export const auth0__token__ = be_('auth0__token__', ctx=>{
-	const auth0_token_ = computed_(auth0__in__token__(ctx), $=>
+	const auth0__token_ = computed_(auth0__in__token__(ctx), $=>
 		$?.error ? null : $)
 	auth0__token__json__(ctx).subscribe($=>{
 		if ($ == null) {
@@ -21,15 +21,15 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 		}
 		if (has_dom) {
 			localStorage__sync('auth0__token__json', $)
-			if ($) queueMicrotask(()=>schedule_validate_auth0_token_current(ctx))
+			if ($) queueMicrotask(()=>auth0__token__validate__schedule_(ctx))
 		}
 	})
 	if (has_dom) {
 		window.addEventListener('storage', $=>
 			auth0__token__json__set(ctx, $))
 	}
-	return auth0_token_
-	function schedule_validate_auth0_token_current(ctx) {
+	return auth0__token_
+	function auth0__token__validate__schedule_(ctx) {
 		const auth0__token = auth0__token__(ctx).$
 		const id_token =
 			auth0__token === null
