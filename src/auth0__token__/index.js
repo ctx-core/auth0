@@ -6,7 +6,7 @@ import { be_ } from '@ctx-core/object'
 import { auth0__in__token__ } from '../auth0__in__token__/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
-import { auth0__token__json__ } from '../auth0__token__json__/index.js'
+import { auth0__token__json__, auth0__token__json__set } from '../auth0__token__json__/index.js'
 import { auth0__token__validate } from '../auth0__token__validate/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
@@ -26,7 +26,7 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 	})
 	if (has_dom) {
 		window.addEventListener('storage', $=>
-			auth0__token__json__set(ctx, $))
+			storage__auth0__token__json__set(ctx, $))
 	}
 	return auth0__token_
 	function auth0__token__validate__schedule_(ctx) {
@@ -64,14 +64,14 @@ export {
  * @private
  */
 export function auth0__token_(ctx) {
-  return auth0__token__(ctx).$
+	return auth0__token__(ctx).$
 }
 /**
  * @param {Ctx}ctx
  * @param {StorageEvent}event
  */
-export function auth0__token__json__set(ctx, event) {
+function storage__auth0__token__json__set(ctx, event) {
 	if (event.key === 'auth0__token__json') {
-		auth0__token__json__(ctx).$ = event.newValue
+		auth0__token__json__set(ctx, event.newValue)
 	}
 }

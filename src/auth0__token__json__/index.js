@@ -30,3 +30,10 @@ export {
 export function auth0__token__json_(ctx) {
 	return auth0__token__json__(ctx).$
 }
+/**
+ * @param {Ctx}ctx
+ * @param {string}auth0__token__json
+ */
+export function auth0__token__json__set(ctx, auth0__token__json) {
+	auth0__token__json__(ctx).$ = auth0__token__json
+}

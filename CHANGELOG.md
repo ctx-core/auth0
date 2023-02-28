@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 37.4.2
+
+### Patch Changes
+
+- auth0**token**json\_\_set: fix: implementation
+
 ## 37.4.1
 
 ### Patch Changes
