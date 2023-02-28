@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 37.6.0
+
+### Minor Changes
+
+- auth0**password**oauth_token**fetch**body_T:
+
+  grant_type: 'password'|'http://auth0.com/oauth/grant-type/password-realm'
+
+  - realm?: string
+
 ## 37.5.2
 
 ### Patch Changes
