@@ -1,5 +1,5 @@
-import { header__access_token_ } from '../header__access_token_/index.js'
 import { auth0__unauthorized__throw } from '../auth0__unauthorized__throw/index.js'
+import { header__access_token_ } from '../header__access_token_/index.js'
 /**
  * @param auth0__token{typeof import('../_types').auth0__token_T}
  * @returns {import('../_types').header__access_token_T}

@@ -23,12 +23,13 @@ export interface auth0__password_confirmation__data_T {
 	password_confirmation?:string
 }
 export declare type auth0_password_confirmation_data_I = auth0__password_confirmation__data_T
-export interface auth0__verified__jwt_token_T extends JwtPayload {
+export interface auth0__access_token_o_T extends JwtPayload {
 	user_id:string
 	email:string
 	sub?:string
 }
-export declare type verified_jwt_token_I = auth0__verified__jwt_token_T
+export declare type auth0__verified__jwt_token_T = auth0__access_token_o_T
+export declare type verified_jwt_token_I = auth0__access_token_o_T
 export interface auth0__login_data_T {
 	username:string
 	password:string
