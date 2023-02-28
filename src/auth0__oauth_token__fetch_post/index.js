@@ -5,7 +5,7 @@ import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
 /** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
 /** @typedef {import('./index.d.ts').auth0__oauth_token__fetch__body_T}auth0__oauth_token__fetch__body_T */
 /**
-) * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {import('@ctx-core/object').Ctx}ctx
  * @param {auth0__oauth_token__fetch__body_T}body
  * @return {Promise<[TokenResponse|Auth0Error, Response]>}
  */

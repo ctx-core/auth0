@@ -3,7 +3,7 @@ import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
- * @param {import('./index.d.ts').auth0__passwordless_start__fetch__body_T}body
+ * @param {import('./index.d.ts').auth0__passwordless_start__fetch_post__body_T}body
  * @return {Promise<[string|Auth0Error, Response]>}
  */
 export async function auth0__passwordless_start__fetch_post(

@@ -19,25 +19,25 @@ export interface auth0__grant_type__body_T {
 }
 export declare type auth0_grant_type_body_I = auth0__grant_type__body_T
 export interface auth0__password_confirmation__data_T {
-	password:string;
-	password_confirmation?:string;
+	password:string
+	password_confirmation?:string
 }
 export declare type auth0_password_confirmation_data_I = auth0__password_confirmation__data_T
 export interface auth0__verified__jwt_token_T extends JwtPayload {
-	user_id:string;
-	email:string;
-	sub?:string;
+	user_id:string
+	email:string
+	sub?:string
 }
 export declare type verified_jwt_token_I = auth0__verified__jwt_token_T
 export interface auth0__login_data_T {
-	username:string;
-	password:string;
+	username:string
+	password:string
 }
 export declare type login_data_I = auth0__login_data_T
 export interface auth0__signup_data_T extends auth0__password_confirmation__data_T {
-	email:string;
-	password:string;
-	password_confirmation?:string;
+	email:string
+	password:string
+	password_confirmation?:string
 }
 export declare type signup_data_I = auth0__signup_data_T
 export interface auth0__password_confirmation__error_T extends Auth0Error {

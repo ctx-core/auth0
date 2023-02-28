@@ -16,7 +16,7 @@ export type auth0__passwordless_start__fetch_post__body_T = {
 	connection:'email'|'sms'
 	send:'link'|'code'
 	authParams?:{
-		scope?:'openid'
+		scope?:'openid'|'openid profile email'
 		state?:string
 		redirect_uri?:string
 	}
