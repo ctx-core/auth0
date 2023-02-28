@@ -1,5 +1,21 @@
 # @ctx-core/auth0
 
+## 37.5.0
+
+### Minor Changes
+
+- - auth0**access_token_o_T: aliased by auth0**verified\_\_jwt_token_T
+- - AUTH0_URL\_\_set
+- - auth0\__user_id_: aliased by user*id*
+- - auth0\_\_error_T
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/error@11.6.11
+
 ## 37.4.3
 
 ### Patch Changes
