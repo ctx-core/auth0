@@ -30,7 +30,7 @@ export interface auth0__passwordless__oauth_token__fetch__body_T {
 	scope?:'openid'|'openid profile email'
 }
 export interface auth0__password__oauth_token__fetch__body_T {
-	grant_type:'password'
+	grant_type:'password'|'http://auth0.com/oauth/grant-type/password-realm'
 	client_id:string
 	client_secret:string
 	username:string
@@ -38,6 +38,7 @@ export interface auth0__password__oauth_token__fetch__body_T {
 	audience:string
 	scope?:'openid'|'openid profile email'
 	connection: 'Username-Password-Authentication',
+	realm?: string
 }
 export type auth0__oauth_token__fetch__body_T =
 	auth0__password__oauth_token__fetch__body_T|
