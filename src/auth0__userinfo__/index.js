@@ -25,6 +25,6 @@ export {
  * @returns {auth0__userinfo_T}
  */
 export function auth0__userinfo_(ctx) {
-  return auth0__userinfo__(ctx).$
+	return auth0__userinfo__(ctx).$
 }
 

@@ -8,7 +8,8 @@ import { auth0__password_confirmation__validate } from '../auth0__password_confi
  */
 export function auth0__signup__validate(data) {
 	const email_error = auth0__email__validate(data)
-	const password_confirmation_error = auth0__password_confirmation__validate(data)
+	const password_confirmation_error =
+		auth0__password_confirmation__validate(data)
 	const signup_error = {}
 	let has_errors
 	if (email_error || password_confirmation_error) {

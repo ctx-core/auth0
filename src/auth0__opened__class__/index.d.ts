@@ -8,4 +8,3 @@ export {
 }
 export declare function auth0__opened__class_(ctx:Ctx):auth0__opened_T
 export declare type auth0_opened_class_T = auth0__opened_T
-

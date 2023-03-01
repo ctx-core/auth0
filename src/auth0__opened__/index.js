@@ -20,6 +20,13 @@ export function auth0__opened_(ctx) {
 }
 /**
  * @param {Ctx}ctx
+ * @param {string}auth0__opened
+ */
+export function auth0__opened__set(ctx, auth0__opened) {
+  auth0__opened__(ctx).$ = auth0__opened
+}
+/**
+ * @param {Ctx}ctx
  */
 export function auth0__change_password__open(ctx) {
 	auth0__opened__(ctx).$ = 'change_password'

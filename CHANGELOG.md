@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 37.7.0
+
+### Minor Changes
+
+- - auth0**opened**set
+- - auth0**token**clear_T: aliased by clear_auth0_token_T
+- - auth0**token**error\_\_set
+- - auth0**userinfo_token**set
+- - auth0**change_password**opened\_\_set
+
+### Patch Changes
+
+- auth0**opened**class\_: fix: implementation
+
 ## 37.6.1
 
 ### Patch Changes

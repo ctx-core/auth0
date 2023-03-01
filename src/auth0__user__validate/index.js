@@ -1,6 +1,9 @@
 import { auth0__bad_gateway__throw } from '../auth0__bad_gateway__throw/index.js'
+/** @typedef {import('auth0').User}User */
+/** @typedef {import('auth0-js').Auth0Error}Auth0Error */
+/** @typedef {import('auth0-js').Auth0UserProfile}Auth0UserProfile */
 /**
- * @param user{import('auth0').User|import('auth0-js').Auth0Error|import('auth0-js').Auth0UserProfile}
+ * @param user{User|Auth0Error|Auth0UserProfile}
  */
 export function auth0__user__validate(user) {
 	const user_error = user

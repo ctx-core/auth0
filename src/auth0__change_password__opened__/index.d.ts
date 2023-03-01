@@ -6,3 +6,7 @@ export {
 	auth0__change_password__opened__ as auth0_change_password_opened$_,
 }
 export declare function auth0__change_password__opened_(ctx:Ctx):boolean
+export function auth0__change_password__opened__set(
+	ctx:Ctx,
+	auth0__change_password__opened:boolean
+):void

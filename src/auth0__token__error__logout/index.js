@@ -1,10 +1,11 @@
 import { auth0__token__error__ } from '../auth0__token__error__/index.js'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
+/** @typedef {import('auth0').TokenResponse}TokenResponse */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /** @typedef {import('./index.d.ts').auth0__token__error__logout__param_T}auth0__token__error__logout__param_T */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
- * @param {Auth0Error|auth0__token__error__logout__param_T}error
+ * @param {Auth0Error|TokenResponse|auth0__token__error__logout__param_T}error
  */
 export function auth0__token__error__logout(
 	ctx, error
