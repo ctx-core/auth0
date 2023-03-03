@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 37.7.4
+
+### Patch Changes
+
+- @ctx-core/fetch-undici: ^2.3.121 -> ^2.3.122
+- @ctx-core/dom: ^11.4.22 -> ^11.4.23
+
 ## 37.7.3
 
 ### Patch Changes
