@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 37.7.6
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.1.28 -> ^8.1.29
+- Updated dependencies
+  - @ctx-core/jwt@10.3.33
+
 ## 37.7.5
 
 ### Patch Changes
