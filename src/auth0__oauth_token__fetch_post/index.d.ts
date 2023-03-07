@@ -16,8 +16,8 @@ export interface auth0__secret__oauth_token__fetch__body_T extends auth0__grant_
 export declare type post_auth0_oauth_token_T = typeof auth0__oauth_token__fetch_post
 export declare type post_auth0_oauth_token_body_I = auth0__secret__oauth_token__fetch__body_T
 /**
- * @See https://auth0.com/docs/api/authentication#authenticate-user
- * @See https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/relevant-api-endpoints
+ * @see {@link https://auth0.com/docs/api/authentication#authenticate-user}
+ * @see {@link https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/relevant-api-endpoints}
  */
 export interface auth0__passwordless__oauth_token__fetch__body_T {
 	grant_type:'http://auth0.com/oauth/grant-type/passwordless/otp'

@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 37.7.23
+
+### Patch Changes
+
+- jsdoc: fix: @see {@link ...}
+- Updated dependencies
+  - @ctx-core/function@21.12.1
+
 ## 37.7.22
 
 ### Patch Changes

@@ -8,7 +8,7 @@ export {
 }
 //@formatter:off
 /**
- * @see https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/relevant-api-endpoints#post-passwordless-start
+ * @see {@link https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/relevant-api-endpoints#post-passwordless-start}
  */
 export type auth0__passwordless_start__fetch_post__body_T = {
 	client_id:string
