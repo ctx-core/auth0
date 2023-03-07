@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 37.7.26
+
+### Patch Changes
+
+- @ctx-core/jwt: ^10.3.48 -> ^10.3.49
+- @ctx-core/fetch-undici: ^2.3.138 -> ^2.3.139
+
 ## 37.7.25
 
 ### Patch Changes
