@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 37.7.27
+
+### Patch Changes
+
+- @ctx-core/array: ^26.11.20 -> ^26.11.21
+
 ## 37.7.26
 
 ### Patch Changes
