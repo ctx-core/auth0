@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "37.7.30",
+	"version": "37.7.31",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -33,7 +33,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.11.21",
+		"@ctx-core/array": "^26.12.0",
 		"@ctx-core/combinators": "^8.0.41",
 		"@ctx-core/dom": "^11.4.37",
 		"@ctx-core/email": "^9.1.0",
