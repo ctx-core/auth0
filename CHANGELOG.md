@@ -1,5 +1,21 @@
 # @ctx-core/auth0
 
+## 37.7.46
+
+### Patch Changes
+
+- dependencies: - svelte
+- Updated dependencies
+  - @ctx-core/env@17.2.36
+
+## 37.7.45
+
+### Patch Changes
+
+- svelte: ^3.56.0 -> ^3.57.0
+- Updated dependencies
+  - @ctx-core/env@17.2.35
+
 ## 37.7.44
 
 ### Patch Changes
