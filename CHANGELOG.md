@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 37.7.42
+
+### Patch Changes
+
+- @ctx-core/jwt: ^10.3.54 -> ^10.3.55
+
 ## 37.7.41
 
 ### Patch Changes
