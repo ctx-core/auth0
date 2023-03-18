@@ -1,5 +1,6 @@
 import { has_dom } from '@ctx-core/dom'
-import { jwt_token_exp_ } from '@ctx-core/jwt'
+import { bad_credentials_error_ } from '@ctx-core/error'
+import { jwt__expiration__is_valid_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
 import { computed_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
@@ -7,7 +8,6 @@ import { auth0__in__token__ } from '../auth0__in__token__/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__token__json__, auth0__token__json__set } from '../auth0__token__json__/index.js'
-import { auth0__token__validate } from '../auth0__token__validate/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
 /** @type {typeof import('./index.d.ts').auth0__token__} */
@@ -37,21 +37,17 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 			? void 0
 			: auth0__token.id_token
 		if (!id_token) return
-		const jwt_token_exp_millis = jwt_token_exp_(id_token) * 1000
-		const now = Date.now()
-		const validate_millis = now - jwt_token_exp_millis
-		setTimeout(async ()=>{
-			try {
-				auth0__token__validate(auth0__token)
-			} catch (error) {
-				if (error.type === 'bad_credentials') {
-					console.error(error)
-					auth0__token__error__logout(ctx, error)
-					return
-				}
-				throw error
+		if (auth0__token) {
+			const { id_token } = auth0__token
+			if (!jwt__expiration__is_valid_(id_token)) {
+				auth0__token__error__logout(
+					ctx,
+					bad_credentials_error_({
+						data: { id_token },
+						error_message: 'Session Expired'
+					}))
 			}
-		}, validate_millis)
+		}
 	}
 })
 export {
