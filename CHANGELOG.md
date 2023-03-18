@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 37.8.0
+
+### Minor Changes
+
+- - auth0**Authorization**validation*pair*,auth0**Authorization**validation_pair_T
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/jwt@10.4.0
+
 ## 37.7.59
 
 ### Patch Changes
