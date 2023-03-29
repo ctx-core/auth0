@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 38.0.1
+
+### Patch Changes
+
+- @ctx-core/error: ^12.0.0 -> ^12.1.2
+- @ctx-core/jwt: ^10.4.14 -> ^10.4.15
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/env@17.2.45
+  - @ctx-core/fetch-undici@2.3.171
+
 ## 38.0.0
 
 ### Major Changes
