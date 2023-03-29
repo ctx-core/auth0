@@ -15,7 +15,7 @@ export function auth0__user__validate(user) {
 	const user_profile = user
 	if (!user_profile || !user_profile.user_id) {
 		auth0__bad_gateway__throw({
-			http_status: user_error.statusCode,
+			http__status: user_error.statusCode,
 			data: user_error
 		})
 	}

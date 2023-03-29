@@ -1,10 +1,10 @@
-import { error__throw, unauthorized_error_ } from '@ctx-core/error'
+import { error_o__throw, unauthorized_error_ } from '@ctx-core/error'
 import { auth0__http__error_ } from '../auth0__http__error_/index.js'
 /**
  * @param {import('@ctx-core/error').error_o_T}[error_o]
  */
 export function auth0__unauthorized__throw(error_o = {}) {
-	error__throw(auth0__unauthorized__error_(error_o))
+	error_o__throw(auth0__unauthorized__error_(error_o))
 }
 export {
 	auth0__unauthorized__throw as throw_unauthorized_auth0,

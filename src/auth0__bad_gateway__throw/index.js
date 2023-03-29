@@ -1,10 +1,10 @@
-import { bad_gateway_error_, error__throw } from '@ctx-core/error'
+import { bad_gateway_error_, error_o__throw } from '@ctx-core/error'
 import { auth0__http__error_ } from '../auth0__http__error_/index.js'
 /**
  * @param {import('@ctx-core/error').error_o_T}[error_o]
  */
 export function auth0__bad_gateway__throw(error_o = {}) {
-	error__throw(auth0__bad_gateway_error_(error_o))
+	error_o__throw(auth0__bad_gateway_error_(error_o))
 }
 export {
 	auth0__bad_gateway__throw as throw_bad_gateway_auth0,
