@@ -1,5 +1,38 @@
 # @ctx-core/auth0
 
+## 38.0.0
+
+### Major Changes
+
+- - auth0**http**error\_
+- arguments: (message?:string, error_o?:argument**auth0**unauthorized\_\_error_o_T):
+
+  auth0**unauthorized**error\_
+  auth0**unauthorized**throw
+
+- arguments: (message?:string, error_o?:argument\_\_error_o_T):
+
+  auth0**bad*gateway_error*
+  auth0**bad_gateway\_\_throw
+
+### Minor Changes
+
+- auth0**oauth_token**fetch\_\_body_T:
+
+  auth0**password**oauth_token**fetch**body_T
+  |auth0**passwordless**oauth_token**fetch**body_T
+  |auth0\_\_login_data_T
+
+- - auth0**unauthorized**error_o_T,argument**auth0**unauthorized**error_o_T,auth0**unauthorized\_\_error_o_error_T
+
+### Patch Changes
+
+- auth0**token**error\_\_logout: error argument:
+
+  - BadCredentialsError
+
+- fix tests
+
 ## 37.8.21
 
 ### Patch Changes

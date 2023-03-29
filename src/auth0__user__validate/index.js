@@ -1,4 +1,4 @@
-import { auth0__bad_gateway__throw } from '../auth0__bad_gateway__throw/index.js'
+import { auth0__bad_gateway__throw } from '../auth0__bad_gateway/index.js'
 /** @typedef {import('auth0').User}User */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /** @typedef {import('auth0-js').Auth0UserProfile}Auth0UserProfile */
@@ -14,7 +14,7 @@ export function auth0__user__validate(user) {
 	}
 	const user_profile = user
 	if (!user_profile || !user_profile.user_id) {
-		auth0__bad_gateway__throw({
+		auth0__bad_gateway__throw('Bad Gateway', {
 			http__status: user_error.statusCode,
 			data: user_error
 		})

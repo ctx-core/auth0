@@ -1,6 +1,6 @@
 import { authorization__header__jwt_token_, jwt__expiration__error_ } from '@ctx-core/jwt'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
-import { auth0__unauthorized__error_ } from '../auth0__unauthorized__throw/index.js'
+import { auth0__unauthorized__error_ } from '../auth0__unauthorized/index.js'
 /** @typedef {import('./auth0__token__.d.ts').auth0_token_T}auth0_token_T */
 /** @typedef {import('./index.d.ts').auth0__Authorization__validation_pair_T}auth0__Authorization__validation_pair_T */
 /**
@@ -15,14 +15,22 @@ export async function auth0__Authorization__validation_pair_(
 ) {
 	const auth0_token__Authorization = auth0_token__Authorization_(auth0__token)
 	if (!auth0_token__Authorization) {
-		return [null, auth0__unauthorized__error_({ data: auth0_token__Authorization })]
+		return [
+			null,
+			auth0__unauthorized__error_(
+				'Unauthorized',
+				{ data: auth0_token__Authorization })
+		]
 	}
 	const jwt_token = authorization__header__jwt_token_(auth0_token__Authorization)
 	const jwt__expiration__error = jwt__expiration__error_(jwt_token)
 	if (jwt__expiration__error) {
 		console.error(jwt__expiration__error)
 		auth0__token__error__logout(ctx, jwt__expiration__error)
-		return [null, auth0__unauthorized__error_(jwt__expiration__error)]
+		return [
+			null,
+			auth0__unauthorized__error_('Unauthorized', jwt__expiration__error)
+		]
 	}
 	return [auth0_token__Authorization, null]
 }

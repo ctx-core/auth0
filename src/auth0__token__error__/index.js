@@ -31,7 +31,8 @@ export function auth0__token__error_(ctx) {
  * @param {auth0__token__error_T}auth0__token__error
  */
 export function auth0__token__error__set(
-	ctx, auth0__token__error
+	ctx,
+	auth0__token__error
 ) {
 	auth0__token__error__(ctx).$ = auth0__token__error
 }

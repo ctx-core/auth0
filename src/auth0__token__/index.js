@@ -42,10 +42,9 @@ export const auth0__token__ = be_('auth0__token__', ctx=>{
 			if (!jwt__expiration__is_valid_(id_token)) {
 				auth0__token__error__logout(
 					ctx,
-					bad_credentials_error_({
-						data: { id_token },
-						error_message: 'Session Expired'
-					}))
+					bad_credentials_error_(
+						'Session Expired',
+						{ data: { id_token } }))
 			}
 		}
 	}

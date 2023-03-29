@@ -19,8 +19,10 @@ test('auth0__jwt__expiration__validate: valid', ()=>{
 test('auth0__jwt__expiration__validate: expired_token', ()=>{
 	clock.now = 10_000
 	const expired_token = `expired_token.${btoa(JSON.stringify({ exp: 2 }))}`
-	throws(()=>auth0__jwt__expiration__validate(expired_token), bad_credentials_error_({
-		jwt_token: expired_token, error_message: 'Session Expired'
-	}))
+	throws(
+		()=>auth0__jwt__expiration__validate(expired_token),
+		bad_credentials_error_('Session Expired', {
+			jwt_token: expired_token,
+		}))
 })
 test.run()
