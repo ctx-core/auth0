@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 38.0.12
+
+### Patch Changes
+
+- @ctx-core/fetch-undici: ^2.3.178 -> ^2.3.179
+- Updated dependencies
+  - @ctx-core/nanostores@3.1.19
+
 ## 38.0.11
 
 ### Patch Changes
