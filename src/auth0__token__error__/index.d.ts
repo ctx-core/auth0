@@ -8,7 +8,8 @@ export {
 }
 export declare function auth0__token__error_(ctx:Ctx):auth0__token__error_T
 export declare function auth0__token__error__set(
-	ctx:Ctx, auth0__token__error:auth0__token__error_T
+	ctx:Ctx,
+	auth0__token__error:auth0__token__error_T
 ):void
 export declare type auth0__token__error_T = Auth0Error&{
 	username?:string

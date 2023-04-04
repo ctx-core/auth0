@@ -5,8 +5,12 @@ export {
 	auth0__logout__msg__ as auth0_logout_msg__,
 	auth0__logout__msg__ as auth0_logout_msg$_,
 }
-export declare function auth0__logout__msg_(ctx:Ctx):auth0__logout__msg_T
-export declare function auth0__logout(ctx:Ctx):void
+export declare function auth0__logout__msg_(
+	ctx:Ctx
+):auth0__logout__msg_T
+export declare function auth0__logout(
+	ctx:Ctx
+):void
 export {
 	auth0__logout as auth0_logout,
 }

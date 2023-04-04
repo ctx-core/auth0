@@ -5,7 +5,8 @@ import type { Auth0Error } from 'auth0-js'
 import type { auth0__client_id__body_T, auth0__grant_type__body_T } from '../_types'
 import { auth0__login_data_T } from '../_types'
 export declare function auth0__oauth_token__fetch_post(
-	ctx:Ctx, body:auth0__oauth_token__fetch__body_T
+	ctx:Ctx,
+	body:auth0__oauth_token__fetch__body_T
 ):Promise<[(TokenResponse&JwtToken)|Auth0Error, Response]>
 export {
 	auth0__oauth_token__fetch_post as post_auth0_oauth_token,

@@ -9,7 +9,9 @@ export {
 	auth0__userinfo_o__ as auth0_userinfo_ctx__,
 	auth0__userinfo_o__ as auth0_userinfo_ctx$_,
 }
-export declare function auth0__userinfo_o_(ctx:Ctx):auth0_userinfo_o_T
+export declare function auth0__userinfo_o_(
+	ctx:Ctx
+):auth0_userinfo_o_T
 export interface auth0_userinfo_o_T {
 	auth0_userinfo:Token|nullish
 	auth0_userinfo_auth0_token:auth0__userinfo_token_T

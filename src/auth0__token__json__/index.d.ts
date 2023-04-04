@@ -6,5 +6,10 @@ export {
 	auth0__token__json__ as auth0_token_json__,
 	auth0__token__json__ as auth0_token_json$_,
 }
-export declare function auth0__token__json_(ctx:Ctx):string|nullish
-export declare function auth0__token__json__set(ctx:Ctx, auth0__token__json:string):void
+export declare function auth0__token__json_(
+	ctx:Ctx
+):string|nullish
+export declare function auth0__token__json__set(
+	ctx:Ctx,
+	auth0__token__json:string
+):void

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "38.0.22",
+	"version": "38.0.23",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -39,7 +39,7 @@
 		"@ctx-core/email": "^9.1.0",
 		"@ctx-core/env": "^17.2.56",
 		"@ctx-core/error": "^12.3.5",
-		"@ctx-core/fetch-undici": "^2.6.6",
+		"@ctx-core/fetch-undici": "^2.6.7",
 		"@ctx-core/function": "^21.15.0",
 		"@ctx-core/jwt": "^10.4.26",
 		"@ctx-core/local-storage": "^11.0.27",

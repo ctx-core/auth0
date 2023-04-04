@@ -3,4 +3,7 @@ import type { Be, Ctx } from '@ctx-core/object'
 export declare const AUTH0_DOMAIN__:Be<WritableAtom_<string>>
 export { AUTH0_DOMAIN__ as AUTH0_DOMAIN$_ }
 export declare function AUTH0_DOMAIN_(ctx:Ctx):string
-export declare function AUTH0_DOMAIN__set(ctx:Ctx, AUTH0_DOMAIN:string):void
+export declare function AUTH0_DOMAIN__set(
+	ctx:Ctx,
+	AUTH0_DOMAIN:string
+):void

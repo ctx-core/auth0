@@ -1,7 +1,8 @@
 import type { Ctx } from '@ctx-core/object'
 import type { Auth0Error } from 'auth0-js'
 export declare function auth0__passwordless_start__fetch_post(
-	ctx:Ctx, body:auth0__passwordless_start__fetch_post__body_T
+	ctx:Ctx,
+	body:auth0__passwordless_start__fetch_post__body_T
 ):Promise<[null|Auth0Error, Response]>
 export {
 	auth0__passwordless_start__fetch_post as post_auth0_passwordless_start,

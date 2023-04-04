@@ -1,6 +1,7 @@
 import type { Ctx } from '@ctx-core/object'
 export declare function auth0__change_password__fetch_post(
-	ctx:Ctx, password:string
+	ctx:Ctx,
+	password:string
 ):Promise<[auth_change_password_T, Response]>
 export {
 	auth0__change_password__fetch_post as post_auth0_auth_change_password,
