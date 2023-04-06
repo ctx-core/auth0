@@ -1,5 +1,20 @@
 # @ctx-core/auth0
 
+## 38.0.31
+
+### Patch Changes
+
+- @ctx-core/local-storage: ^11.0.28 -> ^11.0.29
+- @ctx-core/btoa: ^8.1.73 -> ^8.1.74
+- @ctx-core/fetch-undici: ^2.6.11 -> ^2.6.12
+- @ctx-core/error: ^12.3.6 -> ^12.3.7
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/jwt@10.4.31
+  - @ctx-core/dom@14.1.12
+  - @ctx-core/env@17.2.61
+
 ## 38.0.30
 
 ### Patch Changes
