@@ -1,5 +1,36 @@
 # @ctx-core/auth0
 
+## 38.0.56
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.5.16 -> ^7.5.17
+- @ctx-core/dev-tools: 8.1.109 -> 8.1.110
+- @ctx-core/git-tools: ^7.0.59 -> ^7.0.60
+- @ctx-core/monorepo: ^20.2.3 -> ^20.3.0
+- @ctx-core/ctx-core-package-tools: ^8.0.189 -> ^8.0.190
+- @ctx-core/build: 1.0.297 -> 1.0.298
+- @ctx-core/function: ^21.17.14 -> ^21.17.15
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@26.12.29
+  - @ctx-core/combinators@8.0.58
+  - @ctx-core/dom@14.1.28
+  - @ctx-core/email@9.1.16
+  - @ctx-core/env@17.2.80
+  - @ctx-core/error@12.3.23
+  - @ctx-core/fetch-undici@2.6.33
+  - @ctx-core/function@21.17.16
+  - @ctx-core/jwt@10.4.48
+  - @ctx-core/local-storage@11.0.45
+  - @ctx-core/nanostores@3.2.19
+  - @ctx-core/object@27.4.20
+
 ## 38.0.55
 
 ### Patch Changes
