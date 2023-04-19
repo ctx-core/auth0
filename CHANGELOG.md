@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 38.0.59
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.3.3 -> ^20.3.4
+- Updated dependencies
+  - @ctx-core/array@26.12.32
+  - @ctx-core/combinators@8.0.61
+  - @ctx-core/dom@14.1.31
+  - @ctx-core/email@9.1.19
+  - @ctx-core/env@17.2.83
+  - @ctx-core/error@12.3.26
+  - @ctx-core/fetch-undici@2.6.36
+  - @ctx-core/function@21.17.19
+  - @ctx-core/jwt@10.4.51
+  - @ctx-core/local-storage@11.0.48
+  - @ctx-core/nanostores@3.2.22
+  - @ctx-core/object@27.4.23
+
 ## 38.0.58
 
 ### Patch Changes
