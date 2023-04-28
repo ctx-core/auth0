@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 38.0.71
+
+### Patch Changes
+
+- @ctx-core/nanostores: ^3.2.23 -> ^3.3.0
+- @ctx-core/function: ^21.17.19 -> ^21.18.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/env@17.2.85
+  - @ctx-core/array@26.12.33
+  - @ctx-core/dom@14.1.33
+  - @ctx-core/jwt@10.4.53
+  - @ctx-core/object@27.4.24
+
 ## 38.0.70
 
 ### Patch Changes
