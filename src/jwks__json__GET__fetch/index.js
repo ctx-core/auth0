@@ -14,5 +14,6 @@ export const [
 			`https://${AUTH0_DOMAIN_(ctx)}/.well-known/jwks.json`)
 )
 export {
+	jwks__json__GET__fetch2 as jwks__json__fetch_get,
 	jwks__json__GET__fetch2 as get_jwks_json,
 }

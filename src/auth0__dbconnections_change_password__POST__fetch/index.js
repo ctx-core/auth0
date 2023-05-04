@@ -18,5 +18,6 @@ export const [
 			})
 )
 export {
+	auth0__dbconnections_change_password__POST__fetch2 as auth0__dbconnections_change_password__fetch_post,
 	auth0__dbconnections_change_password__POST__fetch2 as post_auth0_dbconnections_change_password,
 }

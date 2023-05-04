@@ -24,5 +24,6 @@ export const [
 			})
 )
 export {
+	auth0__dbconnections_signup__GET__fetch as auth0__dbconnections_signup__fetch_get,
 	auth0__dbconnections_signup__GET__fetch as post_auth0_dbconnections_signup,
 }

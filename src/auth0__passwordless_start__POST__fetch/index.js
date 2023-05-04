@@ -19,5 +19,6 @@ export const [
 		})
 )
 export {
+	auth0__passwordless_start__POST__fetch2 as auth0__passwordless_start__fetch_post,
 	auth0__passwordless_start__POST__fetch2 as post_auth0_passwordless_start,
 }
