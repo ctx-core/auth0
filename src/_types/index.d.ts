@@ -45,19 +45,22 @@ export interface auth0__password_confirmation__error_T extends Auth0Error {
 	password_confirmation?:string
 }
 export declare type change_password_error_I = auth0__password_confirmation__error_T
-export interface auth0__userinfo__fetch_get__params_T {
+export interface auth0__userinfo__GET__fetch2__params_T {
 	auth0__token:JwtToken
 	AUTH0_DOMAIN:string
 }
-export declare type get_auth0_userinfo_params_I = auth0__userinfo__fetch_get__params_T
-export interface auth0__userinfo__fetch_get__error_T {
+export type auth0__userinfo__fetch_get__params_T = auth0__userinfo__GET__fetch2__params_T
+export type get_auth0_userinfo_params_I = auth0__userinfo__GET__fetch2__params_T
+export interface auth0__userinfo__GET__fetch2__error_T {
 	error:string
 	error_description:string
 }
-export type auth0__userinfo__fetch_get__payload_T =
+export type auth0__userinfo__fetch_get__error_T = auth0__userinfo__GET__fetch2__error_T
+export type auth0__userinfo__GET__fetch2__payload_T =
 	auth0__userinfo_T
-	|auth0__userinfo__fetch_get__error_T
+	|auth0__userinfo__GET__fetch2__error_T
 	|string // Unauthorized
+export type auth0__userinfo__fetch_get__payload_T = auth0__userinfo__GET__fetch2__payload_T
 export interface auth0__userinfo_T {
 	sub:string
 	nickname:string
@@ -80,5 +83,5 @@ export interface auth0__userinfo_T {
 	phone_number_verified?:boolean
 	address?:{ country:string }
 }
-export declare type get_auth0_userinfo_T = auth0__userinfo__fetch_get__payload_T
-export type auth0__userinfo__response_pair_T = [auth0__userinfo__fetch_get__payload_T, Response]
+export declare type get_auth0_userinfo_T = auth0__userinfo__GET__fetch2__payload_T
+export type auth0__userinfo__response_pair_T = [auth0__userinfo__GET__fetch2__payload_T, Response]

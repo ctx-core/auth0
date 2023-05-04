@@ -1,13 +1,13 @@
 import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
 import { header__access_token__verify } from '../header__access_token__verify/index.js'
-/** @typedef {import('./index.d.ts').auth0__userinfo__fetch_get__params_T}auth0__userinfo__fetch_get__params_T */
-/** @typedef {import('./index.d.ts').auth0__userinfo__fetch_get__payload_T}auth0__userinfo__fetch_get__payload_T */
+/** @typedef {import('./index.d.ts').auth0__userinfo__GET__fetch2__params_T}auth0__userinfo__GET__fetch2__params_T */
+/** @typedef {import('./index.d.ts').auth0__userinfo__GET__fetch2__payload_T}auth0__userinfo__GET__fetch2__payload_T */
 export const [
 	auth0__userinfo__GET__fetch,
 	auth0__userinfo__GET__fetch2,
 ] = fetch__template_pair_(
 	/**
-	 * @param {auth0__userinfo__fetch_get__params_T}params
+	 * @param {auth0__userinfo__GET__fetch2__params_T}params
 	 * @returns {Promise<Response>}
 	 */
 	async params=>{
