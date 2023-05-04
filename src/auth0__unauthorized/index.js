@@ -10,7 +10,12 @@ export function auth0__unauthorized__error_(
 	message,
 	error_o
 ) {
-	return /** @type {auth0__unauthorized__error_o_error_T} */unauthorized_error_(message, error_o)
+	return (
+		/**
+		 *  @type {auth0__unauthorized__error_o_error_T}
+		 */
+		unauthorized_error_(message, error_o)
+	)
 }
 export {
 	auth0__unauthorized__error_ as unauthorized_auth0_error_,
@@ -23,7 +28,9 @@ export function auth0__unauthorized__throw(
 	message,
 	error_o
 ) {
-	throw auth0__unauthorized__error_(message, error_o)
+	throw auth0__unauthorized__error_(
+		message,
+		error_o)
 }
 export {
 	auth0__unauthorized__throw as throw_unauthorized_auth0,

@@ -1,5 +1,29 @@
 # @ctx-core/auth0
 
+## 38.1.0
+
+### Minor Changes
+
+- - auth0\_\_oauth_token\_\_POST\_\_fetch
+- - auth0\_\_oauth_token\_\_POST\_\_fetch2: aliased by auth0\_\_oauth_token\_\_fetch_post
+- - auth0\_\_change_password\_\_POST\_\_fetch2: aliased by auth0\_\_change_password\_\_POST\_\_fetch2
+- - auth0**userinfo**GET**fetch2: aliased by auth0**userinfo\_\_fetch_get
+- - auth0**passwordless_start**POST\_\_fetch
+- - auth0**passwordless_start**POST**fetch2: aliased by auth0**passwordless_start\_\_fetch_post
+- - auth0\_\_change_password\_\_POST\_\_fetch
+- - auth0**userinfo**GET\_\_fetch
+- - jwks**json**GET**fetch2: aliased by jwks**json\_\_fetch_get
+- - auth0\_\_dbconnections_signup\_\_GET\_\_fetch2: aliased by auth0\_\_dbconnections_signup\_\_fetch_get
+- - auth0\_\_dbconnections_signup\_\_GET\_\_fetch
+
+### Patch Changes
+
+- auth0\_\_change_password\_\_opened\_\_set: fix: ∋ auth0\_\_opened\_\_set
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch@12.9.0
+
 ## 38.0.77
 
 ### Patch Changes

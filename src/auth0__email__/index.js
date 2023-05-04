@@ -1,9 +1,10 @@
-import { computed_ } from '@ctx-core/nanostores'
-import { be_ } from '@ctx-core/object'
+import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__opened__ } from '../auth0__opened__/index.js'
 import { auth0__userinfo__ } from '../auth0__userinfo__/index.js'
-/** @type {typeof import('./index.d.ts').auth0__email__} */
-export const auth0__email__ = be_('auth0__email__', ctx=>{
+export const [
+	auth0__email__,
+	auth0__email_,
+] = be_computed_pair_(ctx=>{
 	const auth0__email_ = computed_(auth0__userinfo__(ctx),
 		$=>$ ? $?.email : null)
 	let auth0_email
@@ -18,12 +19,4 @@ export const auth0__email__ = be_('auth0__email__', ctx=>{
 export {
 	auth0__email__ as auth0_email__,
 	auth0__email__ as auth0_email$_,
-}
-/**
- * @param {import('@ctx-core/object').Ctx}ctx
- * @returns {string}
- * @private
- */
-export function auth0__email_(ctx) {
-  return auth0__email__(ctx).$
 }

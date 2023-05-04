@@ -1,11 +1,12 @@
 import { nullish__check_ } from '@ctx-core/function'
-import { be_ } from '@ctx-core/object'
-import { computed_ } from '@ctx-core/nanostores'
+import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__userinfo__response_pair__ } from '../auth0__userinfo__response_pair__/index.js'
 /** @typedef {typeof import('@ctx-core/object').Ctx}Ctx */
-/** @typedef {typeof import('../auth0__userinfo__fetch_get').auth0__userinfo_T}auth0__userinfo_T */
-/** @type {typeof import('./index.d.ts').auth0__userinfo__} */
-export const auth0__userinfo__ = be_('auth0__userinfo__', ctx=>
+/** @typedef {typeof import('../auth0__userinfo__GET__fetch2').auth0__userinfo_T}auth0__userinfo_T */
+export const [
+	auth0__userinfo__,
+	auth0__userinfo_,
+] = be_computed_pair_(ctx=>
 	computed_(
 		auth0__userinfo__response_pair__(ctx),
 		auth0__userinfo__response_pair=>
@@ -20,11 +21,3 @@ export {
 	auth0__userinfo__ as auth0_userinfo__,
 	auth0__userinfo__ as auth0_userinfo$_,
 }
-/**
- * @param {import('@ctx-core/object').Ctx}ctx
- * @returns {auth0__userinfo_T}
- */
-export function auth0__userinfo_(ctx) {
-	return auth0__userinfo__(ctx).$
-}
-

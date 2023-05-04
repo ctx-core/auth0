@@ -5,4 +5,5 @@ export {
 }
 export declare type auth0__forgot_password__check_email__open_T =
 	typeof auth0__forgot_password__check_email__open
-export declare type open_auth0_forgot_password_check_email_T = auth0__forgot_password__check_email__open_T
+export declare type open_auth0_forgot_password_check_email_T =
+	auth0__forgot_password__check_email__open_T

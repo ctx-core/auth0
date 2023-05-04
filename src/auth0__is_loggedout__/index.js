@@ -1,19 +1,13 @@
-import { computed_ } from '@ctx-core/nanostores'
-import { be_ } from '@ctx-core/object'
+import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__token__ } from '../auth0__token__/index.js'
-/** @type {typeof import('./index.d.ts').auth0__is_loggedout__} */
-export const auth0__is_loggedout__ = be_('auth0__is_loggedout__', ctx=>
+export const [
+	auth0__is_loggedout__,
+	auth0__is_loggedout_,
+] = be_computed_pair_(ctx=>
 	computed_(auth0__token__(ctx),
-		$=>$ === null))
+		auth__token=>
+			auth__token === null))
 export {
 	auth0__is_loggedout__ as is_auth0_loggedout__,
 	auth0__is_loggedout__ as is_auth0_loggedout$_,
-}
-/**
- * @param {import('@ctx-core/object').Ctx}ctx
- * @returns {boolean}
- * @private
- */
-export function auth0__is_loggedout_(ctx) {
-  return auth0__is_loggedout__(ctx).$
 }

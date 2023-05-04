@@ -1,4 +1,4 @@
-import { auth0__token__error__ } from '../auth0__token__error__/index.js'
+import { auth0__token__error__set } from '../auth0__token__error__/index.js'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
 /** @typedef {import('auth0').TokenResponse}TokenResponse */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
@@ -12,10 +12,13 @@ export function auth0__token__error__logout(
 	ctx,
 	error
 ) {
-	auth0__token__error__(ctx).$ = typeof error === 'string' ? {
-		error: 'Error',
-		error_description: error,
-	} : error
+	auth0__token__error__set(ctx,
+		typeof error === 'string'
+		? {
+				error: 'Error',
+				error_description: error,
+			}
+		: error)
 	if (error) {
 		auth0__token__logout(ctx)
 	}

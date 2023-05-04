@@ -1,5 +1,7 @@
 import type { Ctx } from '@ctx-core/object'
-export declare function auth0__forgot_password__open(ctx:Ctx):void
+export declare function auth0__forgot_password__open(
+	ctx:Ctx
+):void
 export {
 	auth0__forgot_password__open as open_auth0_forgot_password,
 }

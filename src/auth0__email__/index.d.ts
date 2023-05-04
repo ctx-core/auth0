@@ -1,8 +1,12 @@
-import type { ReadableAtom_ } from '@ctx-core/nanostores'
-import type { Be, Ctx } from '@ctx-core/object'
-export declare const auth0__email__:Be<ReadableAtom_<string>>
+import type { be_computed_pair_T, ReadableAtom_ } from '@ctx-core/nanostores'
+export declare const [
+	auth0__email__,
+	auth0__email_,
+]:be_computed_pair_T<
+	string,
+	ReadableAtom_<string>
+>
 export {
 	auth0__email__ as auth0_email__,
 	auth0__email__ as auth0_email$_,
 }
-export declare function auth0__email_(ctx:Ctx):string

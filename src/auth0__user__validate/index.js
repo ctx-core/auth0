@@ -5,9 +5,17 @@ import { auth0__bad_gateway__throw } from '../auth0__bad_gateway/index.js'
 /**
  * @param user{User|Auth0Error|Auth0UserProfile}
  */
-export function auth0__user__validate(user) {
+export function auth0__user__validate(
+	user
+) {
 	const user_error = user
-	if (user_error === null || user_error === void 0 ? void 0 : user_error.error) {
+	if (
+		user_error === null
+		|| (
+			user_error === void 0
+			? void 0
+			: user_error.error)
+	) {
 		console.error(`auth0__user__validate`)
 		console.error(`${user_error.statusCode} ${user_error.error}`)
 		console.error(user_error.description)

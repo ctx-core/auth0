@@ -1,8 +1,9 @@
-import { computed_ } from '@ctx-core/nanostores'
-import { be_ } from '@ctx-core/object'
+import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__token__json__ } from '../auth0__token__json__/index.js'
-/** @type {typeof import('./index.d.ts').auth0__in__token__} */
-export const auth0__in__token__ = be_('auth0__in__token__', ctx=>{
+export const [
+	auth0__in__token__,
+	auth0__in__token_,
+] = be_computed_pair_(ctx=>{
 	let auth0__token__json, in_auth0_token
 	return computed_(auth0__token__json__(ctx), $=>{
 		if ($ && typeof $ === 'string') {
@@ -22,12 +23,4 @@ export const auth0__in__token__ = be_('auth0__in__token__', ctx=>{
 export {
 	auth0__in__token__ as in_auth0_token__,
 	auth0__in__token__ as in_auth0_token$_,
-}
-/**
- * @param {import('@ctx-core/object').Ctx}ctx
- * @returns {import('@ctx-core/jwt').JwtToken}
- * @private
- */
-export function auth0__in__token_(ctx) {
-  return auth0__in__token__(ctx).$
 }

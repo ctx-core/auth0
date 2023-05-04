@@ -2,7 +2,9 @@ import { jwt__expiration__validate } from '@ctx-core/jwt'
 /**
  * @param {string}jwt_token
  */
-export function auth0__jwt__expiration__validate(jwt_token) {
+export function auth0__jwt__expiration__validate(
+	jwt_token
+) {
 	try {
 		jwt__expiration__validate(jwt_token)
 	} catch (err) {

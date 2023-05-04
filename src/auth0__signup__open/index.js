@@ -1,9 +1,10 @@
-import { auth0__opened__ } from '../auth0__opened__/index.js'
+import { auth0__opened__set } from '../auth0__opened__/index.js'
+/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  */
 export function auth0__signup__open(ctx) {
-	auth0__opened__(ctx).$ = 'signup'
+	auth0__opened__set(ctx, 'signup')
 }
 export {
 	auth0__signup__open as open_auth0_signup,
