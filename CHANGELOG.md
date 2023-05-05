@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 38.2.9
+
+### Patch Changes
+
+- fix: import type { fetch\__template_pair_T }
+
 ## 38.2.8
 
 ### Patch Changes
@@ -60,26 +66,26 @@
 
 ### Patch Changes
 
-- auth0\_\_userinfo\_\_GET\_\_fetch2: fix: return type: auth0\_\_userinfo\_\_GET\_\_fetch2\_\_payload_T
+- auth0\__userinfo\__GET\__fetch2: fix: return type: auth0\__userinfo\__GET\__fetch2\__payload_T
 
 ## 38.2.0
 
 ### Minor Changes
 
-- - auth0\_\_userinfo\_\_GET\_\_fetch2\_\_error_T: aliased by auth0\_\_userinfo\_\_fetch_get\_\_error_T
-- - auth0\_\_userinfo\_\_GET\_\_fetch2\_\_params_T: aliased by auth0\_\_userinfo\_\_fetch_get\_\_params_T
-- - auth0\_\_userinfo\_\_GET\_\_fetch2\_\_payload_T: aliased by auth0\_\_userinfo\_\_fetch_get\_\_payload_T
+- - auth0\__userinfo\__GET\__fetch2\__error_T: aliased by auth0\__userinfo\__fetch_get\__error_T
+- - auth0\__userinfo\__GET\__fetch2\__params_T: aliased by auth0\__userinfo\__fetch_get\__params_T
+- - auth0\__userinfo\__GET\__fetch2\__payload_T: aliased by auth0\__userinfo\__fetch_get\__payload_T
 
 ## 38.1.2
 
 ### Patch Changes
 
-- auth0\_\_oauth_token\_\_fetch_post: fix: alias auth0\_\_oauth_token\_\_POST\_\_fetch2
-- auth0\_\_passwordless_start\_\_fetch_post: fix: alias auth0\_\_passwordless_start\_\_POST\_\_fetch2
-- auth0\_\_change_password\_\_fetch_post: fix: alias auth0\_\_change_password\_\_POST\_\_fetch2
-- auth0\_\_dbconnections_change_password\_\_fetch_post: fix: alias auth0\_\_dbconnections_change_password\_\_POST\_\_fetch2
-- auth0\_\_dbconnections_signup\_\_fetch_get: fix: alias auth0\_\_dbconnections_signup\_\_GET\_\_fetch
-- jwks\_\_json\_\_fetch_get: alias jwks\_\_json\_\_GET\_\_fetch2
+- auth0\__oauth_token\__fetch_post: fix: alias auth0\__oauth_token\__POST\__fetch2
+- auth0\__passwordless_start\__fetch_post: fix: alias auth0\__passwordless_start\__POST\__fetch2
+- auth0\__change_password\__fetch_post: fix: alias auth0\__change_password\__POST\__fetch2
+- auth0\__dbconnections_change_password\__fetch_post: fix: alias auth0\__dbconnections_change_password\__POST\__fetch2
+- auth0\__dbconnections_signup\__fetch_get: fix: alias auth0\__dbconnections_signup\__GET\__fetch
+- jwks\__json\__fetch_get: alias jwks\__json\__GET\__fetch2
 
 ## 38.1.1
 
@@ -91,21 +97,21 @@
 
 ### Minor Changes
 
-- - auth0\_\_oauth_token\_\_POST\_\_fetch
-- - auth0\_\_oauth_token\_\_POST\_\_fetch2: aliased by auth0\_\_oauth_token\_\_fetch_post
-- - auth0\_\_change_password\_\_POST\_\_fetch2: aliased by auth0\_\_change_password\_\_POST\_\_fetch2
-- - auth0\_\_userinfo\_\_GET\_\_fetch2: aliased by auth0\_\_userinfo\_\_fetch_get
-- - auth0\_\_passwordless_start\_\_POST\_\_fetch
-- - auth0\_\_passwordless_start\_\_POST\_\_fetch2: aliased by auth0\_\_passwordless_start\_\_fetch_post
-- - auth0\_\_change_password\_\_POST\_\_fetch
-- - auth0\_\_userinfo\_\_GET\_\_fetch
-- - jwks\_\_json\_\_GET\_\_fetch2: aliased by jwks\_\_json\_\_fetch_get
-- - auth0\_\_dbconnections_signup\_\_GET\_\_fetch2: aliased by auth0\_\_dbconnections_signup\_\_fetch_get
-- - auth0\_\_dbconnections_signup\_\_GET\_\_fetch
+- - auth0\__oauth_token\__POST\__fetch
+- - auth0\__oauth_token\__POST\__fetch2: aliased by auth0\__oauth_token\__fetch_post
+- - auth0\__change_password\__POST\__fetch2: aliased by auth0\__change_password\__POST\__fetch2
+- - auth0\__userinfo\__GET\__fetch2: aliased by auth0\__userinfo\__fetch_get
+- - auth0\__passwordless_start\__POST\__fetch
+- - auth0\__passwordless_start\__POST\__fetch2: aliased by auth0\__passwordless_start\__fetch_post
+- - auth0\__change_password\__POST\__fetch
+- - auth0\__userinfo\__GET\__fetch
+- - jwks\__json\__GET\__fetch2: aliased by jwks\__json\__fetch_get
+- - auth0\__dbconnections_signup\__GET\__fetch2: aliased by auth0\__dbconnections_signup\__fetch_get
+- - auth0\__dbconnections_signup\__GET\__fetch
 
 ### Patch Changes
 
-- auth0\_\_change_password\_\_opened\_\_set: fix: ∋ auth0\_\_opened\_\_set
+- auth0\__change_password\__opened\__set: fix: ∋ auth0\__opened\__set
 - Updated dependencies
 - Updated dependencies
 - Updated dependencies
@@ -837,30 +843,30 @@
 
 ### Major Changes
 
-- - auth0\_\_http\_\_error\_
-- arguments: (message?:string, error_o?:argument\_\_auth0\_\_unauthorized\_\_error_o_T):
+- - auth0\__http\__error\_
+- arguments: (message?:string, error_o?:argument\__auth0\__unauthorized\__error_o_T):
 
-  auth0\_\_unauthorized\_\_error\_
-  auth0\_\_unauthorized\_\_throw
+  auth0\__unauthorized\__error\_
+  auth0\__unauthorized\__throw
 
-- arguments: (message?:string, error_o?:argument\_\_error_o_T):
+- arguments: (message?:string, error_o?:argument\__error_o_T):
 
-  auth0\_\_bad_gateway_error\_
-  auth0\_\_bad_gateway\_\_throw
+  auth0\__bad_gateway_error\_
+  auth0\__bad_gateway\__throw
 
 ### Minor Changes
 
-- auth0\_\_oauth_token\_\_fetch\_\_body_T:
+- auth0\__oauth_token\__fetch\__body_T:
 
-  auth0\_\_password\_\_oauth_token\_\_fetch\_\_body_T
-  |auth0\_\_passwordless\_\_oauth_token\_\_fetch\_\_body_T
-  |auth0\_\_login_data_T
+  auth0\__password\__oauth_token\__fetch\__body_T
+  |auth0\__passwordless\__oauth_token\__fetch\__body_T
+  |auth0\__login_data_T
 
-- - auth0\_\_unauthorized\_\_error_o_T,argument\_\_auth0\_\_unauthorized\_\_error_o_T,auth0\_\_unauthorized\_\_error_o_error_T
+- - auth0\__unauthorized\__error_o_T,argument\__auth0\__unauthorized\__error_o_T,auth0\__unauthorized\__error_o_error_T
 
 ### Patch Changes
 
-- auth0\_\_token\_\_error\_\_logout: error argument:
+- auth0\__token\__error\__logout: error argument:
 
   - BadCredentialsError
 
@@ -1104,7 +1110,7 @@
 
 ### Minor Changes
 
-- - auth0\_\_Authorization\_\_validation_pair\_,auth0\_\_Authorization\_\_validation_pair_T
+- - auth0\__Authorization\__validation_pair\_,auth0\__Authorization\__validation_pair_T
 
 ### Patch Changes
 
@@ -1664,15 +1670,15 @@
 
 ### Minor Changes
 
-- - auth0\_\_opened\_\_set
-- - auth0\_\_token\_\_clear_T: aliased by clear_auth0_token_T
-- - auth0\_\_token\_\_error\_\_set
-- - auth0\_\_userinfo_token\_\_set
-- - auth0\_\_change_password\_\_opened\_\_set
+- - auth0\__opened\__set
+- - auth0\__token\__clear_T: aliased by clear_auth0_token_T
+- - auth0\__token\__error\__set
+- - auth0\__userinfo_token\__set
+- - auth0\__change_password\__opened\__set
 
 ### Patch Changes
 
-- auth0\_\_opened\_\_class\_: fix: implementation
+- auth0\__opened\__class\_: fix: implementation
 
 ## 37.6.1
 
@@ -1684,7 +1690,7 @@
 
 ### Minor Changes
 
-- auth0\_\_password\_\_oauth_token\_\_fetch\_\_body_T:
+- auth0\__password\__oauth_token\__fetch\__body_T:
 
   grant_type: 'password'|'http://auth0.com/oauth/grant-type/password-realm'
 
@@ -1714,10 +1720,10 @@
 
 ### Minor Changes
 
-- - auth0\_\_access_token_o_T: aliased by auth0\_\_verified\_\_jwt_token_T
-- - AUTH0_URL\_\_set
+- - auth0\__access_token_o_T: aliased by auth0\__verified\__jwt_token_T
+- - AUTH0_URL\__set
 - - auth0\__user_id_: aliased by user_id\_
-- - auth0\_\_error_T
+- - auth0\__error_T
 
 ### Patch Changes
 
@@ -1738,19 +1744,19 @@
 
 ### Patch Changes
 
-- auth0\_\_token\_\_json\_\_set: fix: implementation
+- auth0\__token\__json\__set: fix: implementation
 
 ## 37.4.1
 
 ### Patch Changes
 
-- auth0\_\_token\_\_json\_\_set: fix: export
+- auth0\__token\__json\__set: fix: export
 
 ## 37.4.0
 
 ### Minor Changes
 
-- - auth0\_\_token\_\_json\_\_set
+- - auth0\__token\__json\__set
 
 ## 37.3.0
 
@@ -1760,53 +1766,53 @@
 - - auth0\__userinfo_
 - - auth0\__token_
 - - auth0\__is_loggedin_
-- - auth0\_\_opened\_\_class\_
+- - auth0\__opened\__class\_
 - - auth0\__userinfo_token_
-- - auth0\_\_token\_\_error\_
-- - auth0\_\_in\_\_token\_
-- - auth0\_\_opened_T: aliased by auth0_opened_T
-- - auth0\_\_login\_\_opened\_
-- - auth0\_\_logout\_\_msg_T: aliased by auth0_logout_msg_T
+- - auth0\__token\__error\_
+- - auth0\__in\__token\_
+- - auth0\__opened_T: aliased by auth0_opened_T
+- - auth0\__login\__opened\_
+- - auth0\__logout\__msg_T: aliased by auth0_logout_msg_T
 - - auth0_forgot_password_check_email_opened\_
 - - AUTH0_URL\_
 - - auth0\__opened_
-- - auth0\_\_logout\_\_msg\_
-- - auth0\_\_change_password\_\_opened\_
+- - auth0\__logout\__msg\_
+- - auth0\__change_password\__opened\_
 
 ## 37.2.0
 
 ### Minor Changes
 
-- auth0\_\_passwordless\_\_oauth_token\_\_fetch\_\_body_T: scope?: 'openid'|'openid profile email'
-- - auth0\_\_passwordless_start\_\_fetch_post
-- - auth0\_\_password\_\_oauth_token\_\_fetch\_\_body_T
-- auth0\_\_oauth_token\_\_fetch\_\_body_T: auth0\_\_password\_\_oauth_token\_\_fetch\_\_body_T|auth0\_\_passwordless\_\_oauth_token\_\_fetch\_\_body_T
+- auth0\__passwordless\__oauth_token\__fetch\__body_T: scope?: 'openid'|'openid profile email'
+- - auth0\__passwordless_start\__fetch_post
+- - auth0\__password\__oauth_token\__fetch\__body_T
+- auth0\__oauth_token\__fetch\__body_T: auth0\__password\__oauth_token\__fetch\__body_T|auth0\__passwordless\__oauth_token\__fetch\__body_T
 
 ## 37.1.0
 
 ### Minor Changes
 
-- auth0\_\_init: + AUTH0_CLIENT_SECRET\_\_set
-- - AUTH0_CLIENT_SECRET\_\_,AUTH0_CLIENT_SECRET\_,AUTH0_CLIENT_SECRET\_\_set
+- auth0\__init: + AUTH0_CLIENT_SECRET\__set
+- - AUTH0_CLIENT_SECRET\__,AUTH0_CLIENT_SECRET\_,AUTH0_CLIENT_SECRET\__set
 
 ### Patch Changes
 
-- auth0\_\_passwordless_start\_\_fetch_post: fix: server side call to AUTH0_DOMAIN\_(ctx)/passwordless/start: - window
+- auth0\__passwordless_start\__fetch_post: fix: server side call to AUTH0_DOMAIN\_(ctx)/passwordless/start: - window
 
 ## 37.0.0
 
 ### Major Changes
 
-- - auth0\_\_passwordless_start\_\_fetch_post\_\_optional_body_T
-  - auth0\_\_passwordless_start\_\_fetch\_\_optional_body_T
+- - auth0\__passwordless_start\__fetch_post\__optional_body_T
+  - auth0\__passwordless_start\__fetch\__optional_body_T
   - post_auth0_passwordless_start_optional_body_T
-  - auth0\_\_client_id\_\_optional_body_T
+  - auth0\__client_id\__optional_body_T
   - auth0_client_id_optional_body_I
 
 ### Minor Changes
 
-- - auth0\_\_passwordless_start\_\_fetch_post\_\_body_T: aliased by auth0\_\_passwordless_start\_\_fetch\_\_body_T
-- auth0\_\_passwordless_start\_\_fetch_post\_\_body_T:
+- - auth0\__passwordless_start\__fetch_post\__body_T: aliased by auth0\__passwordless_start\__fetch\__body_T
+- auth0\__passwordless_start\__fetch_post\__body_T:
 
   - client_secret?:string
   - send?:'link'|'code'
@@ -2079,8 +2085,8 @@
 
 ### Minor Changes
 
-- - auth\_\_userinfo\_,auth0\_\_userinfo\_\_set
-- - auth0\_\_userinfo\_\_response_pair\_\_,auth0\_\_userinfo\_\_response_pair\_,auth0\_\_userinfo\_\_response_pair\_\_set
+- - auth\__userinfo\_,auth0\__userinfo\__set
+- - auth0\__userinfo\__response_pair\__,auth0\__userinfo\__response_pair\_,auth0\__userinfo\__response_pair\__set
 
 ## 36.5.6
 
@@ -2163,14 +2169,14 @@
 
 ### Minor Changes
 
-- - AUTH0_CLIENT_ID\_,AUTH0_CLIENT_ID\_\_set
+- - AUTH0_CLIENT_ID\_,AUTH0_CLIENT_ID\__set
 
 ## 36.4.0
 
 ### Minor Changes
 
-- - auth0\_\_userinfo\_\_set
-- auth0\_\_userinfo_T: optional props:
+- - auth0\__userinfo\__set
+- auth0\__userinfo_T: optional props:
 
       given_name?:string
       family_name?:string
@@ -2188,7 +2194,7 @@
 
 ### Patch Changes
 
-- auth0\_\_userinfo\_\_: fix: type: Be<ReadableAtom\_<auth0\_\_userinfo_T>>
+- auth0\__userinfo\__: fix: type: Be<ReadableAtom\_<auth0\__userinfo_T>>
 
 ## 36.3.12
 
@@ -2322,25 +2328,25 @@
 
 ### Patch Changes
 
-- auth0\_\_userinfo\_\_fetch_get\_\_payload_T: + |string: Unauthorized
+- auth0\__userinfo\__fetch_get\__payload_T: + |string: Unauthorized
 
 ## 36.2.4
 
 ### Patch Changes
 
-- AUTH0_DOMAIN\_\_set: fix: implementation
+- AUTH0_DOMAIN\__set: fix: implementation
 
 ## 36.2.3
 
 ### Patch Changes
 
-- AUTH0_DOMAIN\_\_set: fix type name
+- AUTH0_DOMAIN\__set: fix type name
 
 ## 36.2.2
 
 ### Patch Changes
 
-- auth0\_\_v2\_\_url\_: fix: circular dependency
+- auth0\__v2\__url\_: fix: circular dependency
 
 ## 36.2.1
 
@@ -2352,13 +2358,13 @@
 
 ### Minor Changes
 
-- - AUTH0_DOMAIN\_\_set
+- - AUTH0_DOMAIN\__set
 
 ## 36.1.0
 
 ### Minor Changes
 
-- login\_\_auth0\_\_oauth_token\_\_fetch\_\_body_T: + scope?: string
+- login\__auth0\__oauth_token\__fetch\__body_T: + scope?: string
 
 ## 36.0.5
 
@@ -2379,10 +2385,10 @@
 
 ### Patch Changes
 
-- auth0\_\_userinfo\_\_fetch_get\_\_payload_T: auth0\_\_userinfo_T|auth0\_\_userinfo\_\_fetch_get\_\_error_T
+- auth0\__userinfo\__fetch_get\__payload_T: auth0\__userinfo_T|auth0\__userinfo\__fetch_get\__error_T
 
-  - auth0\_\_userinfo_T: extracted from auth0\_\_userinfo\_\_fetch_get\_\_payload_T
-  - auth0\_\_userinfo\_\_fetch_get\_\_error_T
+  - auth0\__userinfo_T: extracted from auth0\__userinfo\__fetch_get\__payload_T
+  - auth0\__userinfo\__fetch_get\__error_T
     error:string
     error_description:string
 
@@ -2396,26 +2402,26 @@
 
 ### Patch Changes
 
-- auth0\_\_token\_\_is_valid\_: no auth0\_\_token: fix: returns false
+- auth0\__token\__is_valid\_: no auth0\__token: fix: returns false
 
 ## 36.0.0
 
 ### Major Changes
 
-- auth0\_\_userinfo\_\_fetch_get\_\_params_T: auth0_token=>auth0\_\_token
+- auth0\__userinfo\__fetch_get\__params_T: auth0_token=>auth0\__token
 
 ## 35.6.1
 
 ### Patch Changes
 
-- variable names: auth0_token=>auth0\_\_token
+- variable names: auth0_token=>auth0\__token
 
 ## 35.6.0
 
 ### Minor Changes
 
-- - auth0\_\_jwt\_\_expiration\__is_valid_
-- - auth0\_\_token\_\_is_valid\_
+- - auth0\__jwt\__expiration\__is_valid_
+- - auth0\__token\__is_valid\_
 
 ### Patch Changes
 
@@ -2426,23 +2432,23 @@
 
 ### Minor Changes
 
-- auth0\_\_oauth_token\_\_fetch_post: return type: Promise<[TokenResponse|Auth0Error, Response]>
+- auth0\__oauth_token\__fetch_post: return type: Promise<[TokenResponse|Auth0Error, Response]>
 
 ## 35.4.0
 
 ### Minor Changes
 
-- - auth0\_\_userinfo\_\_fetch_get\_\_payload_T: aliased by get_auth0_userinfo_T
-- - auth0\_\_userinfo\_\_fetch_get\_\_params_T: aliased by get_auth0_userinfo_params_I
-- - auth0\_\_userinfo_o\_\_: aliased by auth0\_\_userinfo_ctx\_\_
+- - auth0\__userinfo\__fetch_get\__payload_T: aliased by get_auth0_userinfo_T
+- - auth0\__userinfo\__fetch_get\__params_T: aliased by get_auth0_userinfo_params_I
+- - auth0\__userinfo_o\__: aliased by auth0\__userinfo_ctx\__
 
 ## 35.3.29
 
 ### Patch Changes
 
-- auth0\_\_oauth_token\_\_fetch\_\_body_T: auth0\_\_secret\_\_oauth_token\_\_fetch\_\_body_T|login\_\_auth0\_\_oauth_token\_\_fetch\_\_body_T
+- auth0\__oauth_token\__fetch\__body_T: auth0\__secret\__oauth_token\__fetch\__body_T|login\__auth0\__oauth_token\__fetch\__body_T
 
-  - login\_\_auth0\_\_oauth_token\_\_fetch\_\_body_T
+  - login\__auth0\__oauth_token\__fetch\__body_T
     client_id:string
     client_secret:string
     grant_type:string
@@ -2644,36 +2650,36 @@
 
 ### Minor Changes
 
-- - auth0\_\_secret\_\_oauth_token\_\_fetch\_\_body_T
-- - auth0\_\_secret\_\_dbconnections_signup\_\_fetch\_\_body_T
-- - auth0\_\_init,auth0\_\_init\_\_props_T
-- password_realm\_\_body\_: data argument: auth0\_\_client_id\_\_body_T|password_realm\_\_body_T
-- auth0\_\_oauth_token\_\_fetch\_\_body_T = auth0\_\_secret\_\_oauth_token\_\_fetch\_\_body_T|auth0\_\_login_data_T
-- auth0\_\_dbconnections_signup\_\_fetch\_\_body_T = auth0\_\_dbconnections_signup\_\_fetch\_\_body_T|auth0\_\_secret\_\_dbconnections_signup\_\_fetch\_\_body_T
+- - auth0\__secret\__oauth_token\__fetch\__body_T
+- - auth0\__secret\__dbconnections_signup\__fetch\__body_T
+- - auth0\__init,auth0\__init\__props_T
+- password_realm\__body\_: data argument: auth0\__client_id\__body_T|password_realm\__body_T
+- auth0\__oauth_token\__fetch\__body_T = auth0\__secret\__oauth_token\__fetch\__body_T|auth0\__login_data_T
+- auth0\__dbconnections_signup\__fetch\__body_T = auth0\__dbconnections_signup\__fetch\__body_T|auth0\__secret\__dbconnections_signup\__fetch\__body_T
 
 ## 35.2.1
 
 ### Patch Changes
 
-- auth0\_\_token\_\_error\_\_logout: argument: error:Auth0Error|TokenResponse|auth0\_\_token\_\_error\_\_logout\_\_param_T
+- auth0\__token\__error\__logout: argument: error:Auth0Error|TokenResponse|auth0\__token\__error\__logout\__param_T
 
 ## 35.2.0
 
 ### Minor Changes
 
-- auth0\_\_token\_\_error_T:
+- auth0\__token\__error_T:
 
   - username?:string
   - password?:string
   - password_confirmation?:string
 
-- - auth0\_\_token\_\_error_T aliased by auth0_token_error_T
+- - auth0\__token\__error_T aliased by auth0_token_error_T
 
 ## 35.1.8
 
 ### Patch Changes
 
-- name convention updates: auth0_token_json=>auth0\_\_token\_\_json
+- name convention updates: auth0_token_json=>auth0\__token\__json
 
 ## 35.1.7
 
@@ -2685,19 +2691,19 @@
 
 ### Patch Changes
 
-- fix: export auth0\_\_forgot_password\_\_opened\_\_ as auth0_forgot_password_opened\_\_
+- fix: export auth0\__forgot_password\__opened\__ as auth0_forgot_password_opened\__
 
 ## 35.1.5
 
 ### Patch Changes
 
-- fix: export: auth0\_\_authorization\_\_verify as verify_id_token_header_authorization
+- fix: export: auth0\__authorization\__verify as verify_id_token_header_authorization
 
 ## 35.1.4
 
 ### Patch Changes
 
-- fix: auth0\_\_oauth_token\_\_fetch_get=>auth0\_\_oauth_token\_\_fetch_post,auth0\_\_passwordless_start\_\_fetch_get=>auth0\_\_passwordless_start\_\_fetch_post
+- fix: auth0\__oauth_token\__fetch_get=>auth0\__oauth_token\__fetch_post,auth0\__passwordless_start\__fetch_get=>auth0\__passwordless_start\__fetch_post
 
 ## 35.1.3
 
@@ -2712,9 +2718,9 @@
 
 ### Patch Changes
 
-- auth0\_\_change_password\_\_fetch=>auth0\_\_change_password\_\_fetch_post
+- auth0\__change_password\__fetch=>auth0\__change_password\__fetch_post
 
-  auth0\_\_dbconnections_change_password\_\_fetch=>auth0\_\_dbconnections_change_password\_\_fetch_post
+  auth0\__dbconnections_change_password\__fetch=>auth0\__dbconnections_change_password\__fetch_post
 
 ## 35.1.1
 
@@ -5052,7 +5058,7 @@
 
 ### Major Changes
 
-- \\\_\_b: ctx is a map: @ctx-core/object: 22.0.0
+- \\\__b: ctx is a map: @ctx-core/object: 22.0.0
 
 ### Patch Changes
 
@@ -5936,7 +5942,7 @@
 
 ### Patch Changes
 
-- fix: \\\_\_ctx_I.generated
+- fix: \\\__ctx_I.generated
 - Updated dependencies [undefined]
   - @ctx-core/env@13.0.19
 
@@ -6248,7 +6254,7 @@
 
 ### Patch Changes
 
-- fix: import.meta.url instead of \_\_dirname
+- fix: import.meta.url instead of \__dirname
 - Updated dependencies [undefined]
   - @ctx-core/fetch@11.0.5
   - @ctx-core/package@9.0.3

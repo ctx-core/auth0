@@ -1,4 +1,4 @@
-import { fetch__template_pair_T } from '@ctx-core/fetch'
+import type { fetch__template_pair_T } from '@ctx-core/fetch'
 import type { Ctx } from '@ctx-core/object'
 export declare const [
 	jwks__json__GET__fetch,
