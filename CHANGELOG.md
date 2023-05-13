@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 38.2.15
+
+### Patch Changes
+
+- @ctx-core/object: ^27.4.25 -> ^27.4.26
+- Updated dependencies
+  - @ctx-core/array@26.12.35
+  - @ctx-core/dom@14.1.37
+  - @ctx-core/env@17.2.93
+  - @ctx-core/error@12.3.29
+  - @ctx-core/fetch-undici@2.6.59
+  - @ctx-core/local-storage@11.0.51
+  - @ctx-core/nanostores@4.0.1
+
 ## 38.2.14
 
 ### Patch Changes
