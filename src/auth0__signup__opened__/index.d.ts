@@ -3,7 +3,6 @@ export declare const [
 	auth0__signup__opened__,
 	auth0__signup__opened_,
 ]:be_computed_pair_T<
-	boolean,
 	ReadableAtom_<boolean>
 >
 export {

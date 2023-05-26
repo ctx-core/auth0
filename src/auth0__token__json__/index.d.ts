@@ -5,7 +5,6 @@ export declare const [
 	auth0__token__json_,
 	auth0__token__json__set,
 ]:be_atom_triple_T<
-	string|nullish,
 	WritableAtom_<string|nullish>
 >
 export {

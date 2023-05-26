@@ -3,7 +3,6 @@ export declare const [
 	auth0__token__error_txt__,
 	auth0__token__error_txt_,
 ]:be_computed_pair_T<
-	string,
 	ReadableAtom_<string>
 >
 export {

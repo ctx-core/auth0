@@ -4,7 +4,6 @@ export declare const [
 	auth0__opened__class__,
 	auth0__opened__class_,
 ]:be_computed_pair_T<
-	auth0__opened_T,
 	ReadableAtom_<auth0__opened_T>
 >
 export {

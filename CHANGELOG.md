@@ -1,5 +1,71 @@
 # @ctx-core/auth0
 
+## 38.2.20
+
+### Patch Changes
+
+- fix: type:
+
+      AUTH0_CLIENT_ID__
+      AUTH0_CLIENT_ID_
+      AUTH0_CLIENT_ID__set
+      AUTH0_CLIENT_SECRET__
+      AUTH0_CLIENT_SECRET_
+      AUTH0_CLIENT_SECRET__set
+      AUTH0_DOMAIN__
+      AUTH0_DOMAIN_
+      AUTH0_DOMAIN__set
+      AUTH0_URL__
+      AUTH0_URL_
+      AUTH0_URL__set
+      auth0__change_password__opened__
+      auth0__change_password__opened_
+      auth0__closed__
+      auth0__closed_
+      auth0__email__
+      auth0__email_
+      auth0__forgot_password__check_email__opened__
+      auth0__forgot_password__check_email__opened_
+      auth0__forgot_password__opened__
+      auth0__forgot_password__opened_
+      auth0__in__token__
+      auth0__in__token_
+      auth0__is_loggedin__
+      auth0__is_loggedin_
+      auth0__is_loggedout__
+      auth0__is_loggedout_
+      auth0__login__opened__
+      auth0__login__opened_
+      auth0__logout__msg__
+      auth0__logout__msg_
+      auth0__logout__msg__set
+      auth0__opened__
+      auth0__opened_
+      auth0__opened__set
+      auth0__opened__class__
+      auth0__opened__class_
+      auth0__signup__opened__
+      auth0__signup__opened_
+      auth0__token__
+      auth0__token_
+      auth0__token__error__
+      auth0__token__error_
+      auth0__token__error__set
+      auth0__token__error_txt__
+      auth0__token__error_txt_
+      auth0__token__json__
+      auth0__token__json_
+      auth0__token__json__set
+      auth0__userinfo__
+      auth0__userinfo_
+      auth0__userinfo__response_pair__
+      auth0__userinfo__response_pair_
+      auth0__userinfo_o__
+      auth0__userinfo_o_
+      auth0__userinfo_token__
+      auth0__userinfo_token_
+      auth0__userinfo_token__set
+
 ## 38.2.19
 
 ### Patch Changes

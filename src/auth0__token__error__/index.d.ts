@@ -3,8 +3,8 @@ import type { Auth0Error } from 'auth0-js'
 export declare const [
 	auth0__token__error__,
 	auth0__token__error_,
+	auth0__token__error__set,
 ]:be_atom_triple_T<
-	auth0__token__error_T,
 	WritableAtom_<auth0__token__error_T>
 >
 export {

@@ -3,7 +3,6 @@ export declare const [
 	auth0__is_loggedout__,
 	auth0__is_loggedout_,
 ]:be_computed_pair_T<
-	boolean,
 	ReadableAtom_<boolean>
 >
 export {

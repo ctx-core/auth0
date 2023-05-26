@@ -5,7 +5,6 @@ export declare const [
 	auth0__userinfo_token_,
 	auth0__userinfo_token__set,
 ]:be_atom_triple_T<
-	auth0__userinfo_token_T,
 	WritableAtom_<auth0__userinfo_token_T>
 >
 export {

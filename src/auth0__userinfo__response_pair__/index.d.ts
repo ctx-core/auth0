@@ -5,7 +5,6 @@ export declare const [
 	auth0__userinfo__response_pair__,
 	auth0__userinfo__response_pair_
 ]:be_computed_pair_T<
-	auth0__userinfo__response_pair_T,
 	SetterComputedAtom_<auth0__userinfo__response_pair_T>
 >
 export function auth0__userinfo__response_pair__set(

@@ -3,7 +3,6 @@ export declare const [
 	auth0__email__,
 	auth0__email_,
 ]:be_computed_pair_T<
-	string,
 	ReadableAtom_<string>
 >
 export {

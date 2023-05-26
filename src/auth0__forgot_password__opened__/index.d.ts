@@ -3,7 +3,6 @@ export declare const [
 	auth0__forgot_password__opened__,
 	auth0__forgot_password__opened_,
 ]:be_computed_pair_T<
-	boolean,
 	auth0__forgot_password__opened__T
 >
 export {

@@ -5,7 +5,6 @@ export declare const [
 	auth0__token__,
 	auth0__token_,
 ]:be_computed_pair_T<
-	JwtToken|nullish,
 	ReadableAtom_<JwtToken|nullish>
 >
 export {

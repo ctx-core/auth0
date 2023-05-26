@@ -3,5 +3,7 @@ export declare const [
 	AUTH0_URL__,
 	AUTH0_URL_,
 	AUTH0_URL__set,
-]:be_atom_triple_T<string, WritableAtom_<string>>
+]:be_atom_triple_T<
+	WritableAtom_<string>
+>
 export { AUTH0_URL__ as AUTH0_URL$_ }

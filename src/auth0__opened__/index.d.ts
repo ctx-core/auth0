@@ -6,7 +6,6 @@ export declare const [
 	auth0__opened_,
 	auth0__opened__set,
 ]:be_atom_triple_T<
-	auth0__opened_T,
 	WritableAtom_<auth0__opened_T>
 >
 export {

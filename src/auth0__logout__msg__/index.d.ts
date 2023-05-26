@@ -5,7 +5,6 @@ export declare const [
 	auth0__logout__msg_,
 	auth0__logout__msg__set,
 ]:be_atom_triple_T<
-	auth0__logout__msg_T,
 	WritableAtom_<auth0__logout__msg_T>
 >
 export {
