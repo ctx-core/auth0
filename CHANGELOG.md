@@ -1,5 +1,40 @@
 # @ctx-core/auth0
 
+## 38.3.0
+
+### Minor Changes
+
+- - auth0**is*loggedin$*: aliased by auth0**is_loggedin\_\_
+- - auth0**forgot_password**opened$\_: aliased by auth0**forgot_password**opened\_\_
+- - auth0**token$\_: aliased by auth0**token\_\_
+- - auth0**forgot_password**check*email\_\_opened$*: aliased by auth0**forgot_password**check_email**opened**
+- - auth0**token**json$\_: aliased by auth0**token**json\_\_
+- - AUTH0*URL$*: aliased by AUTH0_URL\_\_
+- - auth0**in**token$\_: aliased by auth0**in**token\_\_
+- - auth0**forgot_password**check*email\_\_opened$*: aliased by auth0**forgot_password**check_email**opened**
+- - auth0**userinfo*token$*: aliased by auth0**userinfo_token\_\_
+- - auth0**change_password**opened$\_: aliased by auth0**change_password**opened\_\_
+- - AUTH0*CLIENT_SECRET$*: aliased by AUTH0_CLIENT_SECRET\_\_
+- - auth0**userinfo*o$*: aliased by auth0**userinfo_o\_\_
+- - auth0**userinfo**response*pair$*: aliased by auth0**userinfo**response_pair\_\_
+- - AUTH0*CLIENT_ID$*: aliased by AUTH0_CLIENT_ID\_\_
+- - auth0**login**opened$\_: aliased by auth0**login**opened\_\_
+- - auth0**is*loggedout$*: aliased by auth0**is_loggedout\_\_
+- - auth0**closed$\_: aliased by auth0**closed\_\_
+- - auth0**opened$\_: aliased by auth0**opened\_\_
+- - auth0**opened**class$\_: aliased by auth0**opened**class\_\_
+- - auth0**userinfo$\_: aliased by auth0**userinfo\_\_
+- - auth0**signup**opened$\_: aliased by auth0**signup**opened\_\_
+- - auth0**token**error*txt$*: aliased by auth0**token**error_txt\_\_
+- - auth0**logout**msg$\_: aliased by auth0**logout**msg\_\_
+
+### Patch Changes
+
+- jwks**json**GET**fetch:
+  jwks**json**GET**fetch2:
+
+      fix: implementation
+
 ## 38.2.47
 
 ### Patch Changes
@@ -320,63 +355,63 @@
 
 - fix: type:
 
-      AUTH0_CLIENT_ID__
+      AUTH0_CLIENT_ID$_
       AUTH0_CLIENT_ID_
       AUTH0_CLIENT_ID__set
-      AUTH0_CLIENT_SECRET__
+      AUTH0_CLIENT_SECRET$_
       AUTH0_CLIENT_SECRET_
       AUTH0_CLIENT_SECRET__set
-      AUTH0_DOMAIN__
+      AUTH0_DOMAIN$_
       AUTH0_DOMAIN_
       AUTH0_DOMAIN__set
-      AUTH0_URL__
+      AUTH0_URL$_
       AUTH0_URL_
       AUTH0_URL__set
-      auth0__change_password__opened__
+      auth0__change_password__opened$_
       auth0__change_password__opened_
-      auth0__closed__
+      auth0__closed$_
       auth0__closed_
       auth0__email__
       auth0__email_
-      auth0__forgot_password__check_email__opened__
+      auth0__forgot_password__check_email__opened$_
       auth0__forgot_password__check_email__opened_
-      auth0__forgot_password__opened__
+      auth0__forgot_password__opened$_
       auth0__forgot_password__opened_
-      auth0__in__token__
+      auth0__in__token$_
       auth0__in__token_
-      auth0__is_loggedin__
+      auth0__is_loggedin$_
       auth0__is_loggedin_
-      auth0__is_loggedout__
+      auth0__is_loggedout$_
       auth0__is_loggedout_
-      auth0__login__opened__
+      auth0__login__opened$_
       auth0__login__opened_
-      auth0__logout__msg__
+      auth0__logout__msg$_
       auth0__logout__msg_
       auth0__logout__msg__set
-      auth0__opened__
+      auth0__opened$_
       auth0__opened_
       auth0__opened__set
-      auth0__opened__class__
+      auth0__opened__class$_
       auth0__opened__class_
-      auth0__signup__opened__
+      auth0__signup__opened$_
       auth0__signup__opened_
-      auth0__token__
+      auth0__token$_
       auth0__token_
-      auth0__token__error__
+      auth0__token__error$_
       auth0__token__error_
       auth0__token__error__set
-      auth0__token__error_txt__
+      auth0__token__error_txt$_
       auth0__token__error_txt_
-      auth0__token__json__
+      auth0__token__json$_
       auth0__token__json_
       auth0__token__json__set
-      auth0__userinfo__
+      auth0__userinfo$_
       auth0__userinfo_
-      auth0__userinfo__response_pair__
+      auth0__userinfo__response_pair$_
       auth0__userinfo__response_pair_
-      auth0__userinfo_o__
+      auth0__userinfo_o$_
       auth0__userinfo_o_
-      auth0__userinfo_token__
+      auth0__userinfo_token$_
       auth0__userinfo_token_
       auth0__userinfo_token__set
 

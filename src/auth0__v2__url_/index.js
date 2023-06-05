@@ -1,4 +1,4 @@
-import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN$_/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /**
  * @param {Ctx}ctx

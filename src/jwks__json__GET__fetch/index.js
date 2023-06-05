@@ -1,10 +1,10 @@
-import { be_computed_pair_ } from '@ctx-core/nanostores'
-import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN__/index.js'
+import { fetch__template_pair_ } from '@ctx-core/fetch'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN$_/index.js'
 /** @typedef {import('./index.d.ts').jwks_json_T}.jwks_json_T */
 export const [
 	jwks__json__GET__fetch,
 	jwks__json__GET__fetch2,
-] = be_computed_pair_(
+] = fetch__template_pair_(
 	/**
 	 * @param {Ctx}ctx
 	 * @returns {Promise<Response>}

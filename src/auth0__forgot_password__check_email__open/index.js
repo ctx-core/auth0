@@ -1,4 +1,4 @@
-import { auth0__opened__set } from '../auth0__opened__/index.js'
+import { auth0__opened__set } from '../auth0__opened$_/index.js'
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  */

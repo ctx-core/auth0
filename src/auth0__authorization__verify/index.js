@@ -1,4 +1,4 @@
-/** @typedef {import('./auth0__token__.d.ts').auth0_token_T}auth0_token_T */
+/** @typedef {import('./auth0__token$_.d.ts').auth0_token_T}auth0_token_T */
 import { auth0__Authorization__validation_pair_ } from '../auth0__Authorization__validation_pair_/index.js'
 /**
  * @param {import('@ctx-core/object').Ctx}ctx

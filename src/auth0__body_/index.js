@@ -1,4 +1,4 @@
-import { AUTH0_CLIENT_ID_ } from '../AUTH0_CLIENT_ID__/index.js'
+import { AUTH0_CLIENT_ID_ } from '../AUTH0_CLIENT_ID$_/index.js'
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  * @param {unknown}data
