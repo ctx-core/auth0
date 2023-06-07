@@ -1,5 +1,5 @@
 /**
- * @param auth0__id_token_o{import('../_types').auth0__access_token_o_T}
+ * @param {import('../_types').auth0__access_token_o_T}auth0__id_token_o
  * @returns {string|undefined}
  */
 export function auth0__user_id_(

@@ -1,7 +1,7 @@
 /** @typedef {import('../_types').auth0__password_confirmation__data_T}auth0__password_confirmation__data_T */
 /** @typedef {import('../_types').auth0__password_confirmation__error_T}auth0__password_confirmation__error_T */
 /**
- * @param data{auth0__password_confirmation__data_T}
+ * @param {auth0__password_confirmation__data_T}data
  * @returns {auth0__password_confirmation__error_T}
  */
 export function auth0__password_confirmation__validate(

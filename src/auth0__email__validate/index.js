@@ -3,7 +3,7 @@ import { _email_valid } from '@ctx-core/email'
 /** @type {typeof import('./index.d.ts').auth0__email__validate} */
 /** @typedef {import('./index.d.ts').auth0__email__validate__data_T}auth0__email__validate__data_T */
 /**
- * @param data{auth0__email__validate__data_T}
+ * @param {auth0__email__validate__data_T}data
  * @returns {Auth0Error|null}
  */
 export function auth0__email__validate(

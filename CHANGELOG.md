@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 38.4.0
+
+### Minor Changes
+
+- - auth0**email$\_: aliased by auth0**email\_\_
+
+### Patch Changes
+
+- jsdoc: fix @param:
+
+      auth0\__change_password\__validate
+      auth0\__email\__validate
+      auth0\__forgot_password\__validate
+      auth0\__init
+      auth0\__password_confirmation\__validate
+      auth0\__signup\__validate
+      auth0\__token\__is_valid_
+      auth0\__token\__validate
+      auth0\__user_id_
+
 ## 38.3.0
 
 ### Minor Changes
@@ -371,7 +391,7 @@
       auth0__change_password__opened_
       auth0__closed$_
       auth0__closed_
-      auth0__email__
+      auth0__email$_
       auth0__email_
       auth0__forgot_password__check_email__opened$_
       auth0__forgot_password__check_email__opened_

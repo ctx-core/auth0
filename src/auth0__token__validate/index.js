@@ -1,7 +1,7 @@
 import { auth0__jwt__expiration__validate } from '../auth0__jwt__expiration__validate/index.js'
 /** @type {typeof import('./index.d.ts').auth0__token__validate} */
 /**
- * @param auth0__token{import('../_types').auth0__token_T}
+ * @param {import('../_types').auth0__token_T}auth0__token
  */
 export function auth0__token__validate(
 	auth0__token

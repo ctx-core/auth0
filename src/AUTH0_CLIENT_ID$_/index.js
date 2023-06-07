@@ -1,6 +1,5 @@
 import { import_meta_env_ } from '@ctx-core/env'
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 export const [
 	AUTH0_CLIENT_ID$_,
 	AUTH0_CLIENT_ID_,

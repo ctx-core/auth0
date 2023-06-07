@@ -1,7 +1,6 @@
 import { I } from '@ctx-core/combinators'
 import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__opened$_ } from '../auth0__opened$_/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 export const [
 	auth0__opened__class$_,
 	auth0__opened__class_,

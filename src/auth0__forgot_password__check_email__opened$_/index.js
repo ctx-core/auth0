@@ -6,7 +6,8 @@ export const [
 ] = be_computed_pair_(ctx=>
 	computed_(
 		auth0__opened$_(ctx),
-		$=>$ === 'forgot_password_check_email'))
+		auth__opened=>
+			auth__opened === 'forgot_password_check_email'))
 export {
 	auth0__forgot_password__check_email__opened$_ as auth0__forgot_password__check_email__opened__,
 	auth0__forgot_password__check_email__opened$_ as auth0_forgot_password_check_email_opened__,

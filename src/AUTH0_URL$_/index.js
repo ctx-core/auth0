@@ -1,7 +1,6 @@
 import { import_meta_env_ } from '@ctx-core/env'
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { AUTH0_URL } from '../AUTH0_URL/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 export const [
 	AUTH0_URL$_,
 	AUTH0_URL_,

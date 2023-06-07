@@ -4,8 +4,8 @@ import { AUTH0_CLIENT_ID__set } from '../AUTH0_CLIENT_ID$_/index.js'
 import { AUTH0_CLIENT_SECRET__set } from '../AUTH0_CLIENT_SECRET$_/index.js'
 import { AUTH0_DOMAIN__set } from '../AUTH0_DOMAIN$_/index.js'
 /**
- * @param ctx{import('@ctx-core/object').Ctx}
- * @param props{import('./index.d.ts').auth0__init__props_T}
+ * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {import('./index.d.ts').auth0__init__props_T}props
  */
 export function auth0__init(
 	ctx,

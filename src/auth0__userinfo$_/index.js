@@ -1,8 +1,6 @@
 import { nullish__check_ } from '@ctx-core/function'
 import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__userinfo__response_pair$_ } from '../auth0__userinfo__response_pair$_/index.js'
-/** @typedef {typeof import('@ctx-core/object').Ctx}Ctx */
-/** @typedef {typeof import('../auth0__userinfo__GET__fetch2').auth0__userinfo_T}auth0__userinfo_T */
 export const [
 	auth0__userinfo$_,
 	auth0__userinfo_,

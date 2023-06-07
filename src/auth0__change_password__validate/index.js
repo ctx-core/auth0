@@ -1,6 +1,6 @@
 import { auth0__password_confirmation__validate } from '../auth0__password_confirmation__validate/index.js'
 /**
- * @param data{import('../_types').auth0__password_confirmation__data_T}
+ * @param {import('../_types').auth0__password_confirmation__data_T}data
  * @returns {import('../_types').auth0__password_confirmation__error_T}
  */
 export function auth0__change_password__validate(

@@ -1,6 +1,5 @@
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { auth0__opened$_ } from '../auth0__opened$_/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
 export const [
 	auth0__token__error$_,
 	auth0__token__error_,

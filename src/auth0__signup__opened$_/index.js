@@ -1,6 +1,5 @@
 import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
 import { auth0__opened$_ } from '../auth0__opened$_/index.js'
-/** @type {typeof import('./index.d.ts').auth0__signup__opened$_} */
 export const [
 	auth0__signup__opened$_,
 	auth0__signup__opened_,
