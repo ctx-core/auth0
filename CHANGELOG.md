@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 38.4.1
+
+### Patch Changes
+
+- @types/auth0: ^3.3.2 -> ^3.3.3
+
 ## 38.4.0
 
 ### Minor Changes
