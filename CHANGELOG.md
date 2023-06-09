@@ -1,5 +1,24 @@
 # @ctx-core/auth0
 
+## 38.5.0
+
+### Minor Changes
+
+- auth0**userinfo**GET\_\_fetch: function overload:
+
+      + export declare function auth0__userinfo__GET__fetch(
+      		ctx:Ctx, params:auth0__userinfo__GET__fetch2__params_T
+      	):Promise<Response>
+      + export declare function auth0__userinfo__GET__fetch2(
+      		ctx:Ctx, params:auth0__userinfo__GET__fetch2__params_T
+      	):Promise<response_pair_T<auth0__userinfo__GET__fetch2__payload_T>>
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch@12.11.0
+
 ## 38.4.1
 
 ### Patch Changes

@@ -32,6 +32,7 @@ test('jwks__json__GET__fetch2', async ()=>{
 	_stub.resolves(new Response(JSON.stringify({
 		keys: ['foobar']
 	}), {
+		status: 200,
 		headers: {
 			'Content-Type': 'application/json'
 		}
