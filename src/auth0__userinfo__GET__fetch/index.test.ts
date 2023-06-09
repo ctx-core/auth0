@@ -13,43 +13,34 @@ test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
 	const ctx = ctx_()
 	AUTH0_DOMAIN__set(ctx, 'myapp.auth0.com')
 	const auth0__token = auth0__token_()
-	const _stub = stub(globalThis, 'fetch')
-		.withArgs('https://myapp.auth0.com/userinfo', {
-			headers: {
-				'Content-Type': 'application/json',
-				authorization: 'Bearer access_token',
-			}
-		})
 	const userinfo = userinfo_()
-	_stub.resolves(new Response(JSON.stringify(userinfo), {
-		status: 200,
-		headers: {
-			'Content-Type': 'application/json'
-		}
-	}))
+	fetch__userinfo__stub()
 	const response =
 		await auth0__userinfo__GET__fetch(ctx, { auth0__token })
 	equal(await response.json(), userinfo)
 	equal(response.status, 200)
+	function fetch__userinfo__stub() {
+		stub(globalThis, 'fetch')
+			.withArgs('https://myapp.auth0.com/userinfo', {
+				headers: {
+					'Content-Type': 'application/json',
+					authorization: 'Bearer access_token',
+				}
+			})
+			.resolves(new Response(JSON.stringify(userinfo), {
+				status: 200,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}))
+	}
 })
 test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
 	const ctx = ctx_()
 	AUTH0_DOMAIN__set(ctx, 'notmyapp.auth0.com')
 	const auth0__token = auth0__token_()
-	const _stub = stub(globalThis, 'fetch')
-		.withArgs('https://myapp.auth0.com/userinfo', {
-			headers: {
-				'Content-Type': 'application/json',
-				authorization: 'Bearer access_token',
-			}
-		})
 	const userinfo = userinfo_()
-	_stub.resolves(new Response(JSON.stringify(userinfo), {
-		status: 200,
-		headers: {
-			'Content-Type': 'application/json'
-		}
-	}))
+	fetch__userinfo__stub()
 	const response =
 		await auth0__userinfo__GET__fetch(ctx, {
 			auth0__token,
@@ -57,23 +48,26 @@ test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
 		})
 	equal(await response.json(), userinfo)
 	equal(response.status, 200)
+	function fetch__userinfo__stub() {
+		stub(globalThis, 'fetch')
+			.withArgs('https://myapp.auth0.com/userinfo', {
+				headers: {
+					'Content-Type': 'application/json',
+					authorization: 'Bearer access_token',
+				}
+			})
+			.resolves(new Response(JSON.stringify(userinfo), {
+				status: 200,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}))
+	}
 })
 test('auth0__userinfo__GET__fetch|-ctx|+ AUTH0_DOMAIN', async ()=>{
 	const auth0__token = auth0__token_()
-	const _stub = stub(globalThis, 'fetch')
-		.withArgs('https://myapp.auth0.com/userinfo', {
-			headers: {
-				'Content-Type': 'application/json',
-				authorization: 'Bearer access_token',
-			}
-		})
 	const userinfo = userinfo_()
-	_stub.resolves(new Response(JSON.stringify(userinfo), {
-		status: 200,
-		headers: {
-			'Content-Type': 'application/json'
-		}
-	}))
+	fetch__userinfo__stub()
 	const response =
 		await auth0__userinfo__GET__fetch({
 			auth0__token,
@@ -81,6 +75,21 @@ test('auth0__userinfo__GET__fetch|-ctx|+ AUTH0_DOMAIN', async ()=>{
 		})
 	equal(await response.json(), userinfo)
 	equal(response.status, 200)
+	function fetch__userinfo__stub() {
+		stub(globalThis, 'fetch')
+			.withArgs('https://myapp.auth0.com/userinfo', {
+				headers: {
+					'Content-Type': 'application/json',
+					authorization: 'Bearer access_token',
+				}
+			})
+			.resolves(new Response(JSON.stringify(userinfo), {
+				status: 200,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}))
+	}
 })
 test.run()
 function auth0__token_() {

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "38.7.0",
+	"version": "38.7.1",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -27,10 +27,10 @@
 		"build": ":",
 		"clean": ":",
 		"exec": "$@",
-		"prepublishOnly": "npm run clean && npm run build && npm run test",
+		"prepublishOnly": "pnpm clean && npm build && pnpm test",
 		"test": "pnpm test-unit && check-dts",
-		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
-		"test-unit-coverage": "c8 pnpm test-unit"
+		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$' || exit 1",
+		"test-unit-coverage": "c8 pnpm test-unit || exit 1"
 	},
 	"dependencies": {
 		"@ctx-core/array": "^26.12.42",
@@ -44,7 +44,7 @@
 		"@ctx-core/function": "^21.18.0",
 		"@ctx-core/jwt": "^10.4.73",
 		"@ctx-core/local-storage": "^11.0.58",
-		"@ctx-core/nanostores": "^4.2.6",
+		"@ctx-core/nanostores": "^4.2.7",
 		"@ctx-core/object": "^28.0.1",
 		"@types/auth0": "^3.3.3",
 		"@types/auth0-js": "^9.21.0",

@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 38.7.1
+
+### Patch Changes
+
+- AUTH0_URL: fix: update version
+- Updated dependencies
+  - @ctx-core/nanostores@4.2.7
+
 ## 38.7.0
 
 ### Minor Changes
