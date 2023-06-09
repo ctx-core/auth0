@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 38.6.0
+
+### Minor Changes
+
+- return type: + |Auth0Error:
+
+      auth0__userinfo__GET__fetch2__params_T
+      auth0__dbconnections_change_password__POST__fetch
+      auth0__dbconnections_change_password__POST__fetch2
+      jwks__json__GET__fetch
+      jwks__json__GET__fetch2
+
 ## 38.5.1
 
 ### Patch Changes

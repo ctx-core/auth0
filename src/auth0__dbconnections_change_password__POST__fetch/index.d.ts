@@ -1,5 +1,6 @@
 import type { fetch__template_pair_T } from '@ctx-core/fetch'
 import type { Ctx } from '@ctx-core/object'
+import type { Auth0Error } from 'auth0-js'
 export declare const [
 	auth0__dbconnections_change_password__POST__fetch,
 	auth0__dbconnections_change_password__POST__fetch2
@@ -8,7 +9,7 @@ export declare const [
 		ctx:Ctx,
 		body:auth0__dbconnections_change_password__fetch_T
 	],
-	string
+	string|Auth0Error
 >
 export {
 	auth0__dbconnections_change_password__POST__fetch2 as auth0__dbconnections_change_password__fetch_post,

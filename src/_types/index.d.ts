@@ -51,7 +51,7 @@ export interface auth0__userinfo__GET__fetch2__params_T {
 }
 export type auth0__userinfo__fetch_get__params_T = auth0__userinfo__GET__fetch2__params_T
 export type get_auth0_userinfo_params_I = auth0__userinfo__GET__fetch2__params_T
-export interface auth0__userinfo__GET__fetch2__error_T {
+export interface auth0__userinfo__GET__fetch2__error_T extends Auth0Error {
 	error:string
 	error_description:string
 }
