@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 38.7.0
+
+### Minor Changes
+
+- auth0**user*id*: arguments: auth0**id_token_o:{ user_id:string }|{ sub:string }
+
 ## 38.6.0
 
 ### Minor Changes
