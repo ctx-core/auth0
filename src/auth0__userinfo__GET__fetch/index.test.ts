@@ -4,7 +4,7 @@ import { restore, stub } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import type { auth0__userinfo_T } from '../_types/index.js'
-import { AUTH0_DOMAIN__set } from '../AUTH0_DOMAIN$_/index.js'
+import { AUTH0_DOMAIN__set } from '../AUTH0_DOMAIN/index.js'
 import { auth0__userinfo__GET__fetch } from './index.js'
 test.after.each(()=>{
 	restore()

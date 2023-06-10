@@ -1,5 +1,5 @@
 import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
-import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN$_/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 export const [
 	auth0__oauth_token__POST__fetch,
 	auth0__oauth_token__POST__fetch2

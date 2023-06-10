@@ -1,4 +1,4 @@
-import { auth0__token__error__set } from '../auth0__token__error$_/index.js'
+import { auth0__token__error__set } from '../auth0__token__error/index.js'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
 /** @typedef {import('auth0').TokenResponse}TokenResponse */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */

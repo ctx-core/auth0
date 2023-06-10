@@ -1,6 +1,6 @@
 import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
 import { is_ctx_ } from '@ctx-core/object'
-import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN$_/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 import { header__access_token__verify } from '../header__access_token__verify/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('./index.d.ts').auth0__userinfo__GET__fetch2__params_T}auth0__userinfo__GET__fetch2__params_T */

@@ -1,5 +1,5 @@
 import { fetch__template_pair_ } from '@ctx-core/fetch'
-import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN$_/index.js'
+import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 /** @typedef {import('./index.d.ts').jwks_json_T}.jwks_json_T */
 export const [
 	jwks__json__GET__fetch,

@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 38.8.0
+
+### Minor Changes
+
+- - auth0**token**set
+
 ## 38.7.3
 
 ### Patch Changes
