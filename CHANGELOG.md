@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 39.0.0
+
+### Major Changes
+
+- auth0**userinfo$\_: an atom instead of a computed which fetchs auth0**userinfo**GET**fetch2 via auth0**userinfo**response*pair$*
+- - auth0**userinfo**response*pair$*
+
+  - auth0**userinfo**response*pair*
+
 ## 38.8.1
 
 ### Patch Changes

@@ -1,45 +1,19 @@
-import { JwtToken } from '@ctx-core/jwt'
 import { ctx_ } from '@ctx-core/object'
-import { restore, stub } from 'sinon'
+import { restore } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import { auth0__token__set, auth0__userinfo_, auth0__userinfo__set } from '../index.js'
+import { auth0__userinfo$_, auth0__userinfo_, auth0__userinfo__set } from '../index.js'
 test.after.each(()=>restore())
-test('auth0__userinfo_', ()=>{
-	const ctx = ctx_()
-	auth0__token__set(ctx, auth0__token__new())
-	const auth0__userinfo = auth0__userinfo_(ctx)
-	fetch__userinfo__stub()
-	equal(auth0__userinfo_(ctx), auth0__userinfo)
-	function fetch__userinfo__stub() {
-		stub(globalThis, 'fetch')
-			.withArgs('https://myapp.auth0.com/userinfo', {
-				headers: {
-					'Content-Type': 'application/json',
-					authorization: 'Bearer access_token',
-				}
-			})
-			.resolves(new Response(JSON.stringify(auth0__userinfo), {
-				status: 200,
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}))
-	}
-})
-test('auth0__userinfo__set', ()=>{
+test('auth0__userinfo', ()=>{
 	const ctx = ctx_()
 	const auth0__userinfo = auth0__userinfo__new()
+	equal(auth0__userinfo$_(ctx).$, undefined)
+	equal(auth0__userinfo_(ctx), undefined)
 	auth0__userinfo__set(ctx, auth0__userinfo)
+	equal(auth0__userinfo$_(ctx).$, auth0__userinfo)
 	equal(auth0__userinfo_(ctx), auth0__userinfo)
 })
 test.run()
-function auth0__token__new() {
-	return {
-		access_token: 'access_token',
-		token_type: 'Bearer',
-	} as JwtToken
-}
 function auth0__userinfo__new() {
 	return {
 		'sub': '248289761001',
