@@ -1,9 +1,10 @@
 import { JwtToken } from '@ctx-core/jwt'
 import { ctx_ } from '@ctx-core/object'
-import { stub } from 'sinon'
+import { restore, stub } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { auth0__token__set, auth0__userinfo_, auth0__userinfo__set } from '../index.js'
+test.after.each(()=>restore())
 test('auth0__userinfo_', ()=>{
 	const ctx = ctx_()
 	auth0__token__set(ctx, auth0__token__new())
