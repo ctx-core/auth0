@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 39.0.2
+
+### Patch Changes
+
+- @ctx-core/nanostores: ^5.0.0 -> ^5.0.1
+- Updated dependencies
+  - @ctx-core/env@17.2.110
+
 ## 39.0.1
 
 ### Patch Changes
