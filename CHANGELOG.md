@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 39.0.17
+
+### Patch Changes
+
+- @ctx-core/nanostores: ^5.2.4 -> ^5.2.5
+- @ctx-core/fetch: ^12.11.5 -> ^12.11.6
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/env@17.2.121
+  - @ctx-core/fetch-undici@2.6.91
+
 ## 39.0.16
 
 ### Patch Changes
