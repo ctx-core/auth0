@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 39.0.18
+
+### Patch Changes
+
+- jsonwebtoken: ^9.0.0 -> ^9.0.1
+- Updated dependencies
+  - @ctx-core/fetch@12.11.7
+
 ## 39.0.17
 
 ### Patch Changes
