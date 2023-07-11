@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 39.0.21
+
+### Patch Changes
+
+- deep-equal: ^2.2.1 -> ^2.2.2
+
 ## 39.0.20
 
 ### Patch Changes
