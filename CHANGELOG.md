@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 39.0.37
+
+### Patch Changes
+
+- @sinonjs/fake-timers: ^11.0.0 -> ^11.1.0
+- Updated dependencies
+  - @ctx-core/nanostores@6.0.3
+
 ## 39.0.36
 
 ### Patch Changes
