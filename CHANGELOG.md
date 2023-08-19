@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 39.0.38
+
+### Patch Changes
+
+- @types/auth0: ^3.3.3 -> ^3.3.4
+- Updated dependencies
+  - @ctx-core/fetch@12.11.14
+
 ## 39.0.37
 
 ### Patch Changes
