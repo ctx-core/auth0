@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 39.0.39
+
+### Patch Changes
+
+- format
+
 ## 39.0.38
 
 ### Patch Changes

@@ -10,7 +10,7 @@ export const [
 	auth0__opened$_(ctx).subscribe($=>{
 		if (auth0__opened !== $) {
 			auth0__opened = $
-			auth0__token__error_.$ = null
+			auth0__token__error__set(ctx, null)
 		}
 	})
 	return auth0__token__error_

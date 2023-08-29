@@ -19,22 +19,22 @@ export const [
 				auth0__in__token?.error
 				? null
 				: auth0__in__token)
-	auth0__token__json$_(ctx).subscribe($=>{
-		if ($ == null) {
+	auth0__token__json$_(ctx).subscribe(auth0__token__json=>{
+		if (auth0__token__json == null) {
 			auth0__token__clear(ctx)
 			return
 		}
 		if (has_dom) {
-			localStorage__sync('auth0__token__json', $)
-			if ($) {
+			localStorage__sync('auth0__token__json', auth0__token__json)
+			if (auth0__token__json) {
 				queueMicrotask(()=>
 					auth0__token__validate__schedule(ctx))
 			}
 		}
 	})
 	if (has_dom) {
-		window.addEventListener('storage', $=>
-			storage__auth0__token__json__set(ctx, $))
+		window.addEventListener('storage', evt=>
+			storage__auth0__token__json__set(ctx, evt))
 	}
 	return auth0__token_
 })

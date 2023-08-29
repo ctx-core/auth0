@@ -8,9 +8,10 @@ export const [
 ] = be_atom_triple_(ctx=>{
 	const auth0__logout__msg_ =
 		atom_(undefined)
-	auth0__logout__msg_.subscribe($=>{
-		if ($) {
-			queueMicrotask(()=>auth0__logout__msg_.$ = null)
+	auth0__logout__msg_.subscribe(auth0__logout__msg=>{
+		if (auth0__logout__msg) {
+			queueMicrotask(()=>
+				auth0__logout__msg__set(ctx, null))
 		}
 	})
 	return auth0__logout__msg_

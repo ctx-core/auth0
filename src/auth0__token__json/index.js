@@ -7,18 +7,18 @@ export const [
 	auth0__token__json_,
 	auth0__token__json__set,
 ] = be_atom_triple_(ctx=>{
-	const auth0__token__json_ =
+	const auth0__token__json$ =
 		atom_(
 			has_dom && localStorage.getItem(localStorage_key)
 			|| null)
-	auth0__token__error$_(ctx).subscribe($error=>{
-		if ($error) auth0__token__json_.$ = 'null'
+	auth0__token__error$_(ctx).subscribe(auth0__token__error=>{
+		if (auth0__token__error) auth0__token__json__set(ctx, 'null')
 	})
 	if (has_dom) {
-		auth0__token__json_.listen($=>
-			localStorage.setItem(localStorage_key, $))
+		auth0__token__json$.listen(auth0__token__json=>
+			localStorage.setItem(localStorage_key, auth0__token__json))
 	}
-	return auth0__token__json_
+	return auth0__token__json$
 })
 export {
 	auth0__token__json$_ as auth0__token__json__,
