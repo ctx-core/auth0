@@ -6,7 +6,7 @@ export const [
 	auth0__userinfo_o$_,
 	auth0__userinfo_o_,
 ]:be_computed_pair_T<
-	ReadableAtom_<auth0_userinfo_o_T>
+	ReadableAtom_<auth0__userinfo_o_T>
 >
 export {
 	auth0__userinfo_o$_ as auth0__userinfo_o__,
@@ -14,8 +14,8 @@ export {
 	auth0__userinfo_o$_ as auth0_userinfo_ctx__,
 	auth0__userinfo_o$_ as auth0_userinfo_ctx$_,
 }
-export interface auth0_userinfo_o_T {
-	auth0_userinfo:Token|nullish
-	auth0_userinfo_auth0_token:auth0__userinfo_token_T
+export interface auth0__userinfo_o_T {
+	auth0__userinfo:Token|nullish
+	auth0__userinfo_token:auth0__userinfo_token_T
 }
-export declare type auth0_userinfo_ctx_T = auth0_userinfo_o_T
+export declare type auth0_userinfo_ctx_T = auth0__userinfo_o_T

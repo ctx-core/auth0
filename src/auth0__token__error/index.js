@@ -6,10 +6,10 @@ export const [
 	auth0__token__error__set,
 ] = be_atom_triple_(ctx=>{
 	const auth0__token__error_ = atom_(null)
-	let auth0__opened
-	auth0__opened$_(ctx).subscribe($=>{
-		if (auth0__opened !== $) {
-			auth0__opened = $
+	let _auth0__opened
+	auth0__opened$_(ctx).subscribe(auth0__opened=>{
+		if (_auth0__opened !== auth0__opened) {
+			_auth0__opened = auth0__opened
 			auth0__token__error__set(ctx, null)
 		}
 	})

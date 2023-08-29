@@ -1,5 +1,18 @@
 # @ctx-core/auth0
 
+## 40.0.0
+
+### Major Changes
+
+- auth0_userinfo_o_T=>auth0\_\_userinfo_o_T:
+
+      auth0_userinfo=>auth0__userinfo
+      auth0_userinfo_auth0_token=>auth0__userinfo_token
+
+### Patch Changes
+
+- format
+
 ## 39.0.39
 
 ### Patch Changes
