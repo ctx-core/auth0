@@ -6,7 +6,7 @@ export const [
 	auth0__token__json$_,
 	auth0__token__json_,
 	auth0__token__json__set,
-] = be_atom_triple_(ctx=>{
+] = be_atom_triple_('auth0__token__json', ctx=>{
 	const auth0__token__json$ =
 		atom_(
 			has_dom && localStorage.getItem(localStorage_key)

@@ -3,7 +3,7 @@ import { auth0__token__error$_ } from '../auth0__token__error/index.js'
 export const [
 	auth0__token__error_txt$_,
 	auth0__token__error_txt_,
-] = be_computed_pair_(ctx=>
+] = be_computed_pair_('auth0__token__error_txt', ctx=>
 	computed_(auth0__token__error$_(ctx),
 		auth0__token__error=>
 			auth0__token__error

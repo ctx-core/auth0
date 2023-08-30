@@ -5,7 +5,7 @@ import { auth0__userinfo_ } from '../auth0__userinfo/index.js'
 export const [
 	auth0__email$_,
 	auth0__email_,
-] = be_computed_pair_(ctx=>{
+] = be_computed_pair_('auth0__email', ctx=>{
 	const auth0__email$ =
 		computed_(ctx=>
 			nullish__none_([auth0__userinfo_(ctx)],

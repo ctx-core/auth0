@@ -3,7 +3,7 @@ import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__
 export const [
 	auth0__in__token$_,
 	auth0__in__token_,
-] = be_computed_pair_(ctx=>{
+] = be_computed_pair_('auth0__in__token', ctx=>{
 	let _auth0__token__json, in_auth0_token
 	return computed_(auth0__token__json$_(ctx),
 		auth0__token__json=>{

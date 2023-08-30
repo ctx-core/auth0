@@ -5,7 +5,7 @@ export const [
 	auth0__logout__msg$_,
 	auth0__logout__msg_,
 	auth0__logout__msg__set,
-] = be_atom_triple_(ctx=>{
+] = be_atom_triple_('auth0__logout__msg', ctx=>{
 	const auth0__logout__msg_ =
 		atom_(undefined)
 	auth0__logout__msg_.subscribe(auth0__logout__msg=>{

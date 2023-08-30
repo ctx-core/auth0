@@ -3,7 +3,7 @@ import { auth0__opened_ } from '../auth0__opened/index.js'
 export const [
 	auth0__closed$_,
 	auth0__closed_,
-] = val__be_computed_pair_(ctx=>
+] = val__be_computed_pair_('auth0__closed', ctx=>
 	auth0__opened_(ctx) === null)
 export {
 	auth0__closed$_ as auth0__closed__,

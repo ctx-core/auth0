@@ -3,7 +3,7 @@ import { auth0__opened_ } from '../auth0__opened/index.js'
 export const [
 	auth0__opened__class$_,
 	auth0__opened__class_,
-] = val__be_computed_pair_(ctx=>
+] = val__be_computed_pair_('auth0__opened__class', ctx=>
 	auth0__opened_(ctx))
 export {
 	auth0__opened__class$_ as auth0__opened__class__,

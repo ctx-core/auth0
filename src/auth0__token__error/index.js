@@ -4,7 +4,7 @@ export const [
 	auth0__token__error$_,
 	auth0__token__error_,
 	auth0__token__error__set,
-] = be_atom_triple_(ctx=>{
+] = be_atom_triple_('auth0__token__error', ctx=>{
 	const auth0__token__error_ = atom_(null)
 	let _auth0__opened
 	auth0__opened$_(ctx).subscribe(auth0__opened=>{

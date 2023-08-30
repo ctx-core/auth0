@@ -3,7 +3,7 @@ export const [
 	auth0__userinfo_token$_,
 	auth0__userinfo_token_,
 	auth0__userinfo_token__set,
-] = be_atom_triple_(()=>
+] = be_atom_triple_('auth0__userinfo_token', ()=>
 	neql_atom_(undefined))
 export {
 	auth0__userinfo_token$_ as auth0__userinfo_token__,

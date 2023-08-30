@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 40.0.1
+
+### Patch Changes
+
+- nanostores: + id
+- Updated dependencies
+  - @ctx-core/dom@14.1.60
+  - @ctx-core/nanostores@6.0.5
+
 ## 40.0.0
 
 ### Major Changes
