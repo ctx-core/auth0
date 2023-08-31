@@ -6,19 +6,17 @@ export const [
 	auth0__email$_,
 	auth0__email_,
 ] = be_computed_pair_('auth0__email', ctx=>{
-	const auth0__email$ =
-		computed_(ctx=>
-			nullish__none_([auth0__userinfo_(ctx)],
-				auth0__userinfo=>
-					auth0__userinfo.email))
-	let auth0_email
-	auth0__email$.subscribe(_auth0_email=>{
-		if (auth0_email !== _auth0_email) {
-			auth0_email = _auth0_email
+	let _auth0__email
+	return computed_(()=>{
+		const auth0__email = nullish__none_([auth0__userinfo_(ctx)],
+			auth0__userinfo=>
+				auth0__userinfo.email)
+		if (auth0__email !== _auth0__email) {
+			_auth0__email = auth0__email
 			auth0__opened__set(ctx, null)
 		}
+		return auth0__email
 	})
-	return auth0__email$
 })
 export {
 	auth0__email$_ as auth0__email__,

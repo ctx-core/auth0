@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.0.9
+
+### Patch Changes
+
+- auth0**email: ∋ auth0**opened\_\_set: fix: ctx value
+
 ## 40.0.8
 
 ### Patch Changes
