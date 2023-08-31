@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.0.8
+
+### Patch Changes
+
+- auth0**token**error: fix: circular dependency
+
 ## 40.0.7
 
 ### Patch Changes
