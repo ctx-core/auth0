@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.0.11",
+	"version": "40.0.12",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -35,15 +35,15 @@
 	"dependencies": {
 		"@ctx-core/array": "^26.15.1",
 		"@ctx-core/combinators": "^8.0.61",
-		"@ctx-core/dom": "^14.1.63",
+		"@ctx-core/dom": "^14.1.64",
 		"@ctx-core/email": "^9.1.19",
-		"@ctx-core/env": "^17.3.2",
-		"@ctx-core/error": "^12.3.40",
-		"@ctx-core/fetch": "^12.11.18",
-		"@ctx-core/fetch-undici": "^2.6.103",
+		"@ctx-core/env": "^17.3.3",
+		"@ctx-core/error": "^12.3.41",
+		"@ctx-core/fetch": "^12.11.19",
+		"@ctx-core/fetch-undici": "^2.6.104",
 		"@ctx-core/function": "^21.20.0",
-		"@ctx-core/jwt": "^10.4.85",
-		"@ctx-core/local-storage": "^11.0.62",
+		"@ctx-core/jwt": "^10.4.86",
+		"@ctx-core/local-storage": "^11.0.63",
 		"@ctx-core/nanostores": "^6.0.7",
 		"@ctx-core/object": "^28.0.6",
 		"@types/auth0": "^3.3.4",
@@ -54,7 +54,7 @@
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.1.125",
+		"@ctx-core/btoa": "^8.1.126",
 		"@sinonjs/fake-timers": "^11.1.0",
 		"@types/sinon": "^10.0.16",
 		"@types/sinonjs__fake-timers": "^8.1.2",
