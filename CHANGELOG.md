@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 40.0.15
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/array@26.15.2
+  - @ctx-core/combinators@8.0.62
+  - @ctx-core/dom@14.1.65
+  - @ctx-core/email@9.1.20
+  - @ctx-core/env@17.3.5
+  - @ctx-core/error@12.3.42
+  - @ctx-core/fetch@12.11.21
+  - @ctx-core/fetch-undici@2.6.106
+  - @ctx-core/function@21.20.1
+  - @ctx-core/jwt@10.4.88
+  - @ctx-core/local-storage@11.0.64
+  - @ctx-core/nanostores@6.0.8
+  - @ctx-core/object@28.0.7
+
 ## 40.0.14
 
 ### Patch Changes
