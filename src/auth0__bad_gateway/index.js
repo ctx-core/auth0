@@ -23,7 +23,7 @@ export function auth0__bad_gateway__throw(
 	message,
 	error_o
 ) {
-	error_o__throw(auth0__bad_gateway_error_(message, error_o))
+	throw auth0__bad_gateway_error_(message, error_o)
 }
 export {
 	auth0__bad_gateway__throw as throw_bad_gateway_auth0,

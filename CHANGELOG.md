@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 40.0.14
+
+### Patch Changes
+
+- auth0**bad_gateway**throw: fix: throw auth0\__bad_gateway_error_
+- Updated dependencies
+  - @ctx-core/env@17.3.4
+
 ## 40.0.13
 
 ### Patch Changes
