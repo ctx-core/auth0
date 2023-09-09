@@ -1,4 +1,4 @@
-import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { is_ctx_ } from '@ctx-core/object'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 import { header__access_token__verify } from '../header__access_token__verify/index.js'
@@ -8,7 +8,7 @@ import { header__access_token__verify } from '../header__access_token__verify/in
 export const [
 	auth0__userinfo__GET__fetch,
 	auth0__userinfo__GET__fetch2,
-] = fetch__template_pair_(
+] = fetch__template_pair__new(
 	/**
 	 * @param {auth0__userinfo__GET__fetch2__params_T|Ctx}ctx_OR_params
 	 * @param {auth0__userinfo__GET__fetch2__params_T}[params]

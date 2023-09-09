@@ -1,4 +1,4 @@
-import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 /** @typedef {import('auth0').UserData}UserData */
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
@@ -9,7 +9,7 @@ import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 export const [
 	auth0__dbconnections_signup__GET__fetch,
 	auth0__dbconnections_signup__GET__fetch2
-] = fetch__template_pair_(
+] = fetch__template_pair__new(
 	/**
 	 * @param {Ctx}ctx
 	 * @param {auth0__dbconnections_signup__fetch__body_T}body

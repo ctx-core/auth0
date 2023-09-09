@@ -1,9 +1,9 @@
-import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 export const [
 	auth0__oauth_token__POST__fetch,
 	auth0__oauth_token__POST__fetch2
-] = fetch__template_pair_(
+] = fetch__template_pair__new(
 	(ctx, body)=>
 		fetch(
 			`https://${AUTH0_DOMAIN_(ctx)}/oauth/token`, {

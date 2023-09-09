@@ -1,11 +1,11 @@
-import { fetch__template_pair_ } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 /** @typedef {import('auth0-js').Auth0Error}Auth0Error */
 /** @typedef {import('./index.d.ts').auth0__passwordless_start__POST__fetch2__body_T}auth0__passwordless_start__POST__fetch2__body_T */
 export const [
 	auth0__passwordless_start__POST__fetch,
 	auth0__passwordless_start__POST__fetch2,
-] = fetch__template_pair_(
+] = fetch__template_pair__new(
 	/**
 	 * @param {Ctx}ctx
 	 * @param {auth0__passwordless_start__POST__fetch2__body_T}body
