@@ -12,7 +12,10 @@ export const [
 			has_dom && localStorage.getItem(localStorage_key)
 			|| null)
 	auth0__token__error$_(ctx).subscribe(auth0__token__error=>{
-		if (auth0__token__error) auth0__token__json__set(ctx, 'null')
+		if (auth0__token__error) {
+			queueMicrotask(()=>
+				auth0__token__json__set(ctx, 'null'))
+		}
 	})
 	if (has_dom) {
 		auth0__token__json$.listen(auth0__token__json=>
