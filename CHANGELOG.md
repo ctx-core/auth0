@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.0.24
+
+### Patch Changes
+
+- @types/jsonwebtoken: ^9.0.2 -> ^9.0.3
+
 ## 40.0.23
 
 ### Patch Changes
