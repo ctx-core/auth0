@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.0.43",
+	"version": "40.0.44",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -49,7 +49,7 @@
 		"@types/auth0": "^3.3.6",
 		"@types/auth0-js": "^9.21.1",
 		"@types/jsonwebtoken": "^9.0.3",
-		"auth0-js": "^9.22.1",
+		"auth0-js": "^9.23.0",
 		"deep-equal": "^2.2.2",
 		"jsonwebtoken": "^9.0.2"
 	},
