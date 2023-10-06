@@ -1,5 +1,5 @@
 import { type JwtToken } from '@ctx-core/jwt'
-import { ctx_ } from '@ctx-core/object'
+import { ctx__new } from '@ctx-core/object'
 import { restore, stub } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
@@ -10,7 +10,7 @@ test.after.each(()=>{
 	restore()
 })
 test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
-	const ctx = ctx_()
+	const ctx = ctx__new()
 	AUTH0_DOMAIN__set(ctx, 'myapp.auth0.com')
 	const auth0__token = auth0__token_()
 	const userinfo = userinfo_()
@@ -36,7 +36,7 @@ test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
 	}
 })
 test('auth0__userinfo__GET__fetch|+ctx|- AUTH0_DOMAIN', async ()=>{
-	const ctx = ctx_()
+	const ctx = ctx__new()
 	AUTH0_DOMAIN__set(ctx, 'notmyapp.auth0.com')
 	const auth0__token = auth0__token_()
 	const userinfo = userinfo_()

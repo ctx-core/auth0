@@ -1,4 +1,4 @@
-import { ctx_ } from '@ctx-core/object'
+import { ctx__new } from '@ctx-core/object'
 import { restore, stub } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
@@ -7,7 +7,7 @@ test.after.each(()=>{
 	restore()
 })
 test('jwks__json__GET__fetch', async ()=>{
-	const ctx = ctx_()
+	const ctx = ctx__new()
 	AUTH0_DOMAIN__set(ctx, 'myapp.auth0.com')
 	fetch__well_known_jwks_json__stub()
 	const response = await jwks__json__GET__fetch(ctx)
@@ -27,7 +27,7 @@ test('jwks__json__GET__fetch', async ()=>{
 	}
 })
 test('jwks__json__GET__fetch2', async ()=>{
-	const ctx = ctx_()
+	const ctx = ctx__new()
 	AUTH0_DOMAIN__set(ctx, 'myapp.auth0.com')
 	fetch__well_known_jwks_json__stub()
 	const [payload, response] = await jwks__json__GET__fetch2(ctx)

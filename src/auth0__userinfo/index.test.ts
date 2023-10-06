@@ -1,11 +1,11 @@
-import { ctx_ } from '@ctx-core/object'
+import { ctx__new } from '@ctx-core/object'
 import { restore } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { auth0__userinfo$_, auth0__userinfo_, auth0__userinfo__set } from '../index.js'
 test.after.each(()=>restore())
 test('auth0__userinfo', ()=>{
-	const ctx = ctx_()
+	const ctx = ctx__new()
 	const auth0__userinfo = auth0__userinfo__new()
 	equal(auth0__userinfo$_(ctx).$, undefined)
 	equal(auth0__userinfo_(ctx), undefined)
