@@ -1,5 +1,38 @@
 # @ctx-core/auth0
 
+## 40.0.60
+
+### Patch Changes
+
+- @sinonjs/fake-timers: ^11.1.0 -> ^11.2.1
+- @types/sinonjs\_\_fake-timers: ^8.1.3 -> ^8.1.4
+- @types/auth0: ^3.3.6 -> ^3.3.8
+- @types/auth0-js: ^9.21.1 -> ^9.21.2
+- @types/sinon: ^10.0.19 -> ^10.0.20
+- tsx: ^3.13.0 -> ^3.14.0
+- sinon: ^16.1.0 -> ^16.1.3
+- @types/jsonwebtoken: ^9.0.3 -> ^9.0.4
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/nanostores@6.0.13
+  - @ctx-core/fetch-undici@3.0.30
+  - @ctx-core/fetch@13.0.18
+  - @ctx-core/array@26.15.5
+  - @ctx-core/combinators@8.0.63
+  - @ctx-core/dom@14.2.4
+  - @ctx-core/email@9.1.21
+  - @ctx-core/env@17.3.10
+  - @ctx-core/error@12.3.45
+  - @ctx-core/function@21.20.2
+  - @ctx-core/jwt@10.4.98
+  - @ctx-core/local-storage@11.0.67
+  - @ctx-core/object@28.2.1
+
 ## 40.0.59
 
 ### Patch Changes
