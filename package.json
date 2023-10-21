@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.0.60",
+	"version": "40.0.61",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -44,18 +44,18 @@
 		"@ctx-core/function": "^21.20.2",
 		"@ctx-core/jwt": "^10.4.98",
 		"@ctx-core/local-storage": "^11.0.67",
-		"@ctx-core/nanostores": "^6.0.13",
+		"@ctx-core/nanostores": "^6.0.14",
 		"@ctx-core/object": "^28.2.1",
 		"@types/auth0": "^3.3.8",
 		"@types/auth0-js": "^9.21.2",
 		"@types/jsonwebtoken": "^9.0.4",
-		"auth0-js": "^9.23.0",
+		"auth0-js": "^9.23.1",
 		"deep-equal": "^2.2.2",
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
 		"@ctx-core/btoa": "^8.1.138",
-		"@sinonjs/fake-timers": "^11.2.1",
+		"@sinonjs/fake-timers": "^11.2.2",
 		"@types/sinon": "^10.0.20",
 		"@types/sinonjs__fake-timers": "^8.1.4",
 		"c8": "^8.0.1",
