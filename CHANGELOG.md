@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 40.0.62
+
+### Patch Changes
+
+- sinon: ^16.1.3 -> ^17.0.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/nanostores@6.0.15
+  - @ctx-core/fetch-undici@3.0.31
+  - @ctx-core/fetch@13.0.19
+  - @ctx-core/env@17.3.11
+
 ## 40.0.61
 
 ### Patch Changes
