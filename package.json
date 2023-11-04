@@ -56,7 +56,7 @@
 	"devDependencies": {
 		"@ctx-core/btoa": "^8.1.143",
 		"@sinonjs/fake-timers": "^11.2.2",
-		"@types/sinon": "^10.0.20",
+		"@types/sinon": "^17.0.0",
 		"@types/sinonjs__fake-timers": "^8.1.4",
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
