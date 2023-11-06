@@ -1,5 +1,18 @@
 # @ctx-core/auth0
 
+## 40.0.83
+
+### Patch Changes
+
+- @ctx-core/jwt: ^10.4.103 -> ^10.4.104
+- @ctx-core/fetch: ^13.0.26 -> ^13.0.27
+- @ctx-core/btoa: ^8.1.143 -> ^8.1.144
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@15.0.2
+  - @ctx-core/fetch-undici@3.0.43
+
 ## 40.0.82
 
 ### Patch Changes
