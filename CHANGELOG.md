@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 40.0.88
+
+### Patch Changes
+
+- @types/auth0-js: ^9.21.3 -> ^9.21.4
+- @types/jsonwebtoken: ^9.0.4 -> ^9.0.5
+- @types/sinonjs\_\_fake-timers: ^8.1.4 -> ^8.1.5
+- @types/sinon: ^17.0.0 -> ^17.0.1
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch@13.0.30
+  - @ctx-core/nanostores@7.0.6
+
 ## 40.0.87
 
 ### Patch Changes
