@@ -1,5 +1,29 @@
 # @ctx-core/auth0
 
+## 40.1.1
+
+### Patch Changes
+
+- auth0-js: ^9.23.2 -> ^9.23.3
+- @ctx-core/nanostores: ^7.1.0 -> ^7.1.1
+- tsx: ^4.0.0 -> ^4.1.2
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@27.0.1
+  - @ctx-core/combinators@8.1.1
+  - @ctx-core/error@12.4.1
+  - @ctx-core/fetch@13.1.1
+  - @ctx-core/function@21.21.1
+  - @ctx-core/object@30.1.1
+  - @ctx-core/env@17.4.1
+  - @ctx-core/dom@15.1.1
+  - @ctx-core/email@9.2.1
+  - @ctx-core/fetch-undici@3.1.1
+  - @ctx-core/jwt@10.5.1
+  - @ctx-core/local-storage@11.1.1
+  - @ctx-core/nanostores@7.1.2
+
 ## 40.1.0
 
 ### Minor Changes
