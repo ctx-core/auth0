@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 40.1.2
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/array@27.0.2
+  - @ctx-core/combinators@8.1.2
+  - @ctx-core/dom@15.1.2
+  - @ctx-core/email@9.2.2
+  - @ctx-core/env@17.4.2
+  - @ctx-core/error@12.4.2
+  - @ctx-core/fetch@13.1.2
+  - @ctx-core/fetch-undici@3.1.2
+  - @ctx-core/function@21.21.2
+  - @ctx-core/jwt@10.5.2
+  - @ctx-core/local-storage@11.1.2
+  - @ctx-core/nanostores@7.1.3
+  - @ctx-core/object@30.1.2
+
 ## 40.1.1
 
 ### Patch Changes
