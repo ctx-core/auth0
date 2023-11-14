@@ -1,5 +1,25 @@
 # @ctx-core/auth0
 
+## 40.1.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/array@27.0.3
+  - @ctx-core/combinators@8.1.3
+  - @ctx-core/dom@15.1.3
+  - @ctx-core/email@9.2.3
+  - @ctx-core/env@17.4.3
+  - @ctx-core/error@12.4.3
+  - @ctx-core/fetch@13.1.3
+  - @ctx-core/fetch-undici@3.1.3
+  - @ctx-core/function@21.21.3
+  - @ctx-core/jwt@10.5.3
+  - @ctx-core/local-storage@11.1.3
+  - @ctx-core/nanostores@7.1.4
+  - @ctx-core/object@30.1.3
+
 ## 40.1.2
 
 ### Patch Changes
