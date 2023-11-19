@@ -1,13 +1,11 @@
 import type { nullish } from '@ctx-core/function'
-import type { be_atom_triple_T, WritableAtom_ } from '@ctx-core/nanostores'
+import type { be_atom_triple_T } from '@ctx-core/nanostores'
 import type { Ctx } from '@ctx-core/object'
 export declare const [
 	auth0__opened$_,
 	auth0__opened_,
 	auth0__opened__set,
-]:be_atom_triple_T<
-	WritableAtom_<auth0__opened_T>
->
+]:be_atom_triple_T<auth0__opened_T>
 export {
 	auth0__opened$_ as auth0__opened__,
 	auth0__opened$_ as auth0_opened__,

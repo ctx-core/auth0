@@ -1,13 +1,12 @@
-import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
+import { be_atom_triple_ } from '@ctx-core/nanostores'
 /** @typedef {import('@ctx-core/object').Ctx} */
 /** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
 export const [
 	auth0__opened$_,
 	auth0__opened_,
 	auth0__opened__set,
-] = /** @type {be_atom_triple_T<string>} */be_atom_triple_('auth0__opened',
-	()=>
-		atom_(null))
+] = /** @type {be_atom_triple_T<string>} */be_atom_triple_(()=>null)
+	.config({ id: 'auth0__opened' })
 export {
 	auth0__opened$_ as auth0__opened__,
 	auth0__opened$_ as auth0_opened__,

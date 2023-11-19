@@ -1,21 +1,21 @@
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
+/** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
 /** @typedef {import('@ctx-core/object').Ctx} */
+/** @typedef {import('./index.d.ts').auth0__logout__msg_T} */
 export const [
 	auth0__logout__msg$_,
 	auth0__logout__msg_,
 	auth0__logout__msg__set,
-] = be_atom_triple_('auth0__logout__msg', ctx=>{
-	const auth0__logout__msg_ =
-		atom_(undefined)
-	auth0__logout__msg_.subscribe(auth0__logout__msg=>{
-		if (auth0__logout__msg) {
-			queueMicrotask(()=>
-				auth0__logout__msg__set(ctx, null))
-		}
-	})
-	return auth0__logout__msg_
-})
+] = /** @type {be_atom_triple_T<auth0__logout__msg_T>} */be_atom_triple_(()=>undefined)
+	.config({ id: 'auth0__logout__msg' })
+	.oninit((ctx, auth0__logout__msg$)=>
+		auth0__logout__msg$.subscribe(auth0__logout__msg=>{
+			if (auth0__logout__msg) {
+				queueMicrotask(()=>
+					auth0__logout__msg__set(ctx, null))
+			}
+		}))
 export {
 	auth0__logout__msg$_ as auth0__logout__msg__,
 	auth0__logout__msg$_ as auth0_logout_msg__,
