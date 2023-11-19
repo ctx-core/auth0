@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.1.30
+
+### Patch Changes
+
+- fix: be\_\*: implementation & types
+
 ## 40.1.29
 
 ### Patch Changes
