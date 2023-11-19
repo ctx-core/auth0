@@ -1,8 +1,8 @@
 import { authorization__header__jwt_token_, jwt__expiration__error_ } from '@ctx-core/jwt'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__unauthorized__error_ } from '../auth0__unauthorized/index.js'
-/** @typedef {import('../_types').auth0_token_T}auth0_token_T */
-/** @typedef {import('./index.d.ts').auth0__Authorization__validation_pair_T}auth0__Authorization__validation_pair_T */
+/** @typedef {import('../_types').auth0_token_T} */
+/** @typedef {import('./index.d.ts').auth0__Authorization__validation_pair_T} */
 /**
  * @param {import('@ctx-core/object').Ctx}ctx
  * @param {auth0_token_T}auth0__token

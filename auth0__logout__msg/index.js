@@ -1,6 +1,6 @@
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
+/** @typedef {import('@ctx-core/object').Ctx} */
 export const [
 	auth0__logout__msg$_,
 	auth0__logout__msg_,

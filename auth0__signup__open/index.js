@@ -1,5 +1,5 @@
 import { auth0__opened__set } from '../auth0__opened/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
+/** @typedef {import('@ctx-core/object').Ctx} */
 /**
  * @param {Ctx}ctx
  */

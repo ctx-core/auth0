@@ -1,8 +1,8 @@
 import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
-/** @typedef {import('auth0').UserData}UserData */
-/** @typedef {import('auth0-js').Auth0Error}Auth0Error */
-/** @typedef {import('./index.d.ts').auth0__dbconnections_signup__fetch__body_T}auth0__dbconnections_signup__fetch__body_T */
+/** @typedef {import('auth0').UserData} */
+/** @typedef {import('auth0-js').Auth0Error} */
+/** @typedef {import('./index.d.ts').auth0__dbconnections_signup__fetch__body_T} */
 /**
  * @see {@link https://auth0.com/docs/libraries/custom-signup}
  */

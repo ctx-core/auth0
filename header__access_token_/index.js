@@ -1,5 +1,5 @@
-/** @typedef {import('../_types/index.js').auth0__token_T}auth0__token_T */
-/** @typedef {import('../_types/index.js').header__access_token_T}header__access_token_T */
+/** @typedef {import('../_types/index.js').auth0__token_T} */
+/** @typedef {import('../_types/index.js').header__access_token_T} */
 /**
  * @param {auth0__token_T}auth0__token
  * @returns {header__access_token_T}

@@ -1,7 +1,7 @@
 import { auth0__bad_gateway__throw } from '../auth0__bad_gateway/index.js'
-/** @typedef {import('auth0').User}User */
-/** @typedef {import('auth0-js').Auth0Error}Auth0Error */
-/** @typedef {import('auth0-js').Auth0UserProfile}Auth0UserProfile */
+/** @typedef {import('auth0').User} */
+/** @typedef {import('auth0-js').Auth0Error} */
+/** @typedef {import('auth0-js').Auth0UserProfile} */
 /**
  * @param user{User|Auth0Error|Auth0UserProfile}
  */

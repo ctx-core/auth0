@@ -1,6 +1,6 @@
 import { unauthorized_error_ } from '@ctx-core/error'
-/** @typedef {import('./index.d.ts').argument__auth0__unauthorized__error_o_T}argument__auth0__unauthorized__error_o_T */
-/** @typedef {import('./index.d.ts').auth0__unauthorized__error_o_error_T}auth0__unauthorized__error_o_error_T */
+/** @typedef {import('./index.d.ts').argument__auth0__unauthorized__error_o_T} */
+/** @typedef {import('./index.d.ts').auth0__unauthorized__error_o_error_T} */
 /**
  * @param {string}[message]
  * @param {argument__auth0__unauthorized__error_o_T}[error_o]

@@ -7,8 +7,8 @@ import { auth0__in__token$_ } from '../auth0__in__token/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__json/index.js'
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
-/** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
+/** @typedef {import('@ctx-core/object').Ctx} */
+/** @typedef {import('@ctx-core/jwt').JwtToken} */
 export const [
 	auth0__token$_,
 	auth0__token_,

@@ -1,8 +1,8 @@
 import { auth0__unauthorized__throw } from '../auth0__unauthorized/index.js'
 import { header__access_token_ } from '../header__access_token_/index.js'
-/** @typedef {import('../auth0__unauthorized/index.d.ts').argument__auth0__unauthorized__error_o_T}argument__auth0__unauthorized__error_o_T */
-/** @typedef {typeof import('../_types/index.d.ts').auth0__token_T}auth0__token_T */
-/** @typedef {import('../_types/index.d.ts').header__access_token_T}header__access_token_T */
+/** @typedef {import('../auth0__unauthorized/index.d.ts').argument__auth0__unauthorized__error_o_T} */
+/** @typedef {typeof import('../_types/index.d.ts').auth0__token_T} */
+/** @typedef {import('../_types/index.d.ts').header__access_token_T} */
 /**
  * @param {auth0__token_T}auth0__token
  * @returns {header__access_token_T}
