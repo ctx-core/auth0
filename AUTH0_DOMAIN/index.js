@@ -6,6 +6,6 @@ export const [
 	AUTH0_DOMAIN_,
 	AUTH0_DOMAIN__set,
 ] = /** @type {be_atom_triple_T<string>} */ be_atom_triple_(()=>
-	import_meta_env_().AUTH0_DOMAIN)
-	.config({ id: 'AUTH0_DOMAIN' })
+	import_meta_env_().AUTH0_DOMAIN,
+{ id: 'AUTH0_DOMAIN' })
 export { AUTH0_DOMAIN$_ as AUTH0_DOMAIN__ }

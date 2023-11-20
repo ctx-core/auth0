@@ -2,8 +2,9 @@ import { has_dom } from '@ctx-core/dom'
 import { bad_credentials_error_ } from '@ctx-core/error'
 import { jwt__expiration__is_valid_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
-import { be_computed_pair_ } from '@ctx-core/nanostores'
-import { auth0__in__token_ } from '../auth0__in__token/index.js'
+import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
+import { be_ } from 'ctx-core/all'
+import { auth0__in__token$_ } from '../auth0__in__token/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__json/index.js'
@@ -13,16 +14,13 @@ import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__
 export const [
 	auth0__token$_,
 	auth0__token_,
-] = /** @type {be_computed_pair_T<JwtToken|nullish>} */ be_computed_pair_(ctx=>{
-	const auth0__in__token = auth0__in__token_(ctx)
-	return (
-		auth0__in__token?.error
-			? null
-			: auth0__in__token
-	)
-})
-	.config({ id: 'auth0__token' })
-	.oninit(ctx=>{
+] = /** @type {be_computed_pair_T<JwtToken|nullish>} */ be_computed_pair_(
+	be_(	ctx=>{
+		const auth0__token$ = computed_(auth0__in__token$_(ctx),
+			auth0__in__token=>
+				auth0__in__token?.error
+					? null
+					: auth0__in__token)
 		auth0__token__json$_(ctx).subscribe(auth0__token__json=>{
 			if (auth0__token__json == null) {
 				auth0__token__clear(ctx)
@@ -40,7 +38,8 @@ export const [
 			window.addEventListener('storage', evt=>
 				storage__auth0__token__json__set(ctx, evt))
 		}
-	})
+		return auth0__token$
+	}, { id: 'auth0__token' }))
 export {
 	auth0__token$_ as auth0__token__,
 	auth0__token$_ as auth0_token__,

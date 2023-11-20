@@ -6,8 +6,8 @@ export const [
 	AUTH0_CLIENT_ID_,
 	AUTH0_CLIENT_ID__set,
 ] = /** @type {be_atom_triple_T<string>} */ be_atom_triple_(()=>
-	import_meta_env_().AUTH0_CLIENT_ID)
-	.config({ id: 'AUTH0_CLIENT_ID' })
+	import_meta_env_().AUTH0_CLIENT_ID,
+{ id: 'AUTH0_CLIENT_ID' })
 export {
 	AUTH0_CLIENT_ID$_ as AUTH0_CLIENT_ID__,
 }

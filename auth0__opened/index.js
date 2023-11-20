@@ -5,8 +5,9 @@ export const [
 	auth0__opened$_,
 	auth0__opened_,
 	auth0__opened__set,
-] = /** @type {be_atom_triple_T<string>} */be_atom_triple_(()=>null)
-	.config({ id: 'auth0__opened' })
+] = /** @type {be_atom_triple_T<string>} */be_atom_triple_(
+	()=>null,
+	{ id: 'auth0__opened' })
 export {
 	auth0__opened$_ as auth0__opened__,
 	auth0__opened$_ as auth0_opened__,
