@@ -1,5 +1,17 @@
 # @ctx-core/auth0
 
+## 40.1.36
+
+### Patch Changes
+
+- @types/sinon: ^17.0.1 -> ^17.0.2
+- @types/auth0: ^3.3.9 -> ^3.3.10
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch@13.1.21
+  - @ctx-core/nanostores@9.0.5
+
 ## 40.1.35
 
 ### Patch Changes
