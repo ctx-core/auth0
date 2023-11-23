@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 40.1.44
+
+### Patch Changes
+
+- @ctx-core/nanostores: ^9.0.8 -> ^9.0.9
+- @ctx-core/jwt: ^10.5.23 -> ^10.5.24
+- @ctx-core/fetch-undici: ^3.1.39 -> ^3.1.40
+- @ctx-core/env: ^17.4.26 -> ^17.4.27
+- @ctx-core/dom: ^15.1.23 -> ^15.1.24
+
 ## 40.1.43
 
 ### Patch Changes
