@@ -1,5 +1,19 @@
 # @ctx-core/auth0
 
+## 40.1.43
+
+### Patch Changes
+
+- @types/auth0-js: ^9.21.4 -> ^9.21.5
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@27.0.24
+  - @ctx-core/combinators@8.1.24
+  - @ctx-core/error@12.4.23
+  - @ctx-core/fetch@13.1.25
+  - @ctx-core/function@21.22.19
+  - @ctx-core/object@31.1.5
+
 ## 40.1.42
 
 ### Patch Changes
