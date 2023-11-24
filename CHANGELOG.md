@@ -1,5 +1,27 @@
 # @ctx-core/auth0
 
+## 40.1.46
+
+### Patch Changes
+
+- tsx: ^4.3.0 -> ^4.4.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch@13.1.26
+  - @ctx-core/fetch-undici@3.1.42
+  - @ctx-core/array@27.0.25
+  - @ctx-core/combinators@8.1.25
+  - @ctx-core/dom@15.1.25
+  - @ctx-core/email@9.2.7
+  - @ctx-core/env@17.4.28
+  - @ctx-core/error@12.4.24
+  - @ctx-core/function@21.22.20
+  - @ctx-core/jwt@10.5.25
+  - @ctx-core/local-storage@11.1.7
+  - @ctx-core/nanostores@9.0.10
+  - @ctx-core/object@31.1.6
+
 ## 40.1.45
 
 ### Patch Changes
