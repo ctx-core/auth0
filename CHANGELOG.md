@@ -1,5 +1,33 @@
 # @ctx-core/auth0
 
+## 40.1.73
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.2.36 -> ^8.2.37
+- @ctx-core/fetch: ^13.1.39 -> ^13.1.40
+- @ctx-core/combinators: ^8.1.36 -> ^8.1.37
+- @ctx-core/object: ^31.1.17 -> ^31.1.18
+- @ctx-core/array: ^27.0.36 -> ^27.0.37
+- @ctx-core/error: ^12.4.35 -> ^12.4.36
+- @ctx-core/function: ^21.22.31 -> ^21.22.32
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch-undici@3.1.69
+  - @ctx-core/nanostores@9.0.23
+  - @ctx-core/jwt@10.5.37
+  - @ctx-core/dom@15.1.37
+  - @ctx-core/env@17.4.41
+
 ## 40.1.72
 
 ### Patch Changes
