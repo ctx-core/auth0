@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.74",
+	"version": "40.1.75",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -101,19 +101,19 @@
 		"test-unit-coverage": "c8 pnpm test-unit || exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.0.37",
-		"@ctx-core/combinators": "^8.1.37",
-		"@ctx-core/dom": "^15.1.37",
+		"@ctx-core/array": "^27.0.38",
+		"@ctx-core/combinators": "^8.1.38",
+		"@ctx-core/dom": "^15.1.38",
 		"@ctx-core/email": "^9.2.8",
-		"@ctx-core/env": "^17.4.41",
-		"@ctx-core/error": "^12.4.36",
-		"@ctx-core/fetch": "^13.1.40",
-		"@ctx-core/fetch-undici": "^3.1.70",
-		"@ctx-core/function": "^21.22.32",
-		"@ctx-core/jwt": "^10.5.37",
+		"@ctx-core/env": "^17.4.42",
+		"@ctx-core/error": "^12.4.37",
+		"@ctx-core/fetch": "^13.1.41",
+		"@ctx-core/fetch-undici": "^3.1.71",
+		"@ctx-core/function": "^21.22.33",
+		"@ctx-core/jwt": "^10.5.38",
 		"@ctx-core/local-storage": "^11.1.8",
-		"@ctx-core/nanostores": "^9.0.23",
-		"@ctx-core/object": "^31.1.18",
+		"@ctx-core/nanostores": "^9.0.24",
+		"@ctx-core/object": "^31.1.19",
 		"@types/auth0": "^3.3.10",
 		"@types/auth0-js": "^9.21.5",
 		"@types/jsonwebtoken": "^9.0.5",
@@ -122,7 +122,7 @@
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.2.37",
+		"@ctx-core/btoa": "^8.2.38",
 		"@sinonjs/fake-timers": "^11.2.2",
 		"@types/sinon": "^17.0.2",
 		"@types/sinonjs__fake-timers": "^8.1.5",
