@@ -1,7 +1,7 @@
 import { import_meta_env_ } from '@ctx-core/env'
 import { be_atom_triple_ } from '@ctx-core/nanostores'
 /** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
-export const AUTH0_URL = 'https://cdn.auth0.com/js/auth0/9.23.3/auth0.min.js'
+export const AUTH0_URL = 'https://cdn.auth0.com/js/auth0/9.24.0/auth0.min.js'
 export const [
 	AUTH0_URL$_,
 	AUTH0_URL_,
