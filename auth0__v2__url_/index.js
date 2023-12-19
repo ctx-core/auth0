@@ -1,5 +1,6 @@
+/// <reference types="ctx-core" />
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
-/** @typedef {import('@ctx-core/object').Ctx} */
+/** @typedef {Ctx} */
 /**
  * @param {Ctx}ctx
  * @return {string}

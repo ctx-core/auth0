@@ -1,6 +1,6 @@
-import type { nullish } from '@ctx-core/function'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { be_computed_pair_T } from '@ctx-core/nanostores'
+import type { nullish } from 'ctx-core/function'
 export declare const [
 	auth0__token$_,
 	auth0__token_,

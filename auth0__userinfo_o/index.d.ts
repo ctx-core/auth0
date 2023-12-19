@@ -1,6 +1,6 @@
-import type { nullish } from '@ctx-core/function'
 import type { be_computed_pair_T } from '@ctx-core/nanostores'
 import type { Token } from 'auth0'
+import type { nullish } from 'ctx-core/function'
 import type { auth0__userinfo_token_T } from '../auth0__userinfo_token/index.js'
 export const [
 	auth0__userinfo_o$_,

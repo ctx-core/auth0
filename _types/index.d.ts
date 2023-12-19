@@ -1,4 +1,4 @@
-import type { error_o_T } from '@ctx-core/error'
+import type { error_o_T } from 'ctx-core/error'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { Auth0Error } from 'auth0-js'
 import type { JwtPayload } from 'jsonwebtoken'

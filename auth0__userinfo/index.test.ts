@@ -1,4 +1,4 @@
-import { ctx__new } from '@ctx-core/object'
+import { ctx__new } from 'ctx-core/be'
 import { restore } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'

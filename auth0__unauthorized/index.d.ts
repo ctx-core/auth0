@@ -1,6 +1,6 @@
-import type { argument__error_o_T, error_o_T, UnauthorizedError } from '@ctx-core/error'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { Auth0Error } from 'auth0-js'
+import type { argument__error_o_T, error_o_T, UnauthorizedError } from 'ctx-core/error'
 export declare function auth0__unauthorized__error_(
 	message?:string,
 	error_o?:argument__auth0__unauthorized__error_o_T

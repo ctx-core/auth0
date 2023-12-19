@@ -1,5 +1,5 @@
+/// <reference types="ctx-core" />
 import { be_atom_triple_ } from '@ctx-core/nanostores'
-/** @typedef {import('@ctx-core/object').Ctx} */
 /** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
 export const [
 	auth0__opened$_,

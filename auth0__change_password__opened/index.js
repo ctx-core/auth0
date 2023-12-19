@@ -1,6 +1,6 @@
+/// <reference types="ctx-core" />
 import { be_computed_pair_ } from '@ctx-core/nanostores'
 import { auth0__opened$_, auth0__opened_, auth0__opened__set } from '../auth0__opened/index.js'
-/** @typedef {import('@ctx-core/object').Ctx} */
 export const [
 	auth0__change_password__opened$_,
 	auth0__change_password__opened_,

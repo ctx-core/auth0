@@ -1,5 +1,5 @@
-import type { nullish } from '@ctx-core/function'
 import type { be_atom_triple_T } from '@ctx-core/nanostores'
+import type { nullish } from 'ctx-core/function'
 export declare const [
 	auth0__token__json$_,
 	auth0__token__json_,

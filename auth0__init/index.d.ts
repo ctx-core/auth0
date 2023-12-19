@@ -1,4 +1,4 @@
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 export function auth0__init(
 	ctx:Ctx,
 	props?:auth0__init__props_T

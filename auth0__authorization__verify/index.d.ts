@@ -1,4 +1,4 @@
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 import type { auth0__token_T } from '../_types/index.js'
 export declare function auth0__authorization__verify(
 	ctx:Ctx,

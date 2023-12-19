@@ -1,6 +1,6 @@
-import { bad_gateway_error_ } from '@ctx-core/error'
-/** @typedef {import('@ctx-core/error').argument__error_o_T} */
-/** @typedef {import('@ctx-core/error').BadGatewayError} */
+/// <reference types="ctx-core" />
+/// <reference types="./index.d.ts" />
+import { bad_gateway_error_ } from 'ctx-core/error'
 /**
  * @param {string}[message]
  * @param {argument__error_o_T}[error_o]

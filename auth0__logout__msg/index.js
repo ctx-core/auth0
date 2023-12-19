@@ -1,9 +1,9 @@
+/// <reference types="ctx-core" />
+/// <reference types="./index.d.ts" />
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { be_ } from 'ctx-core/all'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
 /** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
-/** @typedef {import('@ctx-core/object').Ctx} */
-/** @typedef {import('./index.d.ts').auth0__logout__msg_T} */
 export const [
 	auth0__logout__msg$_,
 	auth0__logout__msg_,

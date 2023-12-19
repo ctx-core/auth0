@@ -1,7 +1,7 @@
+/// <reference types="./index.d.ts" />
 import { atom_, be_atom_triple_, decorate_neql_atom_ } from '@ctx-core/nanostores'
 import { be_ } from 'ctx-core/all'
 /** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
-/** @typedef {import('./index.d.ts').auth0__userinfo_token_T} */
 export const [
 	auth0__userinfo_token$_,
 	auth0__userinfo_token_,

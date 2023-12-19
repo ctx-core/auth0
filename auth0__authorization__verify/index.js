@@ -1,7 +1,8 @@
+/// <reference types="ctx-core" />
+/// <reference types="../auth0__token/index.d.ts" />
 import { auth0__Authorization__validation_pair_ } from '../auth0__Authorization__validation_pair_/index.js'
-/** @typedef {import('../auth0__token/index.d.ts').auth0_token_T} */
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  * @param {auth0_token_T}auth0__token
  * @return {Promise<string>}
  * @private

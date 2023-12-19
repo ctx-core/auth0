@@ -1,7 +1,9 @@
+/// <reference types="ctx-core" />
+/// <reference types="../auth0__token/index.d.ts" />
 import { auth0__token__json__set } from '../auth0__token__json/index.js'
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
- * @param {import('../auth0__token/index.js').auth0_token_T}auth0__token
+ * @param {Ctx}ctx
+ * @param {auth0_token_T}auth0__token
  */
 export function auth0__token__set(
 	ctx,

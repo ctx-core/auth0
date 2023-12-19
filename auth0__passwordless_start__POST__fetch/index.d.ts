@@ -1,6 +1,6 @@
 import type { fetch__template_pair_T } from '@ctx-core/fetch'
-import type { Ctx } from '@ctx-core/object'
 import type { Auth0Error } from 'auth0-js'
+import type { Ctx } from 'ctx-core/be'
 export declare const [
 	auth0__passwordless_start__POST__fetch,
 	auth0__passwordless_start__POST__fetch2,

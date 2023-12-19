@@ -1,4 +1,4 @@
-import { ctx__new } from '@ctx-core/object'
+import { ctx__new } from 'ctx-core/be'
 import { restore, stub } from 'sinon'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
@@ -16,14 +16,14 @@ test('jwks__json__GET__fetch', async ()=>{
 	})
 	function fetch__well_known_jwks_json__stub() {
 		stub(globalThis, 'fetch')
-		.withArgs('https://myapp.auth0.com/.well-known/jwks.json')
-		.resolves(new Response(JSON.stringify({
-			keys: ['foobar']
-		}), {
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		}))
+			.withArgs('https://myapp.auth0.com/.well-known/jwks.json')
+			.resolves(new Response(JSON.stringify({
+				keys: ['foobar']
+			}), {
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}))
 	}
 })
 test('jwks__json__GET__fetch2', async ()=>{
@@ -37,15 +37,15 @@ test('jwks__json__GET__fetch2', async ()=>{
 	})
 	function fetch__well_known_jwks_json__stub() {
 		stub(globalThis, 'fetch')
-		.withArgs('https://myapp.auth0.com/.well-known/jwks.json')
-		.resolves(new Response(JSON.stringify({
-			keys: ['foobar']
-		}), {
-			status: 200,
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		}))
+			.withArgs('https://myapp.auth0.com/.well-known/jwks.json')
+			.resolves(new Response(JSON.stringify({
+				keys: ['foobar']
+			}), {
+				status: 200,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}))
 	}
 })
 test.run()

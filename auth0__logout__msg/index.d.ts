@@ -1,5 +1,5 @@
 import type { be_atom_triple_T } from '@ctx-core/nanostores'
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 export declare const [
 	auth0__logout__msg$_,
 	auth0__logout__msg_,

@@ -1,15 +1,14 @@
+/// <reference types="ctx-core" />
 import { has_dom } from '@ctx-core/dom'
-import { bad_credentials_error_ } from '@ctx-core/error'
 import { jwt__expiration__is_valid_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
 import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
-import { be_ } from 'ctx-core/all'
+import { be_ } from 'ctx-core/be'
+import { bad_credentials_error_ } from 'ctx-core/error'
 import { auth0__in__token$_ } from '../auth0__in__token/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__json/index.js'
-/** @typedef {import('@ctx-core/object').be_atom_triple_T} */
-/** @typedef {import('@ctx-core/object').Ctx} */
 /** @typedef {import('@ctx-core/jwt').JwtToken} */
 export const [
 	auth0__token$_,

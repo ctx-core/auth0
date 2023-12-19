@@ -1,7 +1,7 @@
+/// <reference types="ctx-core" />
 import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
 import { auth0__authorization__verify } from '../auth0__authorization__verify/index.js'
 import { auth0__token$_ } from '../auth0__token/index.js'
-/** @typedef {import('@ctx-core/object').Ctx} */
 export const [
 	auth0__change_password__POST__fetch,
 	auth0__change_password__POST__fetch2

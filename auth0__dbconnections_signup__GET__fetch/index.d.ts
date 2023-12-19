@@ -1,7 +1,7 @@
 import type { fetch__template_pair_T } from '@ctx-core/fetch'
-import type { Ctx } from '@ctx-core/object'
 import type { UserData } from 'auth0'
 import type { Auth0Error } from 'auth0-js'
+import type { Ctx } from 'ctx-core/be'
 import type { auth0__client_id__body_T, auth0__signup_data_T } from '../_types/index.js'
 export declare const [
 	auth0__dbconnections_signup__GET__fetch,

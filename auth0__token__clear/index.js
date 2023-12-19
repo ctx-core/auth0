@@ -1,6 +1,7 @@
+/// <reference types="ctx-core" />
 import { auth0__token__set } from '../auth0__token__set/index.js'
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  * @param {null|undefined}value
  */
 export function auth0__token__clear(

@@ -1,6 +1,7 @@
+/// <reference types="ctx-core" />
 import { auth0__opened__set } from '../auth0__opened/index.js'
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  */
 export function auth0__forgot_password__open(
 	ctx

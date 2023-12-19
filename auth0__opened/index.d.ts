@@ -1,6 +1,6 @@
-import type { nullish } from '@ctx-core/function'
 import type { be_atom_triple_T } from '@ctx-core/nanostores'
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
+import type { nullish } from 'ctx-core/function'
 export declare const [
 	auth0__opened$_,
 	auth0__opened_,

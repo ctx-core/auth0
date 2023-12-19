@@ -1,11 +1,12 @@
+/// <reference types="ctx-core" />
+/// <reference types="./index.d.ts" />
 import { auth0__token__error__set } from '../auth0__token__error/index.js'
 import { auth0__token__logout } from '../auth0__token__logout/index.js'
-/** @typedef {import('auth0').TokenResponse} */
-/** @typedef {import('auth0-js').Auth0Error} */
-/** @typedef {import('@ctx-core/error').BadCredentialsError} */
-/** @typedef {import('./index.d.ts').auth0__token__error__logout__param_T} */
+/** @typedef {import('auth0').TokenResponse}TokenResponse */
+/** @typedef {import('auth0-js').Auth0Error}Auth0Error */
+/** @typedef {auth0__token__error__logout__param_T} */
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  * @param {Auth0Error|BadCredentialsError|TokenResponse|auth0__token__error__logout__param_T}error
  */
 export function auth0__token__error__logout(

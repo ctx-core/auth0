@@ -1,4 +1,4 @@
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 import type { auth0__client_id__body_T, auth0__grant_type__body_T } from '../_types/index.js'
 export declare function password_realm__body_<
 	Out extends password_realm__body_T = password_realm__body_T
@@ -11,7 +11,7 @@ export {
 }
 export interface password_realm__body_T
 	extends auth0__grant_type__body_T, auth0__client_id__body_T {
-	realm:string;
-	connection:string;
+	realm:string
+	connection:string
 }
 export declare type password_realm_body_T = password_realm__body_T

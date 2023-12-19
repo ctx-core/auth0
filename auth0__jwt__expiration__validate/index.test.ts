@@ -1,5 +1,5 @@
-import { btoa } from '@ctx-core/btoa'
-import { bad_credentials_error_ } from '@ctx-core/error'
+import { btoa } from 'ctx-core/btoa'
+import { bad_credentials_error_ } from 'ctx-core/error'
 import FakeTimers, { InstalledClock } from '@sinonjs/fake-timers'
 import { test } from 'uvu'
 import { throws } from 'uvu/assert'

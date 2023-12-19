@@ -1,7 +1,7 @@
-import type { BadCredentialsError } from '@ctx-core/error'
-import type { Ctx } from '@ctx-core/object'
 import type { TokenResponse } from 'auth0'
 import type { Auth0Error } from 'auth0-js'
+import type { Ctx } from 'ctx-core/be'
+import type { BadCredentialsError } from 'ctx-core/error'
 export declare function auth0__token__error__logout(
 	ctx:Ctx,
 	error:Auth0Error|BadCredentialsError|TokenResponse|auth0__token__error__logout__param_T

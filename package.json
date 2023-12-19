@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.116",
+	"version": "40.1.117",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -101,23 +101,19 @@
 		"test-unit-coverage": "c8 pnpm test-unit || exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.1.16",
-		"@ctx-core/combinators": "^8.1.55",
 		"@ctx-core/dom": "^15.1.59",
 		"@ctx-core/email": "^9.2.8",
 		"@ctx-core/env": "^17.4.60",
-		"@ctx-core/error": "^12.4.54",
 		"@ctx-core/fetch": "^13.1.60",
-		"@ctx-core/fetch-undici": "^3.1.106",
-		"@ctx-core/function": "^21.24.9",
-		"@ctx-core/jwt": "^10.5.55",
+		"@ctx-core/fetch-undici": "^3.1.107",
+		"@ctx-core/jwt": "^10.5.56",
 		"@ctx-core/local-storage": "^11.1.8",
 		"@ctx-core/nanostores": "^10.0.3",
-		"@ctx-core/object": "^31.1.36",
 		"@types/auth0": "^3.3.10",
 		"@types/auth0-js": "^9.21.5",
 		"@types/jsonwebtoken": "^9.0.5",
 		"auth0-js": "^9.24.0",
+		"ctx-core": "^5.1.0",
 		"deep-equal": "^2.2.3",
 		"jsonwebtoken": "^9.0.2"
 	},

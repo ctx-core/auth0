@@ -1,8 +1,10 @@
+/// <reference types="ctx-core" />
+/// <reference types="../_types/index.d.ts" />
 import { AUTH0_CLIENT_ID_ } from '../AUTH0_CLIENT_ID/index.js'
 /**
- * @param {import('@ctx-core/object').Ctx}ctx
+ * @param {Ctx}ctx
  * @param {unknown}data
- * @return {import('../_types/index.js').auth0__client_id__body_T}
+ * @return {auth0__client_id__body_T}
  */
 export function auth0__body_(
 	ctx,
