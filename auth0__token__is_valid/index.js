@@ -1,4 +1,4 @@
-import { auth0__jwt__expiration__is_valid_ } from '../auth0__jwt__expiration__is_valid_/index.js'
+import { auth0__jwt__expiration__is_valid_ } from '../auth0__jwt__expiration__is_valid/index.js'
 /**
  * @param {import('../_types/index.js').auth0__token_T}auth0__token
  * @returns {boolean}

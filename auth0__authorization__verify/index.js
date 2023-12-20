@@ -1,6 +1,6 @@
 /// <reference types="ctx-core" />
 /// <reference types="../auth0__token/index.d.ts" />
-import { auth0__Authorization__validation_pair_ } from '../auth0__Authorization__validation_pair_/index.js'
+import { auth0__Authorization__validation_pair_ } from '../auth0__Authorization__validation_pair/index.js'
 /**
  * @param {Ctx}ctx
  * @param {auth0_token_T}auth0__token

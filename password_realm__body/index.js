@@ -1,7 +1,7 @@
 /// <reference types="ctx-core" />
 /// <reference types="../_types/index.d.ts" />
 /// <reference types="./index.d.ts" />
-import { auth0__body_ } from '../auth0__body_/index.js'
+import { auth0__body_ } from '../auth0__body/index.js'
 /**
  * @param {Ctx}ctx
  * @param {auth0__client_id__body_T|password_realm__body_T}data
