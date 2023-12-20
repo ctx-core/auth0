@@ -1,10 +1,10 @@
-import type { be_atom_triple_T } from '@ctx-core/nanostores'
+import type { be_sig_triple_T } from 'ctx-core/rmemo'
 import type { Auth0Error } from 'auth0-js'
 export declare const [
 	auth0__token__error$_,
 	auth0__token__error_,
 	auth0__token__error__set,
-]:be_atom_triple_T<auth0__token__error_T>
+]:be_sig_triple_T<auth0__token__error_T>
 export {
 	auth0__token__error$_ as auth0__token__error__,
 	auth0__token__error$_ as auth0_token_error__,

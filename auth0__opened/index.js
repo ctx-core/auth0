@@ -1,11 +1,10 @@
 /// <reference types="ctx-core" />
-import { be_atom_triple_ } from '@ctx-core/nanostores'
-/** @typedef {import('@ctx-core/nanostores').be_atom_triple_T} */
+import { be_sig_triple_ } from 'ctx-core/rmemo'
 export const [
 	auth0__opened$_,
 	auth0__opened_,
 	auth0__opened__set,
-] = /** @type {be_atom_triple_T<string>} */be_atom_triple_(
+] = be_sig_triple_(
 	()=>null,
 	{ id: 'auth0__opened' })
 export {

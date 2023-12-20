@@ -1,17 +1,19 @@
-import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
-import { be_ } from 'ctx-core/all'
+import { be_ } from 'ctx-core/be'
+import { nullish__none_ } from 'ctx-core/function'
+import { be_memo_pair_, memo_ } from 'ctx-core/rmemo'
 import { auth0__opened__set } from '../auth0__opened/index.js'
-import { auth0__userinfo$_ } from '../auth0__userinfo/index.js'
+import { auth0__userinfo_ } from '../auth0__userinfo/index.js'
 export const [
 	auth0__email$_,
 	auth0__email_,
-] = be_computed_pair_(be_(ctx=>{
-	let auth0__email$ = computed_(auth0__userinfo$_(ctx),
-		auth0__userinfo=>auth0__userinfo.email)
+] = be_memo_pair_(be_(ctx=>{
 	let _auth0__email
-	auth0__email$.subscribe(auth0__email=>{
-		if (auth0__email !== _auth0__email) {
-			_auth0__email = auth0__email
+	let auth0__email$ = memo_(()=>
+		nullish__none_([auth0__userinfo_(ctx)], auth0__userinfo=>
+			auth0__userinfo.email),
+	auth0__email$=>{
+		if (auth0__email$._ !== _auth0__email) {
+			_auth0__email = auth0__email$._
 			auth0__opened__set(ctx, null)
 		}
 	})

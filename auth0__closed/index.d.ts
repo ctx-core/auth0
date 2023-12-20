@@ -1,8 +1,8 @@
-import type { be_computed_pair_T } from '@ctx-core/nanostores'
+import type { be_memo_pair_T } from 'ctx-core/rmemo'
 export declare const [
 	auth0__closed$_,
 	auth0__closed_,
-]:be_computed_pair_T<boolean>
+]:be_memo_pair_T<boolean>
 export {
 	auth0__closed$_ as auth0__closed__,
 	auth0__closed$_ as auth0_closed__,

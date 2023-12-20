@@ -2,40 +2,43 @@
 import { has_dom } from '@ctx-core/dom'
 import { jwt__expiration__is_valid_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
-import { be_computed_pair_, computed_ } from '@ctx-core/nanostores'
-import { be_ } from 'ctx-core/be'
+import { ondelete_be_ } from 'ctx-core/be'
 import { bad_credentials_error_ } from 'ctx-core/error'
+import { be_memo_pair_, memo_ } from 'ctx-core/rmemo'
 import { auth0__in__token$_ } from '../auth0__in__token/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
-import { auth0__token__json$_, auth0__token__json__set } from '../auth0__token__json/index.js'
-/** @typedef {import('@ctx-core/jwt').JwtToken} */
+import { auth0__token__json_, auth0__token__json__set } from '../auth0__token__json/index.js'
+/** @typedef {import('@ctx-core/jwt').JwtToken}JwtToken */
 export const [
 	auth0__token$_,
 	auth0__token_,
-] = /** @type {be_computed_pair_T<JwtToken|nullish>} */ be_computed_pair_(
-	be_(	ctx=>{
-		const auth0__token$ = computed_(auth0__in__token$_(ctx),
+] = /** @type {be_memo_pair_T<JwtToken|nullish>} */ be_memo_pair_(
+	ondelete_be_((ctx, be)=>{
+		const auth0__token$ = memo_(auth0__in__token$_(ctx),
 			auth0__in__token=>
 				auth0__in__token?.error
 					? null
-					: auth0__in__token)
-		auth0__token__json$_(ctx).subscribe(auth0__token__json=>{
-			if (auth0__token__json == null) {
-				auth0__token__clear(ctx)
-				return
-			}
-			if (has_dom) {
-				localStorage__sync('auth0__token__json', auth0__token__json)
-				if (auth0__token__json) {
-					queueMicrotask(()=>
-						auth0__token__validate__schedule(ctx))
+					: auth0__in__token,
+			()=>{
+				if (auth0__token__json_(ctx) == null) {
+					auth0__token__clear(ctx)
+					return
 				}
-			}
-		})
+				if (has_dom) {
+					localStorage__sync('auth0__token__json', auth0__token__json_(ctx))
+					if (auth0__token__json_(ctx)) {
+						queueMicrotask(()=>
+							auth0__token__validate__schedule(ctx))
+					}
+				}
+			})
 		if (has_dom) {
-			window.addEventListener('storage', evt=>
-				storage__auth0__token__json__set(ctx, evt))
+			const onstorage = evt=>storage__auth0__token__json__set(ctx, evt)
+			window.addEventListener('storage', onstorage)
+			be.ondelete(()=>{
+				window.removeEventListener('storage', onstorage)
+			})
 		}
 		return auth0__token$
 	}, { id: 'auth0__token' }))

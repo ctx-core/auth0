@@ -1,10 +1,10 @@
-import type { be_atom_triple_T } from '@ctx-core/nanostores'
+import type { be_sig_triple_T } from 'ctx-core/rmemo'
 import type { auth0__token_T } from '../_types/index.js'
 export declare const [
 	auth0__userinfo_token$_,
 	auth0__userinfo_token_,
 	auth0__userinfo_token__set,
-]:be_atom_triple_T<auth0__userinfo_token_T>
+]:be_sig_triple_T<auth0__userinfo_token_T>
 export {
 	auth0__userinfo_token$_ as auth0__userinfo_token__,
 	auth0__userinfo_token$_ as auth0_userinfo_auth0_token__,

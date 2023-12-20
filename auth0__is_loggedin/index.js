@@ -1,11 +1,11 @@
-import { be_computed_pair_ } from '@ctx-core/nanostores'
-import { auth0__token$_ } from '../auth0__token/index.js'
+import { be_memo_pair_ } from 'ctx-core/rmemo'
+import { auth0__token_ } from '../auth0__token/index.js'
 export const [
 	auth0__is_loggedin$_,
 	auth0__is_loggedin_,
-] = be_computed_pair_(ctx=>auth0__token$_(ctx),
-	auth0__token=>!!auth0__token,
-	{ id: 'auth0__is_loggedin' })
+] = be_memo_pair_(ctx=>
+	!!auth0__token_(ctx),
+{ id: 'auth0__is_loggedin' })
 export {
 	auth0__is_loggedin$_ as auth0__is_loggedin__,
 	auth0__is_loggedin$_ as is_auth0_loggedin__,
