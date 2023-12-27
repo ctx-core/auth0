@@ -96,9 +96,9 @@
 		"clean": ":",
 		"exec": "$@",
 		"prepublishOnly": "pnpm clean && pnpm build && pnpm test",
-		"test": "pnpm test-unit && check-dts",
-		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$' || exit 1",
-		"test-unit-coverage": "c8 pnpm test-unit || exit 1"
+		"test": "pnpm test:unit && check-dts",
+		"test:unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$' || exit 1",
+		"test:unit:coverage": "c8 pnpm test:unit || exit 1"
 	},
 	"dependencies": {
 		"@ctx-core/dom": "^15.1.69",
