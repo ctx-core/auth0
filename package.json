@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.131",
+	"version": "40.1.132",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -102,22 +102,22 @@
 		"test:unit:coverage": "c8 pnpm test:unit || exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/dom": "^15.2.2",
+		"@ctx-core/dom": "^15.2.3",
 		"@ctx-core/email": "^9.2.9",
-		"@ctx-core/fetch": "^13.1.72",
-		"@ctx-core/fetch-undici": "^3.1.121",
-		"@ctx-core/jwt": "^10.5.68",
+		"@ctx-core/fetch": "^13.1.73",
+		"@ctx-core/fetch-undici": "^3.1.122",
+		"@ctx-core/jwt": "^10.5.69",
 		"@ctx-core/local-storage": "^11.1.9",
 		"@types/auth0": "^3.3.10",
 		"@types/auth0-js": "^9.21.5",
 		"@types/jsonwebtoken": "^9.0.5",
 		"auth0-js": "^9.24.0",
-		"ctx-core": "^5.7.0",
+		"ctx-core": "^5.8.0",
 		"deep-equal": "^2.2.3",
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.2.67",
+		"@ctx-core/btoa": "^8.2.68",
 		"@sinonjs/fake-timers": "^11.2.2",
 		"@types/sinon": "^17.0.2",
 		"@types/sinonjs__fake-timers": "^8.1.5",
