@@ -1,6 +1,6 @@
 import { import_meta_env_ } from 'ctx-core/env'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
-export const AUTH0_URL = 'https://cdn.auth0.com/js/auth0/9.24.0/auth0.min.js'
+export const AUTH0_URL = 'https://cdn.auth0.com/js/auth0/9.24.1/auth0.min.js'
 export const [
 	AUTH0_URL$_,
 	AUTH0_URL_,
