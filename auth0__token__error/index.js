@@ -7,15 +7,32 @@ export const [
 	auth0__token__error$_,
 	auth0__token__error_,
 	auth0__token__error__set,
-] = /** @type {be_sig_triple_T<auth0__token__error_T>} */be_sig_triple_(
+] = /** @type {be_sig_triple_T<auth0__token__error_T>} */
+	be_sig_triple_(
+		()=>null,
+		{ id: 'auth0__token__error' }
+	).add((
+		ctx,
+		auth0__token__error$,
+		prev_auth0__opened
+	)=>{
+		if (prev_auth0__opened !== auth0__opened_(ctx)) {
+			auth0__token__error$._ = null
+		}
+		return auth0__opened_(ctx)
+	})
+be_sig_triple_(
 	be_(ctx=>{
 		let _auth0__opened
-		const auth0__token__error$ = sig_(null, auth0__token__error$=>{
-			if (_auth0__opened !== auth0__opened_(ctx)) {
-				_auth0__opened = auth0__opened_(ctx)
-				auth0__token__error$._ = null
-			}
-		})
+		const auth0__token__error$ =
+				sig_(
+					null
+				).add(auth0__token__error$=>{
+					if (_auth0__opened !== auth0__opened_(ctx)) {
+						_auth0__opened = auth0__opened_(ctx)
+						auth0__token__error$._ = null
+					}
+				})
 		return auth0__token__error$
 	}, { id: 'auth0__token__error' }))
 export {

@@ -5,7 +5,7 @@ import { localStorage__sync } from '@ctx-core/local-storage'
 import { ondelete_be_ } from 'ctx-core/be'
 import { bad_credentials_error_ } from 'ctx-core/error'
 import { be_memo_pair_, memo_ } from 'ctx-core/rmemo'
-import { auth0__in__token$_ } from '../auth0__in__token/index.js'
+import { auth0__in__token_ } from '../auth0__in__token/index.js'
 import { auth0__token__clear } from '../auth0__token__clear/index.js'
 import { auth0__token__error__logout } from '../auth0__token__error__logout/index.js'
 import { auth0__token__json_, auth0__token__json__set } from '../auth0__token__json/index.js'
@@ -13,14 +13,23 @@ import { auth0__token__json_, auth0__token__json__set } from '../auth0__token__j
 export const [
 	auth0__token$_,
 	auth0__token_,
-] = /** @type {be_memo_pair_T<JwtToken|nullish>} */ be_memo_pair_(
-	ondelete_be_((ctx, be)=>{
-		const auth0__token$ = memo_(auth0__in__token$_(ctx),
-			auth0__in__token=>
-				auth0__in__token?.error
-					? null
-					: auth0__in__token,
-			()=>{
+] = /** @type {be_memo_pair_T<JwtToken|nullish>} */
+	be_memo_pair_(
+		ondelete_be_((ctx, be)=>{
+			const auth0__token$ = memo_(
+				()=>
+					auth0__in__token_(ctx)?.error
+						? null
+						: auth0__in__token_(ctx)
+			).add(ctx=>{
+				if (has_dom) {
+					const onstorage = evt=>storage__auth0__token__json__set(ctx, evt)
+					window.addEventListener('storage', onstorage)
+					be.ondelete(()=>{
+						window.removeEventListener('storage', onstorage)
+					})
+				}
+			}).add(()=>{
 				if (auth0__token__json_(ctx) == null) {
 					auth0__token__clear(ctx)
 					return
@@ -33,15 +42,8 @@ export const [
 					}
 				}
 			})
-		if (has_dom) {
-			const onstorage = evt=>storage__auth0__token__json__set(ctx, evt)
-			window.addEventListener('storage', onstorage)
-			be.ondelete(()=>{
-				window.removeEventListener('storage', onstorage)
-			})
-		}
-		return auth0__token$
-	}, { id: 'auth0__token' }))
+			return auth0__token$
+		}, { id: 'auth0__token' }))
 export {
 	auth0__token$_ as auth0__token__,
 	auth0__token$_ as auth0_token__,

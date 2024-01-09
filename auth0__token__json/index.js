@@ -7,22 +7,22 @@ export const [
 	auth0__token__json$_,
 	auth0__token__json_,
 	auth0__token__json__set,
-] = /** @type {be_sig_triple_T<string|nullish>} */be_sig_triple_(be_(ctx=>{
-	const auth0__token__json$ = sig_(
-		has_dom
-		&& localStorage.getItem(localStorage_key) || null,
-		()=>{
-			if (auth0__token__error_(ctx)) {
-				queueMicrotask(()=>
-					auth0__token__json__set(ctx, 'null'))
-			}
-		})
-	if (has_dom) {
-		auth0__token__json$.listen(auth0__token__json=>
-			localStorage.setItem(localStorage_key, auth0__token__json))
-	}
-	return auth0__token__json$
-}, { id: 'auth0__token__json' }))
+] = /** @type {be_sig_triple_T<string|nullish>} */
+	be_sig_triple_(
+		()=>
+			has_dom && localStorage.getItem(localStorage_key)
+			|| null,
+		{ id: 'auth0__token__json' }
+	).add(ctx=>{
+		if (auth0__token__error_(ctx)) {
+			queueMicrotask(()=>
+				auth0__token__json__set(ctx, 'null'))
+		}
+	}).add((ctx, auth0__token__json$)=>{
+		if (has_dom) {
+			localStorage.setItem(localStorage_key, auth0__token__json$())
+		}
+	})
 export {
 	auth0__token__json$_ as auth0__token__json__,
 	auth0__token__json$_ as auth0_token_json__,
