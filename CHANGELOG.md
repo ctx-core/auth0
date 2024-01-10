@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 40.1.145
+
+### Patch Changes
+
+- @types/sinon: ^17.0.2 -> ^17.0.3
+- Updated dependencies
+  - @ctx-core/fetch@13.1.85
+
 ## 40.1.144
 
 ### Patch Changes
