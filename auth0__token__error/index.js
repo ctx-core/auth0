@@ -1,7 +1,7 @@
 /// <reference types="ctx-core" />
 /// <reference types="./index.d.ts" />
 import { be_ } from 'ctx-core/be'
-import { be_sig_triple_, sig_ } from 'ctx-core/rmemo'
+import { be_sig_triple_, memo_, sig_ } from 'ctx-core/rmemo'
 import { auth0__opened_ } from '../auth0__opened/index.js'
 export const [
 	auth0__token__error$_,
@@ -27,12 +27,13 @@ be_sig_triple_(
 		const auth0__token__error$ =
 				sig_(
 					null
-				).add(auth0__token__error$=>{
-					if (_auth0__opened !== auth0__opened_(ctx)) {
-						_auth0__opened = auth0__opened_(ctx)
-						auth0__token__error$._ = null
-					}
-				})
+				).add(auth0__token__error$=>
+					memo_(()=>{
+						if (_auth0__opened !== auth0__opened_(ctx)) {
+							_auth0__opened = auth0__opened_(ctx)
+							auth0__token__error$._ = null
+						}
+					}))
 		return auth0__token__error$
 	}, { id: 'auth0__token__error' }))
 export {
