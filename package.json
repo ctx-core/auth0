@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.151",
+	"version": "40.1.152",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -117,7 +117,7 @@
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.2.83",
+		"@ctx-core/btoa": "^8.2.84",
 		"@sinonjs/fake-timers": "^11.2.2",
 		"@types/sinon": "^17.0.3",
 		"@types/sinonjs__fake-timers": "^8.1.5",
