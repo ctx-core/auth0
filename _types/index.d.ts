@@ -1,6 +1,6 @@
-import type { error_o_T } from 'ctx-core/error'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { Auth0Error } from 'auth0-js'
+import type { error_o_T } from 'ctx-core/error'
 import type { JwtPayload } from 'jsonwebtoken'
 export declare type auth0__token_T = JwtToken
 export declare type auth0_token_T = auth0__token_T
