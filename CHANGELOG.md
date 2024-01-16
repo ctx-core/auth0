@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 40.1.161
+
+### Patch Changes
+
+- @ctx-core/fetch: ^13.1.98 -> ^13.1.99
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/fetch-undici@3.1.148
+
 ## 40.1.160
 
 ### Patch Changes
