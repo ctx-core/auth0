@@ -1,4 +1,4 @@
-import { _email_valid } from '@ctx-core/email'
+import { email_valid_ } from '@ctx-core/email'
 /** @typedef {import('auth0-js').Auth0Error} */
 /** @type {typeof import('./index.d.ts').auth0__email__validate} */
 /** @typedef {import('./index.d.ts').auth0__email__validate__data_T} */
@@ -16,7 +16,7 @@ export function auth0__email__validate(
 	//	 signup_error.password = 'Your password must be at least 8 characters and contain at least one upper case letter, one lower case letter, and one number.'
 	//	 has_errors = true
 	// }
-	if (!_email_valid(email)) {
+	if (!email_valid_(email)) {
 		email_error.email = 'Please enter a valid email address.'
 		has_errors = true
 	}

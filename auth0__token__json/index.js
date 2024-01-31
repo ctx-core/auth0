@@ -1,6 +1,5 @@
-import { has_dom } from '@ctx-core/dom'
-import { be_ } from 'ctx-core/be'
-import { be_sig_triple_, memo_, sig_ } from 'ctx-core/rmemo'
+import { is_browser_ } from 'ctx-core/env'
+import { be_sig_triple_, memo_ } from 'ctx-core/rmemo'
 import { auth0__token__error_ } from '../auth0__token__error/index.js'
 const localStorage_key = 'auth0__token__json'
 export const [
@@ -10,7 +9,7 @@ export const [
 ] = /** @type {be_sig_triple_T<string|nullish>} */
 	be_sig_triple_(
 		()=>
-			has_dom && localStorage.getItem(localStorage_key)
+			is_browser_() && localStorage.getItem(localStorage_key)
 			|| null,
 		{ id: 'auth0__token__json' }
 	).add(ctx=>
@@ -22,7 +21,7 @@ export const [
 		})
 	).add((ctx, auth0__token__json$)=>
 		memo_(()=>{
-			if (has_dom) {
+			if (is_browser_()) {
 				localStorage.setItem(localStorage_key, auth0__token__json$())
 			}
 		}))

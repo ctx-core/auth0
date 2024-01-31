@@ -1,4 +1,4 @@
-import type { response_pair_T } from '@ctx-core/fetch'
+import type { response_pair_T } from 'ctx-core/fetch'
 import type { Ctx } from 'ctx-core/be'
 import type {
 	auth0__userinfo__GET__fetch2__params_T,

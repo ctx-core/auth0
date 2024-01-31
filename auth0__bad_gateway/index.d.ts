@@ -1,5 +1,5 @@
-import type { argument__error_o_T, BadGatewayError } from 'ctx-core/error'
 import type { Auth0Error } from 'auth0-js'
+import type { argument__error_o_T, BadGatewayError } from 'ctx-core/error'
 export declare function auth0__bad_gateway_error_(
 	message?:string,
 	error_o?:argument__error_o_T

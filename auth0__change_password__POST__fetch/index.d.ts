@@ -1,4 +1,4 @@
-import type { fetch__template_pair_T } from '@ctx-core/fetch'
+import type { fetch__template_pair_T } from 'ctx-core/fetch'
 import type { Ctx } from 'ctx-core/be'
 export declare const [
 	auth0__change_password__POST__fetch,

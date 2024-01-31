@@ -1,5 +1,5 @@
-import type { be_sig_triple_T } from 'ctx-core/rmemo'
 import type { Auth0Error } from 'auth0-js'
+import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	auth0__token__error$_,
 	auth0__token__error_,

@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 40.1.202
+
+### Patch Changes
+
+- patch:
+
+      - ∋ @ctx-core/dom
+      - ∋ @ctx-core/fetch
+      - ∋ @ctx-core/fetch-undici
+      optimize imports
+
 ## 40.1.201
 
 ### Patch Changes

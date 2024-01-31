@@ -1,6 +1,6 @@
 /// <reference types="ctx-core" />
 /// <reference types="./index.d.ts" />
-import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from 'ctx-core/fetch'
 import { is_ctx_ } from 'ctx-core/be'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 import { header__access_token__verify } from '../header__access_token__verify/index.js'

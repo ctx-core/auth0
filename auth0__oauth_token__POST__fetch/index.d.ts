@@ -1,4 +1,4 @@
-import type { fetch__template_pair_T } from '@ctx-core/fetch'
+import type { fetch__template_pair_T } from 'ctx-core/fetch'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { TokenResponse } from 'auth0'
 import type { Auth0Error } from 'auth0-js'

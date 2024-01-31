@@ -1,4 +1,4 @@
-import type { fetch__template_pair_T } from '@ctx-core/fetch'
+import type { fetch__template_pair_T } from 'ctx-core/fetch'
 import type { UserData } from 'auth0'
 import type { Auth0Error } from 'auth0-js'
 import type { Ctx } from 'ctx-core/be'

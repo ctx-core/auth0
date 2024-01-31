@@ -1,8 +1,8 @@
 /// <reference types="ctx-core" />
-import { has_dom } from '@ctx-core/dom'
 import { jwt__expiration__is_valid_ } from '@ctx-core/jwt'
 import { localStorage__sync } from '@ctx-core/local-storage'
 import { ondelete_be_ } from 'ctx-core/be'
+import { is_browser_ } from 'ctx-core/env'
 import { bad_credentials_error_ } from 'ctx-core/error'
 import { be_memo_pair_, memo_ } from 'ctx-core/rmemo'
 import { auth0__in__token_ } from '../auth0__in__token/index.js'
@@ -22,7 +22,7 @@ export const [
 						? null
 						: auth0__in__token_(ctx)
 			).add(ctx=>{
-				if (has_dom) {
+				if (is_browser_()) {
 					const onstorage = evt=>storage__auth0__token__json__set(ctx, evt)
 					window.addEventListener('storage', onstorage)
 					be.ondelete(()=>{
@@ -34,7 +34,7 @@ export const [
 					auth0__token__clear(ctx)
 					return
 				}
-				if (has_dom) {
+				if (is_browser_()) {
 					localStorage__sync('auth0__token__json', auth0__token__json_(ctx))
 					if (auth0__token__json_(ctx)) {
 						queueMicrotask(()=>

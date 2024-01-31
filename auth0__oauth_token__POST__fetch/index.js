@@ -1,4 +1,4 @@
-import { fetch__template_pair__new } from '@ctx-core/fetch-undici'
+import { fetch__template_pair__new } from 'ctx-core/fetch'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 export const [
 	auth0__oauth_token__POST__fetch,

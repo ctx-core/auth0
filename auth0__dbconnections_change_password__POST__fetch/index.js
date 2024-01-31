@@ -1,4 +1,4 @@
-import { fetch, fetch__template_pair__new } from '@ctx-core/fetch-undici'
+import { fetch, fetch__template_pair__new } from 'ctx-core/fetch'
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
 /** @typedef {import('./index.d.ts').auth0__dbconnections_change_password__fetch_T} */
 export const [

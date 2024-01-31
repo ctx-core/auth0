@@ -1,5 +1,5 @@
-import type { be_sig_triple_T } from 'ctx-core/rmemo'
 import type { nullish } from 'ctx-core/function'
+import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	auth0__token__json$_,
 	auth0__token__json_,
