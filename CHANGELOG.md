@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 40.1.212
+
+### Patch Changes
+
+- ctx-core: ^6.1.0 -> ^6.1.1
+- Updated dependencies
+  - @ctx-core/jwt@10.5.133
+
 ## 40.1.211
 
 ### Patch Changes
