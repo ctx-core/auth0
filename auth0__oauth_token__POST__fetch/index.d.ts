@@ -2,14 +2,14 @@ import type { fetch__template_pair_T } from 'ctx-core/fetch'
 import type { JwtToken } from '@ctx-core/jwt'
 import type { TokenResponse } from 'auth0'
 import type { Auth0Error } from 'auth0-js'
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 import type { auth0__client_id__body_T, auth0__grant_type__body_T, auth0__login_data_T } from '../_types/index.js'
 export declare const [
 	auth0__oauth_token__POST__fetch,
 	auth0__oauth_token__POST__fetch2
 ]:fetch__template_pair_T<
 	[
-		ctx:Ctx,
+		ctx:ctx_T,
 		body:auth0__oauth_token__fetch__body_T
 	],
 	(TokenResponse&JwtToken)|Auth0Error

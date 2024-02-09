@@ -6,7 +6,7 @@ export const [
 	auth0__dbconnections_change_password__POST__fetch2,
 ] = fetch__template_pair__new(
 	/**
-	 * @param {Ctx}ctx
+	 * @param {ctx_T}ctx
 	 * @param {auth0__dbconnections_change_password__fetch_T}body
 	 */
 	(ctx, body)=>

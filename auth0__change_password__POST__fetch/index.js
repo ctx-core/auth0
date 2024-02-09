@@ -7,7 +7,7 @@ export const [
 	auth0__change_password__POST__fetch2
 ] = fetch__template_pair__new(
 	/**
-	 * @param {Ctx}ctx
+	 * @param {ctx_T}ctx
 	 * @param {string}password
 	 * @returns {Promise<Response>}
 	 */

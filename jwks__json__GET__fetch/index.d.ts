@@ -1,11 +1,11 @@
 import type { fetch__template_pair_T } from 'ctx-core/fetch'
 import type { Auth0Error } from 'auth0-js'
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 export declare const [
 	jwks__json__GET__fetch,
 	jwks__json__GET__fetch2,
 ]:fetch__template_pair_T<
-	[ctx:Ctx],
+	[ctx:ctx_T],
 	jwks_json_T|Auth0Error
 >
 export {

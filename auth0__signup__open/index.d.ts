@@ -1,5 +1,5 @@
-import type { Ctx } from 'ctx-core/be'
-export declare function auth0__signup__open(ctx:Ctx):void
+import type { ctx_T } from 'ctx-core/be'
+export declare function auth0__signup__open(ctx:ctx_T):void
 export {
 	auth0__signup__open as open_auth0_signup,
 }

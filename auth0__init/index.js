@@ -5,7 +5,7 @@ import { AUTH0_CLIENT_ID__set } from '../AUTH0_CLIENT_ID/index.js'
 import { AUTH0_CLIENT_SECRET__set } from '../AUTH0_CLIENT_SECRET/index.js'
 import { AUTH0_DOMAIN__set } from '../AUTH0_DOMAIN/index.js'
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {auth0__init__props_T}props
  */
 export function auth0__init(

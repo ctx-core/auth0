@@ -1,7 +1,7 @@
 /// <reference types="ctx-core" />
 import { auth0__opened__set } from '../auth0__opened/index.js'
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  */
 export function auth0__forgot_password__check_email__open(
 	ctx

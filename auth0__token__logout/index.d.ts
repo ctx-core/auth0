@@ -1,6 +1,6 @@
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 export declare function auth0__token__logout(
-	ctx:Ctx
+	ctx:ctx_T
 ):void
 export {
 	auth0__token__logout as logout_auth0_token,

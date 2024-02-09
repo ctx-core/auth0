@@ -69,7 +69,7 @@ function auth0__token__validate__schedule(ctx) {
 	}
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {StorageEvent}event
  */
 function storage__auth0__token__json__set(ctx, event) {

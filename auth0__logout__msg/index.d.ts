@@ -1,4 +1,4 @@
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	auth0__logout__msg$_,
@@ -11,7 +11,7 @@ export {
 	auth0__logout__msg$_ as auth0_logout_msg$_,
 }
 export declare function auth0__logout(
-	ctx:Ctx
+	ctx:ctx_T
 ):void
 export {
 	auth0__logout as auth0_logout,

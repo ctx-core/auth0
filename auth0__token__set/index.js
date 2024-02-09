@@ -2,7 +2,7 @@
 /// <reference types="../auth0__token/index.d.ts" />
 import { auth0__token__json__set } from '../auth0__token__json/index.js'
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {auth0_token_T}auth0__token
  */
 export function auth0__token__set(

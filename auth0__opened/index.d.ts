@@ -1,4 +1,4 @@
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 import type { nullish } from 'ctx-core/function'
 import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
@@ -11,7 +11,7 @@ export {
 	auth0__opened$_ as auth0_opened__,
 	auth0__opened$_ as auth0_opened$_,
 }
-export declare function auth0__change_password__open(ctx:Ctx):void
+export declare function auth0__change_password__open(ctx:ctx_T):void
 export {
 	auth0__change_password__open as open_auth0_change_password,
 }

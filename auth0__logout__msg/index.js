@@ -22,7 +22,7 @@ export {
 	auth0__logout__msg$_ as auth0_logout_msg$_,
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  */
 export function auth0__logout(ctx) {
 	auth0__token__logout(ctx)

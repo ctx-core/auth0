@@ -6,7 +6,7 @@ export const [
 	jwks__json__GET__fetch2,
 ] = fetch__template_pair__new(
 	/**
-	 * @param {Ctx}ctx
+	 * @param {ctx_T}ctx
 	 * @returns {Promise<Response>}
 	 */
 	ctx=>

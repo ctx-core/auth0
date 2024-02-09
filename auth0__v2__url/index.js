@@ -1,8 +1,8 @@
 /// <reference types="ctx-core" />
 import { AUTH0_DOMAIN_ } from '../AUTH0_DOMAIN/index.js'
-/** @typedef {Ctx} */
+/** @typedef {ctx_T} */
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @return {string}
  */
 export function auth0__v2__url_(

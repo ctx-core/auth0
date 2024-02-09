@@ -1,6 +1,6 @@
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 export declare function auth0__forgot_password__open(
-	ctx:Ctx
+	ctx:ctx_T
 ):void
 export {
 	auth0__forgot_password__open as open_auth0_forgot_password,

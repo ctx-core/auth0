@@ -1,7 +1,7 @@
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 import type { auth0__token_T } from '../_types/index.js'
 export declare function auth0__authorization__verify(
-	ctx:Ctx,
+	ctx:ctx_T,
 	auth0__token:auth0__token_T
 ):Promise<string>
 export {

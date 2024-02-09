@@ -1,5 +1,5 @@
-import type { Ctx } from 'ctx-core/be'
-export declare function auth0__forgot_password__check_email__open(ctx:Ctx):void
+import type { ctx_T } from 'ctx-core/be'
+export declare function auth0__forgot_password__check_email__open(ctx:ctx_T):void
 export {
 	auth0__forgot_password__check_email__open as open_auth0_forgot_password_check_email,
 }

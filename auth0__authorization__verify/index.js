@@ -2,7 +2,7 @@
 /// <reference types="../auth0__token/index.d.ts" />
 import { auth0__Authorization__validation_pair_ } from '../auth0__Authorization__validation_pair/index.js'
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {auth0_token_T}auth0__token
  * @return {Promise<string>}
  * @private

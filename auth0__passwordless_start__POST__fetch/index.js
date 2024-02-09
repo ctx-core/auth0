@@ -7,7 +7,7 @@ export const [
 	auth0__passwordless_start__POST__fetch2,
 ] = fetch__template_pair__new(
 	/**
-	 * @param {Ctx}ctx
+	 * @param {ctx_T}ctx
 	 * @param {auth0__passwordless_start__POST__fetch2__body_T}body
 	 * @returns {Promise<Response>}
 	 */

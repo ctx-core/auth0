@@ -1,10 +1,10 @@
 import type { fetch__template_pair_T } from 'ctx-core/fetch'
-import type { Ctx } from 'ctx-core/be'
+import type { ctx_T } from 'ctx-core/be'
 export declare const [
 	auth0__change_password__POST__fetch,
 	auth0__change_password__POST__fetch2
 ]:fetch__template_pair_T<
-	[ctx:Ctx, password:string],
+	[ctx:ctx_T, password:string],
 	auth_change_password_T
 >
 export {

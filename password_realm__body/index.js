@@ -3,7 +3,7 @@
 /// <reference types="./index.d.ts" />
 import { auth0__body_ } from '../auth0__body/index.js'
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {auth0__client_id__body_T|password_realm__body_T}data
  * @returns {auth0__client_id__body_T}
  */

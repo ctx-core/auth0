@@ -11,7 +11,7 @@ export const [
 	auth0__dbconnections_signup__GET__fetch2
 ] = fetch__template_pair__new(
 	/**
-	 * @param {Ctx}ctx
+	 * @param {ctx_T}ctx
 	 * @param {auth0__dbconnections_signup__fetch__body_T}body
 	 * @returns {Promise<Response>}
 	 */
