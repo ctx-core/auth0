@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 40.1.213
+
+### Patch Changes
+
+- tsx: ^4.7.0 -> ^4.7.1
+- Updated dependencies
+  - ctx-core@6.1.2
+  - @ctx-core/email@9.2.10
+  - @ctx-core/jwt@10.5.134
+  - @ctx-core/local-storage@11.1.10
+
 ## 40.1.212
 
 ### Patch Changes
