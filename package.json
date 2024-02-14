@@ -99,7 +99,7 @@
 		"test": "pnpm run /^test:/",
 		"test:types": "check-dts",
 		"test:unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$' || exit 1",
-		"test:unit:coverage": "c8 pnpm test:unit || exit 1"
+		"disable:test:coverage": "c8 pnpm test:unit || exit 1"
 	},
 	"dependencies": {
 		"@ctx-core/email": "^9.2.10",
