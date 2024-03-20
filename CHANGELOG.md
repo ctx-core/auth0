@@ -1,5 +1,16 @@
 # @ctx-core/auth0
 
+## 40.1.237
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+  - @ctx-core/email@9.2.11
+  - @ctx-core/jwt@10.5.157
+  - @ctx-core/local-storage@11.1.11
+
 ## 40.1.236
 
 ### Patch Changes

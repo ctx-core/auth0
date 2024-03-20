@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.236",
+	"version": "40.1.237",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -15,7 +15,11 @@
 		"url": "https://github.com/ctx-core/auth0.git"
 	},
 	"license": "Apache-2.0",
-	"author": "Brian Takita",
+	"author": {
+		"name": "Brian Takita",
+		"url": "https://briantakita.me",
+		"email": "info+ctx-core-auth0@briantakita.me"
+	},
 	"type": "module",
 	"files": [
 		"*.d.ts",
@@ -102,19 +106,19 @@
 		"disable:test:coverage": "c8 pnpm test:unit || exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/email": "^9.2.10",
-		"@ctx-core/jwt": "^10.5.156",
-		"@ctx-core/local-storage": "^11.1.10",
+		"@ctx-core/email": "^9.2.11",
+		"@ctx-core/jwt": "^10.5.157",
+		"@ctx-core/local-storage": "^11.1.11",
 		"@types/auth0": "^3.3.10",
 		"@types/auth0-js": "^9.21.5",
 		"@types/jsonwebtoken": "^9.0.6",
 		"auth0-js": "^9.24.1",
-		"ctx-core": "^6.6.0",
+		"ctx-core": "^6.6.1",
 		"deep-equal": "^2.2.3",
 		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.2.156",
+		"@ctx-core/btoa": "^8.2.157",
 		"@sinonjs/fake-timers": "^11.2.2",
 		"@types/sinon": "^17.0.3",
 		"@types/sinonjs__fake-timers": "^8.1.5",
