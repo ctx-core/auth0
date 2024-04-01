@@ -1,6 +1,6 @@
 /// <reference types="ctx-core" />
 /// <reference types="./index.d.ts" />
-import { be_, id_be_ } from 'ctx-core/be'
+import { id_be_ } from 'ctx-core/be'
 import { be_sig_triple_, id_be_sig_triple_, memo_, sig_ } from 'ctx-core/rmemo'
 import { auth0__opened_ } from '../auth0__opened/index.js'
 export const [
