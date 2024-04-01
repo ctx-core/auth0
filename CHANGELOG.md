@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.1.245
+
+### Patch Changes
+
+- auth0\_\_token: fix: local storage rmemo
+
 ## 40.1.244
 
 ### Patch Changes

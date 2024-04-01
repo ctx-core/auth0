@@ -21,7 +21,7 @@ export const [
 					auth0__in__token_(ctx)?.error
 						? null
 						: auth0__in__token_(ctx)
-			).add(ctx=>{
+			).add(()=>{
 				if (is_browser_()) {
 					const onstorage = evt=>storage__auth0__token__json__set(ctx, evt)
 					window.addEventListener('storage', onstorage)
