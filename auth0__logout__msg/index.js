@@ -14,7 +14,7 @@ export const [
 			(ctx, auth0__logout__msg$)=>{
 				if (auth0__logout__msg$()) {
 					queueMicrotask(()=>
-						auth0__logout__msg$._ = null)
+						auth0__logout__msg$.set(null))
 				}
 			}
 		])

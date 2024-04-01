@@ -1,5 +1,14 @@
 # @ctx-core/auth0
 
+## 40.1.248
+
+### Patch Changes
+
+- fix: implementation regression from ctx-core: 7.0.0 upgrade:
+
+      auth0__logout__msg
+      auth0__token__error
+
 ## 40.1.247
 
 ### Patch Changes

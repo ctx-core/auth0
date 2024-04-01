@@ -18,7 +18,7 @@ export const [
 				prev_auth0__opened
 			)=>{
 				if (prev_auth0__opened !== auth0__opened_(ctx)) {
-					auth0__token__error$._ = null
+					auth0__token__error$.set(null)
 				}
 				return auth0__opened_(ctx)
 			}
@@ -35,7 +35,7 @@ be_sig_triple_(
 					memo_(()=>{
 						if (_auth0__opened !== auth0__opened_(ctx)) {
 							_auth0__opened = auth0__opened_(ctx)
-							auth0__token__error$._ = null
+							auth0__token__error$.set(null)
 						}
 					}))
 			return auth0__token__error$
