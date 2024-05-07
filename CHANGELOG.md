@@ -1,5 +1,12 @@
 # @ctx-core/auth0
 
+## 40.1.265
+
+### Patch Changes
+
+- @ctx-core/jwt: ^10.5.179 -> ^10.5.180
+- @ctx-core/btoa: ^8.2.179 -> ^8.2.180
+
 ## 40.1.264
 
 ### Patch Changes
