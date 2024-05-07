@@ -1,5 +1,13 @@
 # @ctx-core/auth0
 
+## 40.1.264
+
+### Patch Changes
+
+- sinon: ^17.0.1 -> ^17.0.2
+- Updated dependencies
+  - ctx-core@7.2.5
+
 ## 40.1.263
 
 ### Patch Changes

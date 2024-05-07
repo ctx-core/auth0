@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.263",
+	"version": "40.1.264",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -113,7 +113,7 @@
 		"@types/auth0-js": "^9.21.5",
 		"@types/jsonwebtoken": "^9.0.6",
 		"auth0-js": "^9.26.0",
-		"ctx-core": "^7.2.4",
+		"ctx-core": "^7.2.5",
 		"deep-equal": "^2.2.3",
 		"jsonwebtoken": "^9.0.2"
 	},
@@ -124,7 +124,7 @@
 		"@types/sinonjs__fake-timers": "^8.1.5",
 		"c8": "^9.1.0",
 		"check-dts": "^0.7.2",
-		"sinon": "^17.0.1",
+		"sinon": "^17.0.2",
 		"tsx": "^4.9.3",
 		"typescript": "next",
 		"uvu": "^0.5.6"
