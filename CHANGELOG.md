@@ -1,5 +1,11 @@
 # @ctx-core/auth0
 
+## 40.1.267
+
+### Patch Changes
+
+- version bump
+
 ## 40.1.266
 
 ### Patch Changes
