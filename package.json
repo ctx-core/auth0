@@ -123,7 +123,7 @@
 		"@types/sinon": "^17.0.3",
 		"@types/sinonjs__fake-timers": "^8.1.5",
 		"c8": "^9.1.0",
-		"check-dts": "^0.7.2",
+		"check-dts": "^0.8.0",
 		"sinon": "^18.0.0",
 		"tsx": "^4.10.5",
 		"typescript": "next",
