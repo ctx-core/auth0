@@ -1,5 +1,15 @@
 # @ctx-core/auth0
 
+## 40.1.294
+
+### Patch Changes
+
+- @sinonjs/fake-timers: ^11.2.2 -> ^13.0.1
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.31
+
 ## 40.1.293
 
 ### Patch Changes
