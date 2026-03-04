@@ -1,4 +1,4 @@
-import pkg from 'auth0-js/package.json'
+import pkg from 'auth0-js/package.json' with { type: "json" }
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { AUTH0_URL } from '../index.js'
