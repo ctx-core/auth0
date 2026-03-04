@@ -1,5 +1,37 @@
 # @ctx-core/auth0
 
+## 40.1.297
+
+### Patch Changes
+
+- c8: ^10.1.3 -> ^11.0.0
+- @types/sinon: ^17.0.4 -> ^21.0.0
+- @sinonjs/fake-timers: ^15.1.0 -> ^15.1.1
+- sinon: ^21.0.1 -> ^21.0.2
+- @types/sinonjs\_\_fake-timers: ^8.1.5 -> ^15.0.1
+- check-dts: ^0.8.2 -> ^0.9.0
+- tsx: ^4.20.6 -> ^4.21.0
+- auth0-js: ^9.29.0 -> ^9.30.1
+- @sinonjs/fake-timers: ^13.0.5 -> ^15.1.0
+- sinon: ^18.0.1 -> ^21.0.1
+- jsonwebtoken: ^9.0.2 -> ^9.0.3
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.33
+  - @ctx-core/email@9.2.12
+  - @ctx-core/jwt@10.5.207
+  - @ctx-core/local-storage@11.1.12
+
 ## 40.1.296
 
 ### Patch Changes
@@ -6215,7 +6247,6 @@
 ### Patch Changes
 
 - auth0\_\_token\_\_error\_\_logout: error argument:
-
   - BadCredentialsError
 
 - fix tests
@@ -7041,7 +7072,6 @@
 - auth0\_\_password\_\_oauth_token\_\_fetch\_\_body_T:
 
   grant_type: 'password'|'http://auth0.com/oauth/grant-type/password-realm'
-
   - realm?: string
 
 ## 37.5.2
@@ -7161,7 +7191,6 @@
 
 - - auth0\_\_passwordless_start\_\_fetch_post\_\_body_T: aliased by auth0\_\_passwordless_start\_\_fetch\_\_body_T
 - auth0\_\_passwordless_start\_\_fetch_post\_\_body_T:
-
   - client_secret?:string
   - send?:'link'|'code'
   - authParams?:{ scope?:'openid', state?:string, redirect_uri?:string
@@ -7734,7 +7763,6 @@
 ### Patch Changes
 
 - auth0\_\_userinfo\_\_fetch_get\_\_payload_T: auth0\_\_userinfo_T|auth0\_\_userinfo\_\_fetch_get\_\_error_T
-
   - auth0\_\_userinfo_T: extracted from auth0\_\_userinfo\_\_fetch_get\_\_payload_T
   - auth0\_\_userinfo\_\_fetch_get\_\_error_T
     error:string
@@ -7795,7 +7823,6 @@
 ### Patch Changes
 
 - auth0\_\_oauth_token\_\_fetch\_\_body_T: auth0\_\_secret\_\_oauth_token\_\_fetch\_\_body_T|login\_\_auth0\_\_oauth_token\_\_fetch\_\_body_T
-
   - login\_\_auth0\_\_oauth_token\_\_fetch\_\_body_T
     client_id:string
     client_secret:string
@@ -8016,7 +8043,6 @@
 ### Minor Changes
 
 - auth0\_\_token\_\_error_T:
-
   - username?:string
   - password?:string
   - password_confirmation?:string
