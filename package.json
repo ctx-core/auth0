@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/auth0",
-	"version": "40.1.297",
+	"version": "40.1.298",
 	"description": "ctx-core auth0",
 	"keywords": [
 		"ctx-core",
@@ -106,9 +106,9 @@
 		"disable:test:coverage": "c8 bun run test:unit || exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/email": "^9.2.12",
+		"@ctx-core/email": "^9.2.13",
 		"@ctx-core/jwt": "*",
-		"@ctx-core/local-storage": "^11.1.12",
+		"@ctx-core/local-storage": "^11.1.13",
 		"@types/auth0": "^3.3.11",
 		"@types/auth0-js": "^9.21.6",
 		"@types/jsonwebtoken": "^9.0.10",
