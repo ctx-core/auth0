@@ -1,9 +1,9 @@
 import { btoa } from '@ctx-core/btoa'
-import FakeTimers, { InstalledClock } from '@sinonjs/fake-timers'
+import FakeTimers, { type Clock } from '@sinonjs/fake-timers'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { auth0__jwt__expiration__is_valid_ } from '../index.js'
-let clock:InstalledClock
+let clock:Clock
 test.before(()=>{
 	clock = FakeTimers.install()
 })
